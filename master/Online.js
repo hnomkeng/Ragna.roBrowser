@@ -82359,7 +82359,7 @@ var init_preload_helper = __esmMin((() => {
 //#region src/UI/Common.css?raw
 var Common_default$1;
 var init_Common$1 = __esmMin((() => {
-	Common_default$1 = "/* Avoid input focus border */\r\n:focus {\r\n	outline: none;\r\n}\r\n::-moz-focus-inner {\r\n	border: 0;\r\n}\r\n\r\n* {\r\n	-moz-user-select: none;\r\n}\r\n\r\nhtml,\r\nbody {\r\n	touch-action: manipulation;\r\n	margin: 0;\r\n}\r\n\r\ncanvas {\r\n	touch-action: none;\r\n}\r\n\r\nbody {\r\n	background-color: black;\r\n	font-size: 12px;\r\n	font-family: 'SCDream', Arial, Helvetica, sans-serif;\r\n	overflow: hidden;\r\n	-webkit-user-select: none;\r\n	user-select: none;\r\n	min-width: 100vw;\r\n	min-height: 100vh;\r\n}\r\n\r\nbutton,\r\nui-button {\r\n	padding: 0;\r\n}\r\n\r\nui-button {\r\n	display: inline-block;\r\n}\r\n\r\n.ui-btn {\r\n	-webkit-appearance: none;\r\n	appearance: none;\r\n	display: inline-flex;\r\n	align-items: center;\r\n	justify-content: center;\r\n\r\n	height: 20px;\r\n	min-width: 52px;\r\n	padding: 0 10px;\r\n\r\n	font-size: 12px;\r\n	line-height: 1;\r\n	color: #3f3f3f;\r\n	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.85);\r\n\r\n	border-radius: 4px;\r\n	border: 1px solid;\r\n\r\n	/* 3D border: top right bottom left */\r\n	border-color: #cfcfcf #a9a9a9 #5f5f5f #bdbdbd;\r\n\r\n	/* glossy + subtle depth */\r\n	background: linear-gradient(to bottom, #ffffff 0%, #f2f2f2 35%, #dcdcdc 55%, #f9f9f9 100%);\r\n\r\n	box-shadow:\r\n		inset 0 1px 0 rgba(255, 255, 255, 0.95),\r\n		/* top highlight */ inset 0 -1px 0 rgba(0, 0, 0, 0.12),\r\n		/* bottom inner edge */ 0 1px 0 rgba(0, 0, 0, 0.12); /* outer bottom shadow */\r\n\r\n	cursor: pointer;\r\n}\r\n\r\n/* Hover: hơi xanh nhẹ giống button Reset */\r\n.ui-btn:hover {\r\n	border-color: #c9d1dd #8ea2c4 #4d5f86 #b1bfd5;\r\n	background: linear-gradient(to bottom, #f7fbff 0%, #dfe8f6 35%, #c0d0ee 55%, #f0f6ff 100%);\r\n\r\n	box-shadow:\r\n		inset 0 1px 0 rgba(255, 255, 255, 0.95),\r\n		inset 0 -1px 0 rgba(0, 0, 0, 0.12),\r\n		0 1px 0 rgba(0, 0, 0, 0.12);\r\n}\r\n\r\n/* Active: giống \"ấn xuống\" */\r\n.ui-btn:active {\r\n	border-color: #9fb0c9 #6f86a6 #3b4b67 #7f96b6;\r\n\r\n	background: linear-gradient(to bottom, #cdd8eb 0%, #b7c8e5 45%, #dfe9fb 100%);\r\n\r\n	box-shadow:\r\n		inset 0 2px 3px rgba(0, 0, 0, 0.18),\r\n		inset 0 1px 0 rgba(255, 255, 255, 0.35);\r\n\r\n	transform: translateY(1px); /* cảm giác bị nhấn */\r\n}\r\n\r\n/* Disabled */\r\n.ui-btn:disabled,\r\n.ui-btn.is-disabled {\r\n	cursor: default;\r\n	color: #8f8f8f;\r\n	text-shadow: none;\r\n\r\n	border-color: #d3d3d3 #bdbdbd #9b9b9b #c9c9c9;\r\n\r\n	background: linear-gradient(to bottom, #f6f6f6 0%, #e7e7e7 55%, #fafafa 100%);\r\n\r\n	box-shadow:\r\n		inset 0 1px 0 rgba(255, 255, 255, 0.9),\r\n		inset 0 -1px 0 rgba(0, 0, 0, 0.08),\r\n		0 1px 0 rgba(0, 0, 0, 0.08);\r\n\r\n	transform: none;\r\n}\r\n\r\n/* Hide native cursor inside Shadow DOM when custom cursor is active */\r\n:host-context(.custom-cursor) * {\r\n	cursor: none !important;\r\n}\r\n";
+	Common_default$1 = "/* Avoid input focus border */\r\n:focus {\r\n	outline: none;\r\n}\r\n::-moz-focus-inner {\r\n	border: 0;\r\n}\r\n\r\n* {\r\n	-moz-user-select: none;\r\n}\r\n\r\nhtml,\r\nbody {\r\n	touch-action: manipulation;\r\n	margin: 0;\r\n}\r\n\r\ncanvas {\r\n	touch-action: none;\r\n}\r\n\r\nbody {\r\n	background-color: #000;\r\n	color: #484848;\r\n	font-size: 11px;\r\n	font-weight: 400;\r\n	font-family: Gulim, Dotum, 'Malgun Gothic', sans-serif, Arial;\r\n	overflow: hidden;\r\n	-webkit-user-select: none;\r\n	user-select: none;\r\n	min-width: 100vw;\r\n	min-height: 100vh;\r\n	letter-spacing: 0;\r\n	line-height: 1.2;\r\n}\r\n\r\n.title {\r\n	font-size: 12px;\r\n}\r\n\r\nbutton,\r\nui-button {\r\n	padding: 0;\r\n}\r\n\r\nui-button {\r\n	display: inline-block;\r\n}\r\n\r\n.ui-btn {\r\n	-webkit-appearance: none;\r\n	appearance: none;\r\n	display: inline-flex;\r\n	align-items: center;\r\n	justify-content: center;\r\n\r\n	height: 20px;\r\n	min-width: 52px;\r\n	padding: 0 10px;\r\n\r\n	font-size: 12px;\r\n	line-height: 1;\r\n	color: #3f3f3f;\r\n	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.85);\r\n\r\n	border-radius: 4px;\r\n	border: 1px solid;\r\n\r\n	/* 3D border: top right bottom left */\r\n	border-color: #cfcfcf #a9a9a9 #5f5f5f #bdbdbd;\r\n\r\n	/* glossy + subtle depth */\r\n	background: linear-gradient(to bottom, #ffffff 0%, #f2f2f2 35%, #dcdcdc 55%, #f9f9f9 100%);\r\n\r\n	box-shadow:\r\n		inset 0 1px 0 rgba(255, 255, 255, 0.95),\r\n		/* top highlight */ inset 0 -1px 0 rgba(0, 0, 0, 0.12),\r\n		/* bottom inner edge */ 0 1px 0 rgba(0, 0, 0, 0.12); /* outer bottom shadow */\r\n\r\n	cursor: pointer;\r\n}\r\n\r\n/* Hover: hơi xanh nhẹ giống button Reset */\r\n.ui-btn:hover {\r\n	border-color: #c9d1dd #8ea2c4 #4d5f86 #b1bfd5;\r\n	background: linear-gradient(to bottom, #f7fbff 0%, #dfe8f6 35%, #c0d0ee 55%, #f0f6ff 100%);\r\n\r\n	box-shadow:\r\n		inset 0 1px 0 rgba(255, 255, 255, 0.95),\r\n		inset 0 -1px 0 rgba(0, 0, 0, 0.12),\r\n		0 1px 0 rgba(0, 0, 0, 0.12);\r\n}\r\n\r\n/* Active: giống \"ấn xuống\" */\r\n.ui-btn:active {\r\n	border-color: #9fb0c9 #6f86a6 #3b4b67 #7f96b6;\r\n\r\n	background: linear-gradient(to bottom, #cdd8eb 0%, #b7c8e5 45%, #dfe9fb 100%);\r\n\r\n	box-shadow:\r\n		inset 0 2px 3px rgba(0, 0, 0, 0.18),\r\n		inset 0 1px 0 rgba(255, 255, 255, 0.35);\r\n\r\n	transform: translateY(1px); /* cảm giác bị nhấn */\r\n}\r\n\r\n/* Disabled */\r\n.ui-btn:disabled,\r\n.ui-btn.is-disabled {\r\n	cursor: default;\r\n	color: #8f8f8f;\r\n	text-shadow: none;\r\n\r\n	border-color: #d3d3d3 #bdbdbd #9b9b9b #c9c9c9;\r\n\r\n	background: linear-gradient(to bottom, #f6f6f6 0%, #e7e7e7 55%, #fafafa 100%);\r\n\r\n	box-shadow:\r\n		inset 0 1px 0 rgba(255, 255, 255, 0.9),\r\n		inset 0 -1px 0 rgba(0, 0, 0, 0.08),\r\n		0 1px 0 rgba(0, 0, 0, 0.08);\r\n\r\n	transform: none;\r\n}\r\n\r\n/* Hide native cursor inside Shadow DOM when custom cursor is active */\r\n:host-context(.custom-cursor) * {\r\n	cursor: none !important;\r\n}\r\n";
 }));
 //#endregion
 //#region src/Core/Preferences.js
@@ -89311,11 +89311,7 @@ var init_BGM = __esmMin((() => {
 * Render background (or a black background if no image is loaded yet)
 */
 function render$24() {
-	if (_image.complete && _image.width) _ctx$17.drawImage(_image, 0, 0, _canvas[0].width, _canvas[0].height);
-	else {
-		_ctx$17.fillStyle = "#000";
-		_ctx$17.fillRect(0, 0, _canvas[0].width, _canvas[0].height);
-	}
+	_ctx$17.clearRect(0, 0, _canvas[0].width, _canvas[0].height);
 	if (_progress > -1) Background.setPercent(_progress);
 }
 /**
@@ -89332,19 +89328,13 @@ function transition(callback) {
 		});
 	});
 }
-var _canvas, _ctx$17, _overlay, _progress, _image, _loading, Background;
+var _overlay, _container, _canvas, _ctx$17, _progress, _loading, Background;
 var init_Background = __esmMin((() => {
 	init_DBManager();
 	init_jquery();
 	init_Client();
 	init_Configs();
-	_canvas = jquery_default("<canvas/>").css({
-		position: "absolute",
-		top: 0,
-		left: 0,
-		zIndex: 5
-	});
-	_ctx$17 = _canvas[0].getContext("2d");
+	init_PacketVerManager();
 	_overlay = jquery_default("<div/>").css({
 		position: "absolute",
 		top: 0,
@@ -89353,8 +89343,23 @@ var init_Background = __esmMin((() => {
 		backgroundColor: "black",
 		opacity: 0
 	});
+	_container = jquery_default("<div/>").css({
+		position: "absolute",
+		top: 0,
+		left: 0,
+		zIndex: 1,
+		width: "100%",
+		height: "100%",
+		backgroundColor: "black"
+	});
+	_canvas = jquery_default("<canvas/>").css({
+		position: "absolute",
+		top: 0,
+		left: 0,
+		zIndex: 2
+	});
+	_ctx$17 = _canvas[0].getContext("2d");
 	_progress = -1;
-	_image = new Image();
 	_loading = [];
 	Background = class Background {
 		/**
@@ -89365,7 +89370,7 @@ var init_Background = __esmMin((() => {
 		static init(loading) {
 			let i;
 			_progress = 0;
-			_canvas.css("zIndex", 0);
+			_canvas.css("zIndex", 1);
 			render$24();
 			if (loading) {
 				_loading = loading;
@@ -89384,34 +89389,99 @@ var init_Background = __esmMin((() => {
 				width,
 				height
 			});
-			_ctx$17.fillStyle = "black";
-			_ctx$17.fillRect(0, 0, width, height);
+			_container.css({
+				width: width + "px",
+				height: height + "px"
+			});
+			_ctx$17.clearRect(0, 0, width, height);
 			render$24();
 		}
 		/**
 		* Set an image as background
 		*
-		* @param {string} filename
+		* @param {string|Array<string>} filename
 		* @param {function} callback once the image is loaded (optional)
 		*/
 		static setImage(filename, callback) {
-			const exist = !!_canvas[0].parentNode;
+			const exist = !!_container[0].parentNode;
 			_progress = -1;
+			_container.empty().css("backgroundImage", "none");
 			render$24();
-			Client.loadFile(DB.INTERFACE_PATH + filename, (url) => {
-				if (url !== _image.src) {
-					_image.decoding = "async";
-					_image.src = url;
-					_image.onload = render$24;
+			if (Array.isArray(filename)) {
+				let loadedCount = 0;
+				const total = filename.length;
+				const divs = [];
+				for (let i = 0; i < total; i++) {
+					const div = jquery_default("<div/>").css({
+						width: "25%",
+						height: "33.333%",
+						float: "left",
+						backgroundSize: "100% 100%"
+					});
+					divs.push(div);
+					_container.append(div);
 				}
-				if (exist && callback) callback();
-			}, () => {
-				if (exist && callback) callback();
-			});
+				filename.forEach((file, index) => {
+					const fullPath = DB.INTERFACE_PATH + file;
+					Client.loadFile(fullPath, (url) => {
+						divs[index].css("backgroundImage", "url(" + url + ")");
+						loadedCount++;
+						if (loadedCount === total) {
+							if (exist && callback) callback();
+						}
+					}, () => {
+						loadedCount++;
+						if (loadedCount === total) {
+							if (exist && callback) callback();
+						}
+					});
+				});
+			} else {
+				const fullPath = DB.INTERFACE_PATH + filename;
+				Client.loadFile(fullPath, (url) => {
+					_container.css({
+						backgroundImage: "url(" + url + ")",
+						backgroundSize: "100% 100%"
+					});
+					if (exist && callback) callback();
+				}, () => {
+					if (exist && callback) callback();
+				});
+			}
 			if (!exist) transition(() => {
+				_container.appendTo("body");
 				_canvas.appendTo("body");
 				if (callback) callback();
 			});
+		}
+		/**
+		* Helper method to return the right login background filename(s) based on packet version.
+		*/
+		static getLoginBackgroundName() {
+			if (PacketVerManager_default.value >= 20221207) return "t_login.jpg";
+			if (PacketVerManager_default.value >= 20181114) return [
+				"t_¹è°æ1-1.bmp",
+				"t_¹è°æ1-2.bmp",
+				"t_¹è°æ1-3.bmp",
+				"t_¹è°æ1-4.bmp",
+				"t_¹è°æ2-1.bmp",
+				"t_¹è°æ2-2.bmp",
+				"t_¹è°æ2-3.bmp",
+				"t_¹è°æ2-4.bmp",
+				"t_¹è°æ3-1.bmp",
+				"t_¹è°æ3-2.bmp",
+				"t_¹è°æ3-3.bmp",
+				"t_¹è°æ3-4.bmp"
+			];
+			return "bgi_temp.bmp";
+		}
+		/**
+		* Add versioned login background
+		*
+		* @param {function} callback once the background is display (optional)
+		*/
+		static setLoginBackground(callback) {
+			Background.setImage(Background.getLoginBackgroundName(), callback);
 		}
 		/**
 		* Add loading background
@@ -89432,10 +89502,16 @@ var init_Background = __esmMin((() => {
 		* @param {function} callback once the overlay hide the window (optional)
 		*/
 		static remove(callback) {
+			if (!!!_container[0].parentNode) {
+				if (callback) callback();
+				return;
+			}
 			transition(() => {
+				_container.css("zIndex", 0);
 				_canvas.css("zIndex", 0);
-				_canvas.remove();
-				_image.src = "";
+				_container.detach();
+				_canvas.detach();
+				_container.empty().css("backgroundImage", "none");
 				if (callback) callback();
 			});
 		}
@@ -91420,6 +91496,18 @@ var init_Sounds = __esmMin((() => {
 	};
 }));
 //#endregion
+//#region src/Renderer/Effects/RainWeather.vs?raw
+var RainWeather_default$1;
+var init_RainWeather$2 = __esmMin((() => {
+	RainWeather_default$1 = "#version 300 es\r\nprecision highp float;\r\n\r\nin vec3 aPosition;\r\nin vec2 aTextureCoord;\r\n\r\nout vec2 vTextureCoord;\r\nout vec3 vWorldPos;\r\n\r\nuniform mat4 uModelViewMat;\r\nuniform mat4 uProjectionMat;\r\nuniform vec3 uWorldPosition;\r\nuniform vec2 uSize;\r\nuniform float uAngle;\r\nuniform float uZIndex;\r\n\r\nvoid main(void) {\r\n	// Convert size from SpriteRenderer units to world units\r\n	float sizeX = uSize.x / 35.0;\r\n	float sizeY = uSize.y / 35.0;\r\n\r\n	// Scale the quad by size\r\n	vec3 pos = vec3(aPosition.x * sizeX, aPosition.y, aPosition.z * sizeY);\r\n\r\n	// Rotate around Y axis by angle\r\n	float cosA = cos(uAngle);\r\n	float sinA = sin(uAngle);\r\n	vec3 rotatedPos = vec3(\r\n		pos.x * cosA - pos.z * sinA,\r\n		pos.y,\r\n		pos.x * sinA + pos.z * cosA\r\n	);\r\n\r\n	// World position following RO coordinate system: x, -z (height), y\r\n	vWorldPos = vec3(\r\n		uWorldPosition.x + 0.5 + rotatedPos.x,\r\n		-uWorldPosition.z + rotatedPos.y,\r\n		uWorldPosition.y + 0.5 + rotatedPos.z\r\n	);\r\n\r\n	gl_Position = uProjectionMat * uModelViewMat * vec4(vWorldPos, 1.0);\r\n	gl_Position.z -= uZIndex * 0.01;\r\n\r\n	vTextureCoord = aTextureCoord;\r\n}\r\n";
+}));
+//#endregion
+//#region src/Renderer/Effects/RainWeather.fs?raw
+var RainWeather_default;
+var init_RainWeather$1 = __esmMin((() => {
+	RainWeather_default = "#version 300 es\r\nprecision highp float;\r\n\r\nin vec2 vTextureCoord;\r\nin vec3 vWorldPos;\r\nout vec4 fragColor;\r\n\r\nuniform sampler2D uDiffuse;\r\nuniform vec4 uColor;\r\nuniform float uTime;\r\nuniform vec3 uFogColor;\r\nuniform float uFogNear;\r\nuniform float uFogFar;\r\nuniform bool uFogUse;\r\nuniform vec3 uCameraPos;\r\n\r\nvoid main(void) {\r\n	vec2 uv = vTextureCoord;\r\n	vec2 center = vec2(0.5, 0.5);\r\n	float dist = distance(uv, center);\r\n\r\n	// Multi-layered procedural ripples - made slower for \"standing water\" look\r\n	float wave1 = sin(dist * 20.0 - uTime * 2.2) * 0.5 + 0.5;\r\n	float wave2 = sin(dist * 12.0 + uTime * 1.4 + vWorldPos.x * 0.5) * 0.5 + 0.5;\r\n	float combinedWave = (wave1 * 0.7 + wave2 * 0.3) * (1.0 - dist * 2.0);\r\n\r\n	// Distort UV based on waves for a \"refraction\" feel\r\n	vec2 distortedUV = uv + (uv - center) * combinedWave * 0.035;\r\n	vec4 texColor = texture(uDiffuse, distortedUV);\r\n\r\n	if (texColor.a < 0.01) {\r\n		discard;\r\n	}\r\n\r\n	// Fresnel Effect: Water reflects more at shallow angles\r\n	vec3 viewDir = normalize(uCameraPos - vWorldPos);\r\n	float fresnel = pow(1.0 - max(0.0, dot(viewDir, vec3(0.0, 1.0, 0.0))), 3.5);\r\n\r\n	// Fake sky reflection (Bright Platinum mix)\r\n	vec3 skyReflect = vec3(0.88, 0.92, 1.0); \r\n	float reflectFactor = (pow(combinedWave, 2.5) * 0.45 + fresnel * 0.5) * 0.8;\r\n	\r\n	// Brighter deep water tone\r\n	texColor.rgb *= 0.98; \r\n	texColor.rgb = mix(texColor.rgb, skyReflect, reflectFactor);\r\n\r\n	// Dynamic specular highlight (shine) on wave peaks\r\n	float shine = pow(combinedWave, 8.0) * 0.55 + fresnel * 0.1;\r\n	texColor.rgb += vec3(shine);\r\n\r\n	// Final color with alpha from uColor\r\n	vec4 finalColor = texColor * uColor;\r\n\r\n	// Apply Fog\r\n	if (uFogUse) {\r\n		float depth = gl_FragCoord.z / gl_FragCoord.w;\r\n		float fogFactor = smoothstep(uFogNear, uFogFar, depth);\r\n		finalColor.rgb = mix(finalColor.rgb, uFogColor, fogFactor);\r\n	}\r\n\r\n	fragColor = finalColor;\r\n}\r\n";
+}));
+//#endregion
 //#region src/Renderer/Effects/RainWeather.js
 function ensureDropFrame(gl) {
 	if (_dropFrame && _dropFrame.texture && gl.isTexture(_dropFrame.texture)) return;
@@ -91512,6 +91600,82 @@ function ensureSplashFrame(gl) {
 		type: 1
 	};
 }
+function ensurePuddleFrame(gl) {
+	if (_puddleFrame && _puddleFrame.texture && gl.isTexture(_puddleFrame.texture)) return;
+	_puddleFrame = null;
+	const w = 64, h = 64;
+	const data = new Uint8Array(w * h * 4);
+	const cx = (w - 1) / 2;
+	const cy = (h - 1) / 2;
+	const maxR = Math.min(cx, cy) * .85;
+	for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) {
+		const dx = x - cx;
+		const dy = y - cy;
+		const dist = Math.sqrt(dx * dx + dy * dy);
+		const angle = Math.atan2(dy, dx);
+		const r = dist / (maxR * (1 + .15 * Math.sin(angle * 5) + .08 * Math.sin(angle * 3 + 1.5) + .05 * Math.cos(angle * 11)));
+		let a = 0;
+		if (r <= 1) a = Math.pow(1 - r, .7);
+		const alphaByte = Math.max(0, Math.min(255, Math.floor(a * 255)));
+		const idx = (y * w + x) * 4;
+		data[idx + 0] = 18;
+		data[idx + 1] = 32;
+		data[idx + 2] = 55;
+		data[idx + 3] = alphaByte;
+	}
+	const tex = gl.createTexture();
+	gl.bindTexture(gl.TEXTURE_2D, tex);
+	gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, w, h, 0, gl.RGBA, gl.UNSIGNED_BYTE, data);
+	gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+	gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
+	gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+	gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+	_puddleFrame = {
+		texture: tex,
+		width: w,
+		height: h,
+		type: 1
+	};
+}
+function initPuddleShader(gl) {
+	if (_puddleProgram) return;
+	_puddleProgram = WebGL_default.createShaderProgram(gl, RainWeather_default$1, RainWeather_default);
+	const vertices = new Float32Array([
+		-.5,
+		0,
+		-.5,
+		0,
+		0,
+		.5,
+		0,
+		-.5,
+		1,
+		0,
+		-.5,
+		0,
+		.5,
+		0,
+		1,
+		.5,
+		0,
+		-.5,
+		1,
+		0,
+		.5,
+		0,
+		.5,
+		1,
+		1,
+		-.5,
+		0,
+		.5,
+		0,
+		1
+	]);
+	_puddleBuffer = gl.createBuffer();
+	gl.bindBuffer(gl.ARRAY_BUFFER, _puddleBuffer);
+	gl.bufferData(gl.ARRAY_BUFFER, vertices, gl.STATIC_DRAW);
+}
 function randRange$1(min, max) {
 	return min + Math.random() * (max - min);
 }
@@ -91561,7 +91725,7 @@ function computeDropTilt(vx, vy, speedMs) {
 	if (Math.abs(vxView) < 1e-6 && Math.abs(vyView) < 1e-6) return 0;
 	return Math.atan2(vxView, vyView) * 180 / Math.PI;
 }
-var RAG_TICK_MS$2, FADEOUT_TAIL_MS$3, EMIT_PER_TICK, EMIT_STOP_BEFORE_END_MS$2, MAX_DROPS, SCATTER_RADIUS_CELLS$2, SPAWN_HEIGHT_MIN_CELLS$2, SPAWN_HEIGHT_MAX_CELLS$2, WIND_STRENGTH_BASE, WIND_STRENGTH_VAR, WIND_ANGLE_MAX_RAD, THUNDER_MIN_INTERVAL, THUNDER_MAX_INTERVAL, FLASH_FADE_IN, FLASH_FADE_OUT, RAIN_VOLUME, LAYERS, _layerCDF, _dropFrame, _filterFrame$1, _splashFrame, SPLASH_LIFE_MS, SPLASH_SIZE_PX, SPLASH_ALPHA, _instance$4, _mapName$5, _isStopping$2, RainWeatherEffect;
+var RAG_TICK_MS$2, FADEOUT_TAIL_MS$3, EMIT_PER_TICK, EMIT_STOP_BEFORE_END_MS$2, MAX_DROPS, SCATTER_RADIUS_CELLS$2, SPAWN_HEIGHT_MIN_CELLS$2, SPAWN_HEIGHT_MAX_CELLS$2, WIND_STRENGTH_BASE, WIND_STRENGTH_VAR, WIND_ANGLE_MAX_RAD, THUNDER_MIN_INTERVAL, THUNDER_MAX_INTERVAL, FLASH_FADE_IN, FLASH_FADE_OUT, RAIN_VOLUME, LAYERS, _layerCDF, MAX_PUDDLES, PUDDLE_INITIAL_SIZE, PUDDLE_MAX_SIZE, PUDDLE_GROWTH_PER_DROP, PUDDLE_ALPHA_MAX, PUDDLE_FADE_SPEED, PUDDLE_SEED_CHANCE, _dropFrame, _filterFrame$1, _splashFrame, SPLASH_LIFE_MS, SPLASH_SIZE_PX, SPLASH_ALPHA, _puddleFrame, _puddleProgram, _puddleBuffer, _instance$4, _mapName$5, _isStopping$2, RainWeatherEffect;
 var init_RainWeather = __esmMin((() => {
 	init_Renderer();
 	init_MapRenderer();
@@ -91570,6 +91734,9 @@ var init_RainWeather = __esmMin((() => {
 	init_Camera();
 	init_Audio();
 	init_SessionStorage();
+	init_RainWeather$2();
+	init_RainWeather$1();
+	init_WebGL();
 	RAG_TICK_MS$2 = 25;
 	FADEOUT_TAIL_MS$3 = 1e3 * RAG_TICK_MS$2;
 	EMIT_PER_TICK = 10;
@@ -91621,12 +91788,22 @@ var init_RainWeather = __esmMin((() => {
 		}
 		return out;
 	})();
+	MAX_PUDDLES = 600;
+	PUDDLE_INITIAL_SIZE = 20;
+	PUDDLE_MAX_SIZE = 230;
+	PUDDLE_GROWTH_PER_DROP = 4.5;
+	PUDDLE_ALPHA_MAX = .45;
+	PUDDLE_FADE_SPEED = 4e-5;
+	PUDDLE_SEED_CHANCE = .06;
 	_dropFrame = null;
 	_filterFrame$1 = null;
 	_splashFrame = null;
 	SPLASH_LIFE_MS = 220;
 	SPLASH_SIZE_PX = [10, 18];
 	SPLASH_ALPHA = .45;
+	_puddleFrame = null;
+	_puddleProgram = null;
+	_puddleBuffer = null;
 	_instance$4 = null;
 	_mapName$5 = "";
 	_isStopping$2 = false;
@@ -91639,6 +91816,7 @@ var init_RainWeather = __esmMin((() => {
 			this.lastEmitTick = this.startTick;
 			this.drops = [];
 			this.splashes = [];
+			this.puddles = [];
 			this._wind = {
 				xTick: 0,
 				yTick: 0,
@@ -91712,12 +91890,18 @@ var init_RainWeather = __esmMin((() => {
 			}
 			this.beforeRender(gl, modelView, projection, fog);
 			SpriteRenderer.runWithDepth(false, false, true, () => {
-				_instance$4.render(gl, tick);
+				_instance$4.render(gl, tick, false);
 			});
 			if (_instance$4.needCleanUp) {
 				_instance$4.free();
 				_instance$4 = null;
 			}
+			this.afterRender(gl);
+		}
+		static renderPuddles(gl, modelView, projection, fog, tick) {
+			if (!_instance$4 || !_instance$4.puddles.length) return;
+			this.beforeRender(gl, modelView, projection, fog);
+			_instance$4.render(gl, tick, true);
 			this.afterRender(gl);
 		}
 		static stop(ownerAID, tick) {
@@ -91807,16 +91991,18 @@ var init_RainWeather = __esmMin((() => {
 			const radius = Math.random() * SCATTER_RADIUS_CELLS$2;
 			const ox = Math.cos(theta) * radius;
 			const oy = Math.sin(theta) * radius;
+			const speedTick = randRange$1(layer.speedTick[0], layer.speedTick[1]);
+			const speedMs = speedTick / RAG_TICK_MS$2;
+			const widthPx = randRange$1(layer.widthPx[0], layer.widthPx[1]);
+			const lengthPx = randRange$1(layer.lengthPx[0], layer.lengthPx[1]);
 			const spawnHeight = randRange$1(SPAWN_HEIGHT_MIN_CELLS$2, SPAWN_HEIGHT_MAX_CELLS$2);
-			const upwindX = -this._wind.xTick * spawnHeight * .6;
-			const upwindY = -this._wind.yTick * spawnHeight * .6;
+			const driftTimeTicks = spawnHeight / speedTick;
+			const upwindX = -this._wind.xTick * driftTimeTicks;
+			const upwindY = -this._wind.yTick * driftTimeTicks;
 			const x = px + ox + upwindX;
 			const y = py + oy + upwindY;
 			const groundZ = Altitude.getCellHeight(x, y);
 			const z = groundZ + spawnHeight;
-			const speedMs = randRange$1(layer.speedTick[0], layer.speedTick[1]) / RAG_TICK_MS$2;
-			const widthPx = randRange$1(layer.widthPx[0], layer.widthPx[1]);
-			const lengthPx = randRange$1(layer.lengthPx[0], layer.lengthPx[1]);
 			const windJitterXMs = (Math.random() - .5) * .002;
 			const windJitterYMs = (Math.random() - .5) * .002;
 			const tiltJitter = randRange$1(-4, 4);
@@ -91839,11 +92025,78 @@ var init_RainWeather = __esmMin((() => {
 			});
 			if (this.drops.length > MAX_DROPS) this.drops.splice(0, this.drops.length - MAX_DROPS);
 		}
-		render(gl, tick) {
+		updatePuddle(x, y, z, tick) {
+			let bestPuddle = null;
+			let bestDistSq = Infinity;
+			for (let i = 0; i < this.puddles.length; i++) {
+				const p = this.puddles[i];
+				const dx = p.x - x;
+				const dy = p.y - y;
+				const distSq = dx * dx + dy * dy;
+				const impactRadius = Math.max(1.5, p.size / 35 * .8);
+				if (distSq < impactRadius * impactRadius) {
+					if (distSq < bestDistSq) {
+						bestDistSq = distSq;
+						bestPuddle = p;
+					}
+				}
+			}
+			if (bestPuddle) {
+				bestPuddle.size = Math.min(PUDDLE_MAX_SIZE, bestPuddle.size + PUDDLE_GROWTH_PER_DROP);
+				bestPuddle.alpha = Math.min(PUDDLE_ALPHA_MAX, bestPuddle.alpha + .02);
+				const currentLife = Math.max(0, (bestPuddle.nextDryTick || tick) - tick);
+				const newLife = Math.min(1e4, currentLife + 1500);
+				bestPuddle.nextDryTick = tick + newLife;
+				bestPuddle.lastUpdate = tick;
+			} else if (Math.random() < PUDDLE_SEED_CHANCE) {
+				let tooClose = false;
+				for (let i = 0; i < this.puddles.length; i++) {
+					const p = this.puddles[i];
+					const dx = p.x - x;
+					const dy = p.y - y;
+					if (dx * dx + dy * dy < PUDDLE_MAX_SIZE / 4) {
+						tooClose = true;
+						p.size = Math.min(PUDDLE_MAX_SIZE, p.size + PUDDLE_GROWTH_PER_DROP * .5);
+						break;
+					}
+				}
+				if (!tooClose) {
+					if (this.puddles.length >= MAX_PUDDLES) {
+						let worstIdx = 0;
+						let minScore = Infinity;
+						for (let i = 0; i < this.puddles.length; i++) {
+							const score = this.puddles[i].size * this.puddles[i].alpha;
+							if (score < minScore) {
+								minScore = score;
+								worstIdx = i;
+							}
+						}
+						this.puddles.splice(worstIdx, 1);
+					}
+					this.puddles.push({
+						x,
+						y,
+						z,
+						size: PUDDLE_INITIAL_SIZE,
+						alpha: .12,
+						angle: Math.random() * Math.PI * 2,
+						lastUpdate: tick,
+						nextDryTick: tick + 3500
+					});
+				}
+			}
+		}
+		render(gl, tick, puddlesOnly = false) {
 			if (!SessionStorage_default.Entity) return;
 			ensureDropFrame(gl);
 			ensureFilterFrame$1(gl);
 			ensureSplashFrame(gl);
+			ensurePuddleFrame(gl);
+			initPuddleShader(gl);
+			if (puddlesOnly) {
+				this.renderPuddles(gl, tick);
+				return;
+			}
 			if (!_dropFrame) return;
 			this._wind = computeGlobalWind(tick);
 			const now = Date.now();
@@ -91937,6 +92190,7 @@ var init_RainWeather = __esmMin((() => {
 						if (this.splashes.length > 300) this.splashes.splice(0, this.splashes.length - 300);
 						this.triggerRainDropSound();
 					}
+					this.updatePuddle(drop.x, drop.y, drop.groundZ, tick);
 					this.drops.splice(d, 1);
 					continue;
 				}
@@ -92002,6 +92256,57 @@ var init_RainWeather = __esmMin((() => {
 				SpriteRenderer.render(false);
 			}
 		}
+		renderPuddles(gl, tick) {
+			if (_puddleFrame && this.puddles.length) {
+				const self = this;
+				SpriteRenderer.runWithDepth(true, false, false, () => {
+					const uniform = _puddleProgram.uniform;
+					const attribute = _puddleProgram.attribute;
+					gl.useProgram(_puddleProgram);
+					gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
+					gl.uniformMatrix4fv(uniform.uModelViewMat, false, Camera.modelView);
+					gl.uniformMatrix4fv(uniform.uProjectionMat, false, Camera.projection);
+					const fog = MapRenderer.fog;
+					gl.uniform1i(uniform.uFogUse, fog.use && fog.exist);
+					gl.uniform1f(uniform.uFogNear, fog.near);
+					gl.uniform1f(uniform.uFogFar, fog.far);
+					gl.uniform3fv(uniform.uFogColor, fog.color);
+					gl.activeTexture(gl.TEXTURE0);
+					gl.bindTexture(gl.TEXTURE_2D, _puddleFrame.texture);
+					gl.uniform1i(uniform.uDiffuse, 0);
+					gl.uniform1f(uniform.uTime, tick * .001);
+					gl.uniform3fv(uniform.uCameraPos, Camera.position);
+					gl.bindBuffer(gl.ARRAY_BUFFER, _puddleBuffer);
+					gl.enableVertexAttribArray(attribute.aPosition);
+					gl.enableVertexAttribArray(attribute.aTextureCoord);
+					gl.vertexAttribPointer(attribute.aPosition, 3, gl.FLOAT, false, 20, 0);
+					gl.vertexAttribPointer(attribute.aTextureCoord, 2, gl.FLOAT, false, 20, 12);
+					for (let p = self.puddles.length - 1; p >= 0; p--) {
+						const puddle = self.puddles[p];
+						if (tick > (puddle.nextDryTick || tick)) {
+							const dt = tick - (puddle._lastTick || tick);
+							const fade = PUDDLE_FADE_SPEED / (1 + puddle.size * .003) * dt;
+							puddle.alpha -= fade;
+							puddle.size -= fade * 8500;
+						}
+						puddle._lastTick = tick;
+						if (puddle.size <= .1 || puddle.alpha <= 1e-4) {
+							self.puddles.splice(p, 1);
+							continue;
+						}
+						gl.uniform3f(uniform.uWorldPosition, puddle.x, puddle.y, puddle.z + .01);
+						gl.uniform2f(uniform.uSize, puddle.size, puddle.size);
+						gl.uniform1f(uniform.uAngle, puddle.angle);
+						gl.uniform4f(uniform.uColor, 1, 1, 1, puddle.alpha);
+						gl.uniform1f(uniform.uZIndex, 1);
+						gl.drawArrays(gl.TRIANGLES, 0, 6);
+					}
+					gl.disableVertexAttribArray(attribute.aPosition);
+					gl.disableVertexAttribArray(attribute.aTextureCoord);
+					gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
+				});
+			}
+		}
 		free() {
 			if (this.audioCtx) try {
 				if (this.rainNode) {
@@ -92015,6 +92320,7 @@ var init_RainWeather = __esmMin((() => {
 			}
 			this.drops = [];
 			this.splashes = [];
+			this.puddles = [];
 			this.ready = false;
 		}
 	};
@@ -94002,7 +94308,7 @@ var init_CloudWeatherEffect = __esmMin((() => {
 				1,
 				1,
 				1,
-				.38
+				.18
 			]
 		},
 		230: {
@@ -102562,7 +102868,7 @@ var init_PacketStructure = __esmMin((() => {
 	PACKET.ZC.ITEM_ENTRY.size = PacketVerManager_default.value >= 20181121 ? 19 : 17;
 	PACKET.ZC.ITEM_FALL_ENTRY = function PACKET_ZC_ITEM_FALL_ENTRY(fp, end) {
 		this.ITAID = fp.readULong();
-		this.ITID = fp.readUShort();
+		this.ITID = PacketVerManager_default.value >= 20181121 ? fp.readULong() : fp.readUShort();
 		this.IsIdentified = fp.readUChar();
 		this.xPos = fp.readShort();
 		this.yPos = fp.readShort();
@@ -102570,7 +102876,7 @@ var init_PacketStructure = __esmMin((() => {
 		this.subY = fp.readUChar();
 		this.count = fp.readShort();
 	};
-	PACKET.ZC.ITEM_FALL_ENTRY.size = 17;
+	PACKET.ZC.ITEM_FALL_ENTRY.size = PacketVerManager_default.value >= 20181121 ? 19 : 17;
 	PACKET.ZC.ITEM_PICKUP_ACK = function PACKET_ZC_ITEM_PICKUP_ACK(fp, end) {
 		this.index = fp.readUShort();
 		this.count = fp.readUShort();
@@ -106690,7 +106996,7 @@ var init_PacketStructure = __esmMin((() => {
 	PACKET.HC.NOTIFY_ACCESSIBLE_MAPNAME.size = -1;
 	PACKET.ZC.ITEM_FALL_ENTRY2 = function PACKET_ZC_ITEM_FALL_ENTRY2(fp, end) {
 		this.ITAID = fp.readULong();
-		this.ITID = fp.readUShort();
+		this.ITID = PacketVerManager_default.value >= 20181121 ? fp.readULong() : fp.readUShort();
 		this.type = fp.readUShort();
 		this.IsIdentified = fp.readUChar();
 		this.xPos = fp.readShort();
@@ -106699,7 +107005,7 @@ var init_PacketStructure = __esmMin((() => {
 		this.subY = fp.readUChar();
 		this.count = fp.readShort();
 	};
-	PACKET.ZC.ITEM_FALL_ENTRY2.size = 19;
+	PACKET.ZC.ITEM_FALL_ENTRY2.size = PacketVerManager_default.value >= 20181121 ? 21 : 19;
 	PACKET.ZC.NOTIFY_MOVEENTRY6 = function PACKET_ZC_NOTIFY_MOVEENTRY6(fp, end) {
 		this.objecttype = fp.readUChar();
 		this.GID = fp.readULong();
@@ -107768,6 +108074,11 @@ var init_PacketStructure = __esmMin((() => {
 		return pkt_buf;
 	};
 	PACKET.CH.CHARLIST_REQ.size = 2;
+	PACKET.AC.REFUSE_LOGIN3 = function PACKET_AC_REFUSE_LOGIN3(fp, end) {
+		this.ErrorCode = fp.readUChar();
+		this.blockDate = fp.readULong();
+	};
+	PACKET.AC.REFUSE_LOGIN3.size = 7;
 	PACKET.ZC.BANKING_CHECK = function PACKET_ZC_BANKING_CHECK(fp, end) {
 		this.money = fp.readLong();
 		this.reason = fp.readShort();
@@ -108057,6 +108368,15 @@ var init_PacketStructure = __esmMin((() => {
 		}
 	};
 	PACKET.ZC.ACK_RODEX_LIST3.size = -1;
+	PACKET.AC.LOGIN_TAREN_REFUSE = function PACKET_AC_LOGIN_TAREN_REFUSE(fp, end) {
+		this.ErrorCode = fp.readUChar();
+	};
+	PACKET.AC.LOGIN_TAREN_REFUSE.size = 3;
+	PACKET.AC.LOGIN_TAREN_REFUSE2 = function PACKET_AC_LOGIN_TAREN_REFUSE2(fp, end) {
+		this.ErrorCode = fp.readUChar();
+		this.blockDate = fp.readBinaryString(20);
+	};
+	PACKET.AC.LOGIN_TAREN_REFUSE2.size = 23;
 	PACKET.ZC.GRADE_ENCHANT_MATERIAL_LIST = function PACKET_ZC_GRADE_ENCHANT_MATERIAL_LIST(fp, end) {
 		this.index = fp.readShort();
 		this.success_chance = fp.readLong();
@@ -109301,6 +109621,12 @@ var init_PacketStructure = __esmMin((() => {
 		pkt_buf.writeUChar(this.UIType);
 		return pkt_buf;
 	};
+	PACKET.AC.REFUSE_LOGIN_USA = function PACKET_AC_REFUSE_LOGIN_USA(fp, end) {
+		this.ErrorCode = fp.readULong();
+		this.Error = fp.readULong();
+		this.blockDate = fp.readBinaryString(20);
+	};
+	PACKET.AC.REFUSE_LOGIN_USA.size = 30;
 	PACKET.ZC.UI_OPEN = function PACKET_ZC_UI_OPEN(fp, end) {
 		this.ui_type = fp.readByte();
 		this.data = fp.readULong();
@@ -109389,6 +109715,48 @@ var init_PacketStructure = __esmMin((() => {
 		this.masterName = this.masterAID;
 	};
 	PACKET.ZC.GUILD_INFO3.size = 94;
+	PACKET.ZC.STORE_ASSISTANT_ENTRY = function PACKET_ZC_STORE_ASSISTANT_ENTRY(fp, end) {
+		this.GID = fp.readULong();
+		this.job = fp.readShort();
+		this.unknown = fp.readShort();
+		this.PosDir = [
+			fp.readShort(),
+			fp.readShort(),
+			4
+		];
+		this.sex = fp.readUChar();
+		this.head = fp.readShort();
+		this.weapon = PacketVerManager_default.value >= 20181121 ? fp.readULong() : fp.readUShort();
+		this.shield = PacketVerManager_default.value >= 20181121 ? fp.readULong() : fp.readUShort();
+		this.accessory = fp.readShort();
+		this.accessory2 = fp.readShort();
+		this.accessory3 = fp.readShort();
+		this.headpalette = fp.readShort();
+		this.bodypalette = fp.readShort();
+		this.Robe = fp.readShort();
+		this.name = fp.readBinaryString(NAME_LENGTH);
+		this.speed = 0;
+		this.objecttype = 0;
+		this.bodyState = 0;
+		this.healthState = 0;
+		this.effectState = 0;
+		this.headDir = 0;
+		this.GUID = 0;
+		this.GEmblemVer = 0;
+		this.honor = 0;
+		this.virtue = 0;
+		this.isPKModeON = 0;
+		this.xSize = 0;
+		this.ySize = 0;
+		this.state = 0;
+		this.clevel = 0;
+	};
+	PACKET.ZC.STORE_ASSISTANT_ENTRY.size = PacketVerManager_default.value >= 20181121 ? 61 : 57;
+	PACKET.ZC.STORE_ASSISTANT_DISAPPEAR = function PACKET_ZC_STORE_ASSISTANT_DISAPPEAR(fp, end) {
+		this.GID = fp.readULong();
+		this.type = 0;
+	};
+	PACKET.ZC.STORE_ASSISTANT_DISAPPEAR.size = 6;
 	PACKET.ZC.CONFIG_NOTIFY2 = function PACKET_ZC_CONFIG_NOTIFY2(fp, end) {
 		this.show_eq_flag = fp.readUChar();
 		this.call_flag = fp.readUChar();
@@ -109853,6 +110221,11 @@ var init_PacketStructure = __esmMin((() => {
 		})(this.questCount);
 	};
 	PACKET.ZC.ALL_QUEST_LIST_V4.size = -1;
+	PACKET.AC.REFUSE_LOGIN_EX = function PACKET_AC_REFUSE_LOGIN_EX(fp, end) {
+		this.ErrorCode = fp.readULong();
+		this.blockDate = fp.readBinaryString(20);
+	};
+	PACKET.AC.REFUSE_LOGIN_EX.size = 26;
 	PACKET.ZC.EQUIPWIN_MICROSCOPE_V6 = function PACKET_ZC_EQUIPWIN_MICROSCOPE_V6(fp, end) {
 		this.characterName = fp.readString(NAME_LENGTH);
 		this.job = fp.readShort();
@@ -109903,6 +110276,44 @@ var init_PacketStructure = __esmMin((() => {
 		})();
 	};
 	PACKET.ZC.EQUIPWIN_MICROSCOPE_V6.size = -1;
+	PACKET.ZC.STORE_ASSISTANT_ENTRY_V2 = function PACKET_ZC_STORE_ASSISTANT_ENTRY_V2(fp, end) {
+		this.GID = fp.readULong();
+		this.job = fp.readShort();
+		this.unknown = fp.readShort();
+		this.PosDir = [
+			fp.readShort(),
+			fp.readShort(),
+			4
+		];
+		this.sex = fp.readUChar();
+		this.head = fp.readShort();
+		this.weapon = PacketVerManager_default.value >= 20181121 ? fp.readULong() : fp.readUShort();
+		this.shield = PacketVerManager_default.value >= 20181121 ? fp.readULong() : fp.readUShort();
+		this.accessory = fp.readShort();
+		this.accessory2 = fp.readShort();
+		this.accessory3 = fp.readShort();
+		this.headpalette = fp.readShort();
+		this.bodypalette = fp.readShort();
+		this.Robe = fp.readShort();
+		this.name = fp.readBinaryString(NAME_LENGTH);
+		this.unknown2 = fp.readShort();
+		this.speed = 0;
+		this.objecttype = 0;
+		this.bodyState = 0;
+		this.healthState = 0;
+		this.effectState = 0;
+		this.headDir = 0;
+		this.GUID = 0;
+		this.GEmblemVer = 0;
+		this.honor = 0;
+		this.virtue = 0;
+		this.isPKModeON = 0;
+		this.xSize = 0;
+		this.ySize = 0;
+		this.state = 0;
+		this.clevel = 0;
+	};
+	PACKET.ZC.STORE_ASSISTANT_ENTRY_V2.size = PacketVerManager_default.value >= 20181121 ? 63 : 59;
 	PACKET.ZC.SPLIT_SEND_ITEMLIST_SET = function PACKET_SPLIT_SEND_ITEMLIST_SET(fp, end) {
 		this.invType = fp.readUChar();
 		this.name = fp.readBinaryString(end - fp.tell());
@@ -145031,6 +145442,7 @@ var init_PacketRegister = __esmMin((() => {
 		2463: PACKET.ZC.SKILL_ENTRY4,
 		2461: PACKET.HC.ACCEPT_ENTER_NEO_UNION_LIST,
 		2464: PACKET.HC.CHARLIST_NOTIFY,
+		2469: PACKET.AC.REFUSE_LOGIN3,
 		2470: PACKET.ZC.BANKING_CHECK,
 		2471: PACKET.CZ.REQ_BANKING_DEPOSIT,
 		2472: PACKET.ZC.ACK_BANKING_DEPOSIT,
@@ -145144,6 +145556,8 @@ var init_PacketRegister = __esmMin((() => {
 		2672: PACKET.CZ.RANDOM_COMBINE_ITEM_UI_CLOSE,
 		2685: PACKET.ZC.ACK_RODEX_LIST2,
 		2692: PACKET.ZC.GUILD_INFO3,
+		2697: PACKET.ZC.STORE_ASSISTANT_ENTRY,
+		2698: PACKET.ZC.STORE_ASSISTANT_DISAPPEAR,
 		2709: PACKET.ZC.CONFIG_NOTIFY2,
 		2710: PACKET.ZC.ADD_EXCHANGE_ITEM4,
 		2711: PACKET.CZ.REQ_WEAR_SWITCHEQUIP_ADD,
@@ -145172,8 +145586,11 @@ var init_PacketRegister = __esmMin((() => {
 		2756: PACKET.AC.ACCEPT_LOGIN3,
 		2757: PACKET.HC.NOTIFY_ZONESVR2,
 		2759: PACKET.ZC.NPCACK_SERVERMOVE2,
+		2762: PACKET.AC.LOGIN_TAREN_REFUSE,
 		2763: PACKET.ZC.LONGLONGPAR_CHANGE,
 		2764: PACKET.ZC.NOTIFY_EXP2,
+		2765: PACKET.AC.LOGIN_TAREN_REFUSE2,
+		2784: PACKET.AC.REFUSE_LOGIN_USA,
 		2799: PACKET.CZ.REQ_CHECK_ATTENDANCE,
 		2804: PACKET.CZ.USE_SKILL_TOGROUND3,
 		2806: PACKET.ZC.ACK_RANKING2,
@@ -145188,8 +145605,9 @@ var init_PacketRegister = __esmMin((() => {
 		2783: PACKET.ZC.ACK_REQNAMEALL3,
 		2788: PACKET.ZC.ADD_MEMBER_TO_GROUP4,
 		2789: PACKET.ZC.GROUP_LIST3,
-		2818: PACKET.AC.REFUSE_LOGIN,
+		2818: PACKET.AC.REFUSE_LOGIN_EX,
 		2819: PACKET.ZC.EQUIPWIN_MICROSCOPE_V6,
+		2821: PACKET.ZC.STORE_ASSISTANT_ENTRY_V2,
 		2824: PACKET.ZC.SPLIT_SEND_ITEMLIST_SET,
 		2825: PACKET.ZC.SPLIT_SEND_ITEMLIST_NORMAL,
 		2826: PACKET.ZC.SPLIT_SEND_ITEMLIST_EQUIP,
@@ -147877,7 +148295,8 @@ function onClose$20() {
 	if (this === _socket) {
 		console.warn("[Network] Disconnect from server");
 		if (_socket.ping) clearInterval(_socket.ping);
-		__vitePreload(() => Promise.resolve().then(() => (init_UIManager(), UIManager_exports)).then((UIManager) => {
+		if (_onDisconnect) _onDisconnect();
+		else __vitePreload(() => Promise.resolve().then(() => (init_UIManager(), UIManager_exports)).then((UIManager) => {
 			UIManager.default.showErrorBox("Disconnected from Server.");
 		}), void 0, import.meta.url);
 	}
@@ -147890,11 +148309,12 @@ function onClose$20() {
 function close() {
 	let idx;
 	if (_socket) {
-		_socket.close();
-		if (_socket.izZone) PacketCrypt_default.reset();
-		if (_socket.ping) clearInterval(_socket.ping);
-		idx = _sockets.indexOf(_socket);
+		const s = _socket;
 		_socket = null;
+		s.close();
+		if (s.izZone) PacketCrypt_default.reset();
+		if (s.ping) clearInterval(s.ping);
+		idx = _sockets.indexOf(s);
 		if (idx !== -1) _sockets.splice(idx, 1);
 	}
 }
@@ -147944,7 +148364,7 @@ function utilsLongToIP(long) {
 function utilsBufferToHexString(buffer) {
 	return [...new Uint8Array(buffer)].map((x) => x.toString(16).padStart(2, "0") + " ").join("");
 }
-var _sockets, _socketFactory, _socket, _save_buffer, packetDump, Network;
+var _sockets, _socketFactory, _socket, _save_buffer, _onDisconnect, packetDump, Network;
 var init_NetworkManager = __esmMin((() => {
 	init_Configs();
 	init_BinaryReader();
@@ -147960,6 +148380,7 @@ var init_NetworkManager = __esmMin((() => {
 	_socketFactory = null;
 	_socket = null;
 	_save_buffer = null;
+	_onDisconnect = null;
 	packetDump = Configs.get("packetDump", false);
 	/**
 	* List of supported packets
@@ -147988,6 +148409,12 @@ var init_NetworkManager = __esmMin((() => {
 			hookPacket,
 			close,
 			read: read$1,
+			set onDisconnect(callback) {
+				_onDisconnect = callback;
+			},
+			get onDisconnect() {
+				return _onDisconnect;
+			},
 			setSocketFactory,
 			defaultSocketFactory,
 			registerPacket,
@@ -153456,31 +153883,194 @@ var init_CartItems$1 = __esmMin((() => {
 	CartItems_default$1 = "#cartitems {\r\n	position: absolute;\r\n	top: 100px;\r\n	left: 100px;\r\n}\r\n#cartitems table {\r\n	border-spacing: 0px;\r\n	display: inline-block;\r\n}\r\n\r\n#cartitems .titlebar {\r\n	width: 100%;\r\n	height: 17px;\r\n	background-color: white;\r\n	background-repeat: repeat-x;\r\n	border-radius: 3px 3px 0px 0px;\r\n}\r\n#cartitems .titlebar .base {\r\n	width: 11px;\r\n	height: 11px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n	vertical-align: middle;\r\n}\r\n#cartitems .titlebar .text {\r\n	text-shadow: 1px 1px white;\r\n	vertical-align: -2px;\r\n	white-space: nowrap;\r\n	/* chrome bug */\r\n	display: inline-block;\r\n	width: 32px;\r\n	height: 13px;\r\n	font-size: 11px;\r\n	font-weight: bold;\r\n}\r\n\r\n#cartitems .titlebar .left {\r\n	margin-left: 3px;\r\n	float: left;\r\n}\r\n#cartitems .titlebar .right {\r\n	float: right;\r\n	margin-right: 3px;\r\n}\r\n#cartitems .titlebar .clear {\r\n	clear: both;\r\n}\r\n\r\n#cartitems .container {\r\n	padding-left: 40px;\r\n	border-right: 1px solid #ccc;\r\n	background: white;\r\n}\r\n#cartitems .ff_bugfix {\r\n	position: relative;\r\n	width: 100%;\r\n	height: 100%;\r\n}\r\n#cartitems .hide {\r\n	height: 100%;\r\n	width: 13px;\r\n	position: absolute;\r\n	top: 0px;\r\n	right: 0px;\r\n	background-color: white;\r\n}\r\n#cartitems .content {\r\n	overflow: auto;\r\n	width: 100%;\r\n	height: 100%;\r\n	min-height: 65px;\r\n	background-color: transparent;\r\n	background-repeat: repeat;\r\n	background-attachment: local;\r\n}\r\n\r\n#cartitems .content .item {\r\n	display: block;\r\n	width: 24px;\r\n	height: 24px;\r\n	margin: 4px 4px 4px 4px;\r\n	position: relative;\r\n	float: left;\r\n}\r\n#cartitems .content .item .icon {\r\n	width: 24px;\r\n	height: 24px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n#cartitems .overlay {\r\n	position: absolute;\r\n	display: none;\r\n	white-space: nowrap;\r\n	z-index: 900;\r\n	height: 13px;\r\n	padding: 5px;\r\n	background: rgba(0, 0, 0, 0.7);\r\n	color: white;\r\n	text-shadow: 1px 1px black;\r\n}\r\n#cartitems .overlay.grey {\r\n	color: #aaa;\r\n}\r\n#cartitems .content .item .amount {\r\n	position: relative;\r\n	bottom: 9px;\r\n	right: 0px;\r\n	text-align: right;\r\n	text-shadow: -1px -1px white;\r\n}\r\n\r\n#cartitems .footer {\r\n	width: 100%;\r\n	height: 27px;\r\n	background-repeat: repeat-x;\r\n	background-color: transparent;\r\n	position: relative;\r\n	border-right: 1px solid #ccc;\r\n}\r\n#cartitems .footer button {\r\n	position: absolute;\r\n	right: 0px;\r\n	bottom: 1px;\r\n	width: 13px;\r\n	height: 13px;\r\n	border: none;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n#cartitems .footer .cnt {\r\n	position: absolute;\r\n	left: 10px;\r\n	bottom: 6px;\r\n}\r\n#cartitems .footer .wt {\r\n	position: absolute;\r\n	left: 80px;\r\n	bottom: 6px;\r\n}\r\n\r\n#cartitems .content .item .grade {\r\n	position: absolute;\r\n	width: 12px;\r\n	height: 12px;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n	pointer-events: none;\r\n	z-index: 2;\r\n	top: 12px;\r\n}\r\n";
 }));
 //#endregion
+//#region src/UI/Elements/UIButton.js
+var UIButton;
+var init_UIButton = __esmMin((() => {
+	init_DBManager();
+	init_Client();
+	init_Targa();
+	UIButton = class extends HTMLElement {
+		connectedCallback() {
+			if (this._initialized) return;
+			this._initialized = true;
+			const bg = this.getAttribute("bg");
+			const hover = this.getAttribute("hover");
+			const down = this.getAttribute("down");
+			let bgUri = null, hoverUri = null, downUri = null;
+			const state = {
+				hover: false,
+				down: false
+			};
+			const update = () => {
+				if (this.disabled) {
+					if (bgUri) this.style.backgroundImage = `url(${bgUri})`;
+					this.style.opacity = "0.5";
+					this.style.cursor = "default";
+					return;
+				}
+				this.style.opacity = "";
+				this.style.cursor = "";
+				if (state.down && downUri) this.style.backgroundImage = `url(${downUri})`;
+				else if (state.hover && hoverUri) this.style.backgroundImage = `url(${hoverUri})`;
+				else if (bgUri) this.style.backgroundImage = `url(${bgUri})`;
+				else this.style.backgroundImage = "";
+			};
+			this._update = update;
+			const loadBmp = (path, cb) => {
+				if (!path) return;
+				Client.loadFile(DB.INTERFACE_PATH + path, (dataURI) => {
+					if (dataURI instanceof ArrayBuffer) try {
+						const tga = new Targa();
+						tga.load(new Uint8Array(dataURI));
+						cb(tga.getDataURL());
+					} catch (e) {
+						console.error(e.message);
+					}
+					else cb(dataURI);
+				});
+			};
+			loadBmp(bg, (uri) => {
+				bgUri = uri;
+				update();
+			});
+			loadBmp(hover, (uri) => {
+				hoverUri = uri;
+			});
+			loadBmp(down, (uri) => {
+				downUri = uri;
+			});
+			this.addEventListener("mouseover", () => {
+				if (this.disabled) return;
+				state.hover = true;
+				update();
+			});
+			this.addEventListener("mouseout", () => {
+				state.hover = false;
+				state.down = false;
+				update();
+			});
+			this.addEventListener("mousedown", () => {
+				if (this.disabled) return;
+				state.down = true;
+				update();
+			});
+			this.addEventListener("mouseup", () => {
+				state.down = false;
+				update();
+			});
+			this.addEventListener("click", (e) => {
+				if (this.disabled) {
+					e.stopImmediatePropagation();
+					e.preventDefault();
+				}
+			}, true);
+		}
+		get disabled() {
+			return this.hasAttribute("disabled");
+		}
+		set disabled(val) {
+			if (val) this.setAttribute("disabled", "");
+			else this.removeAttribute("disabled");
+		}
+		static get observedAttributes() {
+			return ["disabled"];
+		}
+		attributeChangedCallback(name) {
+			if (name === "disabled" && this._initialized) {
+				if (this._update) this._update();
+			}
+		}
+	};
+	customElements.define("ui-button", UIButton);
+}));
+//#endregion
+//#region src/UI/Elements/UIText.js
+var UIText;
+var init_UIText = __esmMin((() => {
+	init_DBManager();
+	UIText = class extends HTMLElement {
+		connectedCallback() {
+			if (this._initialized) return;
+			this._initialized = true;
+			const msgId = this.getAttribute("msg");
+			if (msgId) {
+				const text = DB.getMessage(msgId, "");
+				if (text) this.textContent = text;
+			}
+		}
+		static get observedAttributes() {
+			return ["msg"];
+		}
+		attributeChangedCallback(name, oldVal, newVal) {
+			if (name === "msg" && newVal) {
+				const text = DB.getMessage(newVal, "");
+				if (text) this.textContent = text;
+			}
+		}
+	};
+	customElements.define("ui-text", UIText);
+}));
+//#endregion
+//#region src/UI/Elements/UIImage.js
+var UIImage;
+var init_UIImage = __esmMin((() => {
+	init_DBManager();
+	init_Client();
+	init_Targa();
+	UIImage = class extends HTMLElement {
+		connectedCallback() {
+			if (this._initialized) return;
+			this._initialized = true;
+			this.style.display = "none";
+			this._loadSrc(this.getAttribute("src"));
+		}
+		static get observedAttributes() {
+			return ["src"];
+		}
+		attributeChangedCallback(name, oldVal, newVal) {
+			if (name === "src") this._loadSrc(newVal);
+		}
+		_loadSrc(path) {
+			if (!path) return;
+			const target = this.parentElement;
+			if (!target) return;
+			Client.loadFile(DB.INTERFACE_PATH + path, (dataURI) => {
+				if (dataURI instanceof ArrayBuffer) try {
+					const tga = new Targa();
+					tga.load(new Uint8Array(dataURI));
+					target.style.backgroundImage = `url(${tga.getDataURL()})`;
+				} catch (e) {
+					console.error(e.message);
+				}
+				else target.style.backgroundImage = `url(${dataURI})`;
+			});
+		}
+	};
+	customElements.define("ui-image", UIImage);
+}));
+//#endregion
+//#region src/UI/Elements/Elements.js
+var init_Elements = __esmMin((() => {
+	init_UIButton();
+	init_UIText();
+	init_UIImage();
+}));
+//#endregion
 //#region src/UI/Components/Storage/StorageV0/Storage.html?raw
 var Storage_default$5;
 var init_Storage$7 = __esmMin((() => {
-	Storage_default$5 = "<div id=\"Storage\">\r\n	<div class=\"titlebar\" data-background=\"basic_interface/titlebar_mid.bmp\">\r\n		<div class=\"left\">\r\n			<span class=\"text\" data-text=\"169\">Storage</span>\r\n		</div>\r\n		<div class=\"clear\"></div>\r\n	</div>\r\n	<div class=\"overlay\"></div>\r\n	<div class=\"panel\">\r\n		<table>\r\n			<tr>\r\n				<td\r\n					class=\"tabs\"\r\n					rowspan=\"2\"\r\n					data-background=\"basic_interface/tab_itm_ex_01.bmp\"\r\n					data-preload=\"basic_interface/tab_itm_ex_02.bmp;basic_interface/tab_itm_ex_03.bmp;basic_interface/tab_itm_ex_04.bmp;basic_interface/tab_itm_ex_05.bmp;basic_interface/tab_itm_ex_06.bmp;basic_interface/tab_itm_ex_07.bmp\"\r\n				>\r\n					<button class=\"item\"></button>\r\n					<button class=\"kafra\"></button>\r\n					<button class=\"armor\"></button>\r\n					<button class=\"arms\"></button>\r\n					<button class=\"ammo\"></button>\r\n					<button class=\"card\"></button>\r\n					<button class=\"etc\"></button>\r\n				</td>\r\n				<td class=\"container\">\r\n					<div class=\"content\" data-background=\"basic_interface/itemwin_mid.bmp\"></div>\r\n				</td>\r\n			</tr>\r\n			<tr>\r\n				<td class=\"footer\" data-background=\"basic_interface/btnbar_mid2.bmp\">\r\n					<span class=\"current\">0</span>/<span class=\"limit\">0</span>\r\n					<button\r\n						class=\"close\"\r\n						data-background=\"btn_close.bmp\"\r\n						data-hover=\"btn_close_a.bmp\"\r\n						data-down=\"btn_close_b.bmp\"\r\n					></button>\r\n					<button class=\"extend\" data-background=\"btn_resize.bmp\"></button>\r\n				</td>\r\n			</tr>\r\n		</table>\r\n	</div>\r\n</div>\r\n";
+	Storage_default$5 = "<div id=\"Storage\">\r\n	<div class=\"titlebar\">\r\n		<ui-image src=\"basic_interface/titlebar_mid.bmp\"></ui-image>\r\n		<div class=\"left\">\r\n			<span class=\"text\"><ui-text msg=\"169\">Storage</ui-text></span>\r\n		</div>\r\n		<div class=\"clear\"></div>\r\n	</div>\r\n	<div class=\"overlay\"></div>\r\n	<div class=\"panel\">\r\n		<table>\r\n			<tr>\r\n				<td\r\n					class=\"tabs\"\r\n					rowspan=\"2\"\r\n					data-background=\"basic_interface/tab_itm_ex_01.bmp\"\r\n					data-preload=\"basic_interface/tab_itm_ex_02.bmp;basic_interface/tab_itm_ex_03.bmp;basic_interface/tab_itm_ex_04.bmp;basic_interface/tab_itm_ex_05.bmp;basic_interface/tab_itm_ex_06.bmp;basic_interface/tab_itm_ex_07.bmp\"\r\n				>\r\n					<button class=\"item\"></button>\r\n					<button class=\"kafra\"></button>\r\n					<button class=\"armor\"></button>\r\n					<button class=\"arms\"></button>\r\n					<button class=\"ammo\"></button>\r\n					<button class=\"card\"></button>\r\n					<button class=\"etc\"></button>\r\n				</td>\r\n				<td class=\"container\">\r\n					<div class=\"content\" data-background=\"basic_interface/itemwin_mid.bmp\"></div>\r\n				</td>\r\n			</tr>\r\n			<tr>\r\n				<td class=\"footer\" data-background=\"basic_interface/btnbar_mid2.bmp\">\r\n					<span class=\"current\">0</span>/<span class=\"limit\">0</span>\r\n					<ui-button\r\n						class=\"close\"\r\n						bg=\"btn_close.bmp\"\r\n						hover=\"btn_close_a.bmp\"\r\n						down=\"btn_close_b.bmp\"\r\n					></ui-button>\r\n					<button class=\"extend\" data-background=\"btn_resize.bmp\"></button>\r\n				</td>\r\n			</tr>\r\n		</table>\r\n	</div>\r\n</div>\r\n";
 }));
 //#endregion
 //#region src/UI/Components/Storage/StorageV0/Storage.css?raw
 var Storage_default$4;
 var init_Storage$6 = __esmMin((() => {
-	Storage_default$4 = "#Storage {\r\n	position: absolute;\r\n	top: 100px;\r\n	left: 100px;\r\n	width: 280px;\r\n}\r\n#Storage table {\r\n	border-spacing: 0px;\r\n	display: inline-block;\r\n	width: 100%;\r\n}\r\n\r\n#Storage .titlebar {\r\n	width: 100%;\r\n	height: 17px;\r\n	background-color: white;\r\n	background-repeat: repeat-x;\r\n	border-radius: 3px 3px 0px 0px;\r\n}\r\n#Storage .titlebar .text {\r\n	text-shadow: 1px 1px white;\r\n	vertical-align: -2px;\r\n	white-space: nowrap;\r\n	/* chrome bug */\r\n	display: inline-block;\r\n	width: 32px;\r\n	height: 13px;\r\n	margin-left: 15px;\r\n	font-size: 11px;\r\n	font-weight: bold;\r\n}\r\n\r\n#Storage .titlebar .left {\r\n	margin-left: 3px;\r\n	float: left;\r\n}\r\n#Storage .titlebar .clear {\r\n	clear: both;\r\n}\r\n\r\n#Storage .tabs {\r\n	border-left: 1px solid #ccc;\r\n	width: 50px;\r\n	background-repeat: no-repeat;\r\n	background-color: white;\r\n	vertical-align: top;\r\n	background-position: -1px 0px;\r\n}\r\n#Storage .tabs button {\r\n	width: 20px;\r\n	height: 30px;\r\n	border: none;\r\n	background-color: transparent;\r\n	display: block;\r\n}\r\n#Storage .tabs .item {\r\n	height: 25px;\r\n}\r\n\r\n#Storage .container {\r\n	padding-left: 16px;\r\n	border-right: 1px solid #ccc;\r\n	background: white;\r\n}\r\n#Storage .content {\r\n	overflow-y: scroll;\r\n	overflow-x: hidden;\r\n	width: 100%;\r\n	height: 100%;\r\n	min-height: 240px;\r\n	background-color: transparent;\r\n	background-repeat: repeat-y;\r\n	background-attachment: local;\r\n}\r\n\r\n#Storage .content .item {\r\n	display: block;\r\n	width: 24px;\r\n	height: 28px;\r\n	margin: 4px 0px 0px 4px;\r\n	position: relative;\r\n}\r\n#Storage .content .item .icon {\r\n	width: 24px;\r\n	height: 24px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n#Storage .overlay {\r\n	position: absolute;\r\n	display: none;\r\n	white-space: nowrap;\r\n	z-index: 900;\r\n	height: 13px;\r\n	padding: 5px;\r\n	background: rgba(0, 0, 0, 0.7);\r\n	color: white;\r\n	text-shadow: 1px 1px black;\r\n}\r\n#Storage .overlay.grey {\r\n	color: #aaa;\r\n}\r\n#Storage .content .item .amount {\r\n	position: relative;\r\n	bottom: 9px;\r\n	right: 0px;\r\n	text-align: right;\r\n	text-shadow: -1px -1px white;\r\n}\r\n#Storage .content .name {\r\n	position: absolute;\r\n	top: 7px;\r\n	left: 30px;\r\n	width: 190px;\r\n}\r\n\r\n#Storage .footer {\r\n	width: 100%;\r\n	height: 27px;\r\n	background-repeat: repeat-x;\r\n	background-color: transparent;\r\n	position: relative;\r\n	border-right: 1px solid #ccc;\r\n}\r\n#Storage .footer .extend {\r\n	position: absolute;\r\n	right: 0px;\r\n	bottom: 1px;\r\n	width: 13px;\r\n	height: 13px;\r\n	border: none;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n#Storage .footer .close {\r\n	position: absolute;\r\n	border: none;\r\n	width: 42px;\r\n	height: 20px;\r\n	bottom: 4px;\r\n	right: 15px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n";
+	Storage_default$4 = ":host {\r\n	width: 280px;\r\n	height: 306px;\r\n	top: 100px;\r\n	left: 100px;\r\n}\r\n\r\n#Storage {\r\n	position: absolute;\r\n	width: 280px;\r\n}\r\n#Storage table {\r\n	border-spacing: 0px;\r\n	display: inline-block;\r\n	width: 100%;\r\n}\r\n\r\n#Storage .titlebar {\r\n	width: 100%;\r\n	height: 17px;\r\n	background-color: white;\r\n	background-repeat: repeat-x;\r\n	border-radius: 3px 3px 0px 0px;\r\n}\r\n#Storage .titlebar .text {\r\n	text-shadow: 1px 1px white;\r\n	vertical-align: -2px;\r\n	white-space: nowrap;\r\n	/* chrome bug */\r\n	display: inline-block;\r\n	width: 32px;\r\n	height: 13px;\r\n	margin-left: 15px;\r\n	font-size: 11px;\r\n	font-weight: bold;\r\n}\r\n\r\n#Storage .titlebar .left {\r\n	margin-left: 3px;\r\n	float: left;\r\n}\r\n#Storage .titlebar .clear {\r\n	clear: both;\r\n}\r\n\r\n#Storage .tabs {\r\n	border-left: 1px solid #ccc;\r\n	width: 50px;\r\n	background-repeat: no-repeat;\r\n	background-color: white;\r\n	vertical-align: top;\r\n	background-position: -1px 0px;\r\n}\r\n#Storage .tabs button {\r\n	width: 20px;\r\n	height: 30px;\r\n	border: none;\r\n	background-color: transparent;\r\n	display: block;\r\n}\r\n#Storage .tabs .item {\r\n	height: 25px;\r\n}\r\n\r\n#Storage .container {\r\n	padding-left: 16px;\r\n	border-right: 1px solid #ccc;\r\n	background: white;\r\n}\r\n#Storage .content {\r\n	overflow-y: scroll;\r\n	overflow-x: hidden;\r\n	width: 100%;\r\n	height: 100%;\r\n	min-height: 240px;\r\n	background-color: transparent;\r\n	background-repeat: repeat-y;\r\n	background-attachment: local;\r\n}\r\n\r\n#Storage .content .item {\r\n	display: block;\r\n	width: 24px;\r\n	height: 28px;\r\n	margin: 4px 0px 0px 4px;\r\n	position: relative;\r\n}\r\n#Storage .content .item .icon {\r\n	width: 24px;\r\n	height: 24px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n#Storage .overlay {\r\n	position: absolute;\r\n	display: none;\r\n	white-space: nowrap;\r\n	z-index: 900;\r\n	height: 13px;\r\n	padding: 5px;\r\n	background: rgba(0, 0, 0, 0.7);\r\n	color: white;\r\n	text-shadow: 1px 1px black;\r\n}\r\n#Storage .overlay.grey {\r\n	color: #aaa;\r\n}\r\n#Storage .content .item .amount {\r\n	position: relative;\r\n	bottom: 9px;\r\n	right: 0px;\r\n	text-align: right;\r\n	text-shadow: -1px -1px white;\r\n}\r\n#Storage .content .name {\r\n	position: absolute;\r\n	top: 7px;\r\n	left: 30px;\r\n	width: 190px;\r\n}\r\n\r\n#Storage .footer {\r\n	width: 100%;\r\n	height: 27px;\r\n	background-repeat: repeat-x;\r\n	background-color: transparent;\r\n	position: relative;\r\n	border-right: 1px solid #ccc;\r\n}\r\n#Storage .footer .extend {\r\n	position: absolute;\r\n	right: 0px;\r\n	bottom: 1px;\r\n	width: 13px;\r\n	height: 13px;\r\n	border: none;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n#Storage .footer .close {\r\n	position: absolute;\r\n	border: none;\r\n	width: 42px;\r\n	height: 20px;\r\n	bottom: 4px;\r\n	right: 15px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n";
 }));
 //#endregion
 //#region src/UI/Components/Storage/StorageV0/Storage.js
-/**
-* Stop event propagation
-*/
-function stopPropagation$37(event) {
-	event.stopImmediatePropagation();
-	return false;
-}
-/**
-* Extend Storage window size
-*/
 function onResize$17() {
-	const top = Storage$1.ui.position().top;
+	const top = Storage$1._host.offsetTop;
 	let lastHeight = 0;
 	function resizing() {
 		let h = Math.floor((Mouse.screen.y - top - 20) / 32);
@@ -153490,39 +154080,32 @@ function onResize$17() {
 		lastHeight = h;
 	}
 	const _Interval = setInterval(resizing, 30);
-	jquery_default(window).on("mouseup.resize", function(event) {
+	const onMouseUp = (event) => {
 		if (event.which === 1) {
 			clearInterval(_Interval);
-			jquery_default(window).off("mouseup.resize");
+			window.removeEventListener("mouseup", onMouseUp);
 		}
-	});
+	};
+	window.addEventListener("mouseup", onMouseUp);
 }
-/**
-* Extend Storage window size
-*/
 function resizeHeight$3(height) {
 	height = Math.min(Math.max(height, 8), 17);
-	Storage$1.ui.find(".container .content").css("height", height * 32);
-	Storage$1.ui.css("height", 50 + height * 32);
+	const content = (Storage$1._shadow || Storage$1._host).querySelector(".container .content");
+	if (content) content.style.height = `${height * 32}px`;
+	Storage$1._host.style.height = `${50 + height * 32}px`;
 }
-/**
-* Modify tab, filter display entries
-*/
-function onSwitchTab$5() {
-	const idx = jquery_default(this).index();
+function onSwitchTab$5(idx) {
 	_preferences$70.tab = idx;
-	Client.loadFile(DB.INTERFACE_PATH + "basic_interface/tab_itm_ex_0" + (idx + 1) + ".bmp", function(data) {
-		Storage$1.ui.find(".tabs").css("backgroundImage", "url(\"" + data + "\")");
+	Client.loadFile(`${DB.INTERFACE_PATH}basic_interface/tab_itm_ex_0${idx + 1}.bmp`, (data) => {
+		const tabs = (Storage$1._shadow || Storage$1._host).querySelector(".tabs");
+		if (tabs) tabs.style.backgroundImage = `url("${data}")`;
 		requestFilter$5();
 	});
 }
-/**
-* Drop from inventory to storage
-*/
 function onDrop$23(event) {
 	let data;
 	try {
-		data = JSON.parse(event.originalEvent.dataTransfer.getData("Text"));
+		data = JSON.parse(event.dataTransfer.getData("Text"));
 	} catch (e) {}
 	event.stopImmediatePropagation();
 	if (!data || data.type !== "item" || data.from !== "Inventory" && data.from !== "CartItems") return false;
@@ -153541,93 +154124,62 @@ function onDrop$23(event) {
 	else Storage$1.reqAddItem(item.index, 1);
 	return false;
 }
-/**
-* Change tab,
-* Update its content
-*/
 function requestFilter$5() {
-	Storage$1.ui.find(".container .content").empty();
-	let i, count;
-	for (i = 0, count = _list$15.length; i < count; ++i) Storage$1.addItemSub(_list$15[i]);
+	const content = (Storage$1._shadow || Storage$1._host).querySelector(".container .content");
+	if (content) content.innerHTML = "";
+	for (let i = 0, count = _list$15.length; i < count; ++i) Storage$1.addItemSub(_list$15[i]);
 }
-/**
-* Get item index in list base on it's ID
-*
-* @param {number} item id
-*/
 function getItemIndexById$3(index) {
-	let i, count;
-	for (i = 0, count = _list$15.length; i < count; ++i) if (_list$15[i].index === index) return i;
+	for (let i = 0, count = _list$15.length; i < count; ++i) if (_list$15[i].index === index) return i;
 	return -1;
 }
-/**
-* Update scroll by block (32px)
-*/
-function onScroll$8(event) {
+function onScroll$8(event, contentEl) {
 	let delta;
-	if (event.originalEvent.wheelDelta) {
-		delta = event.originalEvent.wheelDelta / 120;
-		if (window.opera) delta = -delta;
-	} else if (event.originalEvent.detail) delta = -event.originalEvent.detail;
-	this.scrollTop = Math.floor(this.scrollTop / 32) * 32 - delta * 32;
-	return false;
+	if (event.wheelDelta) delta = event.wheelDelta / 120;
+	else if (event.detail) delta = -event.detail;
+	else if (event.deltaY) delta = -event.deltaY / 100;
+	contentEl.scrollTop = Math.floor(contentEl.scrollTop / 32) * 32 - delta * 32;
+	event.preventDefault();
 }
-/**
-* Mouse over item, display name and informations
-*/
-function onItemOver$19() {
-	const i = getItemIndexById$3(parseInt(this.getAttribute("data-index"), 10));
+function onItemOver$19(itemEl, root) {
+	const i = getItemIndexById$3(parseInt(itemEl.getAttribute("data-index"), 10));
 	if (i < 0) return;
 	const item = _list$15[i];
-	const pos = jquery_default(this).position();
-	const overlay = Storage$1.ui.find(".overlay");
-	overlay.show();
-	overlay.css({
-		top: pos.top - 10,
-		left: pos.left + 35
-	});
-	overlay.text(DB.getItemName(item) + " " + (item.count || 1) + " ea");
-	if (item.IsIdentified) overlay.removeClass("grey");
-	else overlay.addClass("grey");
+	const overlay = root.querySelector(".overlay");
+	if (overlay) {
+		overlay.style.display = "";
+		overlay.style.top = `${itemEl.offsetTop - 10}px`;
+		overlay.style.left = `${itemEl.offsetLeft + 35}px`;
+		overlay.innerHTML = `${DB.getItemName(item)} ${item.count || 1} ea`;
+		if (item.IsIdentified) overlay.classList.remove("grey");
+		else overlay.classList.add("grey");
+	}
 }
-/**
-* Mouse mouve out of an item, hide title description
-*/
-function onItemOut$20() {
-	Storage$1.ui.find(".overlay").hide();
+function onItemOut$20(root) {
+	const overlay = root.querySelector(".overlay");
+	if (overlay) overlay.style.display = "none";
 }
-/**
-* Start dragging an item
-*/
-function onItemDragStart$16(event) {
-	const i = getItemIndexById$3(parseInt(this.getAttribute("data-index"), 10));
+function onItemDragStart$15(event, itemEl) {
+	const i = getItemIndexById$3(parseInt(itemEl.getAttribute("data-index"), 10));
 	if (i === -1) return;
 	const img = new Image();
-	let url = this.firstChild.style.backgroundImage.match(/\(([^\)]+)/)[1];
-	url = url = url.replace(/^\"/, "").replace(/\"$/, "");
+	let url = itemEl.firstChild.style.backgroundImage.match(/\(([^)]+)/)[1];
+	url = url.replace(/^"/, "").replace(/"$/, "");
 	img.decoding = "async";
 	img.src = url;
-	event.originalEvent.dataTransfer.setDragImage(img, 12, 12);
-	event.originalEvent.dataTransfer.setData("Text", JSON.stringify(window._OBJ_DRAG_ = {
+	event.dataTransfer.setDragImage(img, 12, 12);
+	event.dataTransfer.setData("Text", JSON.stringify(window._OBJ_DRAG_ = {
 		type: "item",
 		from: "Storage",
 		data: _list$15[i]
 	}));
-	onItemOut$20();
 }
-/**
-* Stop the drag/drop on an item
-*/
 function onItemDragEnd$16() {
 	delete window._OBJ_DRAG_;
 }
-/**
-* Display item description
-*
-*/
-function onItemInfo$23(event) {
+function onItemInfo$23(event, itemEl) {
 	event.stopImmediatePropagation();
-	const i = getItemIndexById$3(parseInt(this.getAttribute("data-index"), 10));
+	const i = getItemIndexById$3(parseInt(itemEl.getAttribute("data-index"), 10));
 	if (i === -1) return false;
 	if (event.altKey && event.which === 3) {
 		event.stopImmediatePropagation();
@@ -153640,9 +154192,6 @@ function onItemInfo$23(event) {
 	ItemInfo_default.setItem(_list$15[i]);
 	return false;
 }
-/**
-* Alt Right Click Request Transfer
-*/
 function transferItemToOtherUI$5(item) {
 	const isInventoryOpen = InventoryController.getUI().ui ? InventoryController.getUI().ui.is(":visible") : false;
 	const isCartOpen = CartItems_default.ui ? CartItems_default.ui.is(":visible") : false;
@@ -153656,24 +154205,22 @@ var Storage$1, _list$15, _preferences$70, Storage_default$3;
 var init_Storage$5 = __esmMin((() => {
 	init_DBManager();
 	init_ItemType();
-	init_jquery();
 	init_Client();
 	init_Preferences$1();
 	init_Renderer();
 	init_MouseEventHandler();
 	init_KeyEventHandler();
 	init_UIManager();
-	init_UIComponent();
+	init_GUIComponent();
+	init_Elements();
 	init_InputBox();
 	init_ItemInfo();
 	init_Storage$7();
 	init_Storage$6();
 	init_CartItems();
 	init_Inventory();
-	Storage$1 = new UIComponent("Storage", Storage_default$5, Storage_default$4);
-	/**
-	* Tab constant
-	*/
+	Storage$1 = new GUIComponent("Storage", Storage_default$4);
+	Storage$1.render = () => Storage_default$5;
 	Storage$1.TAB = {
 		ITEM: 0,
 		KAFRA: 1,
@@ -153690,63 +154237,88 @@ var init_Storage$5 = __esmMin((() => {
 		height: 8,
 		tab: Storage$1.TAB.ITEM
 	}, 1);
-	/**
-	* Initialize UI
-	*/
-	Storage$1.init = function Init() {
-		this.ui.find(".tabs button").mousedown(onSwitchTab$5);
-		this.ui.find(".footer .extend").mousedown(onResize$17);
-		this.ui.find(".footer .close").click(this.onClosePressed.bind(this));
-		Client.loadFile(DB.INTERFACE_PATH + "basic_interface/tab_itm_ex_0" + (_preferences$70.tab + 1) + ".bmp", function(data) {
-			Storage$1.ui.find(".tabs").css("backgroundImage", "url(\"" + data + "\")");
+	Storage$1.init = function init() {
+		const root = this._shadow || this._host;
+		root.querySelectorAll(".tabs button").forEach((btn, idx) => {
+			btn.addEventListener("mousedown", () => onSwitchTab$5(idx));
+		});
+		const extendBtn = root.querySelector(".footer .extend");
+		if (extendBtn) extendBtn.addEventListener("mousedown", () => onResize$17());
+		const closeBtn = root.querySelector(".footer .close");
+		if (closeBtn) {
+			closeBtn.addEventListener("mousedown", (e) => e.stopImmediatePropagation());
+			closeBtn.addEventListener("click", () => {
+				if (typeof Storage$1.onClosePressed === "function") Storage$1.onClosePressed();
+			});
+		}
+		Client.loadFile(`${DB.INTERFACE_PATH}basic_interface/tab_itm_ex_0${_preferences$70.tab + 1}.bmp`, (data) => {
+			const tabs = root.querySelector(".tabs");
+			if (tabs) tabs.style.backgroundImage = `url("${data}")`;
 		});
 		resizeHeight$3(_preferences$70.height);
-		this.ui.css({
-			top: Math.min(Math.max(0, _preferences$70.y), Renderer.height - this.ui.height()),
-			left: Math.min(Math.max(0, _preferences$70.x), Renderer.width - this.ui.width())
+		const content = root.querySelector(".container .content");
+		if (content) {
+			content.addEventListener("wheel", (e) => onScroll$8(e, content));
+			content.addEventListener("mouseover", (e) => {
+				const itemEl = e.target.closest(".item");
+				if (itemEl) onItemOver$19(itemEl, root);
+			});
+			content.addEventListener("mouseout", (e) => {
+				if (e.target.closest(".item")) onItemOut$20(root);
+			});
+			content.addEventListener("dragstart", (e) => {
+				const itemEl = e.target.closest(".item");
+				if (itemEl) {
+					onItemDragStart$15(e, itemEl);
+					onItemOut$20(root);
+				}
+			});
+			content.addEventListener("dragend", (e) => {
+				if (e.target.closest(".item")) onItemDragEnd$16();
+			});
+			content.addEventListener("contextmenu", (e) => {
+				const itemEl = e.target.closest(".item");
+				if (itemEl) {
+					e.preventDefault();
+					onItemInfo$23(e, itemEl);
+				}
+			});
+		}
+		this._host.addEventListener("drop", (e) => onDrop$23(e));
+		this._host.addEventListener("dragover", (e) => {
+			e.stopImmediatePropagation();
+			e.preventDefault();
 		});
-		this.ui.on("drop", onDrop$23).on("dragover", stopPropagation$37).find(".container .content").on("mousewheel DOMMouseScroll", onScroll$8).on("mouseover", ".item", onItemOver$19).on("mouseout", ".item", onItemOut$20).on("dragstart", ".item", onItemDragStart$16).on("dragend", ".item", onItemDragEnd$16).on("contextmenu", ".item", onItemInfo$23);
-		this.draggable(this.ui.find(".titlebar"));
+		this.draggable(".titlebar");
+		this.ui.hide();
 	};
-	/**
-	* Remove Storage from window (and so clean up items)
-	*/
+	Storage$1.onAppend = function onAppend() {
+		this.ui.show();
+		this._host.style.left = `${Math.min(Math.max(0, _preferences$70.x), Renderer.width - this._host.getBoundingClientRect().width)}px`;
+		this._host.style.top = `${Math.min(Math.max(0, _preferences$70.y), Renderer.height - this._host.getBoundingClientRect().height)}px`;
+	};
 	Storage$1.onRemove = function onRemove() {
-		this.ui.find(".container .content").empty();
+		const content = (this._shadow || this._host).querySelector(".container .content");
+		if (content) content.innerHTML = "";
 		_list$15.length = 0;
-		_preferences$70.y = parseInt(this.ui.css("top"), 10);
-		_preferences$70.x = parseInt(this.ui.css("left"), 10);
-		_preferences$70.height = Math.floor((this.ui.height() - 20) / 32);
+		_preferences$70.y = parseInt(this._host.style.top, 10);
+		_preferences$70.x = parseInt(this._host.style.left, 10);
+		_preferences$70.height = Math.floor((this._host.getBoundingClientRect().height - 20) / 32);
 		_preferences$70.save();
 	};
-	/**
-	* Add items to the list
-	*
-	* @param {Array} item list
-	*/
 	Storage$1.setItems = function setItems(items) {
-		let i, count;
-		for (i = 0, count = items.length; i < count; ++i) if (this.addItemSub(items[i])) _list$15.push(items[i]);
+		for (let i = 0, count = items.length; i < count; ++i) if (this.addItemSub(items[i])) _list$15.push(items[i]);
 	};
-	/**
-	* Insert Item to Storage
-	*
-	* @param {object} Item
-	*/
 	Storage$1.addItem = function addItem(item) {
 		const i = getItemIndexById$3(item.index);
 		if (i > -1) {
 			_list$15[i].count += item.count;
-			this.ui.find(".item[data-index=\"" + item.index + "\"] .count").text(_list$15[i].count);
+			const countEl = (this._shadow || this._host).querySelector(`.item[data-index="${item.index}"] .count`);
+			if (countEl) countEl.textContent = _list$15[i].count;
 			return;
 		}
 		if (this.addItemSub(item)) _list$15.push(item);
 	};
-	/**
-	* Add item to Storage
-	*
-	* @param {object} Item
-	*/
 	Storage$1.addItemSub = function addItemSub(item) {
 		let tab;
 		switch (item.type) {
@@ -153780,83 +154352,101 @@ var init_Storage$5 = __esmMin((() => {
 		}
 		if (tab === _preferences$70.tab) {
 			const it = DB.getItemInfo(item.ITID);
-			this.ui.find(".container .content").append("<div class=\"item\" data-index=\"" + item.index + "\" draggable=\"true\"><div class=\"icon\"></div><div class=\"amount\">" + (item.count ? "<span class=\"count\">" + item.count + "</span> " : "") + "</div><span class=\"name\">" + jquery_default.escape(DB.getItemName(item)) + "</span></div>");
-			Client.loadFile(DB.INTERFACE_PATH + "item/" + (item.IsIdentified ? it.identifiedResourceName : it.unidentifiedResourceName) + ".bmp", function(data) {
-				this.ui.find(".item[data-index=\"" + item.index + "\"] .icon").css("backgroundImage", "url(" + data + ")");
-			}.bind(this));
+			const root = this._shadow || this._host;
+			const content = root.querySelector(".container .content");
+			const itemEl = document.createElement("div");
+			itemEl.className = "item";
+			itemEl.setAttribute("data-index", item.index);
+			itemEl.setAttribute("draggable", "true");
+			const iconDiv = document.createElement("div");
+			iconDiv.className = "icon";
+			itemEl.appendChild(iconDiv);
+			const amountDiv = document.createElement("div");
+			amountDiv.className = "amount";
+			if (item.count) {
+				const countSpan = document.createElement("span");
+				countSpan.className = "count";
+				countSpan.textContent = item.count;
+				amountDiv.appendChild(countSpan);
+				amountDiv.appendChild(document.createTextNode(" "));
+			}
+			itemEl.appendChild(amountDiv);
+			const nameSpan = document.createElement("span");
+			nameSpan.className = "name";
+			nameSpan.innerHTML = DB.getItemName(item);
+			itemEl.appendChild(nameSpan);
+			if (content) content.appendChild(itemEl);
+			Client.loadFile(`${DB.INTERFACE_PATH}item/${item.IsIdentified ? it.identifiedResourceName : it.unidentifiedResourceName}.bmp`, (data) => {
+				const icon = root.querySelector(`.item[data-index="${item.index}"] .icon`);
+				if (icon) icon.style.backgroundImage = `url(${data})`;
+			});
 		}
 		return true;
 	};
-	/**
-	* Remove item from Storage
-	*
-	* @param {number} index in Storage
-	*/
 	Storage$1.removeItem = function removeItem(index, count) {
 		const i = getItemIndexById$3(index);
 		if (i < 0) return null;
 		if (_list$15[i].count) {
 			_list$15[i].count -= count;
 			if (_list$15[i].count > 0) {
-				this.ui.find(".item[data-index=\"" + index + "\"] .count").text(_list$15[i].count);
+				const countEl = (this._shadow || this._host).querySelector(`.item[data-index="${index}"] .count`);
+				if (countEl) countEl.textContent = _list$15[i].count;
 				return _list$15[i];
 			}
 		}
 		const item = _list$15[i];
 		_list$15.splice(i, 1);
-		this.ui.find(".item[data-index=\"" + index + "\"]").remove();
+		const el = (this._shadow || this._host).querySelector(`.item[data-index="${index}"]`);
+		if (el) el.remove();
 		return item;
 	};
-	/**
-	* Update or set the current amount of items in storage in ui
-	*/
 	Storage$1.setItemInfo = function setItemInfo(current, limit) {
-		this.ui.find(".footer .current").text(current);
-		this.ui.find(".footer .limit").text(limit);
+		const root = this._shadow || this._host;
+		const currentEl = root.querySelector(".footer .current");
+		const limitEl = root.querySelector(".footer .limit");
+		if (currentEl) currentEl.textContent = current;
+		if (limitEl) limitEl.textContent = limit;
 	};
 	Storage$1.onKeyDown = function onKeyDown(event) {
-		if ((event.which === KEYS.ESCAPE || event.key === "Escape") && this.ui.is(":visible")) {
+		if ((event.which === KEYS.ESCAPE || event.key === "Escape") && this._host.style.display !== "none") {
 			if (typeof Storage$1.onClosePressed === "function") Storage$1.onClosePressed();
 		}
 	};
-	/**
-	* Callbacks
-	*/
 	Storage$1.onClosePressed = function onClosedPressed() {};
 	Storage$1.reqAddItem = function reqAddItem() {};
 	Storage$1.reqAddItemFromCart = function reqAddItemFromCart() {};
 	Storage$1.reqRemoveItem = function reqRemoveItem() {};
 	Storage$1.reqMoveItemToCart = function reqMoveItemToCart() {};
+	Storage$1.mouseMode = GUIComponent.MouseMode.STOP;
 	Storage_default$3 = UIManager.addComponent(Storage$1);
 }));
 //#endregion
 //#region src/UI/Components/Storage/StorageV3/StorageFilter.html?raw
 var StorageFilter_default$1;
 var init_StorageFilter$2 = __esmMin((() => {
-	StorageFilter_default$1 = "<div id=\"StorageFilter\">\r\n	<div class=\"titlebar\" data-background=\"basic_interface/titlebar_mid.bmp\">\r\n		<div class=\"left\">\r\n			<span class=\"text\">Item Filter</span>\r\n		</div>\r\n		<div class=\"right\">\r\n			<button\r\n				class=\"base close\"\r\n				data-background=\"basic_interface/sys_close_off.bmp\"\r\n				data-hover=\"basic_interface/sys_close_on.bmp\"\r\n			></button>\r\n		</div>\r\n		<div class=\"clear\"></div>\r\n	</div>\r\n	<div class=\"overlay\"></div>\r\n\r\n	<div class=\"panel\">\r\n		<div class=\"content\" data-background=\"basic_interface/itemwin_mid.bmp\"></div>\r\n	</div>\r\n\r\n	<div class=\"footer\" data-background=\"basic_interface/btnbar_mid2.bmp\">\r\n		<button class=\"extend\" data-background=\"btn_resize.bmp\"></button>\r\n	</div>\r\n</div>\r\n";
+	StorageFilter_default$1 = "<div id=\"StorageFilter\">\r\n	<div class=\"titlebar\">\r\n		<ui-image src=\"basic_interface/titlebar_mid.bmp\"></ui-image>\r\n		<div class=\"left\">\r\n			<span class=\"text\">Item Filter</span>\r\n		</div>\r\n		<div class=\"right\">\r\n			<ui-button\r\n				class=\"base close\"\r\n				bg=\"basic_interface/sys_close_off.bmp\"\r\n				hover=\"basic_interface/sys_close_on.bmp\"\r\n			></ui-button>\r\n		</div>\r\n		<div class=\"clear\"></div>\r\n	</div>\r\n	<div class=\"overlay\"></div>\r\n\r\n	<div class=\"panel\">\r\n		<div class=\"content\" data-background=\"basic_interface/itemwin_mid.bmp\"></div>\r\n	</div>\r\n\r\n	<div class=\"footer\" data-background=\"basic_interface/btnbar_mid2.bmp\">\r\n		<button class=\"extend\" data-background=\"btn_resize.bmp\"></button>\r\n	</div>\r\n</div>\r\n";
 }));
 //#endregion
 //#region src/UI/Components/Storage/StorageV3/StorageFilter.css?raw
 var StorageFilter_default;
 var init_StorageFilter$1 = __esmMin((() => {
-	StorageFilter_default = "#StorageFilter {\r\n	position: absolute;\r\n	top: 150px;\r\n	left: 150px;\r\n	width: 220px;\r\n	z-index: 100;\r\n}\r\n#StorageFilter .titlebar {\r\n	width: 100%;\r\n	height: 17px;\r\n	background-color: white;\r\n	background-repeat: repeat-x;\r\n	border-radius: 3px 3px 0px 0px;\r\n}\r\n#StorageFilter .titlebar .text {\r\n	text-shadow: 1px 1px white;\r\n	vertical-align: -2px;\r\n	white-space: nowrap;\r\n	display: inline-block;\r\n	width: 32px;\r\n	height: 13px;\r\n	margin-left: 15px;\r\n	font-size: 11px;\r\n	font-weight: bold;\r\n}\r\n#StorageFilter .titlebar .left {\r\n	margin-left: 3px;\r\n	float: left;\r\n}\r\n#StorageFilter .titlebar .right {\r\n	margin-right: 3px;\r\n	float: right;\r\n}\r\n#StorageFilter .titlebar .clear {\r\n	clear: both;\r\n}\r\n#StorageFilter .titlebar .base {\r\n	width: 11px;\r\n	height: 11px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n	vertical-align: middle;\r\n}\r\n\r\n#StorageFilter .panel {\r\n	border: 1px solid #ccc;\r\n	border-bottom: none;\r\n	background: white;\r\n	padding-left: 16px;\r\n}\r\n\r\n#StorageFilter .content {\r\n	overflow-y: auto;\r\n	overflow-x: hidden;\r\n	width: 100%;\r\n	min-height: 128px;\r\n	background-color: transparent;\r\n	background-repeat: repeat-y;\r\n	background-attachment: local;\r\n}\r\n\r\n#StorageFilter .content .item {\r\n	display: block;\r\n	width: 24px;\r\n	height: 28px;\r\n	margin: 4px 0px 0px 4px;\r\n	position: relative;\r\n}\r\n#StorageFilter .content .item .icon {\r\n	width: 24px;\r\n	height: 24px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n#StorageFilter .overlay {\r\n	position: absolute;\r\n	display: none;\r\n	white-space: nowrap;\r\n	z-index: 900;\r\n	height: 13px;\r\n	padding: 5px;\r\n	background: rgba(0, 0, 0, 0.7);\r\n	color: white;\r\n	text-shadow: 1px 1px black;\r\n}\r\n#StorageFilter .overlay.grey {\r\n	color: #aaa;\r\n}\r\n#StorageFilter .content .item .amount {\r\n	position: relative;\r\n	bottom: 9px;\r\n	right: 0px;\r\n	text-align: right;\r\n	text-shadow: -1px -1px white;\r\n}\r\n#StorageFilter .content .name {\r\n	position: absolute;\r\n	top: 7px;\r\n	left: 30px;\r\n	width: 160px;\r\n}\r\n\r\n#StorageFilter .footer {\r\n	width: 100%;\r\n	height: 19px;\r\n	background-repeat: repeat-x;\r\n	background-color: transparent;\r\n	position: relative;\r\n	border: 1px solid #ccc;\r\n	border-top: none;\r\n	box-sizing: border-box;\r\n}\r\n\r\n#StorageFilter .footer .extend {\r\n	position: absolute;\r\n	right: 0px;\r\n	bottom: 1px;\r\n	width: 13px;\r\n	height: 13px;\r\n	border: none;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n	cursor: se-resize;\r\n}\r\n";
+	StorageFilter_default = ":host {\r\n	width: 220px;\r\n	height: 164px;\r\n	top: 150px;\r\n	left: 150px;\r\n}\r\n\r\n#StorageFilter {\r\n	position: absolute;\r\n	width: 220px;\r\n}\r\n#StorageFilter .titlebar {\r\n	width: 100%;\r\n	height: 17px;\r\n	background-color: white;\r\n	background-repeat: repeat-x;\r\n	border-radius: 3px 3px 0px 0px;\r\n}\r\n#StorageFilter .titlebar .text {\r\n	text-shadow: 1px 1px white;\r\n	vertical-align: -2px;\r\n	white-space: nowrap;\r\n	display: inline-block;\r\n	width: 32px;\r\n	height: 13px;\r\n	margin-left: 15px;\r\n	font-size: 11px;\r\n	font-weight: bold;\r\n}\r\n#StorageFilter .titlebar .left {\r\n	margin-left: 3px;\r\n	float: left;\r\n}\r\n#StorageFilter .titlebar .right {\r\n	margin-right: 3px;\r\n	float: right;\r\n}\r\n#StorageFilter .titlebar .clear {\r\n	clear: both;\r\n}\r\n#StorageFilter .titlebar .base {\r\n	width: 11px;\r\n	height: 11px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n	vertical-align: middle;\r\n}\r\n\r\n#StorageFilter .panel {\r\n	border: 1px solid #ccc;\r\n	border-bottom: none;\r\n	background: white;\r\n	padding-left: 16px;\r\n}\r\n\r\n#StorageFilter .content {\r\n	overflow-y: auto;\r\n	overflow-x: hidden;\r\n	width: 100%;\r\n	min-height: 128px;\r\n	background-color: transparent;\r\n	background-repeat: repeat-y;\r\n	background-attachment: local;\r\n}\r\n\r\n#StorageFilter .content .item {\r\n	display: block;\r\n	width: 24px;\r\n	height: 28px;\r\n	margin: 4px 0px 0px 4px;\r\n	position: relative;\r\n}\r\n#StorageFilter .content .item .icon {\r\n	width: 24px;\r\n	height: 24px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n#StorageFilter .overlay {\r\n	position: absolute;\r\n	display: none;\r\n	white-space: nowrap;\r\n	z-index: 900;\r\n	height: 13px;\r\n	padding: 5px;\r\n	background: rgba(0, 0, 0, 0.7);\r\n	color: white;\r\n	text-shadow: 1px 1px black;\r\n}\r\n#StorageFilter .overlay.grey {\r\n	color: #aaa;\r\n}\r\n#StorageFilter .content .item .amount {\r\n	position: relative;\r\n	bottom: 9px;\r\n	right: 0px;\r\n	text-align: right;\r\n	text-shadow: -1px -1px white;\r\n}\r\n#StorageFilter .content .name {\r\n	position: absolute;\r\n	top: 7px;\r\n	left: 30px;\r\n	width: 160px;\r\n}\r\n\r\n#StorageFilter .footer {\r\n	width: 100%;\r\n	height: 19px;\r\n	background-repeat: repeat-x;\r\n	background-color: transparent;\r\n	position: relative;\r\n	border: 1px solid #ccc;\r\n	border-top: none;\r\n	box-sizing: border-box;\r\n}\r\n\r\n#StorageFilter .footer .extend {\r\n	position: absolute;\r\n	right: 0px;\r\n	bottom: 1px;\r\n	width: 13px;\r\n	height: 13px;\r\n	border: none;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n	cursor: se-resize;\r\n}\r\n";
 }));
 //#endregion
 //#region src/UI/Components/Storage/StorageV3/StorageFilter.js
-/**
-* Create StorageFilter "class"
-* Inherit from UIComponent
-*/
 function StorageFilter(tabId) {
 	const prefName = "StorageFilter_" + tabId;
-	UIComponent.call(this, prefName, StorageFilter_default$1, StorageFilter_default);
+	GUIComponent.call(this, prefName, StorageFilter_default);
+	this.render = () => StorageFilter_default$1;
 	this.onRemove = function() {
-		this.ui.find(".content").empty();
+		const root = this._shadow || this._host;
+		const content = root.querySelector(".content");
+		if (content) content.innerHTML = "";
 		this._list.length = 0;
 		this._currentTabId = -1;
-		this._preferences.y = parseInt(this.ui.css("top"), 10);
-		this._preferences.x = parseInt(this.ui.css("left"), 10);
-		this._preferences.height = Math.floor(this.ui.find(".content").height() / 32);
+		this._preferences.y = parseInt(this._host.style.top, 10);
+		this._preferences.x = parseInt(this._host.style.left, 10);
+		this._preferences.height = Math.floor((root.querySelector(".content") ? root.querySelector(".content").offsetHeight : 128) / 32);
 		this._preferences.save();
 		if (typeof this.onCloseCallback === "function") this.onCloseCallback();
 	};
@@ -153871,98 +154461,149 @@ function StorageFilter(tabId) {
 }
 var init_StorageFilter = __esmMin((() => {
 	init_DBManager();
-	init_jquery();
 	init_Client();
 	init_Preferences$1();
 	init_Renderer();
 	init_MouseEventHandler();
-	init_UIComponent();
+	init_GUIComponent();
+	init_Elements();
 	init_ItemInfo();
 	init_StorageFilter$2();
 	init_StorageFilter$1();
-	StorageFilter.prototype = Object.create(UIComponent.prototype);
+	StorageFilter.prototype = Object.create(GUIComponent.prototype);
 	StorageFilter.prototype.constructor = StorageFilter;
-	/**
-	* Initialize the component
-	*/
-	StorageFilter.prototype.init = function Init() {
+	StorageFilter.prototype.init = function init() {
 		const self = this;
-		this.ui.find(".titlebar .right .close").click(function() {
-			self.remove();
-		});
-		this.ui.find(".footer .extend").mousedown(this.onResize.bind(this));
-		this.ui.css({
-			top: Math.min(Math.max(0, this._preferences.y), Renderer.height - this.ui.height()),
-			left: Math.min(Math.max(0, this._preferences.x), Renderer.width - this.ui.width())
-		});
+		const root = this._shadow || this._host;
+		const closeBtn = root.querySelector(".titlebar .right .close");
+		if (closeBtn) {
+			closeBtn.addEventListener("mousedown", (e) => e.stopImmediatePropagation());
+			closeBtn.addEventListener("click", () => {
+				self.remove();
+			});
+		}
+		const extendBtn = root.querySelector(".footer .extend");
+		if (extendBtn) extendBtn.addEventListener("mousedown", () => this.onResize());
 		this.resizeHeight(this._preferences.height);
-		this.ui.find(".content").on("mouseover", ".item", this.onItemOver.bind(this)).on("mouseout", ".item", this.onItemOut.bind(this)).on("contextmenu", ".item", this.onItemInfo.bind(this)).on("dragstart", ".item", this.onItemDragStart.bind(this)).on("dragend", ".item", this.onItemDragEnd.bind(this));
-		this.draggable(this.ui.find(".titlebar"));
+		const content = root.querySelector(".content");
+		if (content) {
+			content.addEventListener("mouseover", (e) => {
+				const itemEl = e.target.closest(".item");
+				if (itemEl) this.onItemOver(itemEl, root);
+			});
+			content.addEventListener("mouseout", (e) => {
+				if (e.target.closest(".item")) this.onItemOut(root);
+			});
+			content.addEventListener("contextmenu", (e) => {
+				const itemEl = e.target.closest(".item");
+				if (itemEl) {
+					e.preventDefault();
+					this.onItemInfo(e, itemEl);
+				}
+			});
+			content.addEventListener("dragstart", (e) => {
+				const itemEl = e.target.closest(".item");
+				if (itemEl) {
+					this.onItemDragStart(e, itemEl);
+					this.onItemOut(root);
+				}
+			});
+			content.addEventListener("dragend", (e) => {
+				if (e.target.closest(".item")) this.onItemDragEnd();
+			});
+		}
+		this.draggable(".titlebar");
+		this.ui.hide();
 	};
-	/**
-	* Public method to set the items and title of this window
-	*/
-	StorageFilter.prototype.setItems = function SetItems(title, items, tabId) {
+	StorageFilter.prototype.onAppend = function onAppend() {
+		this.ui.show();
+		this._host.style.left = `${Math.min(Math.max(0, this._preferences.x), Renderer.width - this._host.getBoundingClientRect().width)}px`;
+		this._host.style.top = `${Math.min(Math.max(0, this._preferences.y), Renderer.height - this._host.getBoundingClientRect().height)}px`;
+	};
+	StorageFilter.prototype.setItems = function setItems(title, items, tabId) {
 		this._list = items.slice(0);
 		this._currentTabId = tabId;
-		this.ui.find(".titlebar .text").text(title);
-		this.ui.find(".content").empty();
-		let i, count;
-		for (i = 0, count = this._list.length; i < count; ++i) this.renderItem(this._list[i]);
+		const root = this._shadow || this._host;
+		const titleEl = root.querySelector(".titlebar .text");
+		if (titleEl) titleEl.textContent = title;
+		const content = root.querySelector(".content");
+		if (content) content.innerHTML = "";
+		for (let i = 0, count = this._list.length; i < count; ++i) this.renderItem(this._list[i]);
 	};
-	/**
-	* Renders a single item in the content area
-	*/
-	StorageFilter.prototype.renderItem = function RenderItem(item) {
+	StorageFilter.prototype.renderItem = function renderItem(item) {
 		const it = DB.getItemInfo(item.ITID);
-		const self = this;
-		this.ui.find(".content").append("<div class=\"item\" data-index=\"" + item.index + "\" draggable=\"true\"><div class=\"icon\"></div><div class=\"amount\">" + (item.count ? "<span class=\"count\">" + item.count + "</span> " : "") + "</div><span class=\"name\">" + jquery_default.escape(DB.getItemName(item)) + "</span></div>");
-		Client.loadFile(DB.INTERFACE_PATH + "item/" + (item.IsIdentified ? it.identifiedResourceName : it.unidentifiedResourceName) + ".bmp", function(data) {
-			self.ui.find(".item[data-index=\"" + item.index + "\"] .icon").css("backgroundImage", "url(" + data + ")");
+		const root = this._shadow || this._host;
+		const content = root.querySelector(".content");
+		const itemEl = document.createElement("div");
+		itemEl.className = "item";
+		itemEl.setAttribute("data-index", item.index);
+		itemEl.setAttribute("draggable", "true");
+		const iconDiv = document.createElement("div");
+		iconDiv.className = "icon";
+		itemEl.appendChild(iconDiv);
+		const amountDiv = document.createElement("div");
+		amountDiv.className = "amount";
+		if (item.count) {
+			const countSpan = document.createElement("span");
+			countSpan.className = "count";
+			countSpan.textContent = item.count;
+			amountDiv.appendChild(countSpan);
+			amountDiv.appendChild(document.createTextNode(" "));
+		}
+		itemEl.appendChild(amountDiv);
+		const nameSpan = document.createElement("span");
+		nameSpan.className = "name";
+		nameSpan.innerHTML = DB.getItemName(item);
+		itemEl.appendChild(nameSpan);
+		if (content) content.appendChild(itemEl);
+		Client.loadFile(`${DB.INTERFACE_PATH}item/${item.IsIdentified ? it.identifiedResourceName : it.unidentifiedResourceName}.bmp`, (data) => {
+			const icon = root.querySelector(`.item[data-index="${item.index}"] .icon`);
+			if (icon) icon.style.backgroundImage = `url(${data})`;
 		});
 	};
 	StorageFilter.prototype.getItemFromIndex = function getItemFromIndex(index) {
-		return this._list.filter(function(item) {
-			return item.index === index;
-		})[0];
+		return this._list.filter((item) => item.index === index)[0];
 	};
-	StorageFilter.prototype.onItemOver = function onItemOver(event) {
-		const index = parseInt(event.currentTarget.getAttribute("data-index"), 10);
+	StorageFilter.prototype.onItemOver = function onItemOver(itemEl, root) {
+		const index = parseInt(itemEl.getAttribute("data-index"), 10);
 		const item = this.getItemFromIndex(index);
 		if (!item) return;
-		const pos = jquery_default(event.currentTarget).position();
-		const overlay = this.ui.find(".overlay");
-		overlay.show();
-		overlay.css({
-			top: pos.top - 10,
-			left: pos.left + 35
-		});
-		overlay.text(DB.getItemName(item) + " " + (item.count || 1) + " ea");
-		overlay.toggleClass("grey", !item.IsIdentified);
+		const overlay = root.querySelector(".overlay");
+		if (overlay) {
+			overlay.style.display = "";
+			overlay.style.top = `${itemEl.offsetTop - 10}px`;
+			overlay.style.left = `${itemEl.offsetLeft + 35}px`;
+			overlay.innerHTML = `${DB.getItemName(item)} ${item.count || 1} ea`;
+			if (item.IsIdentified) overlay.classList.remove("grey");
+			else overlay.classList.add("grey");
+		}
 	};
-	StorageFilter.prototype.onItemOut = function onItemOut() {
-		this.ui.find(".overlay").hide();
+	StorageFilter.prototype.onItemOut = function onItemOut(root) {
+		if (!root) root = this._shadow || this._host;
+		const overlay = root.querySelector(".overlay");
+		if (overlay) overlay.style.display = "none";
 	};
-	StorageFilter.prototype.onItemDragStart = function onItemDragStart(event) {
-		const index = parseInt(event.currentTarget.getAttribute("data-index"), 10);
+	StorageFilter.prototype.onItemDragStart = function onItemDragStart(event, itemEl) {
+		const index = parseInt(itemEl.getAttribute("data-index"), 10);
 		const item = this.getItemFromIndex(index);
 		if (!item) return;
 		const img = new Image();
-		img.src = event.currentTarget.firstChild.style.backgroundImage.match(/\(([^\)]+)/)[1].replace(/\"/g, "");
-		event.originalEvent.dataTransfer.setDragImage(img, 12, 12);
-		event.originalEvent.dataTransfer.setData("Text", JSON.stringify(window._OBJ_DRAG_ = {
+		let url = itemEl.firstChild.style.backgroundImage.match(/\(([^)]+)/)[1];
+		url = url.replace(/^"/, "").replace(/"$/, "");
+		img.src = url;
+		event.dataTransfer.setDragImage(img, 12, 12);
+		event.dataTransfer.setData("Text", JSON.stringify(window._OBJ_DRAG_ = {
 			type: "item",
 			from: "Storage",
 			data: item
 		}));
-		this.onItemOut();
 	};
 	StorageFilter.prototype.onItemDragEnd = function onItemDragEnd() {
 		delete window._OBJ_DRAG_;
 	};
-	StorageFilter.prototype.onItemInfo = function onItemInfo(event) {
+	StorageFilter.prototype.onItemInfo = function onItemInfo(event, itemEl) {
 		event.stopImmediatePropagation();
-		const index = parseInt(event.currentTarget.getAttribute("data-index"), 10);
+		const index = parseInt(itemEl.getAttribute("data-index"), 10);
 		const item = this.getItemFromIndex(index);
 		if (!item) return false;
 		if (event.altKey && event.which === 3) {
@@ -153977,12 +154618,13 @@ var init_StorageFilter = __esmMin((() => {
 	};
 	StorageFilter.prototype.resizeHeight = function resizeHeight(height) {
 		height = Math.min(Math.max(height, 4), 10);
-		this.ui.find(".content").css("height", height * 32);
-		this.ui.css("height", height * 32 + 17 + 19);
+		const content = (this._shadow || this._host).querySelector(".content");
+		if (content) content.style.height = `${height * 32}px`;
+		this._host.style.height = `${height * 32 + 17 + 19}px`;
 	};
 	StorageFilter.prototype.onResize = function onResize() {
 		const self = this;
-		const top = this.ui.position().top;
+		const top = this._host.offsetTop;
 		let lastHeight = 0;
 		const extraY = 36;
 		function resizing() {
@@ -153993,17 +154635,18 @@ var init_StorageFilter = __esmMin((() => {
 			lastHeight = h;
 		}
 		const _Interval = setInterval(resizing, 30);
-		jquery_default(window).on("mouseup.resizeStorageFilter", function(event) {
+		const onMouseUp = (event) => {
 			if (event.which === 1) {
 				clearInterval(_Interval);
-				jquery_default(window).off("mouseup.resizeStorageFilter");
+				window.removeEventListener("mouseup", onMouseUp);
 			}
-		});
+		};
+		window.addEventListener("mouseup", onMouseUp);
 	};
-	StorageFilter.prototype.getCurrentTab = function GetCurrentTab() {
+	StorageFilter.prototype.getCurrentTab = function getCurrentTab() {
 		return this._currentTabId;
 	};
-	StorageFilter.prototype.removeItem = function RemoveItem(index, count) {
+	StorageFilter.prototype.removeItem = function removeItem(index, count) {
 		let i = -1;
 		for (let j = 0, count_ = this._list.length; j < count_; ++j) if (this._list[j].index === index) {
 			i = j;
@@ -154014,44 +154657,46 @@ var init_StorageFilter = __esmMin((() => {
 		if (item.count) {
 			item.count -= count;
 			if (item.count > 0) {
-				this.ui.find(".item[data-index=\"" + index + "\"] .count").text(item.count);
+				const countEl = (this._shadow || this._host).querySelector(`.item[data-index="${index}"] .count`);
+				if (countEl) countEl.textContent = item.count;
 				return;
 			}
 		}
 		this._list.splice(i, 1);
-		this.ui.find(".item[data-index=\"" + index + "\"]").remove();
-		this.ui.find(".overlay").hide();
+		const root = this._shadow || this._host;
+		const el = root.querySelector(`.item[data-index="${index}"]`);
+		if (el) el.remove();
+		const overlay = root.querySelector(".overlay");
+		if (overlay) overlay.style.display = "none";
 	};
-	StorageFilter.prototype.addItem = function AddItem(item) {
+	StorageFilter.prototype.addItem = function addItem(item) {
 		for (let j = 0, count_ = this._list.length; j < count_; ++j) if (this._list[j].index === item.index) {
 			this._list[j].count += item.count;
-			this.ui.find(".item[data-index=\"" + item.index + "\"] .count").text(this._list[j].count);
+			const countEl = (this._shadow || this._host).querySelector(`.item[data-index="${item.index}"] .count`);
+			if (countEl) countEl.textContent = this._list[j].count;
 			return;
 		}
 		this._list.push(JSON.parse(JSON.stringify(item)));
 		this.renderItem(item);
 	};
+	StorageFilter.prototype.mouseMode = GUIComponent.MouseMode.STOP;
 }));
 //#endregion
 //#region src/UI/Components/Storage/StorageV3/Storage.html?raw
 var Storage_default$2;
 var init_Storage$4 = __esmMin((() => {
-	Storage_default$2 = "<div id=\"Storage\">\r\n	<div class=\"titlebar\" data-background=\"basic_interface/titlebar_mid.bmp\">\r\n		<div class=\"left\">\r\n			<span class=\"text\" data-text=\"169\">Storage</span>\r\n		</div>\r\n		<div class=\"clear\"></div>\r\n	</div>\r\n	<div class=\"overlay\"></div>\r\n	<div class=\"panel\">\r\n		<table>\r\n			<tbody>\r\n				<tr>\r\n					<td\r\n						colspan=\"2\"\r\n						class=\"tabs\"\r\n						data-background=\"basic_interface/tab_itm_ex_01.bmp\"\r\n						data-preload=\"basic_interface/tab_itm_ex_02.bmp;basic_interface/tab_itm_ex_03.bmp;basic_interface/tab_itm_ex_04.bmp;basic_interface/tab_itm_ex_05.bmp;basic_interface/tab_itm_ex_06.bmp;basic_interface/tab_itm_ex_07.bmp\"\r\n					>\r\n						<button class=\"item\"></button>\r\n						<button class=\"kafra\"></button>\r\n						<button class=\"armor\"></button>\r\n						<button class=\"arms\"></button>\r\n						<button class=\"ammo\"></button>\r\n						<button class=\"card\"></button>\r\n						<button class=\"etc\"></button>\r\n					</td>\r\n					<td class=\"container\">\r\n						<div class=\"content\" data-background=\"basic_interface/itemwin_mid.bmp\"></div>\r\n					</td>\r\n				</tr>\r\n			</tbody>\r\n			<tfoot class=\"footer\" data-background=\"basic_interface/btnbar_mid3.bmp\">\r\n				<tr>\r\n					<td colspan=\"3\" class=\"filter-buttons\">\r\n						<button\r\n							class=\"filter-use\"\r\n							data-tab-id=\"0\"\r\n							data-title=\"Use\"\r\n							data-background=\"basic_interface/¼Òºñ-2.bmp\"\r\n							data-down=\"basic_interface/¼Òºñ-1.bmp\"\r\n							data-active=\"basic_interface/¼Òºñ-1.bmp\"\r\n						></button>\r\n						<button\r\n							class=\"filter-kafra\"\r\n							data-tab-id=\"1\"\r\n							data-title=\"Cash\"\r\n							data-background=\"basic_interface/Ä³½Ã-2.bmp\"\r\n							data-down=\"basic_interface/Ä³½Ã-1.bmp\"\r\n							data-active=\"basic_interface/Ä³½Ã-1.bmp\"\r\n						></button>\r\n						<button\r\n							class=\"filter-armor\"\r\n							data-tab-id=\"2\"\r\n							data-title=\"Armor\"\r\n							data-background=\"basic_interface/ÀÇ»ó-2.bmp\"\r\n							data-down=\"basic_interface/ÀÇ»ó-1.bmp\"\r\n							data-active=\"basic_interface/ÀÇ»ó-1.bmp\"\r\n						></button>\r\n						<button\r\n							class=\"filter-arms\"\r\n							data-tab-id=\"3\"\r\n							data-title=\"Weapon\"\r\n							data-background=\"basic_interface/¹«±â-2.bmp\"\r\n							data-down=\"basic_interface/¹«±â-1.bmp\"\r\n							data-active=\"basic_interface/¹«±â-1.bmp\"\r\n						></button>\r\n						<button\r\n							class=\"filter-ammo\"\r\n							data-tab-id=\"4\"\r\n							data-title=\"Ammo\"\r\n							data-background=\"basic_interface/Åõ»çÃ¼-2.bmp\"\r\n							data-down=\"basic_interface/Åõ»çÃ¼-1.bmp\"\r\n							data-active=\"basic_interface/Åõ»çÃ¼-1.bmp\"\r\n						></button>\r\n						<button\r\n							class=\"filter-card\"\r\n							data-tab-id=\"5\"\r\n							data-title=\"Card\"\r\n							data-background=\"basic_interface/Ä«µå-2.bmp\"\r\n							data-down=\"basic_interface/Ä«µå-1.bmp\"\r\n							data-active=\"basic_interface/Ä«µå-1.bmp\"\r\n						></button>\r\n						<button\r\n							class=\"filter-etc\"\r\n							data-tab-id=\"6\"\r\n							data-title=\"Etc\"\r\n							data-background=\"basic_interface/±âÅ¸-2.bmp\"\r\n							data-down=\"basic_interface/±âÅ¸-1.bmp\"\r\n							data-active=\"basic_interface/±âÅ¸-1.bmp\"\r\n						></button>\r\n						<select class=\"storage-order-by\">\r\n							<option value=\"BASE\">Base</option>\r\n							<option value=\"UPGRADE\">Upgrade</option>\r\n							<option value=\"DOWNGRADE\">Downgrade</option>\r\n						</select>\r\n					</td>\r\n				</tr>\r\n				<tr>\r\n					<td colspan=\"2\">\r\n						<div class=\"item_num_display\">\r\n							<button class=\"item_num\" data-background=\"inventory/icon_num.bmp\"></button>\r\n							<span class=\"current\">0</span><span class=\"divider\">/</span><span class=\"limit\">0</span>\r\n						</div>\r\n					</td>\r\n					<td>\r\n						<div class=\"search-container\">\r\n							<input id=\"storage-search-input\" type=\"text\" class=\"search-input\" />\r\n							<button\r\n								class=\"search-button\"\r\n								data-background=\"bt_search_normal.bmp\"\r\n								data-hover=\"bt_search_over.bmp\"\r\n								data-down=\"bt_search_press.bmp\"\r\n							></button>\r\n						</div>\r\n						<button\r\n							class=\"close\"\r\n							data-background=\"btn_close.bmp\"\r\n							data-hover=\"btn_close_a.bmp\"\r\n							data-down=\"btn_close_b.bmp\"\r\n						></button>\r\n						<button class=\"extend\" data-background=\"btn_resize.bmp\"></button>\r\n					</td>\r\n				</tr>\r\n			</tfoot>\r\n		</table>\r\n	</div>\r\n</div>\r\n";
+	Storage_default$2 = "<div id=\"Storage\">\r\n	<div class=\"titlebar\">\r\n		<ui-image src=\"basic_interface/titlebar_mid.bmp\"></ui-image>\r\n		<div class=\"left\">\r\n			<span class=\"text\"><ui-text msg=\"169\">Storage</ui-text></span>\r\n		</div>\r\n		<div class=\"clear\"></div>\r\n	</div>\r\n	<div class=\"overlay\"></div>\r\n	<div class=\"panel\">\r\n		<table>\r\n			<tbody>\r\n				<tr>\r\n					<td\r\n						colspan=\"2\"\r\n						class=\"tabs\"\r\n						data-background=\"basic_interface/tab_itm_ex_01.bmp\"\r\n						data-preload=\"basic_interface/tab_itm_ex_02.bmp;basic_interface/tab_itm_ex_03.bmp;basic_interface/tab_itm_ex_04.bmp;basic_interface/tab_itm_ex_05.bmp;basic_interface/tab_itm_ex_06.bmp;basic_interface/tab_itm_ex_07.bmp\"\r\n					>\r\n						<button class=\"item\"></button>\r\n						<button class=\"kafra\"></button>\r\n						<button class=\"armor\"></button>\r\n						<button class=\"arms\"></button>\r\n						<button class=\"ammo\"></button>\r\n						<button class=\"card\"></button>\r\n						<button class=\"etc\"></button>\r\n					</td>\r\n					<td class=\"container\">\r\n						<div class=\"content\" data-background=\"basic_interface/itemwin_mid.bmp\"></div>\r\n					</td>\r\n				</tr>\r\n			</tbody>\r\n			<tfoot class=\"footer\" data-background=\"basic_interface/btnbar_mid3.bmp\">\r\n				<tr>\r\n					<td colspan=\"3\" class=\"filter-buttons\">\r\n						<button\r\n							class=\"filter-use\"\r\n							data-tab-id=\"0\"\r\n							data-title=\"Use\"\r\n							data-background=\"basic_interface/¼Òºñ-2.bmp\"\r\n							data-down=\"basic_interface/¼Òºñ-1.bmp\"\r\n							data-active=\"basic_interface/¼Òºñ-1.bmp\"\r\n						></button>\r\n						<button\r\n							class=\"filter-kafra\"\r\n							data-tab-id=\"1\"\r\n							data-title=\"Cash\"\r\n							data-background=\"basic_interface/Ä³½Ã-2.bmp\"\r\n							data-down=\"basic_interface/Ä³½Ã-1.bmp\"\r\n							data-active=\"basic_interface/Ä³½Ã-1.bmp\"\r\n						></button>\r\n						<button\r\n							class=\"filter-armor\"\r\n							data-tab-id=\"2\"\r\n							data-title=\"Armor\"\r\n							data-background=\"basic_interface/ÀÇ»ó-2.bmp\"\r\n							data-down=\"basic_interface/ÀÇ»ó-1.bmp\"\r\n							data-active=\"basic_interface/ÀÇ»ó-1.bmp\"\r\n						></button>\r\n						<button\r\n							class=\"filter-arms\"\r\n							data-tab-id=\"3\"\r\n							data-title=\"Weapon\"\r\n							data-background=\"basic_interface/¹«±â-2.bmp\"\r\n							data-down=\"basic_interface/¹«±â-1.bmp\"\r\n							data-active=\"basic_interface/¹«±â-1.bmp\"\r\n						></button>\r\n						<button\r\n							class=\"filter-ammo\"\r\n							data-tab-id=\"4\"\r\n							data-title=\"Ammo\"\r\n							data-background=\"basic_interface/Åõ»çÃ¼-2.bmp\"\r\n							data-down=\"basic_interface/Åõ»çÃ¼-1.bmp\"\r\n							data-active=\"basic_interface/Åõ»çÃ¼-1.bmp\"\r\n						></button>\r\n						<button\r\n							class=\"filter-card\"\r\n							data-tab-id=\"5\"\r\n							data-title=\"Card\"\r\n							data-background=\"basic_interface/Ä«µå-2.bmp\"\r\n							data-down=\"basic_interface/Ä«µå-1.bmp\"\r\n							data-active=\"basic_interface/Ä«µå-1.bmp\"\r\n						></button>\r\n						<button\r\n							class=\"filter-etc\"\r\n							data-tab-id=\"6\"\r\n							data-title=\"Etc\"\r\n							data-background=\"basic_interface/±âÅ¸-2.bmp\"\r\n							data-down=\"basic_interface/±âÅ¸-1.bmp\"\r\n							data-active=\"basic_interface/±âÅ¸-1.bmp\"\r\n						></button>\r\n						<select class=\"storage-order-by\">\r\n							<option value=\"BASE\">Base</option>\r\n							<option value=\"UPGRADE\">Upgrade</option>\r\n							<option value=\"DOWNGRADE\">Downgrade</option>\r\n						</select>\r\n					</td>\r\n				</tr>\r\n				<tr>\r\n					<td colspan=\"2\">\r\n						<div class=\"item_num_display\">\r\n							<button class=\"item_num\" data-background=\"inventory/icon_num.bmp\"></button>\r\n							<span class=\"current\">0</span><span class=\"divider\">/</span><span class=\"limit\">0</span>\r\n						</div>\r\n					</td>\r\n					<td>\r\n						<div class=\"search-container\">\r\n							<input id=\"storage-search-input\" type=\"text\" class=\"search-input\" />\r\n							<ui-button\r\n								class=\"search-button\"\r\n								bg=\"bt_search_normal.bmp\"\r\n								hover=\"bt_search_over.bmp\"\r\n								down=\"bt_search_press.bmp\"\r\n							></ui-button>\r\n						</div>\r\n						<ui-button\r\n							class=\"close\"\r\n							bg=\"btn_close.bmp\"\r\n							hover=\"btn_close_a.bmp\"\r\n							down=\"btn_close_b.bmp\"\r\n						></ui-button>\r\n						<button class=\"extend\" data-background=\"btn_resize.bmp\"></button>\r\n					</td>\r\n				</tr>\r\n			</tfoot>\r\n		</table>\r\n	</div>\r\n</div>\r\n";
 }));
 //#endregion
 //#region src/UI/Components/Storage/StorageV3/Storage.css?raw
 var Storage_default$1;
 var init_Storage$3 = __esmMin((() => {
-	Storage_default$1 = "#Storage {\r\n	position: absolute;\r\n	top: 100px;\r\n	left: 100px;\r\n	width: 280px;\r\n	border-radius: 3px;\r\n}\r\n#Storage table {\r\n	border-spacing: 0px;\r\n	display: inline-block;\r\n	width: 100%;\r\n}\r\n\r\n#Storage .titlebar {\r\n	width: 100%;\r\n	height: 17px;\r\n	background-color: white;\r\n	background-repeat: repeat-x;\r\n	border-radius: 3px 3px 0px 0px;\r\n}\r\n#Storage .titlebar .text {\r\n	text-shadow: 1px 1px white;\r\n	vertical-align: -2px;\r\n	white-space: nowrap;\r\n	/* chrome bug */\r\n	display: inline-block;\r\n	width: 32px;\r\n	height: 13px;\r\n	margin-left: 15px;\r\n	font-size: 11px;\r\n	font-weight: bold;\r\n}\r\n\r\n#Storage .titlebar .left {\r\n	margin-left: 3px;\r\n	float: left;\r\n}\r\n#Storage .titlebar .clear {\r\n	clear: both;\r\n}\r\n\r\n#Storage .tabs {\r\n	border-left: 1px solid #ccc;\r\n	width: 50px;\r\n	background-repeat: no-repeat;\r\n	background-color: white;\r\n	vertical-align: top;\r\n	background-position: -1px 0px;\r\n}\r\n#Storage .tabs button {\r\n	width: 20px;\r\n	height: 30px;\r\n	border: none;\r\n	background-color: transparent;\r\n	display: block;\r\n}\r\n#Storage .tabs .item {\r\n	height: 25px;\r\n}\r\n\r\n#Storage .container {\r\n	padding-left: 16px;\r\n	border-right: 1px solid #ccc;\r\n	background: white;\r\n	width: 100%;\r\n}\r\n#Storage .content {\r\n	overflow-y: scroll;\r\n	overflow-x: hidden;\r\n	width: 100%;\r\n	height: 100%;\r\n	min-height: 240px;\r\n	background-color: transparent;\r\n	background-repeat: repeat-y;\r\n	background-attachment: local;\r\n}\r\n\r\n#Storage .content .item {\r\n	display: block;\r\n	width: 24px;\r\n	height: 28px;\r\n	margin: 4px 0px 0px 4px;\r\n	position: relative;\r\n}\r\n#Storage .content .item .icon {\r\n	width: 24px;\r\n	height: 24px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n#Storage .overlay {\r\n	position: absolute;\r\n	display: none;\r\n	white-space: nowrap;\r\n	z-index: 900;\r\n	height: 13px;\r\n	padding: 5px;\r\n	background: rgba(0, 0, 0, 0.7);\r\n	color: white;\r\n	text-shadow: 1px 1px black;\r\n}\r\n#Storage .overlay.grey {\r\n	color: #aaa;\r\n}\r\n#Storage .content .item .amount {\r\n	position: relative;\r\n	bottom: 9px;\r\n	right: 0px;\r\n	text-align: right;\r\n	text-shadow: -1px -1px white;\r\n}\r\n#Storage .content .name {\r\n	position: absolute;\r\n	top: 7px;\r\n	left: 30px;\r\n	width: 190px;\r\n}\r\n\r\n#Storage .footer {\r\n	width: 100%;\r\n	height: 55px;\r\n	background-color: transparent;\r\n	position: relative;\r\n	border-right: 1px solid #ccc;\r\n}\r\n#Storage .footer .extend {\r\n	position: absolute;\r\n	right: 0px;\r\n	bottom: 1px;\r\n	width: 13px;\r\n	height: 13px;\r\n	border: none;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n#Storage .footer .close {\r\n	position: absolute;\r\n	border: none;\r\n	width: 42px;\r\n	height: 20px;\r\n	bottom: 2px;\r\n	right: 15px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n\r\n#Storage .footer .divider-bar {\r\n	left: 0;\r\n	right: 0;\r\n	height: 10px;\r\n}\r\n\r\n#Storage .footer .filter-buttons {\r\n	padding-left: 5px;\r\n	height: 28px;\r\n}\r\n\r\n#Storage .footer .filter-buttons button {\r\n	width: 23px;\r\n	height: 23px;\r\n	border: 1px solid #cfcfcf;\r\n	background-color: #eee;\r\n	background-repeat: no-repeat;\r\n	background-position: center center;\r\n	padding: 0;\r\n	border-radius: 2px;\r\n	margin: 2px 1px 0px;\r\n	cursor: pointer;\r\n}\r\n\r\n#Storage .footer .filter-buttons button:hover {\r\n	background-color: #f5f5f5;\r\n}\r\n\r\n#Storage .footer .item_num_display {\r\n	display: flex;\r\n	align-items: center;\r\n	padding-left: 3px;\r\n}\r\n\r\n#Storage .footer .item_num {\r\n	display: inline-block;\r\n	height: 14px;\r\n	width: 11px;\r\n	margin-right: 2px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n\r\n#Storage .footer .current {\r\n	margin-left: 2px;\r\n}\r\n\r\n#Storage .footer .current,\r\n#Storage .footer .divider,\r\n#Storage .footer .limit {\r\n	font-size: 12px;\r\n}\r\n\r\n/* Search */\r\n#Storage .footer .search-container {\r\n	display: flex;\r\n	align-items: center;\r\n	padding-left: 18px;\r\n}\r\n\r\n#Storage .footer .search-input {\r\n	border: 1px solid #ccc;\r\n	border-radius: 5px;\r\n	padding: 2px;\r\n	width: 130px;\r\n	height: 14px;\r\n}\r\n\r\n#Storage .footer .search-button {\r\n	width: 23px;\r\n	height: 18px;\r\n	background-color: #eee;\r\n	background-repeat: no-repeat;\r\n	background-position: center center;\r\n	border: none;\r\n	margin-left: -23px;\r\n	cursor: pointer;\r\n}\r\n\r\n#Storage .footer .storage-order-by {\r\n	margin-left: 2px;\r\n	width: 70px;\r\n	vertical-align: super;\r\n	border-radius: 3px;\r\n}\r\n\r\n/* add blue border to options */\r\n#Storage .footer .storage-order-by option {\r\n	border: 1px solid blue;\r\n}\r\n";
+	Storage_default$1 = ":host {\r\n	width: 280px;\r\n	height: 306px;\r\n	top: 100px;\r\n	left: 100px;\r\n}\r\n\r\n#Storage {\r\n	position: absolute;\r\n	width: 280px;\r\n	border-radius: 3px;\r\n}\r\n#Storage table {\r\n	border-spacing: 0px;\r\n	display: inline-block;\r\n	width: 100%;\r\n}\r\n\r\n#Storage .titlebar {\r\n	width: 100%;\r\n	height: 17px;\r\n	background-color: white;\r\n	background-repeat: repeat-x;\r\n	border-radius: 3px 3px 0px 0px;\r\n}\r\n#Storage .titlebar .text {\r\n	text-shadow: 1px 1px white;\r\n	vertical-align: -2px;\r\n	white-space: nowrap;\r\n	/* chrome bug */\r\n	display: inline-block;\r\n	width: 32px;\r\n	height: 13px;\r\n	margin-left: 15px;\r\n	font-size: 11px;\r\n	font-weight: bold;\r\n}\r\n\r\n#Storage .titlebar .left {\r\n	margin-left: 3px;\r\n	float: left;\r\n}\r\n#Storage .titlebar .clear {\r\n	clear: both;\r\n}\r\n\r\n#Storage .tabs {\r\n	border-left: 1px solid #ccc;\r\n	width: 50px;\r\n	background-repeat: no-repeat;\r\n	background-color: white;\r\n	vertical-align: top;\r\n	background-position: -1px 0px;\r\n}\r\n#Storage .tabs button {\r\n	width: 20px;\r\n	height: 30px;\r\n	border: none;\r\n	background-color: transparent;\r\n	display: block;\r\n}\r\n#Storage .tabs .item {\r\n	height: 25px;\r\n}\r\n\r\n#Storage .container {\r\n	padding-left: 16px;\r\n	border-right: 1px solid #ccc;\r\n	background: white;\r\n	width: 100%;\r\n}\r\n#Storage .content {\r\n	overflow-y: scroll;\r\n	overflow-x: hidden;\r\n	width: 100%;\r\n	height: 100%;\r\n	min-height: 240px;\r\n	background-color: transparent;\r\n	background-repeat: repeat-y;\r\n	background-attachment: local;\r\n}\r\n\r\n#Storage .content .item {\r\n	display: block;\r\n	width: 24px;\r\n	height: 28px;\r\n	margin: 4px 0px 0px 4px;\r\n	position: relative;\r\n}\r\n#Storage .content .item .icon {\r\n	width: 24px;\r\n	height: 24px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n#Storage .overlay {\r\n	position: absolute;\r\n	display: none;\r\n	white-space: nowrap;\r\n	z-index: 900;\r\n	height: 13px;\r\n	padding: 5px;\r\n	background: rgba(0, 0, 0, 0.7);\r\n	color: white;\r\n	text-shadow: 1px 1px black;\r\n}\r\n#Storage .overlay.grey {\r\n	color: #aaa;\r\n}\r\n#Storage .content .item .amount {\r\n	position: relative;\r\n	bottom: 9px;\r\n	right: 0px;\r\n	text-align: right;\r\n	text-shadow: -1px -1px white;\r\n}\r\n#Storage .content .name {\r\n	position: absolute;\r\n	top: 7px;\r\n	left: 30px;\r\n	width: 190px;\r\n}\r\n\r\n#Storage .footer {\r\n	width: 100%;\r\n	height: 55px;\r\n	background-color: transparent;\r\n	position: relative;\r\n	border-right: 1px solid #ccc;\r\n}\r\n#Storage .footer .extend {\r\n	position: absolute;\r\n	right: 0px;\r\n	bottom: 1px;\r\n	width: 13px;\r\n	height: 13px;\r\n	border: none;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n#Storage .footer .close {\r\n	position: absolute;\r\n	border: none;\r\n	width: 42px;\r\n	height: 20px;\r\n	bottom: 2px;\r\n	right: 15px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n\r\n#Storage .footer .divider-bar {\r\n	left: 0;\r\n	right: 0;\r\n	height: 10px;\r\n}\r\n\r\n#Storage .footer .filter-buttons {\r\n	padding-left: 5px;\r\n	height: 28px;\r\n}\r\n\r\n#Storage .footer .filter-buttons button {\r\n	width: 23px;\r\n	height: 23px;\r\n	border: 1px solid #cfcfcf;\r\n	background-color: #eee;\r\n	background-repeat: no-repeat;\r\n	background-position: center center;\r\n	padding: 0;\r\n	border-radius: 2px;\r\n	margin: 2px 1px 0px;\r\n	cursor: pointer;\r\n}\r\n\r\n#Storage .footer .filter-buttons button:hover {\r\n	background-color: #f5f5f5;\r\n}\r\n\r\n#Storage .footer .item_num_display {\r\n	display: flex;\r\n	align-items: center;\r\n	padding-left: 3px;\r\n}\r\n\r\n#Storage .footer .item_num {\r\n	display: inline-block;\r\n	height: 14px;\r\n	width: 11px;\r\n	margin-right: 2px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n\r\n#Storage .footer .current {\r\n	margin-left: 2px;\r\n}\r\n\r\n#Storage .footer .current,\r\n#Storage .footer .divider,\r\n#Storage .footer .limit {\r\n	font-size: 12px;\r\n}\r\n\r\n/* Search */\r\n#Storage .footer .search-container {\r\n	display: flex;\r\n	align-items: center;\r\n	padding-left: 18px;\r\n}\r\n\r\n#Storage .footer .search-input {\r\n	border: 1px solid #ccc;\r\n	border-radius: 5px;\r\n	padding: 2px;\r\n	width: 130px;\r\n	height: 14px;\r\n}\r\n\r\n#Storage .footer .search-button {\r\n	width: 23px;\r\n	height: 18px;\r\n	background-color: #eee;\r\n	background-repeat: no-repeat;\r\n	background-position: center center;\r\n	border: none;\r\n	margin-left: -23px;\r\n	cursor: pointer;\r\n}\r\n\r\n#Storage .footer .storage-order-by {\r\n	margin-left: 2px;\r\n	width: 70px;\r\n	vertical-align: super;\r\n	border-radius: 3px;\r\n}\r\n\r\n/* add blue border to options */\r\n#Storage .footer .storage-order-by option {\r\n	border: 1px solid blue;\r\n}\r\n";
 }));
 //#endregion
 //#region src/UI/Components/Storage/StorageV3/Storage.js
-function stopPropagation$36(event) {
-	event.stopImmediatePropagation();
-	return false;
-}
 function onResize$16() {
-	const top = Storage.ui.position().top;
+	const top = Storage._host.offsetTop;
 	let lastHeight = 0;
 	function resizing() {
 		let h = Math.floor((Mouse.screen.y - top - 20) / 32);
@@ -154061,30 +154706,32 @@ function onResize$16() {
 		lastHeight = h;
 	}
 	const _Interval = setInterval(resizing, 30);
-	jquery_default(window).on("mouseup.resize", function(event) {
+	const onMouseUp = (event) => {
 		if (event.which === 1) {
 			clearInterval(_Interval);
-			jquery_default(window).off("mouseup.resize");
+			window.removeEventListener("mouseup", onMouseUp);
 		}
-	});
+	};
+	window.addEventListener("mouseup", onMouseUp);
 }
 function resizeHeight$2(height) {
 	height = Math.min(Math.max(height, 8), 17);
-	Storage.ui.find(".container .content").css("height", height * 32);
-	Storage.ui.css("height", 50 + height * 32);
+	const content = (Storage._shadow || Storage._host).querySelector(".container .content");
+	if (content) content.style.height = `${height * 32}px`;
+	Storage._host.style.height = `${50 + height * 32}px`;
 }
-function onSwitchTab$4() {
-	const idx = jquery_default(this).index();
+function onSwitchTab$4(idx) {
 	_preferences$69.tab = idx;
-	Client.loadFile(DB.INTERFACE_PATH + "basic_interface/tab_itm_ex_0" + (idx + 1) + ".bmp", function(data) {
-		Storage.ui.find(".tabs").css("backgroundImage", "url(\"" + data + "\")");
+	Client.loadFile(`${DB.INTERFACE_PATH}basic_interface/tab_itm_ex_0${idx + 1}.bmp`, (data) => {
+		const tabs = (Storage._shadow || Storage._host).querySelector(".tabs");
+		if (tabs) tabs.style.backgroundImage = `url("${data}")`;
 		requestFilter$4();
 	});
 }
 function onDrop$22(event) {
 	let data;
 	try {
-		data = JSON.parse(event.originalEvent.dataTransfer.getData("Text"));
+		data = JSON.parse(event.dataTransfer.getData("Text"));
 	} catch (e) {}
 	event.stopImmediatePropagation();
 	if (!data || data.type !== "item" || data.from !== "Inventory" && data.from !== "CartItems") return false;
@@ -154104,51 +154751,47 @@ function onDrop$22(event) {
 	return false;
 }
 function requestFilter$4() {
-	Storage.ui.find(".container .content").empty();
-	let i, count;
+	const root = Storage._shadow || Storage._host;
+	const content = root.querySelector(".container .content");
+	if (content) content.innerHTML = "";
 	let list = _list$14;
-	const orderBy = Storage.ui.find(".storage-order-by").val();
+	const orderBySelect = root.querySelector(".storage-order-by");
+	const orderBy = orderBySelect ? orderBySelect.value : "BASE";
 	if (orderBy === "UPGRADE" || orderBy === "DOWNGRADE") {
 		list = _list$14.slice(0);
-		list.sort(function(a, b) {
+		list.sort((a, b) => {
 			const nameA = DB.getItemName(a);
 			const nameB = DB.getItemName(b);
 			return orderBy === "UPGRADE" ? nameA.localeCompare(nameB) : nameB.localeCompare(nameA);
 		});
 	}
-	for (i = 0, count = list.length; i < count; ++i) Storage.addItemSub(list[i]);
+	for (let i = 0, count = list.length; i < count; ++i) Storage.addItemSub(list[i]);
 }
 function getItemIndexById$2(index) {
-	let i, count;
-	for (i = 0, count = _list$14.length; i < count; ++i) if (_list$14[i].index === index) return i;
+	for (let i = 0, count = _list$14.length; i < count; ++i) if (_list$14[i].index === index) return i;
 	return -1;
 }
-function onScroll$7(event) {
+function onScroll$7(event, contentEl) {
 	let delta;
-	if (event.originalEvent.wheelDelta) {
-		delta = event.originalEvent.wheelDelta / 120;
-		if (window.opera) delta = -delta;
-	} else if (event.originalEvent.detail) delta = -event.originalEvent.detail;
-	this.scrollTop = Math.floor(this.scrollTop / 32) * 32 - delta * 32;
-	return false;
+	if (event.wheelDelta) delta = event.wheelDelta / 120;
+	else if (event.detail) delta = -event.detail;
+	else if (event.deltaY) delta = -event.deltaY / 100;
+	contentEl.scrollTop = Math.floor(contentEl.scrollTop / 32) * 32 - delta * 32;
+	event.preventDefault();
 }
-/**
-* NEW: Toggles a filter window on/off
-*/
-function onFilterWindowOpen() {
-	const $button = jquery_default(this);
-	const tabId = parseInt($button.attr("data-tab-id"), 10);
-	const title = $button.attr("data-title") || "Items";
-	$button.toggleClass("active");
+function onFilterWindowOpen(button) {
+	const tabId = parseInt(button.getAttribute("data-tab-id"), 10);
+	const title = button.getAttribute("data-title") || "Items";
+	button.classList.toggle("active");
 	if (_openFilters[tabId]) {
 		_openFilters[tabId].remove();
 		delete _openFilters[tabId];
 		return;
 	}
-	let i, count, tab;
 	const filtered_list = [];
-	for (i = 0, count = _list$14.length; i < count; ++i) {
+	for (let i = 0, count = _list$14.length; i < count; ++i) {
 		const item = _list$14[i];
+		let tab;
 		switch (item.type) {
 			case ItemType_default.HEALING:
 			case ItemType_default.USABLE:
@@ -154183,7 +154826,7 @@ function onFilterWindowOpen() {
 	const newFilter = new StorageFilter(tabId);
 	_openFilters[tabId] = newFilter;
 	newFilter.onCloseCallback = function() {
-		$button.removeClass("active");
+		button.classList.remove("active");
 		if (_openFilters[tabId]) delete _openFilters[tabId];
 	};
 	newFilter.onTransferItemToOtherUI = function(item) {
@@ -154192,58 +154835,59 @@ function onFilterWindowOpen() {
 	newFilter.append();
 	newFilter.setItems(title, filtered_list, tabId);
 }
-function onFilterWindowHover() {
-	const $button = jquery_default(this);
-	const title = $button.attr("data-title");
-	Storage.ui.find(".overlay").text(title);
-	const height = Storage.ui.height();
-	Storage.ui.find(".overlay").css({
-		top: height - 50,
-		left: $button.position().left
-	});
-	Storage.ui.find(".overlay").show();
+function onFilterWindowHover(button, root) {
+	const title = button.getAttribute("data-title");
+	const overlay = root.querySelector(".overlay");
+	if (overlay) {
+		overlay.textContent = title;
+		const height = Storage._host.getBoundingClientRect().height;
+		overlay.style.top = `${height - 50}px`;
+		overlay.style.left = `${button.offsetLeft}px`;
+		overlay.style.display = "";
+	}
 }
-function onFilterWindowHoverOut() {
-	Storage.ui.find(".overlay").hide();
+function onFilterWindowHoverOut(root) {
+	const overlay = root.querySelector(".overlay");
+	if (overlay) overlay.style.display = "none";
 }
-function onItemOver$18() {
-	const i = getItemIndexById$2(parseInt(this.getAttribute("data-index"), 10));
+function onItemOver$18(itemEl, root) {
+	const i = getItemIndexById$2(parseInt(itemEl.getAttribute("data-index"), 10));
 	if (i < 0) return;
 	const item = _list$14[i];
-	const pos = jquery_default(this).position();
-	const overlay = Storage.ui.find(".overlay");
-	overlay.show();
-	overlay.css({
-		top: pos.top - 10,
-		left: pos.left + 35
-	});
-	overlay.text(DB.getItemName(item) + " " + (item.count || 1) + " ea");
-	overlay.toggleClass("grey", !item.IsIdentified);
+	const overlay = root.querySelector(".overlay");
+	if (overlay) {
+		overlay.style.display = "";
+		overlay.style.top = `${itemEl.offsetTop - 10}px`;
+		overlay.style.left = `${itemEl.offsetLeft + 35}px`;
+		overlay.innerHTML = `${DB.getItemName(item)} ${item.count || 1} ea`;
+		if (item.IsIdentified) overlay.classList.remove("grey");
+		else overlay.classList.add("grey");
+	}
 }
-function onItemOut$19() {
-	Storage.ui.find(".overlay").hide();
+function onItemOut$19(root) {
+	const overlay = root.querySelector(".overlay");
+	if (overlay) overlay.style.display = "none";
 }
-function onItemDragStart$15(event) {
-	const i = getItemIndexById$2(parseInt(this.getAttribute("data-index"), 10));
+function onItemDragStart$14(event, itemEl) {
+	const i = getItemIndexById$2(parseInt(itemEl.getAttribute("data-index"), 10));
 	if (i === -1) return;
 	const img = new Image();
-	let url = this.firstChild.style.backgroundImage.match(/\(([^\)]+)/)[1];
-	url = url = url.replace(/^\"/, "").replace(/\"$/, "");
+	let url = itemEl.firstChild.style.backgroundImage.match(/\(([^)]+)/)[1];
+	url = url.replace(/^"/, "").replace(/"$/, "");
 	img.src = url;
-	event.originalEvent.dataTransfer.setDragImage(img, 12, 12);
-	event.originalEvent.dataTransfer.setData("Text", JSON.stringify(window._OBJ_DRAG_ = {
+	event.dataTransfer.setDragImage(img, 12, 12);
+	event.dataTransfer.setData("Text", JSON.stringify(window._OBJ_DRAG_ = {
 		type: "item",
 		from: "Storage",
 		data: _list$14[i]
 	}));
-	onItemOut$19();
 }
 function onItemDragEnd$15() {
 	delete window._OBJ_DRAG_;
 }
-function onItemInfo$22(event) {
+function onItemInfo$22(event, itemEl) {
 	event.stopImmediatePropagation();
-	const i = getItemIndexById$2(parseInt(this.getAttribute("data-index"), 10));
+	const i = getItemIndexById$2(parseInt(itemEl.getAttribute("data-index"), 10));
 	if (i === -1) return false;
 	if (event.altKey && event.which === 3) {
 		event.stopImmediatePropagation();
@@ -154256,18 +154900,18 @@ function onItemInfo$22(event) {
 	ItemInfo_default.setItem(_list$14[i]);
 	return false;
 }
-var Storage, _baseOnRemove, _list$14, _openFilters, _preferences$69, Storage_default;
+var Storage, _list$14, _openFilters, _preferences$69, Storage_default;
 var init_Storage$2 = __esmMin((() => {
 	init_DBManager();
 	init_ItemType();
-	init_jquery();
 	init_Client();
 	init_Preferences$1();
 	init_Renderer();
 	init_MouseEventHandler();
 	init_KeyEventHandler();
 	init_UIManager();
-	init_UIComponent();
+	init_GUIComponent();
+	init_Elements();
 	init_InputBox();
 	init_ItemInfo();
 	init_StorageFilter();
@@ -154275,11 +154919,8 @@ var init_Storage$2 = __esmMin((() => {
 	init_Storage$3();
 	init_CartItems();
 	init_Inventory();
-	Storage = new UIComponent("Storage", Storage_default$2, Storage_default$1);
-	_baseOnRemove = Storage.onRemove;
-	/**
-	* Tab constant
-	*/
+	Storage = new GUIComponent("Storage", Storage_default$1);
+	Storage.render = () => Storage_default$2;
 	Storage.TAB = {
 		ITEM: 0,
 		KAFRA: 1,
@@ -154297,56 +154938,95 @@ var init_Storage$2 = __esmMin((() => {
 		height: 8,
 		tab: Storage.TAB.ITEM
 	}, 1);
-	/**
-	* Initialize UI
-	*/
-	Storage.init = function Init() {
-		this.ui.find(".tabs button").mousedown(onSwitchTab$4);
-		this.ui.find(".footer .extend").mousedown(onResize$16);
-		this.ui.find(".footer .close").click(this.onClosePressed.bind(this));
-		this.ui.find(".filter-buttons button").mousedown(onFilterWindowOpen);
-		this.ui.find(".filter-buttons button").mouseover(onFilterWindowHover);
-		this.ui.find(".filter-buttons button").mouseout(onFilterWindowHoverOut);
-		this.ui.find(".search-button").mousedown(this.onSearch.bind(this));
-		this.ui.find(".storage-order-by").change(requestFilter$4);
-		Client.loadFile(DB.INTERFACE_PATH + "basic_interface/tab_itm_ex_0" + (_preferences$69.tab + 1) + ".bmp", function(data) {
-			Storage.ui.find(".tabs").css("backgroundImage", "url(\"" + data + "\")");
+	Storage.init = function init() {
+		const root = this._shadow || this._host;
+		root.querySelectorAll(".tabs button").forEach((btn, idx) => {
+			btn.addEventListener("mousedown", () => onSwitchTab$4(idx));
+		});
+		const extendBtn = root.querySelector(".footer .extend");
+		if (extendBtn) extendBtn.addEventListener("mousedown", () => onResize$16());
+		const closeBtn = root.querySelector(".footer .close");
+		if (closeBtn) {
+			closeBtn.addEventListener("mousedown", (e) => e.stopImmediatePropagation());
+			closeBtn.addEventListener("click", () => {
+				if (typeof Storage.onClosePressed === "function") Storage.onClosePressed();
+			});
+		}
+		root.querySelectorAll(".filter-buttons button").forEach((btn) => {
+			btn.addEventListener("mousedown", () => onFilterWindowOpen(btn));
+			btn.addEventListener("mouseover", () => onFilterWindowHover(btn, root));
+			btn.addEventListener("mouseout", () => onFilterWindowHoverOut(root));
+		});
+		const searchBtn = root.querySelector(".search-button");
+		if (searchBtn) {
+			searchBtn.addEventListener("mousedown", (e) => e.stopImmediatePropagation());
+			searchBtn.addEventListener("click", () => Storage.onSearch());
+		}
+		const orderBySelect = root.querySelector(".storage-order-by");
+		if (orderBySelect) orderBySelect.addEventListener("change", () => requestFilter$4());
+		Client.loadFile(`${DB.INTERFACE_PATH}basic_interface/tab_itm_ex_0${_preferences$69.tab + 1}.bmp`, (data) => {
+			const tabs = root.querySelector(".tabs");
+			if (tabs) tabs.style.backgroundImage = `url("${data}")`;
 		});
 		resizeHeight$2(_preferences$69.height);
-		this.ui.css({
-			top: Math.min(Math.max(0, _preferences$69.y), Renderer.height - this.ui.height()),
-			left: Math.min(Math.max(0, _preferences$69.x), Renderer.width - this.ui.width())
+		const content = root.querySelector(".container .content");
+		if (content) {
+			content.addEventListener("wheel", (e) => onScroll$7(e, content));
+			content.addEventListener("mouseover", (e) => {
+				const itemEl = e.target.closest(".item");
+				if (itemEl) onItemOver$18(itemEl, root);
+			});
+			content.addEventListener("mouseout", (e) => {
+				if (e.target.closest(".item")) onItemOut$19(root);
+			});
+			content.addEventListener("dragstart", (e) => {
+				const itemEl = e.target.closest(".item");
+				if (itemEl) {
+					onItemDragStart$14(e, itemEl);
+					onItemOut$19(root);
+				}
+			});
+			content.addEventListener("dragend", (e) => {
+				if (e.target.closest(".item")) onItemDragEnd$15();
+			});
+			content.addEventListener("contextmenu", (e) => {
+				const itemEl = e.target.closest(".item");
+				if (itemEl) {
+					e.preventDefault();
+					onItemInfo$22(e, itemEl);
+				}
+			});
+		}
+		this._host.addEventListener("drop", (e) => onDrop$22(e));
+		this._host.addEventListener("dragover", (e) => {
+			e.stopImmediatePropagation();
+			e.preventDefault();
 		});
-		this.ui.on("drop", onDrop$22).on("dragover", stopPropagation$36).find(".container .content").on("mousewheel DOMMouseScroll", onScroll$7).on("mouseover", ".item", onItemOver$18).on("mouseout", ".item", onItemOut$19).on("dragstart", ".item", onItemDragStart$15).on("dragend", ".item", onItemDragEnd$15).on("contextmenu", ".item", onItemInfo$22);
-		this.draggable(this.ui.find(".titlebar"));
+		this.draggable(".titlebar");
+		this.ui.hide();
 	};
-	/**
-	* Remove Storage from window (and so clean up items)
-	*/
+	Storage.onAppend = function onAppend() {
+		this.ui.show();
+		this._host.style.left = `${Math.min(Math.max(0, _preferences$69.x), Renderer.width - this._host.getBoundingClientRect().width)}px`;
+		this._host.style.top = `${Math.min(Math.max(0, _preferences$69.y), Renderer.height - this._host.getBoundingClientRect().height)}px`;
+	};
 	Storage.onRemove = function onRemove() {
-		this.ui.find(".container .content").empty();
+		const root = this._shadow || this._host;
+		const content = root.querySelector(".container .content");
+		if (content) content.innerHTML = "";
 		_list$14.length = 0;
-		_preferences$69.y = parseInt(this.ui.css("top"), 10);
-		_preferences$69.x = parseInt(this.ui.css("left"), 10);
-		_preferences$69.height = Math.floor((this.ui.height() - 20) / 32);
+		_preferences$69.y = parseInt(this._host.style.top, 10);
+		_preferences$69.x = parseInt(this._host.style.left, 10);
+		_preferences$69.height = Math.floor((this._host.getBoundingClientRect().height - 20) / 32);
 		_preferences$69.save();
-		let tabId;
-		for (tabId in _openFilters) if (_openFilters.hasOwnProperty(tabId)) _openFilters[tabId].remove();
-		for (tabId in _openFilters) if (_openFilters.hasOwnProperty(tabId)) _openFilters[tabId].remove();
+		for (const tabId in _openFilters) if (_openFilters.hasOwnProperty(tabId)) _openFilters[tabId].remove();
 		_openFilters = {};
-		if (typeof _baseOnRemove === "function") _baseOnRemove.call(this);
-		Storage.ui.find("#storage-search-input").val("");
+		const searchInput = root.querySelector("#storage-search-input");
+		if (searchInput) searchInput.value = "";
 	};
-	/**
-	* Add items to the list
-	*/
 	Storage.setItems = function setItems(items) {
-		let i, count;
-		for (i = 0, count = items.length; i < count; ++i) if (this.addItemSub(items[i])) _list$14.push(items[i]);
+		for (let i = 0, count = items.length; i < count; ++i) if (this.addItemSub(items[i])) _list$14.push(items[i]);
 	};
-	/**
-	* Insert Item to Storage
-	*/
 	Storage.addItem = function addItem(item) {
 		const i = getItemIndexById$2(item.index);
 		let itemTab;
@@ -154382,14 +155062,12 @@ var init_Storage$2 = __esmMin((() => {
 		if (_openFilters[itemTab]) _openFilters[itemTab].addItem(item);
 		if (i > -1) {
 			_list$14[i].count += item.count;
-			this.ui.find(".item[data-index=\"" + item.index + "\"] .count").text(_list$14[i].count);
+			const countEl = (this._shadow || this._host).querySelector(`.item[data-index="${item.index}"] .count`);
+			if (countEl) countEl.textContent = _list$14[i].count;
 			return;
 		}
 		if (this.addItemSub(item)) _list$14.push(item);
 	};
-	/**
-	* Add item to Storage
-	*/
 	Storage.addItemSub = function addItemSub(item) {
 		let tab;
 		switch (item.type) {
@@ -154423,16 +155101,37 @@ var init_Storage$2 = __esmMin((() => {
 		}
 		if (tab === _preferences$69.tab) {
 			const it = DB.getItemInfo(item.ITID);
-			this.ui.find(".container .content").append("<div class=\"item\" data-index=\"" + item.index + "\" draggable=\"true\"><div class=\"icon\"></div><div class=\"amount\">" + (item.count ? "<span class=\"count\">" + item.count + "</span> " : "") + "</div><span class=\"name\">" + jquery_default.escape(DB.getItemName(item)) + "</span></div>");
-			Client.loadFile(DB.INTERFACE_PATH + "item/" + (item.IsIdentified ? it.identifiedResourceName : it.unidentifiedResourceName) + ".bmp", function(data) {
-				this.ui.find(".item[data-index=\"" + item.index + "\"] .icon").css("backgroundImage", "url(" + data + ")");
-			}.bind(this));
+			const root = this._shadow || this._host;
+			const content = root.querySelector(".container .content");
+			const itemEl = document.createElement("div");
+			itemEl.className = "item";
+			itemEl.setAttribute("data-index", item.index);
+			itemEl.setAttribute("draggable", "true");
+			const iconDiv = document.createElement("div");
+			iconDiv.className = "icon";
+			itemEl.appendChild(iconDiv);
+			const amountDiv = document.createElement("div");
+			amountDiv.className = "amount";
+			if (item.count) {
+				const countSpan = document.createElement("span");
+				countSpan.className = "count";
+				countSpan.textContent = item.count;
+				amountDiv.appendChild(countSpan);
+				amountDiv.appendChild(document.createTextNode(" "));
+			}
+			itemEl.appendChild(amountDiv);
+			const nameSpan = document.createElement("span");
+			nameSpan.className = "name";
+			nameSpan.innerHTML = DB.getItemName(item);
+			itemEl.appendChild(nameSpan);
+			if (content) content.appendChild(itemEl);
+			Client.loadFile(`${DB.INTERFACE_PATH}item/${item.IsIdentified ? it.identifiedResourceName : it.unidentifiedResourceName}.bmp`, (data) => {
+				const icon = root.querySelector(`.item[data-index="${item.index}"] .icon`);
+				if (icon) icon.style.backgroundImage = `url(${data})`;
+			});
 		}
 		return true;
 	};
-	/**
-	* Remove item from Storage
-	*/
 	Storage.removeItem = function removeItem(index, count) {
 		const i = getItemIndexById$2(index);
 		if (i < 0) return null;
@@ -154440,25 +155139,29 @@ var init_Storage$2 = __esmMin((() => {
 		if (_list$14[i].count) {
 			_list$14[i].count -= count;
 			if (_list$14[i].count > 0) {
-				this.ui.find(".item[data-index=\"" + index + "\"] .count").text(_list$14[i].count);
+				const countEl = (this._shadow || this._host).querySelector(`.item[data-index="${index}"] .count`);
+				if (countEl) countEl.textContent = _list$14[i].count;
 				return _list$14[i];
 			}
 		}
 		const item = _list$14[i];
 		_list$14.splice(i, 1);
-		this.ui.find(".item[data-index=\"" + index + "\"]").remove();
-		this.ui.find(".overlay").hide();
+		const root = this._shadow || this._host;
+		const el = root.querySelector(`.item[data-index="${index}"]`);
+		if (el) el.remove();
+		const overlay = root.querySelector(".overlay");
+		if (overlay) overlay.style.display = "none";
 		return item;
 	};
-	/**
-	* Update or set the current amount of items in storage in ui
-	*/
 	Storage.setItemInfo = function setItemInfo(current, limit) {
-		this.ui.find(".footer .current").text(current);
-		this.ui.find(".footer .limit").text(limit);
+		const root = this._shadow || this._host;
+		const currentEl = root.querySelector(".footer .current");
+		const limitEl = root.querySelector(".footer .limit");
+		if (currentEl) currentEl.textContent = current;
+		if (limitEl) limitEl.textContent = limit;
 	};
 	Storage.onKeyDown = function onKeyDown(event) {
-		if (this.ui.is(":visible")) {
+		if (this._host.style.display !== "none") {
 			if (event.which === KEYS.ESCAPE || event.key === "Escape") {
 				if (typeof Storage.onClosePressed === "function") Storage.onClosePressed();
 			}
@@ -154468,10 +155171,10 @@ var init_Storage$2 = __esmMin((() => {
 		}
 	};
 	Storage.onSearch = function onSearch() {
-		const searchInput = Storage.ui.find("#storage-search-input");
+		const searchInput = (this._shadow || this._host).querySelector("#storage-search-input");
 		if (!searchInput) return;
-		const searchTerm = searchInput.val().toLowerCase();
-		const filteredItems = _list$14.filter(function(item) {
+		const searchTerm = searchInput.value.toLowerCase();
+		const filteredItems = _list$14.filter((item) => {
 			return DB.getItemName(item).toLowerCase().indexOf(searchTerm) > -1;
 		});
 		if (!_openFilters[ItemType_default.SEARCH]) {
@@ -154501,6 +155204,7 @@ var init_Storage$2 = __esmMin((() => {
 	Storage.reqAddItemFromCart = function reqAddItemFromCart() {};
 	Storage.reqRemoveItem = function reqRemoveItem() {};
 	Storage.reqMoveItemToCart = function reqMoveItemToCart() {};
+	Storage.mouseMode = GUIComponent.MouseMode.STOP;
 	Storage_default = UIManager.addComponent(Storage);
 }));
 //#endregion
@@ -154545,7 +155249,7 @@ var init_Storage$1 = __esmMin((() => {
 /**
 * Stop event propagation
 */
-function stopPropagation$35(event) {
+function stopPropagation$33(event) {
 	event.stopImmediatePropagation();
 	return false;
 }
@@ -154683,7 +155387,7 @@ function onItemOut$18() {
 /**
 * Start dragging an item
 */
-function onItemDragStart$14(event) {
+function onItemDragStart$13(event) {
 	const index = parseInt(this.getAttribute("data-index"), 10);
 	const item = CartItems.getItemByIndex(index);
 	if (!item) return;
@@ -154801,13 +155505,13 @@ var init_CartItems = __esmMin((() => {
 	* Initialize UI
 	*/
 	CartItems.init = function Init() {
-		this.ui.find(".titlebar .base").mousedown(stopPropagation$35);
+		this.ui.find(".titlebar .base").mousedown(stopPropagation$33);
 		this.ui.find(".titlebar .mini").click(onToggleReduction$4);
 		this.ui.find(".footer .extend").mousedown(onResize$15);
 		this.ui.find(".titlebar .close").click(function() {
 			CartItems.ui.hide();
 		});
-		this.ui.on("drop", onDrop$21).on("dragover", stopPropagation$35).find(".container .content").on("mousewheel DOMMouseScroll", onScroll$6).on("mouseover", ".item", onItemOver$17).on("mouseout", ".item", onItemOut$18).on("dragstart", ".item", onItemDragStart$14).on("dragend", ".item", onItemDragEnd$14).on("contextmenu", ".item", onItemInfo$21).on("dblclick", ".item", onItemUsed$5);
+		this.ui.on("drop", onDrop$21).on("dragover", stopPropagation$33).find(".container .content").on("mousewheel DOMMouseScroll", onScroll$6).on("mouseover", ".item", onItemOver$17).on("mouseout", ".item", onItemOut$18).on("dragstart", ".item", onItemDragStart$13).on("dragend", ".item", onItemDragEnd$14).on("contextmenu", ".item", onItemInfo$21).on("dblclick", ".item", onItemUsed$5);
 		this.draggable(this.ui.find(".titlebar"));
 	};
 	/**
@@ -158840,13 +159544,13 @@ var init_History = __esmMin((() => {
 //#region src/UI/Components/WhisperBox/WhisperBox.html?raw
 var WhisperBox_default$1;
 var init_WhisperBox$2 = __esmMin((() => {
-	WhisperBox_default$1 = "<div class=\"whisper-container\">\r\n	<div class=\"whisper-header\">\r\n		<span class=\"title\">With weeeee (Friend) *^.^* [813-338]</span>\r\n		<button\r\n			class=\"close\"\r\n			data-background=\"basic_interface/sys_close_off.bmp\"\r\n			data-hover=\"basic_interface/sys_close_on.bmp\"\r\n		></button>\r\n	</div>\r\n	<div class=\"whisper-body\">\r\n		<div class=\"content\"></div>\r\n	</div>\r\n	<div class=\"whisper-footer\">\r\n		<div class=\"input-wrapper\">\r\n			<div contenteditable=\"true\" class=\"message input-whisper\"></div>\r\n		</div>\r\n		<div class=\"resizer event_add_cursor\" data-background=\"btn_resize.bmp\"></div>\r\n	</div>\r\n</div>\r\n";
+	WhisperBox_default$1 = "<div id=\"WhisperBox\" class=\"whisper-container\">\r\n	<div class=\"whisper-header\">\r\n		<span class=\"title\">With weeeee (Friend) *^.^* [813-338]</span>\r\n		<ui-button\r\n			class=\"close\"\r\n			bg=\"basic_interface/sys_close_off.bmp\"\r\n			hover=\"basic_interface/sys_close_on.bmp\"\r\n		></ui-button>\r\n	</div>\r\n	<div class=\"whisper-body\">\r\n		<div class=\"content\"></div>\r\n	</div>\r\n	<div class=\"whisper-footer\">\r\n		<div class=\"input-wrapper\">\r\n			<div contenteditable=\"true\" class=\"message input-whisper\"></div>\r\n		</div>\r\n		<div class=\"resizer event_add_cursor\" data-background=\"btn_resize.bmp\"></div>\r\n	</div>\r\n</div>\r\n";
 }));
 //#endregion
 //#region src/UI/Components/WhisperBox/WhisperBox.css?raw
 var WhisperBox_default;
 var init_WhisperBox$1 = __esmMin((() => {
-	WhisperBox_default = ".whisper-container {\r\n	position: absolute;\r\n	width: 280px;\r\n	height: 156px;\r\n	border: 1px solid white;\r\n	border-radius: 5px;\r\n	background: rgba(0, 0, 0, 0.5);\r\n	display: flex;\r\n	flex-direction: column;\r\n	overflow: hidden;\r\n	color: #ffffff;\r\n	z-index: 50;\r\n	min-width: 150px;\r\n	min-height: 100px;\r\n}\r\n\r\n.whisper-header {\r\n	background: rgba(255, 255, 255, 0.2);\r\n	height: 18px;\r\n	padding: 0 5px;\r\n	display: flex;\r\n	align-items: center;\r\n	justify-content: space-between;\r\n	color: #ffffff;\r\n	font-size: 11px;\r\n	font-weight: bold;\r\n	cursor: move;\r\n}\r\n\r\n.whisper-header .close {\r\n	width: 11px;\r\n	height: 11px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n	vertical-align: middle;\r\n}\r\n\r\n.whisper-body {\r\n	flex: 1;\r\n	padding: 0 2px 2px 5px;\r\n	overflow: hidden;\r\n	border-bottom: 1px solid white;\r\n}\r\n\r\n.whisper-body .contentwrapper {\r\n	height: 100%;\r\n}\r\n\r\n.whisper-body .content {\r\n	height: 100%;\r\n	overflow-y: auto;\r\n	font-size: 12px;\r\n	text-shadow: 1px 1px 0px #000;\r\n	word-break: break-all;\r\n	line-height: 14px;\r\n}\r\n\r\n.whisper-footer {\r\n	height: 25px;\r\n	position: relative;\r\n	display: flex;\r\n	align-items: center;\r\n}\r\n\r\n.whisper-footer .input-wrapper {\r\n	display: flex;\r\n	align-items: center;\r\n	height: 23px;\r\n	width: calc(100% - 25px);\r\n	overflow: hidden;\r\n}\r\n\r\n.whisper-footer .message {\r\n	width: 100%;\r\n	padding-left: 2px;\r\n	line-height: 18px;\r\n	outline: none;\r\n	white-space: nowrap;\r\n	overflow-x: hidden;\r\n	overflow-y: hidden;\r\n	color: #ffffff;\r\n	font-size: 12px;\r\n	display: inline-block;\r\n}\r\n\r\n.whisper-container img {\r\n	max-height: 1.25em;\r\n	width: auto;\r\n	vertical-align: middle;\r\n	background: transparent !important;\r\n}\r\n\r\n.whisper-footer .resizer {\r\n	position: absolute;\r\n	right: 0px;\r\n	bottom: 1px;\r\n	width: 13px;\r\n	height: 13px;\r\n	border: none;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n\r\n/* Scrollbar styling - handled dynamically in JS to use RO assets */\r\n";
+	WhisperBox_default = ":host {\r\n	width: 280px;\r\n	height: 156px;\r\n	top: 100px;\r\n	left: 100px;\r\n}\r\n\r\n.whisper-container {\r\n	position: absolute;\r\n	width: 280px;\r\n	height: 156px;\r\n	border: 1px solid white;\r\n	border-radius: 5px;\r\n	background: rgba(0, 0, 0, 0.5);\r\n	display: flex;\r\n	flex-direction: column;\r\n	overflow: hidden;\r\n	color: #ffffff;\r\n	min-width: 150px;\r\n	min-height: 100px;\r\n}\r\n\r\n.whisper-header {\r\n	background: rgba(255, 255, 255, 0.2);\r\n	height: 18px;\r\n	padding: 0 5px;\r\n	display: flex;\r\n	align-items: center;\r\n	justify-content: space-between;\r\n	color: #ffffff;\r\n	font-size: 11px;\r\n	font-weight: bold;\r\n	cursor: move;\r\n}\r\n\r\n.whisper-header .close {\r\n	width: 11px;\r\n	height: 11px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n	vertical-align: middle;\r\n}\r\n\r\n.whisper-body {\r\n	flex: 1;\r\n	padding: 0 2px 2px 5px;\r\n	overflow: hidden;\r\n	border-bottom: 1px solid white;\r\n}\r\n\r\n.whisper-body .contentwrapper {\r\n	height: 100%;\r\n}\r\n\r\n.whisper-body .content {\r\n	height: 100%;\r\n	overflow-y: auto;\r\n	font-size: 12px;\r\n	text-shadow: 1px 1px 0px #000;\r\n	word-break: break-all;\r\n	line-height: 14px;\r\n}\r\n\r\n.whisper-footer {\r\n	height: 25px;\r\n	position: relative;\r\n	display: flex;\r\n	align-items: center;\r\n}\r\n\r\n.whisper-footer .input-wrapper {\r\n	display: flex;\r\n	align-items: center;\r\n	height: 23px;\r\n	width: calc(100% - 25px);\r\n	overflow: hidden;\r\n}\r\n\r\n.whisper-footer .message {\r\n	width: 100%;\r\n	padding-left: 2px;\r\n	line-height: 18px;\r\n	outline: none;\r\n	white-space: nowrap;\r\n	overflow-x: hidden;\r\n	overflow-y: hidden;\r\n	color: #ffffff;\r\n	font-size: 12px;\r\n	display: inline-block;\r\n}\r\n\r\n.whisper-container img {\r\n	max-height: 1.25em;\r\n	width: auto;\r\n	vertical-align: middle;\r\n	background: transparent !important;\r\n}\r\n\r\n.whisper-footer .resizer {\r\n	position: absolute;\r\n	right: 0px;\r\n	bottom: 1px;\r\n	width: 13px;\r\n	height: 13px;\r\n	border: none;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n";
 }));
 //#endregion
 //#region src/Engine/MapEngine/Friends.js
@@ -159049,38 +159753,74 @@ function setCaretToEnd(el) {
 }
 /**
 * Extract plain chat text from input while preserving item links
-* @param {jQuery} $input
+* @param {HTMLElement} inputEl
 * @returns {string}
 */
-function extractChatMessage$1($input) {
-	const clone = $input.clone();
-	clone.find("span.item-link").each(function() {
-		const data = jquery_default(this).attr("data-item") || jquery_default(this).data("item") || "";
-		jquery_default(this).replaceWith(document.createTextNode(data));
+function extractChatMessage$1(inputEl) {
+	const clone = inputEl.cloneNode(true);
+	clone.querySelectorAll("span.item-link").forEach((link) => {
+		const data = link.getAttribute("data-item") || "";
+		link.replaceWith(document.createTextNode(data));
 	});
-	return clone.text().replace(/\u00A0/g, " ");
+	return clone.textContent.replace(/\u00A0/g, " ");
+}
+/**
+* Set up item link click handler inside an instance's shadow DOM
+* @param {GUIComponent} instance
+*/
+function setupItemLinkHandler(instance) {
+	(instance._shadow || instance._host).addEventListener("click", (event) => {
+		const link = event.target.closest(".item-link");
+		if (!link) return;
+		const match = link.getAttribute("data-item");
+		const item = DB.parseItemLink(match);
+		if (item) __vitePreload(() => Promise.resolve().then(() => (init_ItemInfo(), ItemInfo_exports)).then((m) => {
+			const ItemInfo = m.default;
+			ItemInfo.append();
+			ItemInfo.uid = item.ITID;
+			ItemInfo.setItem(item);
+		}), void 0, import.meta.url);
+	});
+}
+/**
+* Set up nickname link click handler inside an instance's shadow DOM
+* @param {GUIComponent} instance
+*/
+function setupNicknameLinkHandler(instance) {
+	(instance._shadow || instance._host).addEventListener("click", (event) => {
+		const link = event.target.closest(".nickname-link");
+		if (!link) return;
+		const nickname = link.getAttribute("data-nickname");
+		if (nickname) WhisperBox.show(nickname);
+		event.stopImmediatePropagation();
+	});
 }
 /**
 * Initialize resizable logic for an instance
-* @param {UIComponent} instance
+* @param {GUIComponent} instance
 */
 function initResizable(instance) {
-	const resizer = instance.ui.find(".resizer")[0];
+	const root = instance._shadow || instance._host;
+	const resizer = root.querySelector(".resizer");
 	if (!resizer) return;
-	const resize = function(e) {
-		const width = Math.max(150, e.pageX - instance.ui.offset().left);
-		const height = Math.max(100, e.pageY - instance.ui.offset().top);
-		instance.ui.css({
-			width: width + "px",
-			height: height + "px"
-		});
-		instance.$content[0].scrollTop = instance.$content[0].scrollHeight;
+	const resize = (e) => {
+		const rect = instance._host.getBoundingClientRect();
+		const width = Math.max(150, e.pageX - rect.left);
+		const height = Math.max(100, e.pageY - rect.top);
+		instance._host.style.width = `${width}px`;
+		instance._host.style.height = `${height}px`;
+		const container = root.querySelector(".whisper-container");
+		if (container) {
+			container.style.width = `${width}px`;
+			container.style.height = `${height}px`;
+		}
+		instance._contentEl.scrollTop = instance._contentEl.scrollHeight;
 	};
-	const stopResize = function() {
+	const stopResize = () => {
 		window.removeEventListener("mousemove", resize);
 		window.removeEventListener("mouseup", stopResize);
 	};
-	resizer.addEventListener("mousedown", function(e) {
+	resizer.addEventListener("mousedown", (e) => {
 		e.preventDefault();
 		e.stopPropagation();
 		window.addEventListener("mousemove", resize);
@@ -159090,9 +159830,9 @@ function initResizable(instance) {
 var WhisperBox, _preferences$67;
 var init_WhisperBox = __esmMin((() => {
 	init_DBManager();
-	init_jquery();
 	init_UIManager();
-	init_UIComponent();
+	init_GUIComponent();
+	init_Elements();
 	init_Preferences$1();
 	init_KeyEventHandler();
 	init_Renderer();
@@ -159101,7 +159841,8 @@ var init_WhisperBox = __esmMin((() => {
 	init_WhisperBox$2();
 	init_WhisperBox$1();
 	init_preload_helper();
-	WhisperBox = new UIComponent("WhisperBox", WhisperBox_default$1, WhisperBox_default);
+	WhisperBox = new GUIComponent("WhisperBox", WhisperBox_default);
+	WhisperBox.render = () => WhisperBox_default$1;
 	/**
 	* @var {Object} active whisper windows indexed by nickname
 	*/
@@ -159120,32 +159861,18 @@ var init_WhisperBox = __esmMin((() => {
 		alarm1to1: true
 	}, 1);
 	_preferences$67 = WhisperBox.preferences;
+	WhisperBox.mouseMode = GUIComponent.MouseMode.STOP;
+	WhisperBox.captureKeyEvents = true;
 	/**
 	* Initialize component
 	*/
-	WhisperBox.init = function() {
+	WhisperBox.init = function init() {
 		this.clearAll();
-		jquery_default(document).on("click.whisperbox", ".whisperbox .item-link, .whisper-container .item-link", function(event) {
-			const match = jquery_default(this).attr("data-item") || jquery_default(this).data("item");
-			const item = DB.parseItemLink(match);
-			if (item) __vitePreload(() => Promise.resolve().then(() => (init_ItemInfo(), ItemInfo_exports)).then((m) => {
-				const ItemInfo = m.default;
-				ItemInfo.append();
-				ItemInfo.uid = item.ITID;
-				ItemInfo.setItem(item);
-			}), void 0, import.meta.url);
-		});
-		jquery_default(document).on("click.whisperbox", ".whisperbox .nickname-link, .whisper-container .nickname-link", function(event) {
-			const nickname = jquery_default(this).attr("data-nickname") || jquery_default(this).data("nickname");
-			if (nickname) WhisperBox.show(nickname);
-			event.stopImmediatePropagation();
-			return false;
-		});
 	};
 	/**
 	* Clear all history and windows
 	*/
-	WhisperBox.clearAll = function() {
+	WhisperBox.clearAll = function clearAll() {
 		const keys = Object.keys(this.instances);
 		for (let i = 0; i < keys.length; i++) this.instances[keys[i]].remove();
 		this.instances = {};
@@ -159155,95 +159882,110 @@ var init_WhisperBox = __esmMin((() => {
 	* @param {string} nickname
 	* @param {boolean} [bHasMessage]
 	*/
-	WhisperBox.show = function(nickname, bHasMessage) {
-		const self = this;
+	WhisperBox.show = function show(nickname, bHasMessage) {
 		if (this.instances[nickname]) {
-			this.instances[nickname].ui.show();
+			this.instances[nickname]._host.style.display = "";
 			this.instances[nickname].focus();
 			return this.instances[nickname];
 		}
 		if (_preferences$67.alarm1to1 && bHasMessage) SoundManager.play("¹öÆ°¼Ò¸®.wav");
 		const instance = this.clone(nickname);
 		instance.nickname = nickname;
-		instance.name = "WhisperBox:" + nickname;
+		instance.name = `WhisperBox:${nickname}`;
 		instance.needFocus = true;
+		instance.captureKeyEvents = true;
+		instance.onKeyDown = function onKeyDown(event) {
+			const focused = (this._shadow || this._host).activeElement;
+			if (focused && focused.tagName) {
+				const isInput = focused.tagName.match(/input|select|textarea/i);
+				const isContentEditable = focused.getAttribute("contenteditable") === "true";
+				if (isInput || isContentEditable) switch (event.which) {
+					case KEYS.ESCAPE:
+						this.remove();
+						event.stopImmediatePropagation();
+						return false;
+					case KEYS.ENTER: {
+						const msg = extractChatMessage$1(this._inputEl).replace(/\u00A0/g, " ").trim();
+						if (msg.length) {
+							this.history.push(msg);
+							WhisperBox.onRequestTalk(this.nickname, msg);
+							this._inputEl.innerHTML = "";
+						}
+						event.stopImmediatePropagation();
+						return false;
+					}
+					case KEYS.UP:
+					case KEYS.DOWN: {
+						const historyMsg = event.which === KEYS.UP ? this.history.previous() : this.history.next();
+						this._inputEl.innerHTML = historyMsg;
+						setCaretToEnd(this._inputEl);
+						event.stopImmediatePropagation();
+						return false;
+					}
+					default: {
+						const currentText = extractChatMessage$1(this._inputEl);
+						if (event.which >= 32 && currentText.length >= 100 && !event.ctrlKey && !event.altKey) {
+							event.stopImmediatePropagation();
+							return false;
+						}
+						event.stopImmediatePropagation();
+						return true;
+					}
+				}
+			}
+			return true;
+		};
 		UIManager.addComponent(instance);
 		instance.prepare();
 		instance.append();
-		const $ui = instance.ui;
-		instance.$content = $ui.find(".content");
-		instance.$input = $ui.find(".input-whisper");
+		const root = instance._shadow || instance._host;
+		instance._contentEl = root.querySelector(".content");
+		instance._inputEl = root.querySelector(".input-whisper");
 		__vitePreload(() => Promise.resolve().then(() => (init_Friends(), Friends_exports)).then((Friends) => {
 			const isFriend = Friends && Friends.default.isFriend ? Friends.default.isFriend(nickname) : false;
-			$ui.find(".title").text("With " + nickname + (isFriend ? " (Friend)" : ""));
+			const titleEl = root.querySelector(".title");
+			if (titleEl) titleEl.textContent = `With ${nickname}${isFriend ? " (Friend)" : ""}`;
 		}), void 0, import.meta.url);
-		instance.draggable($ui.find(".whisper-header, .whisper-footer"));
-		$ui.find(".close").click(function() {
-			instance.remove();
-		});
-		instance.onRemove = function() {
+		instance.draggable(".whisper-header, .whisper-footer");
+		const closeBtn = root.querySelector(".close");
+		if (closeBtn) {
+			closeBtn.addEventListener("mousedown", (e) => e.stopImmediatePropagation());
+			closeBtn.addEventListener("click", () => {
+				instance.remove();
+			});
+		}
+		const self = this;
+		instance.onRemove = function onRemove() {
 			delete self.instances[nickname];
 			delete UIManager.components[this.name];
 		};
 		instance.history = new History();
-		instance.$input.on("keydown", function(event) {
-			switch (event.which) {
-				case KEYS.ENTER: {
-					const msg = extractChatMessage$1(jquery_default(this)).replace(/\u00A0/g, " ").trim();
-					if (msg.length) {
-						instance.history.push(msg);
-						self.onRequestTalk(nickname, msg);
-						jquery_default(this).html("");
-					}
-					event.preventDefault();
-					event.stopImmediatePropagation();
-					return false;
-				}
-				case KEYS.UP:
-				case KEYS.DOWN: {
-					const historyMsg = event.which === KEYS.UP ? instance.history.previous() : instance.history.next();
-					jquery_default(this).html(historyMsg);
-					setCaretToEnd(this);
-					break;
-				}
-				default: {
-					const currentText = extractChatMessage$1(jquery_default(this));
-					if (event.which >= 32 && currentText.length >= 100 && !event.ctrlKey && !event.altKey) {
-						event.preventDefault();
-						return false;
-					}
-					return true;
-				}
-			}
-		});
-		instance.$input.on("paste", function(event) {
+		instance._inputEl.addEventListener("paste", (event) => {
 			event.preventDefault();
 			const clipboard = (event.originalEvent || event).clipboardData;
 			let paste = clipboard ? clipboard.getData("text/plain") : "";
 			if (!paste) return false;
 			paste = paste.replace(/\u00A0/g, " ");
-			const remaining = 100 - extractChatMessage$1(jquery_default(this)).length;
+			const remaining = 100 - extractChatMessage$1(instance._inputEl).length;
 			if (remaining <= 0) return false;
 			const toInsert = paste.substr(0, remaining);
-			if (document.queryCommandSupported && document.queryCommandSupported("insertText")) document.execCommand("insertText", false, toInsert);
-			else {
-				const selection = window.getSelection();
-				if (selection.rangeCount) {
-					selection.deleteFromDocument();
-					selection.getRangeAt(0).insertNode(document.createTextNode(toInsert));
-				}
+			const selection = window.getSelection();
+			if (selection.rangeCount) {
+				selection.deleteFromDocument();
+				selection.getRangeAt(0).insertNode(document.createTextNode(toInsert));
+				selection.collapseToEnd();
 			}
 		});
-		$ui.mousedown(function() {
+		instance._host.addEventListener("mousedown", () => {
 			instance.focus();
 		});
+		setupItemLinkHandler(instance);
+		setupNicknameLinkHandler(instance);
 		initResizable(instance);
 		const offset = this._spawnCounter % 10 * 20;
 		this._spawnCounter++;
-		$ui.css({
-			top: Math.min(Math.max(0, _preferences$67.y + offset), Renderer.height - 156),
-			left: Math.min(Math.max(0, _preferences$67.x + offset), Renderer.width - 280)
-		});
+		instance._host.style.top = `${Math.min(Math.max(0, _preferences$67.y + offset), Renderer.height - 156)}px`;
+		instance._host.style.left = `${Math.min(Math.max(0, _preferences$67.x + offset), Renderer.width - 280)}px`;
 		this.instances[nickname] = instance;
 		return instance;
 	};
@@ -159253,26 +159995,29 @@ var init_WhisperBox = __esmMin((() => {
 	* @param {string} text
 	* @param {string} color
 	*/
-	WhisperBox.addText = function(nickname, text, color) {
+	WhisperBox.addText = function addText(nickname, text, color) {
 		const instance = this.instances[nickname] || this.show(nickname, true);
 		let override = false;
-		text = text.replace(/<ITEMLINK>.*?<\/ITEMLINK>|<ITEML>.*?<\/ITEML>|<ITEM>.*?<\/ITEM>/gi, function(match) {
+		text = text.replace(/<ITEMLINK>.*?<\/ITEMLINK>|<ITEML>.*?<\/ITEML>|<ITEM>.*?<\/ITEM>/gi, (match) => {
 			const item = DB.parseItemLink(match);
 			if (!item) return match;
 			override = true;
-			return "<span data-item=\"" + match + "\" class=\"item-link\" style=\"color:#FFFF63; cursor:pointer;\">&lt;" + item.name + "&gt;</span>";
+			return `<span data-item="${match}" class="item-link" style="color:#FFFF63; cursor:pointer;">&lt;${item.name}&gt;</span>`;
 		});
-		const $content = instance.$content;
-		const isAtBottom = $content[0].scrollHeight - $content.scrollTop() <= $content.outerHeight() + 10;
-		const $div = jquery_default("<div/>").css("color", color || "#ffffff")[override ? "html" : "text"](text);
-		$content.append($div);
-		while ($content[0].childElementCount > 100) $content[0].firstElementChild.remove();
-		if (isAtBottom) $content.scrollTop($content[0].scrollHeight);
+		const contentEl = instance._contentEl;
+		const isAtBottom = contentEl.scrollHeight - contentEl.scrollTop <= contentEl.offsetHeight + 10;
+		const div = document.createElement("div");
+		div.style.color = color || "#ffffff";
+		if (override) div.innerHTML = text;
+		else div.textContent = text;
+		contentEl.appendChild(div);
+		while (contentEl.childElementCount > 100) contentEl.firstElementChild.remove();
+		if (isAtBottom) contentEl.scrollTop = contentEl.scrollHeight;
 	};
 	/**
 	* Interface to be overriden by Engine
 	*/
-	WhisperBox.onRequestTalk = function(nickname, text) {};
+	WhisperBox.onRequestTalk = function onRequestTalk(_nickname, _text) {};
 	UIManager.addComponent(WhisperBox);
 }));
 //#endregion
@@ -159729,7 +160474,7 @@ function onValidZenyInput(event) {
 /**
 * Stop event propagation
 */
-function stopPropagation$34(event) {
+function stopPropagation$32(event) {
 	event.stopImmediatePropagation();
 	return false;
 }
@@ -159790,7 +160535,7 @@ function onItemOut$17() {
 /**
 * Start dragging an item
 */
-function onItemDragStart$13(event) {
+function onItemDragStart$12(event) {
 	const index = parseInt(this.getAttribute("data-index"), 10);
 	const item = Mail.getItemByIndex(index);
 	if (!item) return;
@@ -159938,9 +160683,9 @@ var init_Mail$1 = __esmMin((() => {
 		this.ui.find("#create_mail_cancel").on("click", offCreateMessagesOnWindowMailbox);
 		this.ui.find("#create_mail_send").on("click", sendCreateMessagesMail);
 		updatePageMailItems();
-		this.ui.find(".container_item").on("drop", onDrop$20).on("dragover", stopPropagation$34).on("mouseover", ".item", onItemOver$16).on("mouseout", ".item", onItemOut$17).on("dragstart", ".item", onItemDragStart$13).on("dragend", ".item", onItemDragEnd$13).on("contextmenu", ".item", onItemInfo$20);
-		this.ui.find("input[type=text]").on("drop", onDropText$2).on("dragover", stopPropagation$34);
-		this.ui.find("textarea").on("drop", onDropText$2).on("dragover", stopPropagation$34);
+		this.ui.find(".container_item").on("drop", onDrop$20).on("dragover", stopPropagation$32).on("mouseover", ".item", onItemOver$16).on("mouseout", ".item", onItemOut$17).on("dragstart", ".item", onItemDragStart$12).on("dragend", ".item", onItemDragEnd$13).on("contextmenu", ".item", onItemInfo$20);
+		this.ui.find("input[type=text]").on("drop", onDropText$2).on("dragover", stopPropagation$32);
+		this.ui.find("textarea").on("drop", onDropText$2).on("dragover", stopPropagation$32);
 		this.ui.find("#zeny_amt").on("click", onAddZenyInput);
 		this.ui.find("#zeny_ok").on("click", onValidZenyInput);
 		onWindowMailbox();
@@ -194717,7 +195462,7 @@ function onShowLVL() {
 * Stop event propagation
 * @param {object} event
 */
-function stopPropagation$33(event) {
+function stopPropagation$31(event) {
 	event.stopImmediatePropagation();
 	return false;
 }
@@ -194764,7 +195509,7 @@ var init_WorldMap = __esmMin((() => {
 	*/
 	WorldMap.init = function init() {
 		const root = this._shadow || this._host;
-		root.querySelectorAll(".titlebar .base").forEach((el) => el.addEventListener("mousedown", stopPropagation$33));
+		root.querySelectorAll(".titlebar .base").forEach((el) => el.addEventListener("mousedown", stopPropagation$31));
 		const selectEl = root.querySelector(".titlebar select");
 		if (selectEl) selectEl.addEventListener("change", onSelect);
 		const toggleBtn = root.querySelector(".titlebar .togglemaps");
@@ -197471,7 +198216,7 @@ function onSkillFocus$2() {
 */
 function onSkillDragStart$2(event) {
 	const skill = getSkillById$2(parseInt(this.getAttribute("data-index"), 10));
-	if (!skill || !skill.level || !skill.type) return stopPropagation$32(event);
+	if (!skill || !skill.level || !skill.type) return stopPropagation$30(event);
 	const img = new Image();
 	img.decoding = "async";
 	img.src = this.firstChild.firstChild.src;
@@ -197505,7 +198250,7 @@ function skillLevelSelectDown$2(skill) {
 /**
 * Stop propagation of events
 */
-function stopPropagation$32(event) {
+function stopPropagation$30(event) {
 	event.stopImmediatePropagation();
 	return false;
 }
@@ -197645,7 +198390,7 @@ var init_Guild$1 = __esmMin((() => {
 		MemberView = this.ui.find(".MemberView").remove();
 		PositionView = this.ui.find(".PositionView").remove();
 		ExpelView = this.ui.find(".ExpelView").remove();
-		ui.find(".titlebar .close").mousedown(stopPropagation$32).click(Guild.toggle.bind(this));
+		ui.find(".titlebar .close").mousedown(stopPropagation$30).click(Guild.toggle.bind(this));
 		ui.find(".tabs").on("click", "button", onChangeTab);
 		Client.loadFiles([DB.INTERFACE_PATH + "checkbox_0.bmp", DB.INTERFACE_PATH + "checkbox_1.bmp"], function(off, on) {
 			_checkbox_off = off;
@@ -197713,7 +198458,7 @@ var init_Guild$1 = __esmMin((() => {
 			_btnLevelUp$7.detach();
 			Guild.ui.show();
 			Guild.ui.parent().append(Guild.ui);
-		}).mousedown(stopPropagation$32);
+		}).mousedown(stopPropagation$30);
 		this.ui.on("dblclick", ".skill .icon, .skill .name", onRequestUseSkill$2).on("contextmenu", ".skill .icon, .skill .name", onRequestSkillInfo$2).on("mousedown", ".selectable", onSkillFocus$2).on("dragstart", ".skill", onSkillDragStart$2).on("dragend", ".skill", onSkillDragEnd$2);
 		ui.find(".content.notice").on("focus", "textarea, input", function() {
 			ui.find(".footer .btn_ok").show();
@@ -198272,179 +199017,6 @@ var init_Guild$1 = __esmMin((() => {
 	Guild.onUpdateSkill = function onUpdateSkill() {};
 	Guild.getSkillById = getSkillById$2;
 	Guild_default = UIManager.addComponent(Guild);
-}));
-//#endregion
-//#region src/UI/Elements/UIButton.js
-var UIButton;
-var init_UIButton = __esmMin((() => {
-	init_DBManager();
-	init_Client();
-	init_Targa();
-	UIButton = class extends HTMLElement {
-		connectedCallback() {
-			if (this._initialized) return;
-			this._initialized = true;
-			const bg = this.getAttribute("bg");
-			const hover = this.getAttribute("hover");
-			const down = this.getAttribute("down");
-			let bgUri = null, hoverUri = null, downUri = null;
-			const state = {
-				hover: false,
-				down: false
-			};
-			const update = () => {
-				if (this.disabled) {
-					if (bgUri) this.style.backgroundImage = `url(${bgUri})`;
-					this.style.opacity = "0.5";
-					this.style.cursor = "default";
-					return;
-				}
-				this.style.opacity = "";
-				this.style.cursor = "";
-				if (state.down && downUri) this.style.backgroundImage = `url(${downUri})`;
-				else if (state.hover && hoverUri) this.style.backgroundImage = `url(${hoverUri})`;
-				else if (bgUri) this.style.backgroundImage = `url(${bgUri})`;
-				else this.style.backgroundImage = "";
-			};
-			this._update = update;
-			const loadBmp = (path, cb) => {
-				if (!path) return;
-				Client.loadFile(DB.INTERFACE_PATH + path, (dataURI) => {
-					if (dataURI instanceof ArrayBuffer) try {
-						const tga = new Targa();
-						tga.load(new Uint8Array(dataURI));
-						cb(tga.getDataURL());
-					} catch (e) {
-						console.error(e.message);
-					}
-					else cb(dataURI);
-				});
-			};
-			loadBmp(bg, (uri) => {
-				bgUri = uri;
-				update();
-			});
-			loadBmp(hover, (uri) => {
-				hoverUri = uri;
-			});
-			loadBmp(down, (uri) => {
-				downUri = uri;
-			});
-			this.addEventListener("mouseover", () => {
-				if (this.disabled) return;
-				state.hover = true;
-				update();
-			});
-			this.addEventListener("mouseout", () => {
-				state.hover = false;
-				state.down = false;
-				update();
-			});
-			this.addEventListener("mousedown", () => {
-				if (this.disabled) return;
-				state.down = true;
-				update();
-			});
-			this.addEventListener("mouseup", () => {
-				state.down = false;
-				update();
-			});
-			this.addEventListener("click", (e) => {
-				if (this.disabled) {
-					e.stopImmediatePropagation();
-					e.preventDefault();
-				}
-			}, true);
-		}
-		get disabled() {
-			return this.hasAttribute("disabled");
-		}
-		set disabled(val) {
-			if (val) this.setAttribute("disabled", "");
-			else this.removeAttribute("disabled");
-		}
-		static get observedAttributes() {
-			return ["disabled"];
-		}
-		attributeChangedCallback(name) {
-			if (name === "disabled" && this._initialized) {
-				if (this._update) this._update();
-			}
-		}
-	};
-	customElements.define("ui-button", UIButton);
-}));
-//#endregion
-//#region src/UI/Elements/UIText.js
-var UIText;
-var init_UIText = __esmMin((() => {
-	init_DBManager();
-	UIText = class extends HTMLElement {
-		connectedCallback() {
-			if (this._initialized) return;
-			this._initialized = true;
-			const msgId = this.getAttribute("msg");
-			if (msgId) {
-				const text = DB.getMessage(msgId, "");
-				if (text) this.textContent = text;
-			}
-		}
-		static get observedAttributes() {
-			return ["msg"];
-		}
-		attributeChangedCallback(name, oldVal, newVal) {
-			if (name === "msg" && newVal) {
-				const text = DB.getMessage(newVal, "");
-				if (text) this.textContent = text;
-			}
-		}
-	};
-	customElements.define("ui-text", UIText);
-}));
-//#endregion
-//#region src/UI/Elements/UIImage.js
-var UIImage;
-var init_UIImage = __esmMin((() => {
-	init_DBManager();
-	init_Client();
-	init_Targa();
-	UIImage = class extends HTMLElement {
-		connectedCallback() {
-			if (this._initialized) return;
-			this._initialized = true;
-			this.style.display = "none";
-			this._loadSrc(this.getAttribute("src"));
-		}
-		static get observedAttributes() {
-			return ["src"];
-		}
-		attributeChangedCallback(name, oldVal, newVal) {
-			if (name === "src") this._loadSrc(newVal);
-		}
-		_loadSrc(path) {
-			if (!path) return;
-			const target = this.parentElement;
-			if (!target) return;
-			Client.loadFile(DB.INTERFACE_PATH + path, (dataURI) => {
-				if (dataURI instanceof ArrayBuffer) try {
-					const tga = new Targa();
-					tga.load(new Uint8Array(dataURI));
-					target.style.backgroundImage = `url(${tga.getDataURL()})`;
-				} catch (e) {
-					console.error(e.message);
-				}
-				else target.style.backgroundImage = `url(${dataURI})`;
-			});
-		}
-	};
-	customElements.define("ui-image", UIImage);
-}));
-//#endregion
-//#region src/UI/Elements/Elements.js
-var init_Elements = __esmMin((() => {
-	init_UIButton();
-	init_UIText();
-	init_UIImage();
 }));
 //#endregion
 //#region src/UI/Components/SoundOption/SoundOption.html?raw
@@ -202352,7 +202924,7 @@ function getSkillPosition$1(JobId) {
 /**
 * Stop event propagation
 */
-function stopPropagation$31(event) {
+function stopPropagation$29(event) {
 	event.stopImmediatePropagation();
 	return false;
 }
@@ -202557,7 +203129,7 @@ function onSkillFocus$1() {
 */
 function onSkillDragStart$1(event) {
 	const skill = getSkillById$1(parseInt(this.getAttribute("data-index"), 10));
-	if (!skill || !skill.level || !skill.type) return stopPropagation$31(event);
+	if (!skill || !skill.level || !skill.type) return stopPropagation$29(event);
 	const img = new Image();
 	img.decoding = "async";
 	img.src = jquery_default(this).find(".icon img").attr("src");
@@ -202701,7 +203273,7 @@ var init_SkillList$1 = __esmMin((() => {
 	* Initialize UI
 	*/
 	SkillList.init = function init() {
-		this.ui.find(".titlebar .base").mousedown(stopPropagation$31);
+		this.ui.find(".titlebar .base").mousedown(stopPropagation$29);
 		this.ui.find(".footer .extend").mousedown(onResize$12);
 		this.ui.find(".titlebar .close").click(onClose$15);
 		this.ui.find(".titlebar .mini").click(onMini$1);
@@ -202714,7 +203286,7 @@ var init_SkillList$1 = __esmMin((() => {
 			_btnLevelUp$6.detach();
 			SkillList.ui.show();
 			SkillList.ui.parent().append(SkillList.ui);
-		}).mousedown(stopPropagation$31);
+		}).mousedown(stopPropagation$29);
 		this.ui.on("dblclick", ".skill .icon, .skill .name", onRequestUseSkill$1).on("contextmenu", ".skill .icon, .skill .name", onRequestSkillInfo$1).on("mousedown", ".selectable", onSkillFocus$1).on("mouseover", ".skillCol .skill .icon, .skill .name", onRequestSkillInfo$1).on("mouseout", ".skillCol .skill .icon, .skill .name", onSkillDescriptionRemove$1).on("mouseover", ".skillCol .skill .icon, .skill .name", onNecessarySkills$1).on("mouseout", ".skillCol .skill .icon, .skill .name", onNecessarySkillsRemove$1).on("click", ".skillCol .skill .icon, .skill .name", onRememberChoice$1).on("dragstart", ".skill", onSkillDragStart$1).on("dragend", ".skill", onSkillDragEnd$1).on("touchstart", ".skill .icon", onSkillTouchStart).on("touchmove", ".skill .icon", onSkillTouchMove).on("touchend", ".skill .icon", onSkillTouchEnd);
 		this.draggable(this.ui.find(".titlebar"));
 		Client.loadFile(DB.INTERFACE_PATH + "basic_interface/arw_right.bmp", function(data) {
@@ -203154,7 +203726,7 @@ function getSkillPosition(JobId) {
 /**
 * Stop event propagation
 */
-function stopPropagation$30(event) {
+function stopPropagation$28(event) {
 	event.stopImmediatePropagation();
 	return false;
 }
@@ -203349,7 +203921,7 @@ function onSkillFocus() {
 */
 function onSkillDragStart(event) {
 	const skill = getSkillById(parseInt(this.getAttribute("data-index"), 10));
-	if (!skill || !skill.level || !skill.type) return stopPropagation$30(event);
+	if (!skill || !skill.level || !skill.type) return stopPropagation$28(event);
 	const img = new Image();
 	img.decoding = "async";
 	img.src = jquery_default(this).find(".icon img").attr("src");
@@ -203423,7 +203995,7 @@ var init_SkillListV0 = __esmMin((() => {
 	* Initialize UI
 	*/
 	SkillListV0.init = function init() {
-		this.ui.find(".titlebar .base").mousedown(stopPropagation$30);
+		this.ui.find(".titlebar .base").mousedown(stopPropagation$28);
 		this.ui.find(".footer .extend").mousedown(onResize$11);
 		this.ui.find(".titlebar .close").click(onClose$14);
 		this.ui.find(".titlebar .mini").click(onMini);
@@ -203436,7 +204008,7 @@ var init_SkillListV0 = __esmMin((() => {
 			_btnLevelUp$5.detach();
 			SkillListV0.ui.show();
 			SkillListV0.ui.parent().append(SkillListV0.ui);
-		}).mousedown(stopPropagation$30);
+		}).mousedown(stopPropagation$28);
 		this.ui.on("dblclick", ".skill .icon, .skill .name", onRequestUseSkill).on("contextmenu", ".skill .icon, .skill .name", onRequestSkillInfo).on("mousedown", ".selectable", onSkillFocus).on("mouseover", ".skillCol .skill .icon, .skill .name", onRequestSkillInfo).on("mouseout", ".skillCol .skill .icon, .skill .name", onSkillDescriptionRemove).on("mouseover", ".skillCol .skill .icon, .skill .name", onNecessarySkills).on("mouseout", ".skillCol .skill .icon, .skill .name", onNecessarySkillsRemove).on("click", ".skillCol .skill .icon, .skill .name", onRememberChoice).on("dragstart", ".skill", onSkillDragStart).on("dragend", ".skill", onSkillDragEnd);
 		this.draggable(this.ui.find(".titlebar"));
 		Client.loadFile(DB.INTERFACE_PATH + "basic_interface/arw_right.bmp", function(data) {
@@ -206223,7 +206795,7 @@ var init_BasicInfoV3$2 = __esmMin((() => {
 //#region src/UI/Components/BasicInfo/BasicInfoV3/BasicInfoV3.css?raw
 var BasicInfoV3_default$1;
 var init_BasicInfoV3$1 = __esmMin((() => {
-	BasicInfoV3_default$1 = "#BasicInfoV3 {\r\n	position: absolute;\r\n	top: 0px;\r\n	left: 0px;\r\n	width: 220px;\r\n	height: 135px;\r\n	font-size: 11px;\r\n	font-weight: bold;\r\n}\r\n#BasicInfoV3.small .large {\r\n	display: none;\r\n}\r\n#BasicInfoV3.large .small {\r\n	display: none;\r\n	border-radius: 5px;\r\n}\r\n#BasicInfoV3.small {\r\n	height: 53px;\r\n}\r\n#BasicInfoV3.large .bt_menu {\r\n	top: 135px;\r\n}\r\n#BasicInfoV3.small .bt_menu {\r\n	top: 53px;\r\n}\r\n\r\n#BasicInfoV3.large .buttons {\r\n	top: 144px;\r\n}\r\n#BasicInfoV3.small .buttons {\r\n	top: 62px;\r\n}\r\n\r\n#BasicInfoV3 .topbar .left {\r\n	position: absolute;\r\n	top: 3px;\r\n	left: 4px;\r\n	width: 11px;\r\n	height: 11px;\r\n	border: none;\r\n	background: none;\r\n}\r\n#BasicInfoV3 .topbar .right {\r\n	position: absolute;\r\n	top: 3px;\r\n	right: 2px;\r\n	width: 11px;\r\n	height: 11px;\r\n	border: none;\r\n	background: none;\r\n}\r\n\r\n/* LARGE */\r\n#BasicInfoV3 .large .title {\r\n	position: absolute;\r\n	top: 2px;\r\n	left: 18px;\r\n	text-shadow: 1px 1px white;\r\n}\r\n#BasicInfoV3 .large .name {\r\n	position: absolute;\r\n	left: 10px;\r\n	top: 20px;\r\n}\r\n#BasicInfoV3 .large .job {\r\n	position: absolute;\r\n	left: 10px;\r\n	top: 33px;\r\n}\r\n#BasicInfoV3 .large .hp_title {\r\n	position: absolute;\r\n	top: 50px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV3 .large .sp_title {\r\n	position: absolute;\r\n	top: 65px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV3 .large .hp_bar,\r\n#BasicInfoV3 .large .sp_bar {\r\n	position: absolute;\r\n	top: 53px;\r\n	left: 35px;\r\n	width: 135px;\r\n	height: 9px;\r\n	font-weight: normal;\r\n}\r\n#BasicInfoV3 .large .sp_bar {\r\n	top: 68px;\r\n}\r\n#BasicInfoV3 .large .hp_bar div,\r\n#BasicInfoV3 .large .sp_bar div {\r\n	width: 4px;\r\n	height: 9px;\r\n	float: left;\r\n}\r\n#BasicInfoV3 .large div.hp_bar_perc,\r\n#BasicInfoV3 .large div.sp_bar_perc {\r\n	text-align: center;\r\n	width: 127px;\r\n	position: absolute;\r\n	top: -1px;\r\n}\r\n#BasicInfoV3 .large .hp_perc {\r\n	position: absolute;\r\n	top: 50px;\r\n	right: 20px;\r\n}\r\n#BasicInfoV3 .large .sp_perc {\r\n	position: absolute;\r\n	top: 65px;\r\n	right: 20px;\r\n}\r\n#BasicInfoV3 .large .blvl {\r\n	position: absolute;\r\n	top: 86px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV3 .large .jlvl {\r\n	position: absolute;\r\n	top: 97px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV3 .large .bexp,\r\n#BasicInfoV3 .large .jexp {\r\n	position: absolute;\r\n	top: 89px;\r\n	left: 84px;\r\n	width: 110px;\r\n	height: 4px;\r\n	border: 1px solid #afafaf;\r\n	background-color: white;\r\n}\r\n#BasicInfoV3 .large .bexp div,\r\n#BasicInfoV3 .large .jexp div {\r\n	position: absolute;\r\n	top: 0px;\r\n	left: 0px;\r\n	width: 0%;\r\n	height: 4px;\r\n	background-color: #4262a5;\r\n}\r\n#BasicInfoV3 .large .jexp {\r\n	top: 101px;\r\n}\r\n#BasicInfoV3 .large .extra {\r\n	position: absolute;\r\n	top: 119px;\r\n	right: -15px;\r\n	width: 100%;\r\n	padding-right: 20px;\r\n	overflow: hidden;\r\n	text-overflow: ellipsis;\r\n	text-align: right;\r\n	white-space: nowrap;\r\n}\r\n#BasicInfoV3 .buttons {\r\n	position: absolute;\r\n	left: 0px;\r\n	top: 9px;\r\n	width: 220px;\r\n	height: 184px;\r\n}\r\n#BasicInfoV3 .bt_menu {\r\n	position: absolute;\r\n	left: 2px;\r\n	width: 216px;\r\n	height: 9px;\r\n}\r\n#BasicInfoV3 .buttons:hover {\r\n}\r\n#BasicInfoV3 .buttons div {\r\n	float: left;\r\n	width: 36px;\r\n	height: 36px;\r\n	border: none;\r\n	margin: 0px;\r\n}\r\n#BasicInfoV3 .buttons .clear {\r\n	clear: both;\r\n}\r\n\r\n/* REDUCED */\r\n#BasicInfoV3 .small .line1 {\r\n	position: absolute;\r\n	top: 2px;\r\n	left: 18px;\r\n	text-shadow: 1px 1px white;\r\n	white-space: nowrap;\r\n}\r\n#BasicInfoV3 .small .line2 {\r\n	position: absolute;\r\n	top: 20px;\r\n	left: 10px;\r\n	white-space: nowrap;\r\n}\r\n#BasicInfoV3 .small .line3 {\r\n	position: absolute;\r\n	top: 36px;\r\n	left: 10px;\r\n	white-space: nowrap;\r\n}\r\n#BasicInfoV3 .toggle_btns {\r\n	border: none;\r\n	background-repeat: no-repeat;\r\n	background-color: rgba(0, 0, 0, 0);\r\n}\r\n\r\n#BasicInfoV3 .buttons div .name {\r\n	position: relative;\r\n	display: none;\r\n	z-index: 1;\r\n	top: -20px;\r\n	left: 0px;\r\n	background-color: rgba(0, 0, 0, 0.6);\r\n	text-shadow: 1px 1px black;\r\n	color: white;\r\n	padding: 5px;\r\n	white-space: nowrap;\r\n	font-size: 0.6rem;\r\n}\r\n#BasicInfoV3 .buttons div:hover .name {\r\n	display: table;\r\n}\r\n#BasicInfoV3 .buttons div .name {\r\n	display: none;\r\n}\r\n";
+	BasicInfoV3_default$1 = "#BasicInfoV3 {\r\n	position: absolute;\r\n	top: 0px;\r\n	left: 0px;\r\n	width: 220px;\r\n	height: 135px;\r\n	font-size: 11px;\r\n	letter-spacing: 0.03em;\r\n}\r\n#BasicInfoV3.small .large {\r\n	display: none;\r\n}\r\n#BasicInfoV3.large .small {\r\n	display: none;\r\n	border-radius: 5px;\r\n}\r\n#BasicInfoV3.small {\r\n	height: 53px;\r\n}\r\n#BasicInfoV3.large .bt_menu {\r\n	top: 135px;\r\n}\r\n#BasicInfoV3.small .bt_menu {\r\n	top: 53px;\r\n}\r\n\r\n#BasicInfoV3.large .buttons {\r\n	top: 144px;\r\n}\r\n#BasicInfoV3.small .buttons {\r\n	top: 62px;\r\n}\r\n\r\n#BasicInfoV3 .topbar .left {\r\n	position: absolute;\r\n	top: 3px;\r\n	left: 4px;\r\n	width: 11px;\r\n	height: 11px;\r\n	border: none;\r\n	background: none;\r\n}\r\n#BasicInfoV3 .topbar .right {\r\n	position: absolute;\r\n	top: 3px;\r\n	right: 2px;\r\n	width: 11px;\r\n	height: 11px;\r\n	border: none;\r\n	background: none;\r\n}\r\n\r\n/* LARGE */\r\n#BasicInfoV3 .large .title {\r\n	position: absolute;\r\n	top: 2px;\r\n	left: 18px;\r\n	text-shadow: 1px 1px white;\r\n}\r\n#BasicInfoV3 .large .name {\r\n	position: absolute;\r\n	left: 10px;\r\n	top: 20px;\r\n}\r\n#BasicInfoV3 .large .job {\r\n	position: absolute;\r\n	left: 10px;\r\n	top: 33px;\r\n}\r\n#BasicInfoV3 .large .hp_title {\r\n	position: absolute;\r\n	top: 50px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV3 .large .sp_title {\r\n	position: absolute;\r\n	top: 65px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV3 .large .hp_bar,\r\n#BasicInfoV3 .large .sp_bar {\r\n	position: absolute;\r\n	top: 53px;\r\n	left: 35px;\r\n	width: 135px;\r\n	height: 9px;\r\n	font-weight: normal;\r\n}\r\n#BasicInfoV3 .large .sp_bar {\r\n	top: 68px;\r\n}\r\n#BasicInfoV3 .large .hp_bar div,\r\n#BasicInfoV3 .large .sp_bar div {\r\n	width: 4px;\r\n	height: 9px;\r\n	float: left;\r\n}\r\n#BasicInfoV3 .large div.hp_bar_perc,\r\n#BasicInfoV3 .large div.sp_bar_perc {\r\n	text-align: center;\r\n	width: 127px;\r\n	position: absolute;\r\n	top: -1px;\r\n}\r\n#BasicInfoV3 .large .hp_perc {\r\n	position: absolute;\r\n	top: 50px;\r\n	right: 20px;\r\n}\r\n#BasicInfoV3 .large .sp_perc {\r\n	position: absolute;\r\n	top: 65px;\r\n	right: 20px;\r\n}\r\n#BasicInfoV3 .large .blvl {\r\n	position: absolute;\r\n	top: 86px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV3 .large .jlvl {\r\n	position: absolute;\r\n	top: 97px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV3 .large .bexp,\r\n#BasicInfoV3 .large .jexp {\r\n	position: absolute;\r\n	top: 89px;\r\n	left: 84px;\r\n	width: 110px;\r\n	height: 4px;\r\n	border: 1px solid #afafaf;\r\n	background-color: white;\r\n}\r\n#BasicInfoV3 .large .bexp div,\r\n#BasicInfoV3 .large .jexp div {\r\n	position: absolute;\r\n	top: 0px;\r\n	left: 0px;\r\n	width: 0%;\r\n	height: 4px;\r\n	background-color: #4262a5;\r\n}\r\n#BasicInfoV3 .large .jexp {\r\n	top: 101px;\r\n}\r\n#BasicInfoV3 .large .extra {\r\n	position: absolute;\r\n	top: 119px;\r\n	right: -15px;\r\n	width: 100%;\r\n	padding-right: 20px;\r\n	overflow: hidden;\r\n	text-overflow: ellipsis;\r\n	text-align: right;\r\n	white-space: nowrap;\r\n}\r\n#BasicInfoV3 .buttons {\r\n	position: absolute;\r\n	left: 0px;\r\n	top: 9px;\r\n	width: 220px;\r\n	height: 184px;\r\n}\r\n#BasicInfoV3 .bt_menu {\r\n	position: absolute;\r\n	left: 2px;\r\n	width: 216px;\r\n	height: 9px;\r\n}\r\n#BasicInfoV3 .buttons:hover {\r\n}\r\n#BasicInfoV3 .buttons div {\r\n	float: left;\r\n	width: 36px;\r\n	height: 36px;\r\n	border: none;\r\n	margin: 0px;\r\n}\r\n#BasicInfoV3 .buttons .clear {\r\n	clear: both;\r\n}\r\n\r\n/* REDUCED */\r\n#BasicInfoV3 .small .line1 {\r\n	position: absolute;\r\n	top: 2px;\r\n	left: 18px;\r\n	text-shadow: 1px 1px white;\r\n	white-space: nowrap;\r\n}\r\n#BasicInfoV3 .small .line2 {\r\n	position: absolute;\r\n	top: 20px;\r\n	left: 10px;\r\n	white-space: nowrap;\r\n}\r\n#BasicInfoV3 .small .line3 {\r\n	position: absolute;\r\n	top: 36px;\r\n	left: 10px;\r\n	white-space: nowrap;\r\n}\r\n#BasicInfoV3 .toggle_btns {\r\n	border: none;\r\n	background-repeat: no-repeat;\r\n	background-color: rgba(0, 0, 0, 0);\r\n}\r\n\r\n#BasicInfoV3 .buttons div .name {\r\n	position: relative;\r\n	display: none;\r\n	z-index: 1;\r\n	top: -20px;\r\n	left: 0px;\r\n	background-color: rgba(0, 0, 0, 0.6);\r\n	text-shadow: 1px 1px black;\r\n	color: white;\r\n	padding: 5px;\r\n	white-space: nowrap;\r\n	font-size: 0.6rem;\r\n}\r\n#BasicInfoV3 .buttons div:hover .name {\r\n	display: table;\r\n}\r\n#BasicInfoV3 .buttons div .name {\r\n	display: none;\r\n}\r\n";
 }));
 //#endregion
 //#region src/UI/Components/BasicInfo/BasicInfoV3/BasicInfoV3.js
@@ -206653,7 +207225,7 @@ var init_BasicInfoV4$2 = __esmMin((() => {
 //#region src/UI/Components/BasicInfo/BasicInfoV4/BasicInfoV4.css?raw
 var BasicInfoV4_default$1;
 var init_BasicInfoV4$1 = __esmMin((() => {
-	BasicInfoV4_default$1 = "#BasicInfoV4 {\r\n	position: absolute;\r\n	top: 0px;\r\n	left: 0px;\r\n	width: 220px;\r\n	height: 135px;\r\n	font-size: 11px;\r\n	font-weight: bold;\r\n}\r\n#BasicInfoV4.small .large {\r\n	display: none;\r\n}\r\n#BasicInfoV4.large .small {\r\n	display: none;\r\n	border-radius: 5px;\r\n}\r\n#BasicInfoV4.small {\r\n	height: 53px;\r\n}\r\n#BasicInfoV4.large .bt_menu {\r\n	top: 135px;\r\n}\r\n#BasicInfoV4.small .bt_menu {\r\n	top: 53px;\r\n}\r\n\r\n#BasicInfoV4 .buttons {\r\n	background-position: left bottom;\r\n}\r\n#BasicInfoV4.large .buttons {\r\n	top: 144px;\r\n}\r\n#BasicInfoV4.small .buttons {\r\n	top: 62px;\r\n}\r\n\r\n#BasicInfoV4 .topbar {\r\n	height: 16px;\r\n}\r\n#BasicInfoV4 .topbar .left {\r\n	position: absolute;\r\n	top: 3px;\r\n	left: 4px;\r\n	width: 11px;\r\n	height: 11px;\r\n	border: none;\r\n	background: none;\r\n}\r\n#BasicInfoV4 .topbar .right {\r\n	position: absolute;\r\n	top: 3px;\r\n	right: 2px;\r\n	width: 11px;\r\n	height: 11px;\r\n	border: none;\r\n	background: none;\r\n}\r\n\r\n/* LARGE */\r\n#BasicInfoV4 .large .title {\r\n	position: absolute;\r\n	top: 2px;\r\n	left: 18px;\r\n	text-shadow: 1px 1px white;\r\n}\r\n#BasicInfoV4 .large .name {\r\n	position: absolute;\r\n	left: 10px;\r\n	top: 20px;\r\n}\r\n#BasicInfoV4 .large .job {\r\n	position: absolute;\r\n	left: 10px;\r\n	top: 33px;\r\n}\r\n#BasicInfoV4 .large .hp_title {\r\n	position: absolute;\r\n	top: 50px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV4 .large .sp_title {\r\n	position: absolute;\r\n	top: 65px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV4 .large .hp_bar,\r\n#BasicInfoV4 .large .sp_bar {\r\n	position: absolute;\r\n	top: 53px;\r\n	left: 35px;\r\n	width: 135px;\r\n	height: 9px;\r\n	font-weight: normal;\r\n}\r\n#BasicInfoV4 .large .sp_bar {\r\n	top: 68px;\r\n}\r\n#BasicInfoV4 .large .hp_bar div,\r\n#BasicInfoV4 .large .sp_bar div {\r\n	width: 4px;\r\n	height: 9px;\r\n	float: left;\r\n}\r\n#BasicInfoV4 .large div.hp_bar_perc,\r\n#BasicInfoV4 .large div.sp_bar_perc {\r\n	text-align: center;\r\n	width: 127px;\r\n	position: absolute;\r\n	top: -1px;\r\n}\r\n#BasicInfoV4 .large .hp_perc {\r\n	position: absolute;\r\n	top: 50px;\r\n	right: 20px;\r\n}\r\n#BasicInfoV4 .large .sp_perc {\r\n	position: absolute;\r\n	top: 65px;\r\n	right: 20px;\r\n}\r\n#BasicInfoV4 .large .blvl {\r\n	position: absolute;\r\n	top: 86px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV4 .large .jlvl {\r\n	position: absolute;\r\n	top: 97px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV4 .large .bexp,\r\n#BasicInfoV4 .large .jexp {\r\n	position: absolute;\r\n	top: 89px;\r\n	left: 84px;\r\n	width: 110px;\r\n	height: 4px;\r\n	border: 1px solid #afafaf;\r\n	background-color: white;\r\n}\r\n#BasicInfoV4 .large .bexp div,\r\n#BasicInfoV4 .large .jexp div {\r\n	position: absolute;\r\n	top: 0px;\r\n	left: 0px;\r\n	width: 0%;\r\n	height: 4px;\r\n	background-color: #4262a5;\r\n}\r\n#BasicInfoV4 .large .jexp {\r\n	top: 101px;\r\n}\r\n#BasicInfoV4 .large .extra {\r\n	position: absolute;\r\n	top: 119px;\r\n	right: -15px;\r\n	width: 100%;\r\n	padding-right: 20px;\r\n	overflow: hidden;\r\n	text-overflow: ellipsis;\r\n	text-align: right;\r\n	white-space: nowrap;\r\n}\r\n#BasicInfoV4 .buttons {\r\n	position: absolute;\r\n	left: 0px;\r\n	top: 9px;\r\n	width: 220px;\r\n	display: grid;\r\n	grid-template-columns: auto auto auto auto auto;\r\n	justify-items: center;\r\n}\r\n#BasicInfoV4 .bt_menu {\r\n	position: absolute;\r\n	left: 0px;\r\n	width: 219px;\r\n	height: 9px;\r\n}\r\n#BasicInfoV4 .buttons button {\r\n	width: 32px;\r\n	height: 32px;\r\n	border: none;\r\n	margin: 6px;\r\n	background: transparent;\r\n}\r\n\r\n/* REDUCED */\r\n#BasicInfoV4 .small .line1 {\r\n	position: absolute;\r\n	top: 2px;\r\n	left: 18px;\r\n	text-shadow: 1px 1px white;\r\n	white-space: nowrap;\r\n}\r\n#BasicInfoV4 .small .line2 {\r\n	position: absolute;\r\n	top: 20px;\r\n	left: 10px;\r\n	white-space: nowrap;\r\n}\r\n#BasicInfoV4 .small .line3 {\r\n	position: absolute;\r\n	top: 36px;\r\n	left: 10px;\r\n	white-space: nowrap;\r\n}\r\n#BasicInfoV4 .toggle_btns {\r\n	border: none;\r\n	background-repeat: no-repeat;\r\n	background-color: rgba(0, 0, 0, 0);\r\n}\r\n\r\n#BasicInfoV4 .buttons button .name {\r\n	pointer-events: none;\r\n	position: relative;\r\n	display: none;\r\n	z-index: 1;\r\n	top: -20px;\r\n	left: 0px;\r\n	background-color: rgba(0, 0, 0, 0.6);\r\n	text-shadow: 1px 1px black;\r\n	color: white;\r\n	padding: 5px;\r\n	white-space: nowrap;\r\n	font-size: 0.6rem;\r\n}\r\n#BasicInfoV4 .buttons button:hover .name {\r\n	display: table;\r\n}\r\n#BasicInfoV4 .buttons button .name {\r\n	display: none;\r\n}\r\n\r\n#BasicInfoV4 .buttons .btn_overlay {\r\n	pointer-events: none;\r\n	width: 35px;\r\n	height: 40px;\r\n	border: none;\r\n	position: relative;\r\n	top: -6px;\r\n	left: 0;\r\n	display: none;\r\n}\r\n#BasicInfoV4 .buttons button:active .btn_overlay {\r\n	pointer-events: none;\r\n	top: -5px;\r\n}\r\n";
+	BasicInfoV4_default$1 = "#BasicInfoV4 {\r\n	position: absolute;\r\n	top: 0px;\r\n	left: 0px;\r\n	width: 220px;\r\n	height: 135px;\r\n	font-size: 11px;\r\n	letter-spacing: 0.03em;\r\n}\r\n#BasicInfoV4.small .large {\r\n	display: none;\r\n}\r\n#BasicInfoV4.large .small {\r\n	display: none;\r\n	border-radius: 5px;\r\n}\r\n#BasicInfoV4.small {\r\n	height: 53px;\r\n}\r\n#BasicInfoV4.large .bt_menu {\r\n	top: 135px;\r\n}\r\n#BasicInfoV4.small .bt_menu {\r\n	top: 53px;\r\n}\r\n\r\n#BasicInfoV4 .buttons {\r\n	background-position: left bottom;\r\n}\r\n#BasicInfoV4.large .buttons {\r\n	top: 144px;\r\n}\r\n#BasicInfoV4.small .buttons {\r\n	top: 62px;\r\n}\r\n\r\n#BasicInfoV4 .topbar {\r\n	height: 16px;\r\n}\r\n#BasicInfoV4 .topbar .left {\r\n	position: absolute;\r\n	top: 3px;\r\n	left: 4px;\r\n	width: 11px;\r\n	height: 11px;\r\n	border: none;\r\n	background: none;\r\n}\r\n#BasicInfoV4 .topbar .right {\r\n	position: absolute;\r\n	top: 3px;\r\n	right: 2px;\r\n	width: 11px;\r\n	height: 11px;\r\n	border: none;\r\n	background: none;\r\n}\r\n\r\n/* LARGE */\r\n#BasicInfoV4 .large .title {\r\n	position: absolute;\r\n	top: 2px;\r\n	left: 18px;\r\n	text-shadow: 1px 1px white;\r\n}\r\n#BasicInfoV4 .large .name {\r\n	position: absolute;\r\n	left: 10px;\r\n	top: 20px;\r\n}\r\n#BasicInfoV4 .large .job {\r\n	position: absolute;\r\n	left: 10px;\r\n	top: 33px;\r\n}\r\n#BasicInfoV4 .large .hp_title {\r\n	position: absolute;\r\n	top: 50px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV4 .large .sp_title {\r\n	position: absolute;\r\n	top: 65px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV4 .large .hp_bar,\r\n#BasicInfoV4 .large .sp_bar {\r\n	position: absolute;\r\n	top: 53px;\r\n	left: 35px;\r\n	width: 135px;\r\n	height: 9px;\r\n	font-weight: normal;\r\n}\r\n#BasicInfoV4 .large .sp_bar {\r\n	top: 68px;\r\n}\r\n#BasicInfoV4 .large .hp_bar div,\r\n#BasicInfoV4 .large .sp_bar div {\r\n	width: 4px;\r\n	height: 9px;\r\n	float: left;\r\n}\r\n#BasicInfoV4 .large div.hp_bar_perc,\r\n#BasicInfoV4 .large div.sp_bar_perc {\r\n	text-align: center;\r\n	width: 127px;\r\n	position: absolute;\r\n	top: -1px;\r\n}\r\n#BasicInfoV4 .large .hp_perc {\r\n	position: absolute;\r\n	top: 50px;\r\n	right: 20px;\r\n}\r\n#BasicInfoV4 .large .sp_perc {\r\n	position: absolute;\r\n	top: 65px;\r\n	right: 20px;\r\n}\r\n#BasicInfoV4 .large .blvl {\r\n	position: absolute;\r\n	top: 86px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV4 .large .jlvl {\r\n	position: absolute;\r\n	top: 97px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV4 .large .bexp,\r\n#BasicInfoV4 .large .jexp {\r\n	position: absolute;\r\n	top: 89px;\r\n	left: 84px;\r\n	width: 110px;\r\n	height: 4px;\r\n	border: 1px solid #afafaf;\r\n	background-color: white;\r\n}\r\n#BasicInfoV4 .large .bexp div,\r\n#BasicInfoV4 .large .jexp div {\r\n	position: absolute;\r\n	top: 0px;\r\n	left: 0px;\r\n	width: 0%;\r\n	height: 4px;\r\n	background-color: #4262a5;\r\n}\r\n#BasicInfoV4 .large .jexp {\r\n	top: 101px;\r\n}\r\n#BasicInfoV4 .large .extra {\r\n	position: absolute;\r\n	top: 119px;\r\n	right: -15px;\r\n	width: 100%;\r\n	padding-right: 20px;\r\n	overflow: hidden;\r\n	text-overflow: ellipsis;\r\n	text-align: right;\r\n	white-space: nowrap;\r\n}\r\n#BasicInfoV4 .buttons {\r\n	position: absolute;\r\n	left: 0px;\r\n	top: 9px;\r\n	width: 220px;\r\n	display: grid;\r\n	grid-template-columns: auto auto auto auto auto;\r\n	justify-items: center;\r\n}\r\n#BasicInfoV4 .bt_menu {\r\n	position: absolute;\r\n	left: 0px;\r\n	width: 219px;\r\n	height: 9px;\r\n}\r\n#BasicInfoV4 .buttons button {\r\n	width: 32px;\r\n	height: 32px;\r\n	border: none;\r\n	margin: 6px;\r\n	background: transparent;\r\n}\r\n\r\n/* REDUCED */\r\n#BasicInfoV4 .small .line1 {\r\n	position: absolute;\r\n	top: 2px;\r\n	left: 18px;\r\n	text-shadow: 1px 1px white;\r\n	white-space: nowrap;\r\n}\r\n#BasicInfoV4 .small .line2 {\r\n	position: absolute;\r\n	top: 20px;\r\n	left: 10px;\r\n	white-space: nowrap;\r\n}\r\n#BasicInfoV4 .small .line3 {\r\n	position: absolute;\r\n	top: 36px;\r\n	left: 10px;\r\n	white-space: nowrap;\r\n}\r\n#BasicInfoV4 .toggle_btns {\r\n	border: none;\r\n	background-repeat: no-repeat;\r\n	background-color: rgba(0, 0, 0, 0);\r\n}\r\n\r\n#BasicInfoV4 .buttons button .name {\r\n	pointer-events: none;\r\n	position: relative;\r\n	display: none;\r\n	z-index: 1;\r\n	top: -20px;\r\n	left: 0px;\r\n	background-color: rgba(0, 0, 0, 0.6);\r\n	text-shadow: 1px 1px black;\r\n	color: white;\r\n	padding: 5px;\r\n	white-space: nowrap;\r\n	font-size: 0.6rem;\r\n}\r\n#BasicInfoV4 .buttons button:hover .name {\r\n	display: table;\r\n}\r\n#BasicInfoV4 .buttons button .name {\r\n	display: none;\r\n}\r\n\r\n#BasicInfoV4 .buttons .btn_overlay {\r\n	pointer-events: none;\r\n	width: 35px;\r\n	height: 40px;\r\n	border: none;\r\n	position: relative;\r\n	top: -6px;\r\n	left: 0;\r\n	display: none;\r\n}\r\n#BasicInfoV4 .buttons button:active .btn_overlay {\r\n	pointer-events: none;\r\n	top: -5px;\r\n}\r\n";
 }));
 //#endregion
 //#region src/UI/Components/BasicInfo/BasicInfoV4/BasicInfoV4.js
@@ -207240,7 +207812,7 @@ function onClose$9() {
 /**
 * Stop event propagation
 */
-function stopPropagation$29(event) {
+function stopPropagation$27(event) {
 	event.stopImmediatePropagation();
 	return false;
 }
@@ -207344,7 +207916,7 @@ var init_Reputation = __esmMin((() => {
 		Client.loadFile(DB.INTERFACE_PATH + "reputation/light_blue.bmp", (d) => indicator_blue = d);
 		Client.loadFile(DB.INTERFACE_PATH + "reputation/light_red.bmp", (d) => indicator_red = d);
 		this.draggable(this.ui);
-		this.ui.find(".base").mousedown(stopPropagation$29);
+		this.ui.find(".base").mousedown(stopPropagation$27);
 		this.ui.find(".close").click(onClose$9);
 		this.ui.find(".big_btn_close").click(onClose$9);
 		const paginator = Reputation.ui.find(".paginator");
@@ -207410,7 +207982,7 @@ var init_BasicInfoV5$2 = __esmMin((() => {
 //#region src/UI/Components/BasicInfo/BasicInfoV5/BasicInfoV5.css?raw
 var BasicInfoV5_default$1;
 var init_BasicInfoV5$1 = __esmMin((() => {
-	BasicInfoV5_default$1 = "#BasicInfoV5 {\r\n	position: absolute;\r\n	top: 0px;\r\n	left: 0px;\r\n	width: 220px;\r\n	height: 150px;\r\n	font-size: 11px;\r\n	font-weight: bold;\r\n}\r\n#BasicInfoV5.small .large {\r\n	display: none;\r\n}\r\n#BasicInfoV5.large .small {\r\n	display: none;\r\n	border-radius: 5px;\r\n}\r\n#BasicInfoV5.small {\r\n	height: 70px;\r\n}\r\n#BasicInfoV5.large .bt_menu {\r\n	top: 150px;\r\n}\r\n#BasicInfoV5.small .bt_menu {\r\n	top: 70px;\r\n}\r\n\r\n#BasicInfoV5.large .buttons {\r\n	top: 160px;\r\n}\r\n#BasicInfoV5.small .buttons {\r\n	top: 80px;\r\n}\r\n\r\n#BasicInfoV5 .topbar .left {\r\n	position: absolute;\r\n	top: 3px;\r\n	left: 4px;\r\n	width: 11px;\r\n	height: 11px;\r\n	border: none;\r\n	background: none;\r\n}\r\n#BasicInfoV5 .topbar .right {\r\n	position: absolute;\r\n	top: 3px;\r\n	right: 2px;\r\n	width: 11px;\r\n	height: 11px;\r\n	border: none;\r\n	background: none;\r\n}\r\n\r\n/* LARGE */\r\n#BasicInfoV5 .large .title {\r\n	position: absolute;\r\n	top: 2px;\r\n	left: 18px;\r\n	text-shadow: 1px 1px white;\r\n}\r\n#BasicInfoV5 .large .name {\r\n	position: absolute;\r\n	left: 10px;\r\n	top: 20px;\r\n}\r\n#BasicInfoV5 .large .job {\r\n	position: absolute;\r\n	left: 10px;\r\n	top: 33px;\r\n}\r\n#BasicInfoV5 .large .hp_title {\r\n	position: absolute;\r\n	top: 50px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV5 .large .sp_title {\r\n	position: absolute;\r\n	top: 65px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV5 .large .ap_title {\r\n	position: absolute;\r\n	top: 80px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV5 .large .hp_bar,\r\n#BasicInfoV5 .large .sp_bar,\r\n#BasicInfoV5 .large .ap_bar {\r\n	position: absolute;\r\n	top: 53px;\r\n	left: 35px;\r\n	width: 135px;\r\n	height: 9px;\r\n}\r\n#BasicInfoV5 .large .sp_bar {\r\n	top: 68px;\r\n}\r\n#BasicInfoV5 .large .ap_bar {\r\n	top: 83px;\r\n	background: linear-gradient(\r\n		to bottom,\r\n		#5a5a63 0%,\r\n		#a5a5ad 15%,\r\n		#bdc6ce 30%,\r\n		#ceced6 45%,\r\n		#d6dede 65%,\r\n		#e7e7ef 70%,\r\n		#f7f7f7 80%\r\n	);\r\n	border-radius: 15px;\r\n	border: 1px solid #b5b5b5;\r\n}\r\n#BasicInfoV5 .large .hp_bar div,\r\n#BasicInfoV5 .large .sp_bar div,\r\n#BasicInfoV5 .large .ap_bar div {\r\n	width: 4px;\r\n	height: 9px;\r\n	float: left;\r\n}\r\n#BasicInfoV5 .large div.hp_bar_perc,\r\n#BasicInfoV5 .large div.sp_bar_perc,\r\n#BasicInfoV5 .large div.ap_bar_perc {\r\n	text-align: center;\r\n	width: 127px;\r\n	position: absolute;\r\n	top: -1px;\r\n}\r\n#BasicInfoV5 .large .hp_perc {\r\n	position: absolute;\r\n	top: 50px;\r\n	right: 20px;\r\n}\r\n#BasicInfoV5 .large .sp_perc {\r\n	position: absolute;\r\n	top: 65px;\r\n	right: 20px;\r\n}\r\n#BasicInfoV5 .large .ap_perc {\r\n	position: absolute;\r\n	top: 80px;\r\n	right: 20px;\r\n}\r\n#BasicInfoV5 .large .blvl {\r\n	position: absolute;\r\n	top: 101px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV5 .large .jlvl {\r\n	position: absolute;\r\n	top: 112px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV5 .large .bexp,\r\n#BasicInfoV5 .large .jexp {\r\n	position: absolute;\r\n	top: 105px;\r\n	left: 84px;\r\n	width: 110px;\r\n	height: 4px;\r\n	border: 1px solid #afafaf;\r\n	background-color: white;\r\n}\r\n#BasicInfoV5 .large .bexp div,\r\n#BasicInfoV5 .large .jexp div {\r\n	position: absolute;\r\n	top: 0px;\r\n	left: 0px;\r\n	width: 0%;\r\n	height: 4px;\r\n	background-color: #4262a5;\r\n}\r\n#BasicInfoV5 .large .jexp {\r\n	top: 115px;\r\n}\r\n#BasicInfoV5 .large .extra {\r\n	position: absolute;\r\n	top: 130px;\r\n	right: -15px;\r\n	width: 100%;\r\n	padding-right: 20px;\r\n	overflow: hidden;\r\n	text-overflow: ellipsis;\r\n	text-align: right;\r\n	white-space: nowrap;\r\n}\r\n#BasicInfoV5 .buttons {\r\n	position: absolute;\r\n	left: 0px;\r\n	top: 9px;\r\n	width: 220px;\r\n	height: 184px;\r\n}\r\n#BasicInfoV5 .bt_menu {\r\n	position: absolute;\r\n	left: 0px;\r\n	width: 219px;\r\n	height: 9px;\r\n}\r\n#BasicInfoV5 .buttons:hover {\r\n}\r\n#BasicInfoV5 .buttons div {\r\n	float: left;\r\n	width: 32px;\r\n	height: 32px;\r\n	border: none;\r\n	margin: 6px;\r\n}\r\n#BasicInfoV5 .buttons .clear {\r\n	clear: both;\r\n}\r\n\r\n/* REDUCED */\r\n#BasicInfoV5 .small .line1 {\r\n	position: absolute;\r\n	top: 2px;\r\n	left: 18px;\r\n	text-shadow: 1px 1px white;\r\n	white-space: nowrap;\r\n}\r\n#BasicInfoV5 .small .info-container {\r\n	position: absolute;\r\n	top: 17px;\r\n	height: 60px;\r\n	width: 220px;\r\n	background-color: #ffffff;\r\n}\r\n#BasicInfoV5 .small .hpcontainer,\r\n#BasicInfoV5 .small .spcontainer {\r\n	position: absolute;\r\n	width: 130px;\r\n}\r\n#BasicInfoV5 .small .expcontainer,\r\n#BasicInfoV5 .small .apcontainer {\r\n	position: absolute;\r\n	width: 65px;\r\n	left: 140px;\r\n}\r\n#BasicInfoV5 .small .line2 {\r\n	position: absolute;\r\n	top: 3px;\r\n	left: 10px;\r\n	white-space: nowrap;\r\n}\r\n#BasicInfoV5 .small .line3 {\r\n	position: absolute;\r\n	top: 20px;\r\n	left: 10px;\r\n	white-space: nowrap;\r\n	font-weight: normal;\r\n}\r\n#BasicInfoV5 .small .line3 .hp_max_value {\r\n	display: inline-block;\r\n	width: 65px; /* Set your desired width */\r\n	text-align: left; /* Align the text to the right within the span */\r\n	font-weight: normal;\r\n}\r\n#BasicInfoV5 .small .line4 {\r\n	position: absolute;\r\n	top: 35px;\r\n	left: 10px;\r\n	white-space: nowrap;\r\n	font-weight: normal;\r\n}\r\n#BasicInfoV5 .small .line4 .sp_max_value {\r\n	display: inline-block;\r\n	width: 73px; /* Set your desired width */\r\n	text-align: left; /* Align the text to the right within the span */\r\n	font-weight: normal;\r\n}\r\n#BasicInfoV5 .toggle_btns {\r\n	border: none;\r\n	background-repeat: no-repeat;\r\n	background-color: rgba(0, 0, 0, 0);\r\n}\r\n\r\n#BasicInfoV5 .buttons div .name {\r\n	position: relative;\r\n	display: none;\r\n	z-index: 1;\r\n	top: -20px;\r\n	left: 0px;\r\n	background-color: rgba(0, 0, 0, 0.6);\r\n	text-shadow: 1px 1px black;\r\n	color: white;\r\n	padding: 5px;\r\n	white-space: nowrap;\r\n	font-size: 0.6rem;\r\n}\r\n#BasicInfoV5 .buttons div:hover .name {\r\n	display: table;\r\n}\r\n#BasicInfoV5 .buttons div .name {\r\n	display: none;\r\n}\r\n\r\n#BasicInfoV5 .buttons .btn_overlay {\r\n	width: 35px;\r\n	height: 40px;\r\n	border: none;\r\n	position: relative;\r\n	top: -13px;\r\n	left: -7px;\r\n	z-index: 10;\r\n	display: none;\r\n}\r\n";
+	BasicInfoV5_default$1 = "#BasicInfoV5 {\r\n	position: absolute;\r\n	top: 0px;\r\n	left: 0px;\r\n	width: 220px;\r\n	height: 150px;\r\n	font-size: 11px;\r\n	letter-spacing: 0.03em;\r\n}\r\n#BasicInfoV5.small .large {\r\n	display: none;\r\n}\r\n#BasicInfoV5.large .small {\r\n	display: none;\r\n	border-radius: 5px;\r\n}\r\n#BasicInfoV5.small {\r\n	height: 70px;\r\n}\r\n#BasicInfoV5.large .bt_menu {\r\n	top: 150px;\r\n}\r\n#BasicInfoV5.small .bt_menu {\r\n	top: 70px;\r\n}\r\n\r\n#BasicInfoV5.large .buttons {\r\n	top: 160px;\r\n}\r\n#BasicInfoV5.small .buttons {\r\n	top: 80px;\r\n}\r\n\r\n#BasicInfoV5 .topbar .left {\r\n	position: absolute;\r\n	top: 3px;\r\n	left: 4px;\r\n	width: 11px;\r\n	height: 11px;\r\n	border: none;\r\n	background: none;\r\n}\r\n#BasicInfoV5 .topbar .right {\r\n	position: absolute;\r\n	top: 3px;\r\n	right: 2px;\r\n	width: 11px;\r\n	height: 11px;\r\n	border: none;\r\n	background: none;\r\n}\r\n\r\n/* LARGE */\r\n#BasicInfoV5 .large .title {\r\n	position: absolute;\r\n	top: 2px;\r\n	left: 18px;\r\n	text-shadow: 1px 1px white;\r\n}\r\n#BasicInfoV5 .large .name {\r\n	position: absolute;\r\n	left: 10px;\r\n	top: 20px;\r\n}\r\n#BasicInfoV5 .large .job {\r\n	position: absolute;\r\n	left: 10px;\r\n	top: 33px;\r\n}\r\n#BasicInfoV5 .large .hp_title {\r\n	position: absolute;\r\n	top: 50px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV5 .large .sp_title {\r\n	position: absolute;\r\n	top: 65px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV5 .large .ap_title {\r\n	position: absolute;\r\n	top: 80px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV5 .large .hp_bar,\r\n#BasicInfoV5 .large .sp_bar,\r\n#BasicInfoV5 .large .ap_bar {\r\n	position: absolute;\r\n	top: 53px;\r\n	left: 35px;\r\n	width: 135px;\r\n	height: 9px;\r\n}\r\n#BasicInfoV5 .large .sp_bar {\r\n	top: 68px;\r\n}\r\n#BasicInfoV5 .large .ap_bar {\r\n	top: 83px;\r\n	background: linear-gradient(\r\n		to bottom,\r\n		#5a5a63 0%,\r\n		#a5a5ad 15%,\r\n		#bdc6ce 30%,\r\n		#ceced6 45%,\r\n		#d6dede 65%,\r\n		#e7e7ef 70%,\r\n		#f7f7f7 80%\r\n	);\r\n	border-radius: 15px;\r\n	border: 1px solid #b5b5b5;\r\n}\r\n#BasicInfoV5 .large .hp_bar div,\r\n#BasicInfoV5 .large .sp_bar div,\r\n#BasicInfoV5 .large .ap_bar div {\r\n	width: 4px;\r\n	height: 9px;\r\n	float: left;\r\n}\r\n#BasicInfoV5 .large div.hp_bar_perc,\r\n#BasicInfoV5 .large div.sp_bar_perc,\r\n#BasicInfoV5 .large div.ap_bar_perc {\r\n	text-align: center;\r\n	width: 127px;\r\n	position: absolute;\r\n	top: -1px;\r\n}\r\n#BasicInfoV5 .large .hp_perc {\r\n	position: absolute;\r\n	top: 50px;\r\n	right: 20px;\r\n}\r\n#BasicInfoV5 .large .sp_perc {\r\n	position: absolute;\r\n	top: 65px;\r\n	right: 20px;\r\n}\r\n#BasicInfoV5 .large .ap_perc {\r\n	position: absolute;\r\n	top: 80px;\r\n	right: 20px;\r\n}\r\n#BasicInfoV5 .large .blvl {\r\n	position: absolute;\r\n	top: 101px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV5 .large .jlvl {\r\n	position: absolute;\r\n	top: 112px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV5 .large .bexp,\r\n#BasicInfoV5 .large .jexp {\r\n	position: absolute;\r\n	top: 105px;\r\n	left: 84px;\r\n	width: 110px;\r\n	height: 4px;\r\n	border: 1px solid #afafaf;\r\n	background-color: white;\r\n}\r\n#BasicInfoV5 .large .bexp div,\r\n#BasicInfoV5 .large .jexp div {\r\n	position: absolute;\r\n	top: 0px;\r\n	left: 0px;\r\n	width: 0%;\r\n	height: 4px;\r\n	background-color: #4262a5;\r\n}\r\n#BasicInfoV5 .large .jexp {\r\n	top: 115px;\r\n}\r\n#BasicInfoV5 .large .extra {\r\n	position: absolute;\r\n	top: 130px;\r\n	right: -15px;\r\n	width: 100%;\r\n	padding-right: 20px;\r\n	overflow: hidden;\r\n	text-overflow: ellipsis;\r\n	text-align: right;\r\n	white-space: nowrap;\r\n}\r\n#BasicInfoV5 .buttons {\r\n	position: absolute;\r\n	left: 0px;\r\n	top: 9px;\r\n	width: 220px;\r\n	height: 184px;\r\n}\r\n#BasicInfoV5 .bt_menu {\r\n	position: absolute;\r\n	left: 0px;\r\n	width: 219px;\r\n	height: 9px;\r\n}\r\n#BasicInfoV5 .buttons:hover {\r\n}\r\n#BasicInfoV5 .buttons div {\r\n	float: left;\r\n	width: 32px;\r\n	height: 32px;\r\n	border: none;\r\n	margin: 6px;\r\n}\r\n#BasicInfoV5 .buttons .clear {\r\n	clear: both;\r\n}\r\n\r\n/* REDUCED */\r\n#BasicInfoV5 .small .line1 {\r\n	position: absolute;\r\n	top: 2px;\r\n	left: 18px;\r\n	text-shadow: 1px 1px white;\r\n	white-space: nowrap;\r\n}\r\n#BasicInfoV5 .small .info-container {\r\n	position: absolute;\r\n	top: 17px;\r\n	height: 60px;\r\n	width: 220px;\r\n	background-color: #ffffff;\r\n}\r\n#BasicInfoV5 .small .hpcontainer,\r\n#BasicInfoV5 .small .spcontainer {\r\n	position: absolute;\r\n	width: 130px;\r\n}\r\n#BasicInfoV5 .small .expcontainer,\r\n#BasicInfoV5 .small .apcontainer {\r\n	position: absolute;\r\n	width: 65px;\r\n	left: 140px;\r\n}\r\n#BasicInfoV5 .small .line2 {\r\n	position: absolute;\r\n	top: 3px;\r\n	left: 10px;\r\n	white-space: nowrap;\r\n}\r\n#BasicInfoV5 .small .line3 {\r\n	position: absolute;\r\n	top: 20px;\r\n	left: 10px;\r\n	white-space: nowrap;\r\n	font-weight: normal;\r\n}\r\n#BasicInfoV5 .small .line3 .hp_max_value {\r\n	display: inline-block;\r\n	width: 65px; /* Set your desired width */\r\n	text-align: left; /* Align the text to the right within the span */\r\n	font-weight: normal;\r\n}\r\n#BasicInfoV5 .small .line4 {\r\n	position: absolute;\r\n	top: 35px;\r\n	left: 10px;\r\n	white-space: nowrap;\r\n	font-weight: normal;\r\n}\r\n#BasicInfoV5 .small .line4 .sp_max_value {\r\n	display: inline-block;\r\n	width: 73px; /* Set your desired width */\r\n	text-align: left; /* Align the text to the right within the span */\r\n	font-weight: normal;\r\n}\r\n#BasicInfoV5 .toggle_btns {\r\n	border: none;\r\n	background-repeat: no-repeat;\r\n	background-color: rgba(0, 0, 0, 0);\r\n}\r\n\r\n#BasicInfoV5 .buttons div .name {\r\n	position: relative;\r\n	display: none;\r\n	z-index: 1;\r\n	top: -20px;\r\n	left: 0px;\r\n	background-color: rgba(0, 0, 0, 0.6);\r\n	text-shadow: 1px 1px black;\r\n	color: white;\r\n	padding: 5px;\r\n	white-space: nowrap;\r\n	font-size: 0.6rem;\r\n}\r\n#BasicInfoV5 .buttons div:hover .name {\r\n	display: table;\r\n}\r\n#BasicInfoV5 .buttons div .name {\r\n	display: none;\r\n}\r\n\r\n#BasicInfoV5 .buttons .btn_overlay {\r\n	width: 35px;\r\n	height: 40px;\r\n	border: none;\r\n	position: relative;\r\n	top: -13px;\r\n	left: -7px;\r\n	z-index: 10;\r\n	display: none;\r\n}\r\n";
 }));
 //#endregion
 //#region src/UI/Components/BasicInfo/BasicInfoV5/BasicInfoV5.js
@@ -207851,7 +208423,7 @@ function onDrop$19(event) {
 /**
 * Stop event propagation
 */
-function stopPropagation$28(event) {
+function stopPropagation$26(event) {
 	event.stopImmediatePropagation();
 	return false;
 }
@@ -207882,7 +208454,7 @@ function onItemOut$16() {
 /**
 * Start dragging an item
 */
-function onItemDragStart$12(event) {
+function onItemDragStart$11(event) {
 	const index = parseInt(this.getAttribute("data-index"), 10);
 	const item = WriteRodex.getItemByIndex(index);
 	if (!item) return;
@@ -207976,7 +208548,7 @@ var init_WriteRodex = __esmMin((() => {
 		WriteRodex.ui.find(".tax-text").html("0");
 		WriteRodex.ui.find(".value").val("").attr("max", SessionStorage_default.zeny);
 		WriteRodex.ui.find(".item-list").html("");
-		WriteRodex.ui.find(".items").on("drop", onDrop$19).on("dragover", stopPropagation$28);
+		WriteRodex.ui.find(".items").on("drop", onDrop$19).on("dragover", stopPropagation$26);
 		WriteRodex.ui.show();
 		WriteRodex.ui.focus();
 	};
@@ -208015,7 +208587,7 @@ var init_WriteRodex = __esmMin((() => {
 		Client.loadFile(DB.INTERFACE_PATH + "item/" + (item.IsIdentified ? it.identifiedResourceName : it.unidentifiedResourceName) + ".bmp", function(data) {
 			content.find(".item[data-index=\"" + item.index + "\"] .icon").css("backgroundImage", "url(" + data + ")");
 		});
-		content.find(".item[data-index=\"" + item.index + "\"]").on("mouseover", onItemOver$15).on("mouseout", onItemOut$16).on("dragstart", onItemDragStart$12).on("dragend", onItemDragEnd$12).on("contextmenu", onItemInfo$19);
+		content.find(".item[data-index=\"" + item.index + "\"]").on("mouseover", onItemOver$15).on("mouseout", onItemOut$16).on("dragstart", onItemDragStart$11).on("dragend", onItemDragEnd$12).on("contextmenu", onItemInfo$19);
 		WriteRodex.updateWeight(item.weight);
 		WriteRodex.updateTax();
 	};
@@ -208092,7 +208664,7 @@ function getItemTab$3(item) {
 /**
 * Stop event propagation
 */
-function stopPropagation$27(event) {
+function stopPropagation$25(event) {
 	event.stopImmediatePropagation();
 	return false;
 }
@@ -208244,7 +208816,7 @@ function onItemOut$15() {
 /**
 * Start dragging an item
 */
-function onItemDragStart$11(event) {
+function onItemDragStart$10(event) {
 	const index = parseInt(this.getAttribute("data-index"), 10);
 	const item = InventoryV0.getItemByIndex(index);
 	if (!item) return;
@@ -208392,14 +208964,14 @@ var init_InventoryV0 = __esmMin((() => {
 	* Initialize UI
 	*/
 	InventoryV0.init = function Init() {
-		this.ui.find(".titlebar .base").mousedown(stopPropagation$27);
+		this.ui.find(".titlebar .base").mousedown(stopPropagation$25);
 		this.ui.find(".titlebar .mini").click(onToggleReduction$3);
 		this.ui.find(".tabs button").mousedown(onSwitchTab$3);
 		this.ui.find(".footer .extend").mousedown(onResize$10);
 		this.ui.find(".titlebar .close").click(function() {
 			InventoryV0.ui.hide();
 		});
-		this.ui.on("drop", onDrop$18).on("dragover", stopPropagation$27).find(".container .content").on("mouseover", ".item", onItemOver$14).on("mouseout", ".item", onItemOut$15).on("dragstart", ".item", onItemDragStart$11).on("dragend", ".item", onItemDragEnd$11).on("contextmenu", ".item", onItemInfo$18).on("dblclick", ".item", onItemUsed$4).on("click", ".item", onItemClick$3);
+		this.ui.on("drop", onDrop$18).on("dragover", stopPropagation$25).find(".container .content").on("mouseover", ".item", onItemOver$14).on("mouseout", ".item", onItemOut$15).on("dragstart", ".item", onItemDragStart$10).on("dragend", ".item", onItemDragEnd$11).on("contextmenu", ".item", onItemInfo$18).on("dblclick", ".item", onItemUsed$4).on("click", ".item", onItemClick$3);
 		this.ui.find(".ncnt").text(0);
 		this.ui.find(".mcnt").text(100);
 		this.draggable(this.ui.find(".titlebar"));
@@ -208751,7 +209323,7 @@ function getItemTab$2(item) {
 /**
 * Stop event propagation
 */
-function stopPropagation$26(event) {
+function stopPropagation$24(event) {
 	event.stopImmediatePropagation();
 	return false;
 }
@@ -208913,7 +209485,7 @@ function onItemOut$14() {
 /**
 * Start dragging an item
 */
-function onItemDragStart$10(event) {
+function onItemDragStart$9(event) {
 	const index = parseInt(this.getAttribute("data-index"), 10);
 	const item = InventoryV1.getItemByIndex(index);
 	if (!item) return;
@@ -209148,18 +209720,18 @@ var init_InventoryV1 = __esmMin((() => {
 	* Initialize UI
 	*/
 	InventoryV1.init = function Init() {
-		this.ui.find(".titlebar .base").mousedown(stopPropagation$26);
+		this.ui.find(".titlebar .base").mousedown(stopPropagation$24);
 		this.ui.find(".titlebar .mini").click(onToggleReduction$2);
 		this.ui.find(".tabs button").mousedown(onSwitchTab$2);
 		this.ui.find(".footer .extend").mousedown(onResize$9);
 		this.ui.find(".titlebar .close").click(function() {
 			InventoryV1.ui.hide();
 		});
-		this.ui.on("drop", onDrop$17).on("dragover", stopPropagation$26).find(".container .content").on("mouseover", ".item", onItemOver$13).on("mouseout", ".item", onItemOut$14).on("dragstart", ".item", onItemDragStart$10).on("dragend", ".item", onItemDragEnd$10).on("contextmenu", ".item", onItemInfo$17).on("dblclick", ".item", onItemUsed$3).on("click", ".item", onItemClick$2);
+		this.ui.on("drop", onDrop$17).on("dragover", stopPropagation$24).find(".container .content").on("mouseover", ".item", onItemOver$13).on("mouseout", ".item", onItemOut$14).on("dragstart", ".item", onItemDragStart$9).on("dragend", ".item", onItemDragEnd$10).on("contextmenu", ".item", onItemInfo$17).on("dblclick", ".item", onItemUsed$3).on("click", ".item", onItemClick$2);
 		this.ui.find(".ncnt").text("0 / ");
 		this.ui.find(".mcnt").text(100);
 		this.draggable(this.ui.find(".titlebar"));
-		this.ui.find(".tabs button").on("dragover", stopPropagation$26).on("drop", onTabDrop$2);
+		this.ui.find(".tabs button").on("dragover", stopPropagation$24).on("drop", onTabDrop$2);
 		jquery_default(".tabs button").removeClass("selected");
 		this.ui.find(".tabs button").eq(_preferences$38.tab).addClass("selected");
 		const lockImg = _preferences$38.itemlock ? "inventory/item_drop_lock_on.bmp" : "inventory/item_drop_lock_off.bmp";
@@ -209963,7 +210535,7 @@ function getItemTab$1(item) {
 /**
 * Stop event propagation
 */
-function stopPropagation$25(event) {
+function stopPropagation$23(event) {
 	event.stopImmediatePropagation();
 	return false;
 }
@@ -210125,7 +210697,7 @@ function onItemOut$13() {
 /**
 * Start dragging an item
 */
-function onItemDragStart$9(event) {
+function onItemDragStart$8(event) {
 	const index = parseInt(this.getAttribute("data-index"), 10);
 	const item = InventoryV2.getItemByIndex(index);
 	if (!item) return;
@@ -210365,18 +210937,18 @@ var init_InventoryV2 = __esmMin((() => {
 	* Initialize UI
 	*/
 	InventoryV2.init = function Init() {
-		this.ui.find(".titlebar .base").mousedown(stopPropagation$25);
+		this.ui.find(".titlebar .base").mousedown(stopPropagation$23);
 		this.ui.find(".titlebar .mini").click(onToggleReduction$1);
 		this.ui.find(".tabs button").mousedown(onSwitchTab$1);
 		this.ui.find(".footer .extend").mousedown(onResize$8);
 		this.ui.find(".titlebar .close").click(function() {
 			InventoryV2.ui.hide();
 		});
-		this.ui.on("drop", onDrop$15).on("dragover", stopPropagation$25).find(".container .content").on("mouseover", ".item", onItemOver$12).on("mouseout", ".item", onItemOut$13).on("dragstart", ".item", onItemDragStart$9).on("dragend", ".item", onItemDragEnd$9).on("contextmenu", ".item", onItemInfo$16).on("dblclick", ".item", onItemUsed$2).on("click", ".item", onItemClick$1);
+		this.ui.on("drop", onDrop$15).on("dragover", stopPropagation$23).find(".container .content").on("mouseover", ".item", onItemOver$12).on("mouseout", ".item", onItemOut$13).on("dragstart", ".item", onItemDragStart$8).on("dragend", ".item", onItemDragEnd$9).on("contextmenu", ".item", onItemInfo$16).on("dblclick", ".item", onItemUsed$2).on("click", ".item", onItemClick$1);
 		this.ui.find(".ncnt").text("0 / ");
 		this.ui.find(".mcnt").text(100);
 		this.draggable(this.ui.find(".titlebar"));
-		this.ui.find(".tabs button").on("dragover", stopPropagation$25).on("drop", onTabDrop$1);
+		this.ui.find(".tabs button").on("dragover", stopPropagation$23).on("drop", onTabDrop$1);
 		jquery_default(".tabs button").removeClass("selected");
 		this.ui.find(".tabs button").eq(_preferences$37.tab).addClass("selected");
 		const lockImg = _preferences$37.itemlock ? "inventory/item_drop_lock_on.bmp" : "inventory/item_drop_lock_off.bmp";
@@ -210880,7 +211452,7 @@ function clearRefineStates() {
 /**
 * Stop event propagation
 */
-function stopPropagation$24(event) {
+function stopPropagation$22(event) {
 	event.stopImmediatePropagation();
 	return false;
 }
@@ -211436,7 +212008,7 @@ function onItemInfo$15(event) {
 /**
 * Start dragging an item
 */
-function onItemDragStart$8(event) {
+function onItemDragStart$7(event) {
 	event.originalEvent.dataTransfer.setData("text", event.target.id);
 }
 /**
@@ -211632,14 +212204,14 @@ var init_Refine = __esmMin((() => {
 			top: 200,
 			left: 300
 		});
-		this.ui.find(".titlebar .base").mousedown(stopPropagation$24);
+		this.ui.find(".titlebar .base").mousedown(stopPropagation$22);
 		this.ui.find(".titlebar .close").click(onRefineClose);
 		this.ui.find(".footer .cancel").click(onRefineClose);
 		this.draggable(this.ui.find(".titlebar"));
 		const successdiv = this.ui.find(".success");
 		initialsuccess = DB.getMessage(3724).replace("%d%", `<span class="number">0</span>`);
 		successdiv.html(initialsuccess);
-		this.ui.find(".item_to_refine").on("drop", onItemDrop$1).on("dragover", stopPropagation$24).on("dragstart", ".item", onItemDragStart$8).on("dragend", ".item", onItemDragEnd$8);
+		this.ui.find(".item_to_refine").on("drop", onItemDrop$1).on("dragover", stopPropagation$22).on("dragstart", ".item", onItemDragStart$7).on("dragend", ".item", onItemDragEnd$8);
 		this.ui.find(".materials").on("mouseover", ".item", onItemOver$11).on("mouseout", onItemOut$12);
 		this.ui.find(".materials").on("contextmenu", ".item", onItemInfo$15);
 		this.ui.find(".item_to_refine").on("contextmenu", ".item", onItemInfo$15);
@@ -211761,7 +212333,7 @@ function clearEnchantGradeStates() {
 /**
 * Stop event propagation
 */
-function stopPropagation$23(event) {
+function stopPropagation$21(event) {
 	event.stopImmediatePropagation();
 	return false;
 }
@@ -212141,7 +212713,7 @@ function onItemInfo$14(event) {
 /**
 * Start dragging an item
 */
-function onItemDragStart$7(event) {
+function onItemDragStart$6(event) {
 	event.originalEvent.dataTransfer.setData("text", event.target.id);
 }
 /**
@@ -212286,8 +212858,8 @@ var init_EnchantGrade = __esmMin((() => {
 		this.ui.find(".titlebar .close_btn").click(onEnchantGradeClose);
 		this.ui.find(".footer .big_close_btn").click(onEnchantGradeClose);
 		this.draggable(this.ui.find(".titlebar"));
-		this.ui.find(".enchant_drop_proxy").on("drop", onItemDrop).on("dragover", stopPropagation$23);
-		this.ui.find(".enchant_container").on("dragstart", ".item", onItemDragStart$7).on("dragend", ".item", onItemDragEnd$7);
+		this.ui.find(".enchant_drop_proxy").on("drop", onItemDrop).on("dragover", stopPropagation$21);
+		this.ui.find(".enchant_container").on("dragstart", ".item", onItemDragStart$6).on("dragend", ".item", onItemDragEnd$7);
 		this.ui.find(".material_slot").on("contextmenu", ".item", onItemInfo$14);
 		this.ui.find(".enchant_container").on("contextmenu", ".item", onItemInfo$14);
 		this.ui.find(".BED_container").on("contextmenu", ".item", onItemInfo$14);
@@ -213996,7 +214568,7 @@ function getItemTab(item) {
 /**
 * Stop event propagation
 */
-function stopPropagation$22(event) {
+function stopPropagation$20(event) {
 	event.stopImmediatePropagation();
 	return false;
 }
@@ -214158,7 +214730,7 @@ function onItemOut$11() {
 /**
 * Start dragging an item
 */
-function onItemDragStart$6(event) {
+function onItemDragStart$5(event) {
 	const index = parseInt(this.getAttribute("data-index"), 10);
 	const item = InventoryV3.getItemByIndex(index);
 	if (!item) return;
@@ -214491,18 +215063,18 @@ var init_InventoryV3 = __esmMin((() => {
 	* Initialize UI
 	*/
 	InventoryV3.init = function Init() {
-		this.ui.find(".titlebar .base").mousedown(stopPropagation$22);
+		this.ui.find(".titlebar .base").mousedown(stopPropagation$20);
 		this.ui.find(".titlebar .mini").click(onToggleReduction);
 		this.ui.find(".tabs button").mousedown(onSwitchTab);
 		this.ui.find(".footer .extend").mousedown(onResize$7);
 		this.ui.find(".titlebar .close").click(function() {
 			InventoryV3.ui.hide();
 		});
-		this.ui.on("drop", onDrop$14).on("dragover", stopPropagation$22).find(".container .content").on("mouseover", ".item", onItemOver$10).on("mouseout", ".item", onItemOut$11).on("dragstart", ".item", onItemDragStart$6).on("dragend", ".item", onItemDragEnd$6).on("contextmenu", ".item", onItemInfo$13).on("dblclick", ".item", onItemUsed$1).on("click", ".item", onItemClick);
+		this.ui.on("drop", onDrop$14).on("dragover", stopPropagation$20).find(".container .content").on("mouseover", ".item", onItemOver$10).on("mouseout", ".item", onItemOut$11).on("dragstart", ".item", onItemDragStart$5).on("dragend", ".item", onItemDragEnd$6).on("contextmenu", ".item", onItemInfo$13).on("dblclick", ".item", onItemUsed$1).on("click", ".item", onItemClick);
 		this.ui.find(".ncnt").text("0 / ");
 		this.ui.find(".mcnt").text(100);
 		this.draggable(this.ui.find(".titlebar"));
-		this.ui.find(".tabs button").on("dragover", stopPropagation$22).on("drop", onTabDrop);
+		this.ui.find(".tabs button").on("dragover", stopPropagation$20).on("drop", onTabDrop);
 		jquery_default(".tabs button").removeClass("selected");
 		this.ui.find(".tabs button").eq(_preferences$36.tab).addClass("selected");
 		const lockImg = _preferences$36.itemlock ? "inventory/item_drop_lock_on.bmp" : "inventory/item_drop_lock_off.bmp";
@@ -215520,7 +216092,7 @@ function onRemoveOption$5() {
 /**
 * Stop an event to propagate
 */
-function stopPropagation$21(event) {
+function stopPropagation$19(event) {
 	event.stopImmediatePropagation();
 	return false;
 }
@@ -215709,7 +216281,7 @@ var init_EquipmentV0 = __esmMin((() => {
 	*/
 	EquipmentV0.init = function init() {
 		_ctx$9 = this.ui.find("canvas")[0].getContext("2d");
-		if (UIVersionManager.getEquipmentVersion() > 0) _btnLevelUp$4 = jquery_default("#lvlup_base").detach().mousedown(stopPropagation$21).click(function() {
+		if (UIVersionManager.getEquipmentVersion() > 0) _btnLevelUp$4 = jquery_default("#lvlup_base").detach().mousedown(stopPropagation$19).click(function() {
 			_btnLevelUp$4.detach();
 			EquipmentV0.ui.show();
 			EquipmentV0.ui.parent().append(EquipmentV0.ui);
@@ -215720,7 +216292,7 @@ var init_EquipmentV0 = __esmMin((() => {
 			this.ui.addClass("equipmentV0");
 			this.ui.find("#lvlup_base").remove();
 		}
-		this.ui.find(".titlebar .base").mousedown(stopPropagation$21);
+		this.ui.find(".titlebar .base").mousedown(stopPropagation$19);
 		this.ui.find(".titlebar .mini").click(function() {
 			EquipmentV0.ui.find(".panel").toggle();
 		});
@@ -215999,7 +216571,7 @@ function onRemoveOption$4() {
 /**
 * Stop an event to propagate
 */
-function stopPropagation$20(event) {
+function stopPropagation$18(event) {
 	event.stopImmediatePropagation();
 	return false;
 }
@@ -216226,7 +216798,7 @@ var init_EquipmentV1 = __esmMin((() => {
 			if (i != 0) contentDivs$3[id].classList.add("content", "hide");
 			i++;
 		}
-		if (UIVersionManager.getEquipmentVersion() > 0) _btnLevelUp$3 = jquery_default("#lvlup_base").detach().mousedown(stopPropagation$20).click(function() {
+		if (UIVersionManager.getEquipmentVersion() > 0) _btnLevelUp$3 = jquery_default("#lvlup_base").detach().mousedown(stopPropagation$18).click(function() {
 			_btnLevelUp$3.detach();
 			EquipmentV1.ui.show();
 			EquipmentV1.ui.parent().append(EquipmentV1.ui);
@@ -216237,7 +216809,7 @@ var init_EquipmentV1 = __esmMin((() => {
 			this.ui.addClass("equipmentV0");
 			this.ui.find("#lvlup_base").remove();
 		}
-		this.ui.find(".titlebar .base").mousedown(stopPropagation$20);
+		this.ui.find(".titlebar .base").mousedown(stopPropagation$18);
 		this.ui.find(".titlebar .mini").click(function() {
 			EquipmentV1.ui.find(".panel").toggle();
 		});
@@ -216542,7 +217114,7 @@ function onRemoveOption$3() {
 /**
 * Stop an event to propagate
 */
-function stopPropagation$19(event) {
+function stopPropagation$17(event) {
 	event.stopImmediatePropagation();
 	return false;
 }
@@ -216769,7 +217341,7 @@ var init_EquipmentV2 = __esmMin((() => {
 			if (i != 0) contentDivs$2[id].classList.add("content", "hide");
 			i++;
 		}
-		if (UIVersionManager.getEquipmentVersion() > 0) _btnLevelUp$2 = jquery_default("#lvlup_base").detach().mousedown(stopPropagation$19).click(function() {
+		if (UIVersionManager.getEquipmentVersion() > 0) _btnLevelUp$2 = jquery_default("#lvlup_base").detach().mousedown(stopPropagation$17).click(function() {
 			_btnLevelUp$2.detach();
 			EquipmentV2.ui.show();
 			EquipmentV2.ui.parent().append(EquipmentV2.ui);
@@ -216780,7 +217352,7 @@ var init_EquipmentV2 = __esmMin((() => {
 			this.ui.addClass("equipmentV0");
 			this.ui.find("#lvlup_base").remove();
 		}
-		this.ui.find(".titlebar .base").mousedown(stopPropagation$19);
+		this.ui.find(".titlebar .base").mousedown(stopPropagation$17);
 		this.ui.find(".titlebar .mini").click(function() {
 			EquipmentV2.ui.find(".panel").toggle();
 		});
@@ -217118,7 +217690,7 @@ function onRemoveOption$2() {
 /**
 * Stop an event to propagate
 */
-function stopPropagation$18(event) {
+function stopPropagation$16(event) {
 	event.stopImmediatePropagation();
 	return false;
 }
@@ -217349,7 +217921,7 @@ var init_EquipmentV3 = __esmMin((() => {
 			if (i != 0) contentDivs$1[id].classList.add("content", "hide");
 			i++;
 		}
-		if (UIVersionManager.getEquipmentVersion() > 0) _btnLevelUp$1 = jquery_default("#lvlup_base").detach().mousedown(stopPropagation$18).click(() => {
+		if (UIVersionManager.getEquipmentVersion() > 0) _btnLevelUp$1 = jquery_default("#lvlup_base").detach().mousedown(stopPropagation$16).click(() => {
 			_btnLevelUp$1.detach();
 			WinStatsController.getUI().ui.show();
 		});
@@ -217358,7 +217930,7 @@ var init_EquipmentV3 = __esmMin((() => {
 			this.ui.addClass("equipmentV0");
 			this.ui.find("#lvlup_base").remove();
 		}
-		this.ui.find(".titlebar .base").mousedown(stopPropagation$18);
+		this.ui.find(".titlebar .base").mousedown(stopPropagation$16);
 		this.ui.find(".titlebar .mini").click(function() {
 			EquipmentV3.ui.find(".panel").toggle();
 		});
@@ -217771,7 +218343,7 @@ function onRemoveOption$1() {
 /**
 * Stop an event to propagate
 */
-function stopPropagation$17(event) {
+function stopPropagation$15(event) {
 	event.stopImmediatePropagation();
 	return false;
 }
@@ -218010,7 +218582,7 @@ var init_EquipmentV4 = __esmMin((() => {
 			if (i != 0) contentDivs[id].classList.add("content", "hide");
 			i++;
 		}
-		if (UIVersionManager.getEquipmentVersion() > 0) _btnLevelUp = jquery_default("#lvlup_base").detach().mousedown(stopPropagation$17).click(() => {
+		if (UIVersionManager.getEquipmentVersion() > 0) _btnLevelUp = jquery_default("#lvlup_base").detach().mousedown(stopPropagation$15).click(() => {
 			_btnLevelUp.detach();
 			WinStatsController.getUI().ui.show();
 		});
@@ -218019,7 +218591,7 @@ var init_EquipmentV4 = __esmMin((() => {
 			this.ui.addClass("equipmentV0");
 			this.ui.find("#lvlup_base").remove();
 		}
-		this.ui.find(".titlebar .base").mousedown(stopPropagation$17);
+		this.ui.find(".titlebar .base").mousedown(stopPropagation$15);
 		this.ui.find(".titlebar .mini").click(function() {
 			EquipmentV4.ui.find(".panel").toggle();
 		});
@@ -221575,7 +222147,7 @@ function onClose$8() {
 /**
 * Stop event propagation
 */
-function stopPropagation$16(event) {
+function stopPropagation$14(event) {
 	event.stopImmediatePropagation();
 	return false;
 }
@@ -221612,7 +222184,7 @@ var init_HomunInformations = __esmMin((() => {
 	*/
 	HomunInformations.init = function init() {
 		this.draggable(this.ui.find(".content"));
-		this.ui.find(".base").mousedown(stopPropagation$16);
+		this.ui.find(".base").mousedown(stopPropagation$14);
 		this.ui.find(".close").click(onClose$8);
 		this.ui.find(".modify").click(onChangeName$1);
 		this.ui.find(".feed").click(onFeed);
@@ -221847,7 +222419,7 @@ var init_MercenaryInformations$1 = __esmMin((() => {
 /**
 * Stop event propagation
 */
-function stopPropagation$15(event) {
+function stopPropagation$13(event) {
 	event.stopImmediatePropagation();
 	return false;
 }
@@ -221891,8 +222463,8 @@ var init_MercenaryInformations = __esmMin((() => {
 	*/
 	MercenaryInformations.init = function init() {
 		this.draggable(this.ui.find(".content"));
-		this.ui.find(".content").mousedown(stopPropagation$15);
-		this.ui.find(".content .base").mousedown(stopPropagation$15);
+		this.ui.find(".content").mousedown(stopPropagation$13);
+		this.ui.find(".content .base").mousedown(stopPropagation$13);
 		this.ui.find(".close").click(onClose$7);
 		this.ui.find(".dismiss").click(onDelete);
 		if (!_preferences$28.show) this.ui.hide();
@@ -223720,7 +224292,7 @@ function onDropText$1(event) {
 /**
 * Stop event propagation
 */
-function stopPropagation$14(event) {
+function stopPropagation$12(event) {
 	event.stopImmediatePropagation();
 	return false;
 }
@@ -224020,7 +224592,7 @@ var init_ChatBox = __esmMin((() => {
 				if (!movedInsideChatbox && !isTextInput && !isChatMessage) this.ui.find(".input .username").focus();
 			}.bind(this), 1e3);
 		}.bind(this));
-		this.ui.find("input[type=text]").on("drop", onDropText$1).on("dragover", stopPropagation$14);
+		this.ui.find("input[type=text]").on("drop", onDropText$1).on("dragover", stopPropagation$12);
 		this.ui.find(".header input").dblclick(function() {
 			this.type = "text";
 			this.select();
@@ -243303,6 +243875,9 @@ var init_ScreenEffectManager = __esmMin((() => {
 			Blind.setActive(false);
 			VerticalFlip.setActive(false);
 		}
+		static renderBeforeEntities(gl, modelView, projection, fog, tick) {
+			RainWeatherEffect.renderPuddles(gl, modelView, projection, fog, tick);
+		}
 		/**
 		* Rendering self screen effects
 		*
@@ -243311,9 +243886,14 @@ var init_ScreenEffectManager = __esmMin((() => {
 		* @param {mat4} projection
 		* @param {object} fog structure
 		* @param {number} tick - game tick
+		* @param {boolean} beforeEntities - render before entities
 		*/
-		static render(gl, modelView, projection, fog, tick) {
+		static render(gl, modelView, projection, fog, tick, beforeEntities = false) {
 			if (!ScreenEffectManager.hasAnyActiveEffect()) return;
+			if (beforeEntities) {
+				ScreenEffectManager.renderBeforeEntities(gl, modelView, projection, fog, tick);
+				return;
+			}
 			beforeRender(gl, modelView, projection, fog, tick);
 			SnowWeatherEffect.renderAll(gl, modelView, projection, fog, tick);
 			RainWeatherEffect.renderAll(gl, modelView, projection, fog, tick);
@@ -244103,7 +244683,7 @@ function onContainerMouseLeave(event) {
 /**
 * Stop event propagation
 */
-function stopPropagation$13(event) {
+function stopPropagation$11(event) {
 	event.stopImmediatePropagation();
 	return false;
 }
@@ -244130,7 +244710,7 @@ function onResize$3(event) {
 			jquery_default(window).off("mouseup.resize");
 		}
 	});
-	return stopPropagation$13(event);
+	return stopPropagation$11(event);
 }
 /**
 * Displays the cat hand over an icon
@@ -244494,8 +245074,8 @@ var init_ShortCut = __esmMin((() => {
 	*/
 	ShortCut.init = function init() {
 		this.ui.find(".resize").mousedown(onResize$3);
-		this.ui.find(".close").mousedown(stopPropagation$13).click(onClose$6);
-		this.ui.on("drop", ".container", onDrop$8).on("dragover", ".container", stopPropagation$13).on("dragstart", ".icon", onDragStart$2).on("dragend", ".icon", onDragEnd).on("dblclick", ".icon", onUseShortCut).on("contextmenu", ".icon", onElementInfo).on("mousedown", ".icon", function(event) {
+		this.ui.find(".close").mousedown(stopPropagation$11).click(onClose$6);
+		this.ui.on("drop", ".container", onDrop$8).on("dragover", ".container", stopPropagation$11).on("dragstart", ".icon", onDragStart$2).on("dragend", ".icon", onDragEnd).on("dblclick", ".icon", onUseShortCut).on("contextmenu", ".icon", onElementInfo).on("mousedown", ".icon", function(event) {
 			event.stopImmediatePropagation();
 		});
 		this.draggable();
@@ -246990,8 +247570,8 @@ var init_MapRenderer = __esmMin((() => {
 			const modelView = Camera.modelView;
 			const projection = Camera.projection;
 			const normalMat = Camera.normalMat;
-			Effects_default.spam(SessionStorage_default.Entity.position, tick);
 			Ground_default.render(gl, modelView, projection, normalMat, fog, light);
+			Effects_default.spam(SessionStorage_default.Entity.position, tick);
 			if (Mouse.intersect && Altitude.intersect(modelView, projection, _pos$6)) {
 				x = _pos$6[0];
 				y = _pos$6[1];
@@ -247016,6 +247596,7 @@ var init_MapRenderer = __esmMin((() => {
 			Sky_default.render(gl, modelView, projection, fog, tick);
 			Models_default.render(gl, modelView, projection, normalMat, fog, light);
 			AnimatedModels_default.render(gl, modelView, projection, normalMat, fog, light, tick);
+			ScreenEffectManager.render(gl, modelView, projection, fog, tick, true);
 			EffectManager.render(gl, modelView, projection, fog, tick, true);
 			EntityManager.render(gl, modelView, projection, fog, false);
 			Water_default.render(gl, modelView, projection, fog, light, tick);
@@ -247491,7 +248072,7 @@ function onClose$5() {
 /**
 * Stop event propagation
 */
-function stopPropagation$12(event) {
+function stopPropagation$10(event) {
 	event.stopImmediatePropagation();
 	return false;
 }
@@ -247518,7 +248099,7 @@ var init_PetInformations = __esmMin((() => {
 	*/
 	PetInformations.init = function init() {
 		this.draggable(this.ui.find(".titlebar"));
-		this.ui.find(".base").mousedown(stopPropagation$12);
+		this.ui.find(".base").mousedown(stopPropagation$10);
 		this.ui.find(".close").click(onClose$5);
 		this.ui.find(".modify").click(onChangeName);
 		this.ui.find(".command").change(onCommandSelected);
@@ -247624,39 +248205,72 @@ var init_PetInformations = __esmMin((() => {
 //#region src/UI/Components/Trade/Trade.html?raw
 var Trade_default$2;
 var init_Trade$3 = __esmMin((() => {
-	Trade_default$2 = "<div id=\"Trade\">\r\n	<div class=\"titlebar\" data-background=\"basic_interface/titlebar_mid.bmp\">Trade : <span class=\"title\"></span></div>\r\n	<div class=\"overlay\"></div>\r\n	<div class=\"content\" data-background=\"basic_interface/exchange_bg2.bmp\">\r\n		<div class=\"box send\" data-background=\"basic_interface/itemwin_mid.bmp\"></div>\r\n		<div class=\"box recv\" data-background=\"basic_interface/itemwin_mid.bmp\"></div>\r\n\r\n		<input type=\"text\" class=\"zeny send\" value=\"0\" />\r\n		<div class=\"zeny recv disabled\">0</div>\r\n\r\n		<button\r\n			class=\"btn ok enabled\"\r\n			data-background=\"btn_ok.bmp\"\r\n			data-hover=\"btn_ok_a.bmp\"\r\n			data-down=\"btn_ok_b.bmp\"\r\n		></button>\r\n		<button class=\"btn ok disabled\" data-background=\"btn_ok_dis.bmp\"></button>\r\n		<button\r\n			class=\"btn trade enabled\"\r\n			data-background=\"btn_exchange.bmp\"\r\n			data-hover=\"btn_exchange_a.bmp\"\r\n			data-down=\"btn_exchange_b.bmp\"\r\n		></button>\r\n		<button class=\"btn trade disabled\" data-background=\"btn_exchange_dis.bmp\"></button>\r\n		<button\r\n			class=\"btn cancel\"\r\n			data-background=\"btn_cancel.bmp\"\r\n			data-hover=\"btn_cancel_a.bmp\"\r\n			data-down=\"btn_cancel_b.bmp\"\r\n		></button>\r\n	</div>\r\n</div>\r\n";
+	Trade_default$2 = "<div id=\"Trade\">\r\n	<div class=\"titlebar\">\r\n		<ui-image src=\"basic_interface/titlebar_mid.bmp\"></ui-image>\r\n		Trade : <span class=\"title\"></span>\r\n	</div>\r\n	<div class=\"overlay\"></div>\r\n	<div class=\"content\">\r\n		<ui-image src=\"basic_interface/exchange_bg2.bmp\"></ui-image>\r\n		<div class=\"box send\" data-background=\"basic_interface/itemwin_mid.bmp\"></div>\r\n		<div class=\"box recv\" data-background=\"basic_interface/itemwin_mid.bmp\"></div>\r\n\r\n		<input type=\"text\" class=\"zeny send\" value=\"0\" />\r\n		<div class=\"zeny recv disabled\">0</div>\r\n\r\n		<ui-button class=\"btn ok enabled\" bg=\"btn_ok.bmp\" hover=\"btn_ok_a.bmp\" down=\"btn_ok_b.bmp\"></ui-button>\r\n		<ui-button class=\"btn ok disabled\" bg=\"btn_ok_dis.bmp\"></ui-button>\r\n		<ui-button\r\n			class=\"btn trade enabled\"\r\n			bg=\"btn_exchange.bmp\"\r\n			hover=\"btn_exchange_a.bmp\"\r\n			down=\"btn_exchange_b.bmp\"\r\n		></ui-button>\r\n		<ui-button class=\"btn trade disabled\" bg=\"btn_exchange_dis.bmp\"></ui-button>\r\n		<ui-button class=\"btn cancel\" bg=\"btn_cancel.bmp\" hover=\"btn_cancel_a.bmp\" down=\"btn_cancel_b.bmp\"></ui-button>\r\n	</div>\r\n</div>\r\n";
 }));
 //#endregion
 //#region src/UI/Components/Trade/Trade.css?raw
 var Trade_default$1;
 var init_Trade$2 = __esmMin((() => {
-	Trade_default$1 = "#Trade {\r\n	width: 560px;\r\n	height: 380px;\r\n	position: absolute;\r\n}\r\n\r\n#Trade .titlebar {\r\n	height: 14px;\r\n	background-color: white;\r\n	background-repeat: repeat-x;\r\n	border-radius: 5px 5px 0px 0px;\r\n	text-shadow: 1px 1px white;\r\n	white-space: nowrap;\r\n	position: relative;\r\n	padding-left: 15px;\r\n	padding-top: 3px;\r\n	font-size: 11px;\r\n	font-weight: bold;\r\n}\r\n\r\n/** When mouse over items **/\r\n\r\n#Trade .overlay {\r\n	position: absolute;\r\n	display: none;\r\n	white-space: nowrap;\r\n	z-index: 900;\r\n	height: 13px;\r\n	padding: 5px;\r\n	background: rgba(0, 0, 0, 0.7);\r\n	color: white;\r\n	text-shadow: 1px 1px black;\r\n}\r\n\r\n#Trade .overlay.grey {\r\n	color: #aaa;\r\n}\r\n\r\n/** Content **/\r\n\r\n#Trade .content {\r\n	background-repeat: no-repeat;\r\n	position: relative;\r\n	width: 560px;\r\n	height: 360px;\r\n}\r\n\r\n#Trade .box {\r\n	position: absolute;\r\n	top: 3px;\r\n	width: 275px;\r\n	height: 305px;\r\n	background-repeat: repeat-y;\r\n	background-size: 32px 10%; /* 10% for 10 items */\r\n	background-position: 1px 0px;\r\n}\r\n\r\n#Trade .box.disabled {\r\n	background: #ccc !important;\r\n}\r\n\r\n#Trade .box.send {\r\n	left: 2px;\r\n}\r\n\r\n#Trade .box.recv {\r\n	right: 3px;\r\n}\r\n\r\n/** Items in box **/\r\n\r\n#Trade .box .item {\r\n	display: block;\r\n	width: 24px;\r\n	height: 26px;\r\n	margin: 4px 0px 0px 4px;\r\n	position: relative;\r\n}\r\n\r\n#Trade .box .item .icon {\r\n	width: 24px;\r\n	height: 24px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n\r\n#Trade .box .item .amount {\r\n	position: relative;\r\n	bottom: 9px;\r\n	right: 0px;\r\n	text-align: right;\r\n	text-shadow: -1px -1px white;\r\n}\r\n\r\n#Trade .box .name {\r\n	position: absolute;\r\n	top: 7px;\r\n	left: 30px;\r\n	width: 190px;\r\n}\r\n\r\n/** Zeny input **/\r\n\r\n#Trade .zeny {\r\n	position: absolute;\r\n	top: 311px;\r\n	background-color: #ddd;\r\n	border: none;\r\n	width: 70px;\r\n	height: 13px;\r\n	padding: 2px;\r\n}\r\n\r\n#Trade .zeny.send {\r\n	left: 160px;\r\n}\r\n\r\n#Trade .zeny.recv {\r\n	left: 440px;\r\n}\r\n\r\n#Trade .zeny.disabled {\r\n	background-color: transparent;\r\n}\r\n\r\n/** Buttons **/\r\n\r\n#Trade .btn {\r\n	position: absolute;\r\n	bottom: 4px;\r\n	border: 0;\r\n	width: 42px;\r\n	height: 20px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n#Trade .btn.disabled {\r\n	cursor: default;\r\n}\r\n#Trade .btn.ok {\r\n	left: 5px;\r\n}\r\n#Trade .btn.trade {\r\n	left: 260px;\r\n}\r\n#Trade .btn.cancel {\r\n	left: 510px;\r\n}\r\n";
+	Trade_default$1 = ":host {\r\n	width: 560px;\r\n	height: 380px;\r\n	top: 0px;\r\n	left: 0px;\r\n}\r\n\r\n#Trade {\r\n	position: absolute;\r\n	width: 560px;\r\n	height: 380px;\r\n}\r\n\r\n#Trade .titlebar {\r\n	height: 14px;\r\n	background-color: white;\r\n	background-repeat: repeat-x;\r\n	border-radius: 5px 5px 0px 0px;\r\n	text-shadow: 1px 1px white;\r\n	white-space: nowrap;\r\n	position: relative;\r\n	padding-left: 15px;\r\n	padding-top: 3px;\r\n	font-size: 11px;\r\n	font-weight: bold;\r\n}\r\n\r\n/** When mouse over items **/\r\n\r\n#Trade .overlay {\r\n	position: absolute;\r\n	display: none;\r\n	white-space: nowrap;\r\n	z-index: 900;\r\n	height: 13px;\r\n	padding: 5px;\r\n	background: rgba(0, 0, 0, 0.7);\r\n	color: white;\r\n	text-shadow: 1px 1px black;\r\n}\r\n\r\n#Trade .overlay.grey {\r\n	color: #aaa;\r\n}\r\n\r\n/** Content **/\r\n\r\n#Trade .content {\r\n	background-repeat: no-repeat;\r\n	position: relative;\r\n	width: 560px;\r\n	height: 360px;\r\n}\r\n\r\n#Trade .box {\r\n	position: absolute;\r\n	top: 3px;\r\n	width: 275px;\r\n	height: 305px;\r\n	background-repeat: repeat-y;\r\n	background-size: 32px 10%; /* 10% for 10 items */\r\n	background-position: 1px 0px;\r\n}\r\n\r\n#Trade .box.disabled {\r\n	background: #ccc !important;\r\n}\r\n\r\n#Trade .box.send {\r\n	left: 2px;\r\n}\r\n\r\n#Trade .box.recv {\r\n	right: 3px;\r\n}\r\n\r\n/** Items in box **/\r\n\r\n#Trade .box .item {\r\n	display: block;\r\n	width: 24px;\r\n	height: 26px;\r\n	margin: 4px 0px 0px 4px;\r\n	position: relative;\r\n}\r\n\r\n#Trade .box .item .icon {\r\n	width: 24px;\r\n	height: 24px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n\r\n#Trade .box .item .amount {\r\n	position: relative;\r\n	bottom: 9px;\r\n	right: 0px;\r\n	text-align: right;\r\n	text-shadow: -1px -1px white;\r\n}\r\n\r\n#Trade .box .name {\r\n	position: absolute;\r\n	top: 7px;\r\n	left: 30px;\r\n	width: 190px;\r\n}\r\n\r\n/** Zeny input **/\r\n\r\n#Trade .zeny {\r\n	position: absolute;\r\n	top: 311px;\r\n	background-color: #ddd;\r\n	border: none;\r\n	width: 70px;\r\n	height: 13px;\r\n	padding: 2px;\r\n}\r\n\r\n#Trade .zeny.send {\r\n	left: 160px;\r\n}\r\n\r\n#Trade .zeny.recv {\r\n	left: 440px;\r\n}\r\n\r\n#Trade .zeny.disabled {\r\n	background-color: transparent;\r\n}\r\n\r\n/** Buttons **/\r\n\r\n#Trade .btn {\r\n	position: absolute;\r\n	bottom: 4px;\r\n	border: 0;\r\n	width: 42px;\r\n	height: 20px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n	display: inline-block;\r\n}\r\n#Trade .btn.disabled {\r\n	cursor: default;\r\n}\r\n#Trade .btn.ok {\r\n	left: 5px;\r\n}\r\n#Trade .btn.trade {\r\n	left: 260px;\r\n}\r\n#Trade .btn.cancel {\r\n	left: 510px;\r\n}\r\n";
 }));
 //#endregion
 //#region src/UI/Components/Trade/Trade.js
 /**
+* Escape HTML special characters
+*
+* @param {string} text
+* @returns {string}
+*/
+function escapeHtml$1(text) {
+	const div = document.createElement("div");
+	div.appendChild(document.createTextNode(text));
+	return div.innerHTML;
+}
+/**
+* Reset the UI to its initial state
+*/
+function resetUI() {
+	_tmpCount = {};
+	_recv.length = 0;
+	_send.length = 0;
+	const root = this._shadow || this._host;
+	const overlay = root.querySelector(".overlay");
+	if (overlay) overlay.style.display = "none";
+	const okDisabled = root.querySelector(".ok.disabled");
+	const tradeEnabled = root.querySelector(".trade.enabled");
+	if (okDisabled) okDisabled.style.display = "none";
+	if (tradeEnabled) tradeEnabled.style.display = "none";
+	const okEnabled = root.querySelector(".ok.enabled");
+	const tradeDisabled = root.querySelector(".trade.disabled");
+	if (okEnabled) okEnabled.style.display = "";
+	if (tradeDisabled) tradeDisabled.style.display = "";
+	root.querySelectorAll(".box").forEach((box) => {
+		box.classList.remove("disabled");
+		box.innerHTML = "";
+	});
+	const zenySend = root.querySelector(".zeny.send");
+	if (zenySend) {
+		zenySend.value = "0";
+		zenySend.classList.remove("disabled");
+		zenySend.disabled = false;
+	}
+	const zenyRecv = root.querySelector(".zeny.recv");
+	if (zenyRecv) zenyRecv.textContent = "0";
+}
+/**
 * Prettify number (15000 -> 15,000)
 *
-* @param {number}
+* @param {number} value
 * @return {string}
 */
 function prettifyZeny$2(value) {
-	const num = String(value);
-	let i = 0;
-	const len = num.length;
-	let out = "";
-	while (i < len) {
-		out = num[len - i - 1] + out;
-		if ((i + 1) % 3 === 0 && i + 1 !== len) out = "," + out;
-		++i;
-	}
-	return out;
+	return Number(value).toLocaleString("en-US");
 }
 /**
 * Request to add an item to the trade UI
 *
-* @param {number} item index in inventory
-* @param {number} item count
+* @param {number} index - item index in inventory
+* @param {number} count - item count
 */
 function onRequestAddItem(index, count) {
 	if (index in _tmpCount) {
@@ -247671,24 +248285,18 @@ function onRequestAddItem(index, count) {
 	Trade.reqAddItem(index, count);
 }
 /**
-* Stop event propagation
-*/
-function stopPropagation$11(event) {
-	event.stopImmediatePropagation();
-	return false;
-}
-/**
 * Cancel the deal
 */
 function onCancel() {
-	this.remove();
+	Trade.remove();
 	Trade.onCancel();
 }
 /**
 * Conclude our part
 */
 function onConclude() {
-	let zeny = parseInt(Trade.ui.find(".zeny.send").val(), 10) || 0;
+	const zenySend = (Trade._shadow || Trade._host).querySelector(".zeny.send");
+	let zeny = parseInt(zenySend ? zenySend.value : "0", 10) || 0;
 	zeny = Math.min(Math.max(0, zeny), SessionStorage_default.zeny);
 	onRequestAddItem(0, zeny);
 	Trade.onConclude();
@@ -247698,18 +248306,22 @@ function onConclude() {
 */
 function onTrade() {
 	Trade.onTradeSubmit();
-	this.ui.find(".trade.enabled").hide();
-	this.ui.find(".trade.disabled").show();
+	const root = Trade._shadow || Trade._host;
+	const tradeEnabled = root.querySelector(".trade.enabled");
+	const tradeDisabled = root.querySelector(".trade.disabled");
+	if (tradeEnabled) tradeEnabled.style.display = "none";
+	if (tradeDisabled) tradeDisabled.style.display = "";
 }
 /**
-* Drop from inventory to storage
+* Drop from inventory to trade
 */
 function onDrop$7(event) {
 	let data;
 	try {
-		data = JSON.parse(event.originalEvent.dataTransfer.getData("Text"));
-	} catch (e) {}
+		data = JSON.parse(event.dataTransfer ? event.dataTransfer.getData("Text") : event.originalEvent.dataTransfer.getData("Text"));
+	} catch (_e) {}
 	event.stopImmediatePropagation();
+	event.preventDefault();
 	if (!data || data.type !== "item" || data.from !== "Inventory") return false;
 	const item = data.data;
 	if (item.count > 1) {
@@ -247728,60 +248340,74 @@ function onDrop$7(event) {
 }
 /**
 * When mouse is over an item, show title
+*
+* @param {HTMLElement} itemEl
 */
-function onItemOver$9() {
-	const idx = parseInt(this.getAttribute("data-index"), 10);
-	const item = this.parentNode.className.match(/send/i) ? _send[idx] : _recv[idx];
+function onItemOver$9(itemEl) {
+	const idx = parseInt(itemEl.getAttribute("data-index"), 10);
+	const item = itemEl.parentNode.className.match(/send/i) ? _send[idx] : _recv[idx];
 	if (!item) return;
-	const $e = jquery_default(this);
-	const pos = $e.parent().position();
-	const overlay = Trade.ui.find(".overlay");
-	pos.left += $e.position().left;
-	pos.top += $e.position().top;
-	overlay.show();
-	overlay.css({
-		top: pos.top + 5,
-		left: pos.left + 30
-	});
-	overlay.text(DB.getItemName(item));
-	if (item.IsIdentified) overlay.removeClass("grey");
-	else overlay.addClass("grey");
+	const overlay = (Trade._shadow || Trade._host).querySelector(".overlay");
+	if (!overlay) return;
+	const itemRect = itemEl.getBoundingClientRect();
+	const hostRect = Trade._host.getBoundingClientRect();
+	const posLeft = itemRect.left - hostRect.left;
+	const posTop = itemRect.top - hostRect.top;
+	overlay.style.display = "";
+	overlay.style.top = `${posTop + 5}px`;
+	overlay.style.left = `${posLeft + 30}px`;
+	overlay.textContent = DB.getItemName(item);
+	if (item.IsIdentified) overlay.classList.remove("grey");
+	else overlay.classList.add("grey");
 }
 /**
 * Hide the item title when mouse is not over anymore
 */
 function onItemOut$10() {
-	Trade.ui.find(".overlay").hide();
+	const overlay = (Trade._shadow || Trade._host).querySelector(".overlay");
+	if (overlay) overlay.style.display = "none";
 }
 /**
 * Display ItemInfo UI
+*
+* @param {Event} event
+* @param {HTMLElement} itemEl
 */
-function onItemInfo$12(event) {
-	const idx = parseInt(this.getAttribute("data-index"), 10);
-	const item = this.parentNode.className.match(/send/i) ? _send[idx] : _recv[idx];
-	if (!item) return stopPropagation$11(event);
+function onItemInfo$12(event, itemEl) {
+	const idx = parseInt(itemEl.getAttribute("data-index"), 10);
+	const item = itemEl.parentNode.className.match(/send/i) ? _send[idx] : _recv[idx];
+	if (!item) {
+		event.stopImmediatePropagation();
+		event.preventDefault();
+		return;
+	}
 	if (ItemInfo_default.uid === item.ITID) ItemInfo_default.remove();
 	ItemInfo_default.append();
 	ItemInfo_default.uid = item.ITID;
 	ItemInfo_default.setItem(item);
-	return stopPropagation$11(event);
+	event.stopImmediatePropagation();
+	event.preventDefault();
 }
 var Trade, _tmpCount, _send, _recv, Trade_default;
 var init_Trade$1 = __esmMin((() => {
 	init_DBManager();
-	init_jquery();
 	init_Client();
 	init_SessionStorage();
 	init_Renderer();
+	init_GUIComponent();
 	init_UIManager();
-	init_UIComponent();
+	init_Elements();
 	init_InputBox();
 	init_ItemInfo();
 	init_Inventory();
 	init_ChatBox();
 	init_Trade$3();
 	init_Trade$2();
-	Trade = new UIComponent("Trade", Trade_default$2, Trade_default$1);
+	Trade = new GUIComponent("Trade", Trade_default$1);
+	/**
+	* HTML returned by render()
+	*/
+	Trade.render = () => Trade_default$2;
 	_tmpCount = {};
 	_send = [];
 	_recv = [];
@@ -247790,43 +248416,84 @@ var init_Trade$1 = __esmMin((() => {
 	*/
 	Trade.title = "";
 	/**
-	* Initialize UI
+	* Capture key events so the zeny input field works inside Shadow DOM
 	*/
-	Trade.init = function Init() {
-		this.ui.find(".ok.enabled").click(onConclude);
-		this.ui.find(".trade.enabled").click(onTrade.bind(this));
-		this.ui.find(".cancel").click(onCancel.bind(this));
-		this.ui.on("mousedown", ".disabled", stopPropagation$11).on("drop", onDrop$7).on("dragover", stopPropagation$11);
-		this.ui.find(".zeny.send").mousedown(function() {
-			this.select();
-		});
-		this.ui.find(".box").on("mouseover", ".item", onItemOver$9).on("mouseout", ".item", onItemOut$10).on("contextmenu", ".item", onItemInfo$12);
-		this.draggable(this.ui.find(".titlebar"));
-	};
+	Trade.captureKeyEvents = true;
 	/**
 	* Initialize UI
 	*/
-	Trade.onAppend = function onAppend() {
-		this.onRemove();
-		this.ui.find(".titlebar .title").text(this.title);
-		this.ui.css({
-			top: (Renderer.height - this.ui.height()) / 2,
-			left: (Renderer.width - this.ui.width()) / 2
+	Trade.init = function init() {
+		const root = this._shadow || this._host;
+		const okBtn = root.querySelector(".ok.enabled");
+		if (okBtn) {
+			okBtn.addEventListener("mousedown", (e) => e.stopImmediatePropagation());
+			okBtn.addEventListener("click", () => onConclude());
+		}
+		const tradeBtn = root.querySelector(".trade.enabled");
+		if (tradeBtn) {
+			tradeBtn.addEventListener("mousedown", (e) => e.stopImmediatePropagation());
+			tradeBtn.addEventListener("click", () => onTrade());
+		}
+		const cancelBtn = root.querySelector(".cancel");
+		if (cancelBtn) {
+			cancelBtn.addEventListener("mousedown", (e) => e.stopImmediatePropagation());
+			cancelBtn.addEventListener("click", () => onCancel());
+		}
+		root.addEventListener("mousedown", (e) => {
+			if (e.target.closest && e.target.closest(".disabled")) e.stopImmediatePropagation();
 		});
+		this._host.addEventListener("drop", (e) => onDrop$7(e));
+		this._host.addEventListener("dragover", (e) => {
+			e.preventDefault();
+			e.stopImmediatePropagation();
+		});
+		const zenyInput = root.querySelector(".zeny.send");
+		if (zenyInput) zenyInput.addEventListener("mousedown", function() {
+			this.select();
+		});
+		root.querySelectorAll(".box").forEach((box) => {
+			box.addEventListener("mouseover", (e) => {
+				const itemEl = e.target.closest(".item");
+				if (itemEl) onItemOver$9(itemEl);
+			});
+			box.addEventListener("mouseout", (e) => {
+				if (e.target.closest(".item")) onItemOut$10();
+			});
+			box.addEventListener("contextmenu", (e) => {
+				const itemEl = e.target.closest(".item");
+				if (itemEl) onItemInfo$12(e, itemEl);
+			});
+		});
+		this.draggable(".titlebar");
+	};
+	/**
+	* Guard keyboard input for the zeny <input> inside Shadow DOM
+	*/
+	Trade.onKeyDown = function onKeyDown(event) {
+		const focused = (this._shadow || this._host).activeElement;
+		if (focused && focused.tagName && focused.tagName.match(/input|select|textarea/i)) {
+			event.stopImmediatePropagation();
+			return true;
+		}
+		return true;
+	};
+	/**
+	* Initialize UI on append
+	*/
+	Trade.onAppend = function onAppend() {
+		resetUI.call(this);
+		const titleEl = (this._shadow || this._host).querySelector(".titlebar .title");
+		if (titleEl) titleEl.textContent = this.title;
+		const width = this._host.getBoundingClientRect().width;
+		const height = this._host.getBoundingClientRect().height;
+		this._host.style.top = `${(Renderer.height - height) / 2}px`;
+		this._host.style.left = `${(Renderer.width - width) / 2}px`;
 	};
 	/**
 	* Clean UP UI
 	*/
 	Trade.onRemove = function onRemove() {
-		_tmpCount = {};
-		_recv.length = 0;
-		_send.length = 0;
-		this.ui.find(".overlay").hide();
-		this.ui.find(".ok.disabled, .trade.enabled").hide();
-		this.ui.find(".ok.enabled, .trade.disabled").show();
-		this.ui.find(".box").removeClass("disabled").empty();
-		this.ui.find(".zeny.send").val(0).removeClass("disabled").attr("disabled", false);
-		this.ui.find(".zeny.recv").text("0");
+		resetUI.call(this);
 	};
 	/**
 	* Add Item to the trade window from our inventory
@@ -247839,19 +248506,27 @@ var init_Trade$1 = __esmMin((() => {
 			delete _tmpCount[index];
 			return;
 		}
+		const root = this._shadow || this._host;
 		if (index === 0) {
-			this.ui.find(".zeny.send").val(prettifyZeny$2(_tmpCount[index]));
+			const zenySend = root.querySelector(".zeny.send");
+			if (zenySend) zenySend.value = prettifyZeny$2(_tmpCount[index]);
 			return;
 		}
-		const item = jquery_default.extend({}, InventoryController.getUI().removeItem(index, _tmpCount[index]));
+		const inventoryItem = InventoryController.getUI().removeItem(index, _tmpCount[index]);
+		const item = Object.assign({}, inventoryItem);
 		const it = DB.getItemInfo(item.ITID);
 		const idx = _send.push(item) - 1;
-		const box = this.ui.find(".box.send");
+		const box = root.querySelector(".box.send");
 		item.count = _tmpCount[index];
-		box.append("<div class=\"item\" data-index=\"" + idx + "\"><div class=\"icon\"></div><div class=\"amount\"><span class=\"count\">" + (_tmpCount[index] || 1) + "</span></div><span class=\"name\">" + jquery_default.escape(DB.getItemName(item)) + "</span></div>");
-		Client.loadFile(DB.INTERFACE_PATH + "item/" + (item.IsIdentified ? it.identifiedResourceName : it.unidentifiedResourceName) + ".bmp", function(data) {
-			box.find(".item[data-index=\"" + idx + "\"] .icon").css("backgroundImage", "url(" + data + ")");
-		}.bind(this));
+		const itemDiv = document.createElement("div");
+		itemDiv.className = "item";
+		itemDiv.setAttribute("data-index", idx);
+		itemDiv.innerHTML = `<div class="icon"></div><div class="amount"><span class="count">${_tmpCount[index] || 1}</span></div><span class="name">${escapeHtml$1(DB.getItemName(item))}</span>`;
+		box.appendChild(itemDiv);
+		Client.loadFile(`${DB.INTERFACE_PATH}item/${item.IsIdentified ? it.identifiedResourceName : it.unidentifiedResourceName}.bmp`, (data) => {
+			const icon = root.querySelector(`.item[data-index="${idx}"] .icon`);
+			if (icon && icon.closest(".box.send")) icon.style.backgroundImage = `url(${data})`;
+		});
 	};
 	/**
 	* Add item to the trade UI
@@ -247859,33 +248534,52 @@ var init_Trade$1 = __esmMin((() => {
 	* @param {object} item
 	*/
 	Trade.addItem = function addItem(item) {
+		const root = this._shadow || this._host;
 		if (item.ITID === 0) {
-			this.ui.find(".zeny.recv").text(prettifyZeny$2(item.count));
+			const zenyRecv = root.querySelector(".zeny.recv");
+			if (zenyRecv) zenyRecv.textContent = prettifyZeny$2(item.count);
 			return;
 		}
 		const it = DB.getItemInfo(item.ITID);
 		const idx = _recv.push(item) - 1;
-		const box = this.ui.find(".box.recv");
-		box.append("<div class=\"item\" data-index=\"" + idx + "\"><div class=\"icon\"></div><div class=\"amount\">" + item.count + "</div><span class=\"name\">" + jquery_default.escape(DB.getItemName(item)) + "</span></div>");
-		Client.loadFile(DB.INTERFACE_PATH + "item/" + (item.IsIdentified ? it.identifiedResourceName : it.unidentifiedResourceName) + ".bmp", function(data) {
-			box.find(".item[data-index=\"" + idx + "\"] .icon").css("backgroundImage", "url(" + data + ")");
-		}.bind(this));
+		const box = root.querySelector(".box.recv");
+		const itemDiv = document.createElement("div");
+		itemDiv.className = "item";
+		itemDiv.setAttribute("data-index", idx);
+		itemDiv.innerHTML = `<div class="icon"></div><div class="amount">${item.count}</div><span class="name">${escapeHtml$1(DB.getItemName(item))}</span>`;
+		box.appendChild(itemDiv);
+		Client.loadFile(`${DB.INTERFACE_PATH}item/${item.IsIdentified ? it.identifiedResourceName : it.unidentifiedResourceName}.bmp`, (data) => {
+			const icon = root.querySelector(`.item[data-index="${idx}"] .icon`);
+			if (icon && icon.closest(".box.recv")) icon.style.backgroundImage = `url(${data})`;
+		});
 	};
 	/**
 	* Conclude a part of the trade
 	*
-	* @param {string} selector
+	* @param {string} element - 'send' or 'recv'
 	*/
 	Trade.conclude = function conclude(element) {
-		this.ui.find(".box." + element).addClass("disabled");
+		const root = this._shadow || this._host;
+		const box = root.querySelector(`.box.${element}`);
+		if (box) box.classList.add("disabled");
 		if (element === "send") {
-			this.ui.find(".ok.disabled").show();
-			this.ui.find(".ok.enabled").hide();
-			this.ui.find(".zeny.send").addClass("disabled").attr("disabled", true);
+			const okDisabled = root.querySelector(".ok.disabled");
+			const okEnabled = root.querySelector(".ok.enabled");
+			if (okDisabled) okDisabled.style.display = "";
+			if (okEnabled) okEnabled.style.display = "none";
+			const zenySend = root.querySelector(".zeny.send");
+			if (zenySend) {
+				zenySend.classList.add("disabled");
+				zenySend.disabled = true;
+			}
 		}
-		if (this.ui.find(".box.recv.disabled").is(":visible") && this.ui.find(".box.send.disabled").is(":visible")) {
-			this.ui.find(".trade.enabled").show();
-			this.ui.find(".trade.disabled").hide();
+		const recvDisabled = root.querySelector(".box.recv.disabled");
+		const sendDisabled = root.querySelector(".box.send.disabled");
+		if (recvDisabled && recvDisabled.style.display !== "none" && sendDisabled && sendDisabled.style.display !== "none") {
+			const tradeEnabled = root.querySelector(".trade.enabled");
+			const tradeDisabledBtn = root.querySelector(".trade.disabled");
+			if (tradeEnabled) tradeEnabled.style.display = "";
+			if (tradeDisabledBtn) tradeDisabledBtn.style.display = "none";
 		}
 	};
 	/**
@@ -247895,6 +248589,10 @@ var init_Trade$1 = __esmMin((() => {
 	Trade.onTradeSubmit = function onTradeSubmit() {};
 	Trade.reqAddItem = function reqAddItem() {};
 	Trade.onCancel = function onCancel() {};
+	/**
+	* Set mouse mode
+	*/
+	Trade.mouseMode = GUIComponent.MouseMode.STOP;
 	Trade_default = UIManager.addComponent(Trade);
 }));
 //#endregion
@@ -250264,7 +250962,7 @@ function UpdateBodyStyle(look) {
 		let job = this._job;
 		let cashMountCostume = false;
 		if (PacketVerManager_default.value <= 20231220) {
-			if (look > 0) look = getBodyVal();
+			if (look > 0) look = getBodyVal.call(this);
 		}
 		if (this.costume) {
 			const mountValue = this._allRidingState ? AllMountTable[look] : MountTable[look];
@@ -305902,48 +306600,20 @@ function loadFontFromClient(fontPath) {
 		Client.loadFile(fontPath + "SCDream6.otf", function(fontData6) {
 			const fontUrl6 = "data:font/opentype;base64," + arrayBufferToBase64(fontData6);
 			const style = document.createElement("style");
-			style.textContent = `  
+			style.textContent = `  						
 							@font-face {  
 								font-family: 'SCDream';  
-								src: url('${fontUrl6}') format('opentype');  
-								font-weight: 100; /* Thin */  
-								font-style: normal;  
-							}  
-							
-							@font-face {  
-								font-family: 'SCDream';  
-								src: url('${fontUrl6}') format('opentype');  
-								font-weight: 200; /* Extra Light */  
-								font-style: normal;  
-							}  
-							
-							@font-face {  
-								font-family: 'SCDream';  
-								src: url('${fontUrl6}') format('opentype');  
-								font-weight: 300; /* Light */  
-								font-style: normal;  
-							}  
-							
-							@font-face {  
-								font-family: 'SCDream';  
-								src: url('${fontUrl6}') format('opentype');  
+								src: url('${fontUrl4}') format('opentype');  
 								font-weight: 400; /* Normal */  
 								font-style: normal;  
 							}  
 							
 							@font-face {  
 								font-family: 'SCDream';  
-								src: url('${fontUrl4}') format('opentype');  
+								src: url('${fontUrl6}') format('opentype');  
 								font-weight: 700; /* Bold */  
 								font-style: normal;  
-							}  
-							
-							@font-face {  
-								font-family: 'SCDream';  
-								src: url('${fontUrl4}') format('opentype');  
-								font-weight: 900; /* Black/Bolder */  
-								font-style: normal;  
-							}  
+							}
 						`;
 			document.head.appendChild(style);
 		}, function(error) {
@@ -308648,7 +309318,7 @@ var init_DBManager = __esmMin((() => {
 					if (index === count && DB.onReady) DB.onReady();
 				};
 			}
-			loadFontFromClient("System/Font/");
+			if (Configs.get("useSystemFolderFont", false)) loadFontFromClient("System/Font/");
 			loadTable("data/mp3nametable.txt", "#", 2, function(_index, key, val) {
 				(MapTable[key] || (MapTable[key] = {})).mp3 = val;
 			}, onLoad());
@@ -311431,7 +312101,7 @@ function startAutoTarget() {
 /**
 * Stop event propagation
 */
-function stopPropagation$10(event) {
+function stopPropagation$9(event) {
 	if (event && typeof event.preventDefault === "function") event.preventDefault();
 	event.stopImmediatePropagation();
 	return false;
@@ -311702,195 +312372,195 @@ var init_MobileUI = __esmMin((() => {
 	MobileUI.init = function init() {
 		this.ui.find("#toggleUIButton").on("click touchstart", function(e) {
 			toggleButtons();
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find("#fullscreenButton").on("click touchstart", function(e) {
 			toggleFullScreen();
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find("#f1Button").on("click touchstart", function(e) {
 			logKeyPress(112);
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find("#f2Button").on("click touchstart", function(e) {
 			logKeyPress(113);
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find("#f3Button").on("click touchstart", function(e) {
 			logKeyPress(114);
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find("#f4Button").on("click touchstart", function(e) {
 			logKeyPress(115);
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find("#f5Button").on("click touchstart", function(e) {
 			logKeyPress(116);
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find("#f6Button").on("click touchstart", function(e) {
 			logKeyPress(117);
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find("#f7Button").on("click touchstart", function(e) {
 			logKeyPress(118);
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find("#f8Button").on("click touchstart", function(e) {
 			logKeyPress(119);
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find("#f9Button").on("click touchstart", function(e) {
 			logKeyPress(120);
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find("#n1Button").on("click touchstart", function(e) {
 			logKeyPress(49);
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find("#n2Button").on("click touchstart", function(e) {
 			logKeyPress(50);
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find("#n3Button").on("click touchstart", function(e) {
 			logKeyPress(51);
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find("#n4Button").on("click touchstart", function(e) {
 			logKeyPress(52);
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find("#n5Button").on("click touchstart", function(e) {
 			logKeyPress(53);
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find("#n6Button").on("click touchstart", function(e) {
 			logKeyPress(54);
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find("#n7Button").on("click touchstart", function(e) {
 			logKeyPress(55);
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find("#n8Button").on("click touchstart", function(e) {
 			logKeyPress(56);
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find("#n9Button").on("click touchstart", function(e) {
 			logKeyPress(57);
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find("#qButton").on("click touchstart", function(e) {
 			logKeyPress(81);
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find("#wButton").on("click touchstart", function(e) {
 			logKeyPress(87);
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find("#eButton").on("click touchstart", function(e) {
 			logKeyPress(69);
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find("#rButton").on("click touchstart", function(e) {
 			logKeyPress(82);
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find("#tButton").on("click touchstart", function(e) {
 			logKeyPress(84);
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find("#yButton").on("click touchstart", function(e) {
 			logKeyPress(89);
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find("#uButton").on("click touchstart", function(e) {
 			logKeyPress(85);
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find("#iButton").on("click touchstart", function(e) {
 			logKeyPress(73);
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find("#oButton").on("click touchstart", function(e) {
 			logKeyPress(89);
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find("#aButton").on("click touchstart", function(e) {
 			logKeyPress(65);
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find("#sButton").on("click touchstart", function(e) {
 			logKeyPress(83);
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find("#dButton").on("click touchstart", function(e) {
 			logKeyPress(68);
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find("#fButton").on("click touchstart", function(e) {
 			logKeyPress(70);
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find("#gButton").on("click touchstart", function(e) {
 			logKeyPress(71);
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find("#hButton").on("click touchstart", function(e) {
 			logKeyPress(72);
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find("#jButton").on("click touchstart", function(e) {
 			logKeyPress(74);
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find("#kButton").on("click touchstart", function(e) {
 			logKeyPress(75);
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find("#lButton").on("click touchstart", function(e) {
 			logKeyPress(76);
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find("#f10Button").on("click touchstart", function(e) {
 			logKeyPress(121);
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find("#f12Button").on("click touchstart", function(e) {
 			logKeyPress(123);
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find("#insButton").on("click touchstart", function(e) {
 			logKeyPress(45);
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find("#toggleStatusButton").on("click touchstart", function(e) {
 			toggleStatus();
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find("#toggleTargetingButton").on("click touchstart", function(e) {
 			toggleTouchTargeting();
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find("#toggleAutoFollowButton").on("click touchstart", function(e) {
 			toggleAutoFollow();
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find("#toggleAutoTargetButton").on("click touchstart", function(e) {
 			toggleAutoTargeting();
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find("#attackButton").on("click touchstart", function(e) {
 			attackTargeted();
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find("#pickupButton").on("click touchstart", function(e) {
 			pickUpItem();
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find("#switchshorcutButton").on("click touchstart", function(e) {
 			switchSkillButtons();
-			stopPropagation$10(e);
+			stopPropagation$9(e);
 		});
 		this.ui.find(".buttons").on("mousedown", function(e) {
 			jquery_default(e.target).addClass("pressed");
@@ -314212,44 +314882,37 @@ var init_VendingModelMessage = __esmMin((() => {
 //#region src/UI/Components/Vending/Vending.html?raw
 var Vending_default$2;
 var init_Vending$2 = __esmMin((() => {
-	Vending_default$2 = "<div id=\"vending\">\r\n	<div class=\"InputWindow\">\r\n		<div class=\"titlebar\" data-background=\"basic_interface/titlebar_mid.bmp\">\r\n			<div class=\"text\">\r\n				<span class=\"WinSell\" data-text=\"232\">Available Items for Vending</span>\r\n				<span class=\"WinBuy\" data-text=\"1733\">Available Items for Buying</span>\r\n			</div>\r\n		</div>\r\n		<div class=\"container\">\r\n			<div class=\"overlay\"></div>\r\n			<div class=\"content available\" data-background=\"basic_interface/itemwin_mid.bmp\"></div>\r\n		</div>\r\n		<div class=\"footer\" data-background=\"basic_interface/btnbar_mid2.bmp\">\r\n			<button class=\"extend\" data-background=\"btn_resize.bmp\"></button>\r\n		</div>\r\n	</div>\r\n	<div class=\"OutputWindow\">\r\n		<div class=\"titlebar\" data-background=\"basic_interface/titlebar_mid.bmp\">\r\n			<div class=\"text\">\r\n				<span class=\"WinSell\" data-text=\"224\">Vending</span>\r\n				<span class=\"WinBuy\" data-text=\"1720\">Buying</span>\r\n			</div>\r\n		</div>\r\n		<div class=\"container\">\r\n			<div class=\"nstore\"><span data-text=\"407\">Name</span></div>\r\n			<input class=\"shopname\" type=\"text\" value=\"\" maxlength=\"36\" /><br />\r\n			<div class=\"content add_shop\" data-background=\"basic_interface/itemwin_mid.bmp\"></div>\r\n		</div>\r\n		<div class=\"footer WinBuy\" data-background=\"basic_interface/btnbar_mid2.bmp\">\r\n			<span class=\"WinBuy zenyLabel\" data-text=\"2464\">Zeny</span>\r\n			<span class=\"WinBuy zenySpan\">0</span>\r\n			<span class=\"WinBuy weightLabel\">Weigth:</span>\r\n			<span class=\"WinBuy weightSpan\">0/0</span>\r\n		</div>\r\n		<div class=\"footer\" data-background=\"basic_interface/btnbar_mid2.bmp\">\r\n			<div class=\"limit WinBuy\"><span data-text=\"1723\">Purchase Zeny Limit</span></div>\r\n			<input class=\"limitZeny WinBuy\" type=\"text\" value=\"\" maxlength=\"36\" /><br />\r\n			<div class=\"zeny WinBuy\"><span data-text=\"2464\">Zeny</span></div>\r\n			<button\r\n				class=\"btn sell\"\r\n				data-background=\"btn_ok.bmp\"\r\n				data-hover=\"btn_ok_a.bmp\"\r\n				data-down=\"btn_ok_b.bmp\"\r\n			></button>\r\n			<button\r\n				class=\"btn cancel\"\r\n				data-background=\"btn_cancel.bmp\"\r\n				data-hover=\"btn_cancel_a.bmp\"\r\n				data-down=\"btn_cancel_b.bmp\"\r\n			></button>\r\n		</div>\r\n	</div>\r\n</div>\r\n";
+	Vending_default$2 = "<div id=\"vending\">\r\n	<div class=\"InputWindow\">\r\n		<div class=\"titlebar\">\r\n			<ui-image src=\"basic_interface/titlebar_mid.bmp\"></ui-image>\r\n			<div class=\"text\">\r\n				<span class=\"WinSell\"><ui-text msg=\"232\">Available Items for Vending</ui-text></span>\r\n				<span class=\"WinBuy\"><ui-text msg=\"1733\">Available Items for Buying</ui-text></span>\r\n			</div>\r\n		</div>\r\n		<div class=\"container\">\r\n			<div class=\"overlay\"></div>\r\n			<div class=\"content available\">\r\n				<ui-image src=\"basic_interface/itemwin_mid.bmp\"></ui-image>\r\n			</div>\r\n		</div>\r\n		<div class=\"footer\">\r\n			<ui-image src=\"basic_interface/btnbar_mid2.bmp\"></ui-image>\r\n			<ui-button class=\"extend\" bg=\"btn_resize.bmp\"></ui-button>\r\n		</div>\r\n	</div>\r\n	<div class=\"OutputWindow\">\r\n		<div class=\"titlebar\">\r\n			<ui-image src=\"basic_interface/titlebar_mid.bmp\"></ui-image>\r\n			<div class=\"text\">\r\n				<span class=\"WinSell\"><ui-text msg=\"224\">Vending</ui-text></span>\r\n				<span class=\"WinBuy\"><ui-text msg=\"1720\">Buying</ui-text></span>\r\n			</div>\r\n		</div>\r\n		<div class=\"container\">\r\n			<div class=\"nstore\"><ui-text msg=\"407\">Name</ui-text></div>\r\n			<input class=\"shopname\" type=\"text\" value=\"\" maxlength=\"36\" /><br />\r\n			<div class=\"content add_shop\">\r\n				<ui-image src=\"basic_interface/itemwin_mid.bmp\"></ui-image>\r\n			</div>\r\n		</div>\r\n		<div class=\"footer WinBuy\">\r\n			<ui-image src=\"basic_interface/btnbar_mid2.bmp\"></ui-image>\r\n			<span class=\"WinBuy zenyLabel\"><ui-text msg=\"2464\">Zeny</ui-text></span>\r\n			<span class=\"WinBuy zenySpan\">0</span>\r\n			<span class=\"WinBuy weightLabel\">Weigth:</span>\r\n			<span class=\"WinBuy weightSpan\">0/0</span>\r\n		</div>\r\n		<div class=\"footer\">\r\n			<ui-image src=\"basic_interface/btnbar_mid2.bmp\"></ui-image>\r\n			<div class=\"limit WinBuy\"><ui-text msg=\"1723\">Purchase Zeny Limit</ui-text></div>\r\n			<input class=\"limitZeny WinBuy\" type=\"text\" value=\"\" maxlength=\"36\" /><br />\r\n			<div class=\"zeny WinBuy\"><ui-text msg=\"2464\">Zeny</ui-text></div>\r\n			<ui-button class=\"btn sell\" bg=\"btn_ok.bmp\" hover=\"btn_ok_a.bmp\" down=\"btn_ok_b.bmp\"></ui-button>\r\n			<ui-button\r\n				class=\"btn cancel\"\r\n				bg=\"btn_cancel.bmp\"\r\n				hover=\"btn_cancel_a.bmp\"\r\n				down=\"btn_cancel_b.bmp\"\r\n			></ui-button>\r\n		</div>\r\n	</div>\r\n</div>\r\n";
 }));
 //#endregion
 //#region src/UI/Components/Vending/Vending.css?raw
 var Vending_default$1;
 var init_Vending$1 = __esmMin((() => {
-	Vending_default$1 = "#vending {\r\n	position: relative;\r\n}\r\n#vending .titlebar {\r\n	width: 100%;\r\n	height: 17px;\r\n	background-color: white;\r\n	background-repeat: repeat-x;\r\n	border-radius: 3px 3px 0px 0px;\r\n	text-shadow: 1px 1px white;\r\n	font-size: 11px;\r\n	font-weight: bold;\r\n}\r\n#vending .titlebar .text {\r\n	position: relative;\r\n	top: 2px;\r\n	left: 15px;\r\n	white-space: nowrap;\r\n}\r\n#vending .footer {\r\n	width: 100%;\r\n	height: 27px;\r\n	background-repeat: repeat-x;\r\n	background-color: transparent;\r\n	position: relative;\r\n	border-radius: 0px 0px 3px 3px;\r\n	position: relative;\r\n}\r\n#vending .resize {\r\n	position: absolute;\r\n	right: 1px;\r\n	bottom: 1px;\r\n	width: 13px;\r\n	height: 13px;\r\n	border: none;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n#vending .btn {\r\n	width: 42px;\r\n	height: 20px;\r\n	border: none;\r\n	margin: 0;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n#vending .selectall {\r\n	vertical-align: 2px;\r\n	width: 10px;\r\n	height: 10px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n#vending .ask_quantity {\r\n	padding-top: 7px;\r\n	padding-left: 20px;\r\n}\r\n\r\n#vending .nstore {\r\n	position: absolute;\r\n	top: 24px;\r\n	border: none;\r\n	padding-left: 2px;\r\n	outline: none;\r\n}\r\n#vending .limit {\r\n	position: absolute;\r\n	top: 8px;\r\n	border: none;\r\n	padding-left: 5px;\r\n	outline: none;\r\n}\r\n#vending input.shopname {\r\n	position: absolute;\r\n	left: 55px;\r\n	width: 310px;\r\n	border: none;\r\n	background-color: #e9e9e9;\r\n	padding-left: 2px;\r\n	outline: none;\r\n}\r\n#vending input.shopname {\r\n	top: 22px;\r\n}\r\n#vending input.limitZeny {\r\n	top: 6px;\r\n}\r\n#vending input.limitZeny {\r\n	position: absolute;\r\n	left: 120px;\r\n	width: 100px;\r\n	border: none;\r\n	background-color: #e9e9e9;\r\n	padding-left: 2px;\r\n	outline: none;\r\n}\r\n\r\n#vending .content .item-container {\r\n	width: 32px;\r\n	height: 32px;\r\n	display: block;\r\n	float: left;\r\n	clear: both;\r\n}\r\n#vending .content .damaged {\r\n	background-color: red;\r\n	background-blend-mode: luminosity;\r\n}\r\n#vending .container {\r\n	padding-left: 16px;\r\n	border-right: 1px solid #ccc;\r\n	background: white;\r\n	background-repeat: repeat-y;\r\n	padding-right: 2px;\r\n	padding-top: 5px;\r\n	padding-bottom: 5px;\r\n}\r\n#vending .container .overlay {\r\n	position: absolute;\r\n	display: none;\r\n	white-space: nowrap;\r\n	z-index: 900;\r\n	height: 15px;\r\n	line-height: 15px;\r\n	border-radius: 3px;\r\n	padding: 4px;\r\n	background: rgba(0, 0, 0, 0.7);\r\n	color: white;\r\n	text-shadow: 1px 1px black;\r\n}\r\n#vending .content {\r\n	overflow-y: auto;\r\n	width: 100%;\r\n	height: 100%;\r\n	min-height: 65px;\r\n	background-color: transparent;\r\n	background-repeat: repeat-y;\r\n}\r\n#vending .content .add_shop {\r\n	margin-top: 10px;\r\n}\r\n#vending .content .item {\r\n	display: block;\r\n	position: relative;\r\n	height: 28px;\r\n	padding-top: 4px;\r\n}\r\n#vending .content .item.selected {\r\n	background-color: #346ae180;\r\n}\r\n\r\n#vending .content.available {\r\n	width: 100%;\r\n	height: 100%;\r\n	min-height: 65px;\r\n	background-color: transparent;\r\n	background-repeat: repeat;\r\n}\r\n#vending .content.available .item {\r\n	display: block;\r\n	float: left;\r\n	width: 28px;\r\n	position: relative;\r\n	height: 28px;\r\n	padding-top: 4px;\r\n}\r\n#vending .content.available .item.selected {\r\n	background-color: transparent;\r\n}\r\n\r\n#vending .content .item .icon {\r\n	position: absolute;\r\n	top: 6px;\r\n	left: 4px;\r\n	width: 24px;\r\n	height: 24px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n#vending .content .item .amount {\r\n	position: absolute;\r\n	white-space: nowrap;\r\n	top: 18px;\r\n	left: 18px;\r\n	text-align: left;\r\n	text-shadow: -1px -1px white;\r\n}\r\n#vending .content .item .amount_ {\r\n	position: absolute;\r\n	white-space: nowrap;\r\n	top: 13px;\r\n	left: 200px;\r\n	text-align: left;\r\n	text-shadow: -1px -1px white;\r\n}\r\n#vending .content .item .name {\r\n	position: absolute;\r\n	top: 13px;\r\n	left: 32px;\r\n	width: 115px;\r\n	white-space: nowrap;\r\n}\r\n#vending .content .item .price {\r\n	position: absolute;\r\n	top: 13px;\r\n	left: 260px;\r\n	white-space: nowrap;\r\n	text-align: right;\r\n}\r\n#vending .content .item .unity {\r\n	position: absolute;\r\n	top: 13px;\r\n	right: 2px;\r\n	width: 10px;\r\n}\r\n\r\n#vending .footer .total,\r\n#vending .footer .totalP,\r\n#vending .footer .cashuser {\r\n	padding-left: 10px;\r\n	padding-top: 8px;\r\n}\r\n#vending .footer .extend {\r\n	position: absolute;\r\n	right: 0px;\r\n	bottom: 1px;\r\n	width: 13px;\r\n	height: 13px;\r\n	border: none;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n#vending .InputWindow {\r\n	width: 280px;\r\n	position: absolute;\r\n	z-index: 50;\r\n}\r\n#vending .OutputWindow {\r\n	width: 400px;\r\n	position: absolute;\r\n	z-index: 50;\r\n}\r\n#vending .btn.buy,\r\n#vending .btn.sell {\r\n	position: absolute;\r\n	top: 4px;\r\n	right: 62px;\r\n}\r\n#vending .zeny {\r\n	position: absolute;\r\n	top: 8px;\r\n	left: 230px;\r\n}\r\n#vending .btn.cancel {\r\n	position: absolute;\r\n	top: 4px;\r\n	right: 15px;\r\n}\r\n#vending .zenyLabel,\r\n#vending .zenySpan,\r\n#vending .weightLabel,\r\n#vending .weightSpan {\r\n	position: absolute;\r\n	top: 10px;\r\n}\r\n#vending .zenyLabel {\r\n	left: 5px;\r\n}\r\n#vending .zenySpan {\r\n	left: 40px;\r\n}\r\n#vending .weightLabel {\r\n	left: 215px;\r\n}\r\n#vending .weightSpan {\r\n	left: 260px;\r\n}\r\n";
+	Vending_default$1 = ":host {\r\n	width: 100%;\r\n	height: 100%;\r\n	top: 0;\r\n	left: 0;\r\n}\r\n\r\n#vending {\r\n	position: absolute;\r\n	width: 100%;\r\n	height: 100%;\r\n}\r\n#vending .titlebar {\r\n	width: 100%;\r\n	height: 17px;\r\n	background-color: white;\r\n	background-repeat: repeat-x;\r\n	border-radius: 3px 3px 0px 0px;\r\n	text-shadow: 1px 1px white;\r\n	font-size: 11px;\r\n	font-weight: bold;\r\n}\r\n#vending .titlebar .text {\r\n	position: relative;\r\n	top: 2px;\r\n	left: 15px;\r\n	white-space: nowrap;\r\n}\r\n#vending .footer {\r\n	width: 100%;\r\n	height: 27px;\r\n	background-repeat: repeat-x;\r\n	background-color: transparent;\r\n	position: relative;\r\n	border-radius: 0px 0px 3px 3px;\r\n}\r\n#vending .resize {\r\n	position: absolute;\r\n	right: 1px;\r\n	bottom: 1px;\r\n	width: 13px;\r\n	height: 13px;\r\n	border: none;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n#vending .btn {\r\n	width: 42px;\r\n	height: 20px;\r\n	border: none;\r\n	margin: 0;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n#vending .selectall {\r\n	vertical-align: 2px;\r\n	width: 10px;\r\n	height: 10px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n#vending .ask_quantity {\r\n	padding-top: 7px;\r\n	padding-left: 20px;\r\n}\r\n\r\n#vending .nstore {\r\n	position: absolute;\r\n	top: 24px;\r\n	border: none;\r\n	padding-left: 2px;\r\n	outline: none;\r\n}\r\n#vending .limit {\r\n	position: absolute;\r\n	top: 8px;\r\n	border: none;\r\n	padding-left: 5px;\r\n	outline: none;\r\n}\r\n#vending input.shopname {\r\n	position: absolute;\r\n	left: 55px;\r\n	width: 310px;\r\n	border: none;\r\n	background-color: #e9e9e9;\r\n	padding-left: 2px;\r\n	outline: none;\r\n}\r\n#vending input.shopname {\r\n	top: 22px;\r\n}\r\n#vending input.limitZeny {\r\n	top: 6px;\r\n}\r\n#vending input.limitZeny {\r\n	position: absolute;\r\n	left: 120px;\r\n	width: 100px;\r\n	border: none;\r\n	background-color: #e9e9e9;\r\n	padding-left: 2px;\r\n	outline: none;\r\n}\r\n\r\n#vending .content .item-container {\r\n	width: 32px;\r\n	height: 32px;\r\n	display: block;\r\n	float: left;\r\n	clear: both;\r\n}\r\n#vending .content .damaged {\r\n	background-color: red;\r\n	background-blend-mode: luminosity;\r\n}\r\n#vending .container {\r\n	padding-left: 16px;\r\n	border-right: 1px solid #ccc;\r\n	background: white;\r\n	background-repeat: repeat-y;\r\n	padding-right: 2px;\r\n	padding-top: 5px;\r\n	padding-bottom: 5px;\r\n}\r\n#vending .container .overlay {\r\n	position: absolute;\r\n	display: none;\r\n	white-space: nowrap;\r\n	z-index: 900;\r\n	height: 15px;\r\n	line-height: 15px;\r\n	border-radius: 3px;\r\n	padding: 4px;\r\n	background: rgba(0, 0, 0, 0.7);\r\n	color: white;\r\n	text-shadow: 1px 1px black;\r\n}\r\n#vending .content {\r\n	overflow-y: auto;\r\n	width: 100%;\r\n	height: 100%;\r\n	min-height: 65px;\r\n	background-color: transparent;\r\n	background-repeat: repeat-y;\r\n}\r\n#vending .content .add_shop {\r\n	margin-top: 10px;\r\n}\r\n#vending .content .item {\r\n	display: block;\r\n	position: relative;\r\n	height: 28px;\r\n	padding-top: 4px;\r\n}\r\n#vending .content .item.selected {\r\n	background-color: #346ae180;\r\n}\r\n\r\n#vending .content.available {\r\n	width: 100%;\r\n	height: 100%;\r\n	min-height: 65px;\r\n	background-color: transparent;\r\n	background-repeat: repeat;\r\n}\r\n#vending .content.available .item {\r\n	display: block;\r\n	float: left;\r\n	width: 28px;\r\n	position: relative;\r\n	height: 28px;\r\n	padding-top: 4px;\r\n}\r\n#vending .content.available .item.selected {\r\n	background-color: transparent;\r\n}\r\n\r\n#vending .content .item .icon {\r\n	position: absolute;\r\n	top: 6px;\r\n	left: 4px;\r\n	width: 24px;\r\n	height: 24px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n#vending .content .item .amount {\r\n	position: absolute;\r\n	white-space: nowrap;\r\n	top: 18px;\r\n	left: 18px;\r\n	text-align: left;\r\n	text-shadow: -1px -1px white;\r\n}\r\n#vending .content .item .amount_ {\r\n	position: absolute;\r\n	white-space: nowrap;\r\n	top: 13px;\r\n	left: 200px;\r\n	text-align: left;\r\n	text-shadow: -1px -1px white;\r\n}\r\n#vending .content .item .name {\r\n	position: absolute;\r\n	top: 13px;\r\n	left: 32px;\r\n	width: 115px;\r\n	white-space: nowrap;\r\n}\r\n#vending .content .item .price {\r\n	position: absolute;\r\n	top: 13px;\r\n	left: 260px;\r\n	white-space: nowrap;\r\n	text-align: right;\r\n}\r\n#vending .content .item .unity {\r\n	position: absolute;\r\n	top: 13px;\r\n	right: 2px;\r\n	width: 10px;\r\n}\r\n\r\n#vending .footer .total,\r\n#vending .footer .totalP,\r\n#vending .footer .cashuser {\r\n	padding-left: 10px;\r\n	padding-top: 8px;\r\n}\r\n#vending .footer .extend {\r\n	position: absolute;\r\n	right: 0px;\r\n	bottom: 1px;\r\n	width: 13px;\r\n	height: 13px;\r\n	border: none;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n#vending .InputWindow {\r\n	width: 280px;\r\n	position: absolute;\r\n	z-index: 50;\r\n}\r\n#vending .OutputWindow {\r\n	width: 400px;\r\n	position: absolute;\r\n	z-index: 50;\r\n}\r\n#vending .btn.buy,\r\n#vending .btn.sell {\r\n	position: absolute;\r\n	top: 4px;\r\n	right: 62px;\r\n}\r\n#vending .zeny {\r\n	position: absolute;\r\n	top: 8px;\r\n	left: 230px;\r\n}\r\n#vending .btn.cancel {\r\n	position: absolute;\r\n	top: 4px;\r\n	right: 15px;\r\n}\r\n#vending .zenyLabel,\r\n#vending .zenySpan,\r\n#vending .weightLabel,\r\n#vending .weightSpan {\r\n	position: absolute;\r\n	top: 10px;\r\n}\r\n#vending .zenyLabel {\r\n	left: 5px;\r\n}\r\n#vending .zenySpan {\r\n	left: 40px;\r\n}\r\n#vending .weightLabel {\r\n	left: 215px;\r\n}\r\n#vending .weightSpan {\r\n	left: 260px;\r\n}\r\n";
 }));
 //#endregion
 //#region src/UI/Components/Vending/Vending.js
-function isItemStackable(item) {
-	if (item.type === ItemType_default.WEAPON || item.type === ItemType_default.ARMOR || item.type === ItemType_default.SHADOWGEAR || item.type === ItemType_default.PETEGG || item.type === ItemType_default.PETARMOR) return false;
-	else return true;
+function _getRoot() {
+	return Vending._shadow || Vending._host;
 }
-/**
-* Resize the content
-*
-* @param {jQueryElement} content
-* @param {number} height
-*/
+function escapeHtml(text) {
+	const div = document.createElement("div");
+	div.appendChild(document.createTextNode(text));
+	return div.innerHTML;
+}
+function isItemStackable(item) {
+	return item.type !== ItemType_default.WEAPON && item.type !== ItemType_default.ARMOR && item.type !== ItemType_default.SHADOWGEAR && item.type !== ItemType_default.PETEGG && item.type !== ItemType_default.PETARMOR;
+}
 function resize$1(content, height) {
 	height = Math.min(Math.max(height, 2), 9);
-	content.css("height", height * 32);
+	content.style.height = `${height * 32}px`;
 }
-/**
-* Prettify zeny : 1000000 -> 1,000,000
-*
-* @param {number} zeny
-* @param {boolean} use color
-* @return {string}
-*/
 function prettyZeny$3(val, useStyle) {
 	const list = val.toString().split("");
 	const count = list.length;
-	let i;
 	let str = "";
-	for (i = 0; i < count; i++) str = list[count - i - 1] + (i && i % 3 === 0 ? "," : "") + str;
-	if (useStyle) str = "<span style=\"" + [
+	for (let i = 0; i < count; i++) str = list[count - i - 1] + (i && i % 3 === 0 ? "," : "") + str;
+	if (useStyle) str = `<span style="${[
 		"color:#000000; text-shadow:1px 0px #00ffff;",
 		"color:#0000ff; text-shadow:1px 0px #ce00ce;",
 		"color:#0000ff; text-shadow:1px 0px #00ffff;",
@@ -314260,60 +314923,59 @@ function prettyZeny$3(val, useStyle) {
 		"color:#ff0000;",
 		"color:#000000; text-shadow:1px 0px #cece63;",
 		"color:#ff0000; text-shadow:1px 0px #ff007b;"
-	][count - 1] + "\">" + str + "</span>";
+	][count - 1]}">${str}</span>`;
 	return str;
 }
-/**
-* Add item to the list
-*
-* @param {jQuery} content element
-* @param {Item} item info
-*/
 function addItem$1(content, item, isinput) {
 	const it = DB.getItemInfo(item.ITID);
-	const element = content.find(".item[data-index=" + item.index + "]:first");
-	let price;
+	const element = content.querySelector(`.item[data-index="${item.index}"]`);
 	const textPrice = DB.getMessage(1721);
 	if (item.count === 0) {
-		if (element.length) {
-			const parent = element.parent(".item-container");
-			element.remove();
-			parent.remove();
+		if (element) {
+			const parent = element.closest(".item-container");
+			if (parent) parent.remove();
+			else element.remove();
 		}
 		return;
 	}
-	if (element.length) {
-		element.find(".amount").text(item.IsStackable ? item.count : "");
+	if (element) {
+		const amountEl = element.querySelector(".amount");
+		if (amountEl) amountEl.textContent = item.IsStackable ? item.count : "";
 		return;
 	}
-	if (isinput == false) price = prettyZeny$3(item.price, true);
-	let itemObj = "";
-	if (isinput == true) itemObj = jquery_default("<div class=\"item input\" draggable=\"true\" data-index=\"" + item.index + "\"><div class=\"icon\"></div><div class=\"amount\">" + (item.IsStackable ? item.count : "") + "</div></div>");
-	else {
-		itemObj = jquery_default("<div class=\"item-container\"><div class=\"item output\" draggable=\"true\" data-index=\"" + item.index + "\"><div class=\"icon\"></div><div class=\"amount\">" + (_type$3 === Vending.Type.BUYING_STORE ? item.total : item.IsStackable ? item.count : "") + "</div>" + (_type$3 === Vending.Type.BUYING_STORE ? "<div class=\"amount_\">" + item.count + " ea</div>" : "") + "<div class=\"name\">" + jquery_default.escape(DB.getItemName(item)) + "</div><div class=\"price\">" + textPrice + " " + price + "</div></div></div>");
+	let itemObj;
+	if (isinput) {
+		itemObj = document.createElement("div");
+		itemObj.className = "item input";
+		itemObj.draggable = true;
+		itemObj.dataset.index = item.index;
+		itemObj.innerHTML = `<div class="icon"></div><div class="amount">${item.IsStackable ? item.count : ""}</div>`;
+	} else {
+		const price = prettyZeny$3(item.price, true);
+		const container = document.createElement("div");
+		container.className = "item-container";
+		const amountText = _type$3 === Vending.Type.BUYING_STORE ? item.total : item.IsStackable ? item.count : "";
+		const eaHtml = _type$3 === Vending.Type.BUYING_STORE ? `<div class="amount_">${item.count} ea</div>` : "";
+		container.innerHTML = `<div class="item output" draggable="true" data-index="${item.index}"><div class="icon"></div><div class="amount">${amountText}</div>` + eaHtml + `<div class="name">${escapeHtml(DB.getItemName(item))}</div><div class="price">${textPrice} ${price}</div></div>`;
+		itemObj = container;
 		if (_type$3 === Vending.Type.BUYING_STORE) {
-			let limit = parseInt(Vending.ui.find(".limitZeny").val(), 10);
+			const limitInput = _getRoot().querySelector(".limitZeny");
+			let limit = parseInt(limitInput.value, 10);
 			limit += item.count * item.price;
-			Vending.ui.find(".limitZeny").val(limit);
+			limitInput.value = limit;
 		}
 	}
+	const actualItem = itemObj.classList.contains("item") ? itemObj : itemObj.querySelector(".item");
 	if (item.IsDamaged) {
-		itemObj.css("backgroundImage", "url(\"" + Vending.itemBg + "\")");
-		itemObj.addClass("damaged");
+		actualItem.style.backgroundImage = `url("${Vending.itemBg}")`;
+		actualItem.classList.add("damaged");
 	}
-	content.append(itemObj);
-	Client.loadFile(DB.INTERFACE_PATH + "item/" + (item.IsIdentified ? it.identifiedResourceName : it.unidentifiedResourceName) + ".bmp", function(data) {
-		content.find(".item[data-index=\"" + item.index + "\"] .icon").css("backgroundImage", "url(" + data + ")");
+	content.appendChild(itemObj);
+	Client.loadFile(`${DB.INTERFACE_PATH}item/${item.IsIdentified ? it.identifiedResourceName : it.unidentifiedResourceName}.bmp`, (data) => {
+		const icon = content.querySelector(`.item[data-index="${item.index}"] .icon`);
+		if (icon) icon.style.backgroundImage = `url(${data})`;
 	});
 }
-/**
-* Request move item from box to another
-*
-* @param {number} item index
-* @param {jQueryElement} from the content
-* @param {jQueryElement} to the content
-* @param {boolean} add the content to the output box ?
-*/
 function requestMoveItem$1(index, fromContent, toContent, isAdding) {
 	let count, item_price;
 	const item = isAdding ? _input$1[index] : _output$1[index];
@@ -314358,100 +315020,81 @@ function requestMoveItem$1(index, fromContent, toContent, isAdding) {
 		}
 	};
 }
-/**
-* Drop an input in the InputWindow or OutputWindow
-*
-* @param {jQueryEvent} event
-*/
 function onDrop$5(event) {
 	let data;
 	event.stopImmediatePropagation();
+	event.preventDefault();
 	try {
-		data = JSON.parse(event.originalEvent.dataTransfer.getData("Text"));
-	} catch (e) {
-		return false;
+		data = JSON.parse(event.dataTransfer.getData("Text"));
+	} catch (_e) {
+		return;
 	}
-	if (data.type !== "item" || data.from !== "Vending" || data.container === this.className) return false;
-	requestMoveItem$1(data.index, jquery_default("." + data.container + " .content"), jquery_default(this).find(".content"), this.className === "OutputWindow");
-	return false;
+	if (data.type !== "item" || data.from !== "Vending" || data.container === this.className) return;
+	const fromContent = _getRoot().querySelector(`.${data.container} .content`);
+	const toContent = this.querySelector(".content");
+	requestMoveItem$1(data.index, fromContent, toContent, this.className === "OutputWindow");
 }
-/**
-* Get informations about an item
-*/
 function onItemInfo$11(event) {
 	event.stopImmediatePropagation();
+	event.preventDefault();
 	const item = _input$1[parseInt(this.parentNode.getAttribute("data-index"), 10)];
-	if (!item) return false;
+	if (!item) return;
 	if (ItemInfo_default.uid === item.ITID) {
 		ItemInfo_default.remove();
-		return false;
+		return;
 	}
 	ItemInfo_default.append();
 	ItemInfo_default.uid = item.ITID;
 	ItemInfo_default.setItem(item);
-	return false;
 }
-/**
-* Select an item, put it on the other box
-*/
 function onItemSelected$1() {
-	let from, to;
 	if (_type$3 === Vending.Type.BUY || _type$3 === Vending.Type.VENDING_STORE) return;
-	const input = Vending.ui.find(".InputWindow:first");
-	if (jquery_default.contains(input.get(0), this)) {
-		from = input;
-		to = Vending.ui.find(".OutputWindow:first");
+	const root = _getRoot();
+	const inputWin = root.querySelector(".InputWindow");
+	let from, to;
+	if (inputWin.contains(this)) {
+		from = inputWin;
+		to = root.querySelector(".OutputWindow");
 	} else {
-		from = Vending.ui.find(".OutputWindow:first");
-		to = input;
+		from = root.querySelector(".OutputWindow");
+		to = inputWin;
 	}
-	requestMoveItem$1(parseInt(this.getAttribute("data-index"), 10), from.find(".content:first"), to.find(".content:first"), from === input);
+	requestMoveItem$1(parseInt(this.getAttribute("data-index"), 10), from.querySelector(".content"), to.querySelector(".content"), from === inputWin);
 }
-/**
-* Focus an item
-*/
 function onItemFocus$1() {
-	Vending.ui.find(".item.selected").removeClass("selected");
-	jquery_default(this).addClass("selected");
+	_getRoot().querySelectorAll(".item.selected").forEach((el) => el.classList.remove("selected"));
+	this.classList.add("selected");
 }
-/**
-* Update scroll by block (32px)
-*/
 function onScroll$4(event) {
 	let delta;
-	if (event.originalEvent.wheelDelta) {
-		delta = event.originalEvent.wheelDelta / 120;
+	if (event.wheelDelta) {
+		delta = event.wheelDelta / 120;
 		if (window.opera) delta = -delta;
-	} else if (event.originalEvent.detail) delta = -event.originalEvent.detail;
+	} else if (event.detail) delta = -event.detail;
 	this.scrollTop = Math.floor(this.scrollTop / 32) * 32 - delta * 32;
-	return false;
+	event.preventDefault();
 }
-/**
-* Start dragging an item
-*/
 function onDragStart$1(event) {
-	const InputWindow = Vending.ui.find(".InputWindow:first").get(0);
-	const OutputWindow = Vending.ui.find(".OutputWindow:first").get(0);
-	const container = (jquery_default.contains(InputWindow, this) ? InputWindow : OutputWindow).className;
+	const root = _getRoot();
+	const inputWin = root.querySelector(".InputWindow");
+	const outputWin = root.querySelector(".OutputWindow");
+	const container = (inputWin.contains(this) ? inputWin : outputWin).className;
 	const img = new Image();
-	const url = this.firstChild.style.backgroundImage.match(/\(([^\)]+)/)[1].replace(/"/g, "");
+	const url = this.firstChild.style.backgroundImage.match(/\(([^)]+)/)[1].replace(/"/g, "");
 	img.decoding = "async";
 	img.src = url;
-	event.originalEvent.dataTransfer.setDragImage(img, 12, 12);
-	event.originalEvent.dataTransfer.setData("Text", JSON.stringify(window._OBJ_DRAG_ = {
+	event.dataTransfer.setDragImage(img, 12, 12);
+	event.dataTransfer.setData("Text", JSON.stringify(window._OBJ_DRAG_ = {
 		type: "item",
 		from: "Vending",
 		container,
 		index: this.getAttribute("data-index")
 	}));
 }
-/**
-* Extend InputWindow size
-*/
 function onResizeInput() {
-	const InputWindow = Vending.ui.find(".InputWindow");
-	const content = InputWindow.find(".container .content");
-	const top = InputWindow.position().top;
+	const inputWin = _getRoot().querySelector(".InputWindow");
+	const content = inputWin.querySelector(".container .content");
+	const top = inputWin.offsetTop;
 	let lastHeight = 0;
 	function resizing() {
 		let h = Math.floor((Mouse.screen.y - top - 20) / 32);
@@ -314461,12 +315104,13 @@ function onResizeInput() {
 		lastHeight = h;
 	}
 	const _Interval = setInterval(resizing, 30);
-	jquery_default(window).on("mouseup.resize", function(event) {
+	const onMouseUp = (event) => {
 		if (event.which === 1) {
 			clearInterval(_Interval);
-			jquery_default(window).off("mouseup.resize");
+			window.removeEventListener("mouseup", onMouseUp);
 		}
-	});
+	};
+	window.addEventListener("mouseup", onMouseUp);
 }
 function countSlotsUsed() {
 	let count = 0;
@@ -314478,32 +315122,23 @@ function countSlotsUsed() {
 function submitNetworkPacket(pkt) {
 	Network.sendPacket(pkt);
 }
-/**
-* Show item name when mouse is over
-*/
 function onItemOver$8() {
 	if (!this.classList.contains("input")) return;
 	const idx = parseInt(this.getAttribute("data-index"), 10);
-	const item = _type$3 == Vending.Type.VENDING_STORE ? CartItems_default.getItemByIndex(idx) : InventoryController.getUI().getItemByIndex(idx);
+	const item = _type$3 === Vending.Type.VENDING_STORE ? CartItems_default.getItemByIndex(idx) : InventoryController.getUI().getItemByIndex(idx);
 	if (!item) return;
-	const pos = jquery_default(this).position();
-	const overlay = Vending.ui.find(".overlay");
-	overlay.show();
-	overlay.css({
-		top: pos.top - 20,
-		left: pos.left - 10
-	});
-	overlay.text(DB.getItemName(item) + " " + (item.count || 1) + " ea");
+	const overlay = _getRoot().querySelector(".overlay");
+	overlay.style.display = "";
+	overlay.style.top = `${this.offsetTop - 20}px`;
+	overlay.style.left = `${this.offsetLeft - 10}px`;
+	overlay.textContent = `${DB.getItemName(item)} ${item.count || 1} ea`;
 }
-/**
-* Hide the item name
-*/
 function onItemOut$9() {
-	Vending.ui.find(".overlay").hide();
+	const overlay = _getRoot().querySelector(".overlay");
+	if (overlay) overlay.style.display = "none";
 }
 var Vending, _preferences$20, _input$1, _output$1, _slots$4, _type$3, transferItem$1, Vending_default;
 var init_Vending = __esmMin((() => {
-	init_jquery();
 	init_DBManager();
 	init_NetworkManager();
 	init_PacketStructure();
@@ -314514,7 +315149,8 @@ var init_Vending = __esmMin((() => {
 	init_MouseEventHandler();
 	init_KeyEventHandler();
 	init_UIManager();
-	init_UIComponent();
+	init_GUIComponent();
+	init_Elements();
 	init_ItemInfo();
 	init_InputBox();
 	init_CartItems();
@@ -314524,14 +315160,12 @@ var init_Vending = __esmMin((() => {
 	init_Renderer();
 	init_Inventory();
 	init_BasicInfo();
-	Vending = new UIComponent("Vending", Vending_default$2, Vending_default$1);
+	Vending = new GUIComponent("Vending", Vending_default$1);
+	Vending.render = () => Vending_default$2;
 	Vending.isOpen = false;
 	Vending.Type = {
 		VENDING_STORE: 0,
 		BUYING_STORE: 1
-	};
-	Vending.setType = function(type) {
-		this.type = type;
 	};
 	_preferences$20 = Preferences.get("Vending", {
 		inputWindow: {
@@ -314549,142 +315183,202 @@ var init_Vending = __esmMin((() => {
 	_input$1 = [];
 	_output$1 = [];
 	_slots$4 = 0;
-	/**
-	* Initialize component
-	*/
+	Vending.captureKeyEvents = true;
 	Vending.init = function init() {
-		const ui = this.ui;
-		const InputWindow = ui.find(".InputWindow");
-		const OutputWindow = ui.find(".OutputWindow");
-		ui.find(".btn.sell").click(function(e) {
-			e.stopImmediatePropagation();
-			Vending.onSubmit();
+		const root = _getRoot();
+		const sellBtn = root.querySelector(".btn.sell");
+		if (sellBtn) {
+			sellBtn.addEventListener("mousedown", (e) => e.stopImmediatePropagation());
+			sellBtn.addEventListener("click", (e) => {
+				e.stopImmediatePropagation();
+				Vending.onSubmit();
+			});
+		}
+		const cancelBtn = root.querySelector(".btn.cancel");
+		if (cancelBtn) {
+			cancelBtn.addEventListener("mousedown", (e) => e.stopImmediatePropagation());
+			cancelBtn.addEventListener("click", (e) => {
+				e.stopImmediatePropagation();
+				let pkt;
+				if (_type$3 === Vending.Type.VENDING_STORE) pkt = new PACKET.CZ.REQ_OPENSTORE2();
+				else pkt = new PACKET.CZ.REQ_OPEN_BUYING_STORE();
+				submitNetworkPacket(pkt);
+				Vending.onRemove();
+			});
+		}
+		const extendBtn = root.querySelector(".InputWindow .footer .extend");
+		if (extendBtn) extendBtn.addEventListener("mousedown", onResizeInput);
+		root.querySelectorAll(".content").forEach((content) => {
+			content.addEventListener("contextmenu", (e) => {
+				const icon = e.target.closest(".icon");
+				if (icon) onItemInfo$11.call(icon, e);
+			});
+			content.addEventListener("wheel", (e) => {
+				onScroll$4.call(content, e);
+			});
+			content.addEventListener("mouseover", (e) => {
+				const item = e.target.closest(".item");
+				if (item) onItemOver$8.call(item);
+			});
+			content.addEventListener("mouseout", (e) => {
+				if (e.target.closest(".item")) onItemOut$9();
+			});
+			content.addEventListener("dblclick", (e) => {
+				const item = e.target.closest(".item");
+				if (item) onItemSelected$1.call(item);
+			});
+			content.addEventListener("mousedown", (e) => {
+				const item = e.target.closest(".item");
+				if (item) onItemFocus$1.call(item);
+			});
+			content.addEventListener("dragstart", (e) => {
+				const item = e.target.closest(".item");
+				if (item) onDragStart$1.call(item, e);
+			});
+			content.addEventListener("dragend", (e) => {
+				if (e.target.closest(".item")) delete window._OBJ_DRAG_;
+			});
 		});
-		this.ui.find(".btn.cancel").click(function(e) {
-			e.stopImmediatePropagation();
-			let pkt;
-			if (_type$3 === Vending.Type.VENDING_STORE) pkt = new PACKET.CZ.REQ_OPENSTORE2();
-			else pkt = new PACKET.CZ.REQ_OPEN_BUYING_STORE();
-			submitNetworkPacket(pkt);
-			Vending.onRemove();
+		const inputWin = root.querySelector(".InputWindow");
+		const outputWin = root.querySelector(".OutputWindow");
+		[inputWin, outputWin].forEach((win) => {
+			if (!win) return;
+			win.addEventListener("drop", (e) => {
+				onDrop$5.call(win, e);
+			});
+			win.addEventListener("dragover", (e) => {
+				e.stopImmediatePropagation();
+				e.preventDefault();
+			});
+			win.addEventListener("mousedown", () => {
+				Vending.focus();
+			});
 		});
-		InputWindow.find(".footer .extend").mousedown(onResizeInput);
-		ui.find(".content").on("contextmenu", ".icon", onItemInfo$11).on("mousewheel DOMMouseScroll", onScroll$4).on("mouseover", ".item", onItemOver$8).on("mouseout", ".item", onItemOut$9).on("dblclick", ".item", onItemSelected$1).on("mousedown", ".item", onItemFocus$1).on("dragstart", ".item", onDragStart$1).on("dragend", ".item", function() {
-			delete window._OBJ_DRAG_;
-		});
-		ui.find(".InputWindow, .OutputWindow").on("drop", onDrop$5).on("dragover", function(event) {
-			event.stopImmediatePropagation();
-			return false;
-		}).on("mousedown", function() {
-			Vending.focus();
-		});
-		this.draggable.call({ ui: InputWindow }, InputWindow.find(".titlebar"));
-		this.draggable.call({ ui: OutputWindow }, OutputWindow.find(".titlebar"));
-		Client.loadFile(DB.INTERFACE_PATH + "basic_interface/itemwin_mid.bmp", function(data) {
+		if (inputWin) this.draggable.call({
+			_host: inputWin,
+			_shadow: null,
+			_container: inputWin,
+			magnet: {},
+			needFocus: false,
+			manager: null
+		}, inputWin.querySelector(".titlebar"));
+		if (outputWin) this.draggable.call({
+			_host: outputWin,
+			_shadow: null,
+			_container: outputWin,
+			magnet: {},
+			needFocus: false,
+			manager: null
+		}, outputWin.querySelector(".titlebar"));
+		Client.loadFile(`${DB.INTERFACE_PATH}basic_interface/itemwin_mid.bmp`, (data) => {
 			Vending.itemBg = data;
 		});
 	};
-	/**
-	* Player should not be able to move when the store is opened
-	*/
 	Vending.onAppend = function onAppend() {
-		const InputWindow = this.ui.find(".InputWindow");
-		const OutputWindow = this.ui.find(".OutputWindow");
-		InputWindow.css({
-			top: Math.min(Math.max(0, _preferences$20.inputWindow.y), Renderer.height - InputWindow.find(".content").height()),
-			left: Math.min(Math.max(0, _preferences$20.inputWindow.x), Renderer.width - InputWindow.find(".content").width())
-		});
-		OutputWindow.css({
-			top: Math.min(Math.max(0, _preferences$20.outputWindow.y), Renderer.height - OutputWindow.find(".content").height()),
-			left: Math.min(Math.max(0, _preferences$20.outputWindow.x), Renderer.width - OutputWindow.find(".content").width())
-		});
-		resize$1(InputWindow.find(".content"), _preferences$20.inputWindow.height);
-		resize$1(OutputWindow.find(".content"), _preferences$20.outputWindow.height);
-		this.ui.hide();
+		const root = _getRoot();
+		const inputWin = root.querySelector(".InputWindow");
+		const outputWin = root.querySelector(".OutputWindow");
+		const inputContent = inputWin.querySelector(".content");
+		const outputContent = outputWin.querySelector(".content");
+		inputWin.style.top = `${Math.min(Math.max(0, _preferences$20.inputWindow.y), Renderer.height - inputContent.offsetHeight)}px`;
+		inputWin.style.left = `${Math.min(Math.max(0, _preferences$20.inputWindow.x), Renderer.width - inputContent.offsetWidth)}px`;
+		outputWin.style.top = `${Math.min(Math.max(0, _preferences$20.outputWindow.y), Renderer.height - outputContent.offsetHeight)}px`;
+		outputWin.style.left = `${Math.min(Math.max(0, _preferences$20.outputWindow.x), Renderer.width - outputContent.offsetWidth)}px`;
+		resize$1(inputContent, _preferences$20.inputWindow.height);
+		resize$1(outputContent, _preferences$20.outputWindow.height);
+		this._host.style.display = "none";
 	};
-	/**
-	* Specify the type of the shop
-	*
-	* @param {number} type (see NpcStore.Type.*)
-	*/
 	Vending.setType = function setType(type) {
+		const root = _getRoot();
+		const winBuyEls = root.querySelectorAll(".WinBuy");
+		const winSellEls = root.querySelectorAll(".WinSell");
 		switch (type) {
 			case Vending.Type.VENDING_STORE:
-				this.ui.find(".WinBuy").hide();
-				this.ui.find(".WinSell").show();
+				winBuyEls.forEach((el) => {
+					el.style.display = "none";
+				});
+				winSellEls.forEach((el) => {
+					el.style.display = "";
+				});
 				break;
 			case Vending.Type.BUYING_STORE:
-				this.ui.find(".WinSell").hide();
-				this.ui.find(".WinBuy").show();
-				this.ui.find(".zenySpan").text(prettyZeny$3(SessionStorage_default.zeny));
-				this.ui.find(".weightSpan").text(BasicInfoController.getUI().weight + "/" + BasicInfoController.getUI().weight_max);
-				this.ui.find(".limitZeny").val("0");
+				winSellEls.forEach((el) => {
+					el.style.display = "none";
+				});
+				winBuyEls.forEach((el) => {
+					el.style.display = "";
+				});
+				root.querySelector(".zenySpan").textContent = prettyZeny$3(SessionStorage_default.zeny);
+				root.querySelector(".weightSpan").textContent = `${BasicInfoController.getUI().weight}/${BasicInfoController.getUI().weight_max}`;
+				root.querySelector(".limitZeny").value = "0";
 				break;
 		}
 		_type$3 = type;
 	};
-	/**
-	* Released movement and save preferences
-	*/
 	Vending.onRemove = function onRemove() {
 		VendingModelMessage_default.onRemove();
-		const InputWindow = this.ui.find(".InputWindow");
-		const OutputWindow = this.ui.find(".OutputWindow");
+		const root = _getRoot();
+		const inputWin = root.querySelector(".InputWindow");
+		const outputWin = root.querySelector(".OutputWindow");
 		_input$1.length = 0;
 		_output$1.length = 0;
-		_preferences$20.inputWindow.x = parseInt(InputWindow.css("left"), 10);
-		_preferences$20.inputWindow.y = parseInt(InputWindow.css("top"), 10);
-		_preferences$20.inputWindow.height = InputWindow.find(".content").height() / 32 | 0;
-		_preferences$20.outputWindow.x = parseInt(OutputWindow.css("left"), 10);
-		_preferences$20.outputWindow.y = parseInt(OutputWindow.css("top"), 10);
-		_preferences$20.outputWindow.height = OutputWindow.find(".content").height() / 32 | 0;
+		_preferences$20.inputWindow.x = parseInt(inputWin.style.left, 10);
+		_preferences$20.inputWindow.y = parseInt(inputWin.style.top, 10);
+		_preferences$20.inputWindow.height = inputWin.querySelector(".content").offsetHeight / 32 | 0;
+		_preferences$20.outputWindow.x = parseInt(outputWin.style.left, 10);
+		_preferences$20.outputWindow.y = parseInt(outputWin.style.top, 10);
+		_preferences$20.outputWindow.height = outputWin.querySelector(".content").offsetHeight / 32 | 0;
 		_preferences$20.save();
-		this.ui.find(".content").empty();
-		this.ui.hide();
+		root.querySelectorAll(".content").forEach((el) => {
+			el.innerHTML = "";
+		});
+		this._host.style.display = "none";
 		Vending.isOpen = false;
 	};
-	/**
-	* Key Listener
-	*
-	* Remove the UI when Escape key is pressed
-	*/
 	Vending.onKeyDown = function onKeyDown(event) {
-		if ((event.which === KEYS.ESCAPE || event.key === "Escape") && this.ui.is(":visible")) this.remove();
+		const focused = (this._shadow || this._host).activeElement;
+		if (focused && focused.tagName && focused.tagName.match(/input|select|textarea/i)) {
+			if (event.which === KEYS.ESCAPE || event.key === "Escape") {
+				this.remove();
+				event.stopImmediatePropagation();
+				return false;
+			}
+			event.stopImmediatePropagation();
+			return true;
+		}
+		if ((event.which === KEYS.ESCAPE || event.key === "Escape") && this._host.style.display !== "none") this.remove();
+		return true;
 	};
-	/**
-	* Add items to list
-	*
-	* @param {Array} item list
-	*/
 	Vending.setList = function setList(items) {
-		let i, count, out;
-		this.ui.find(".content").empty();
+		const root = _getRoot();
+		root.querySelectorAll(".content").forEach((el) => {
+			el.innerHTML = "";
+		});
 		_input$1.length = 0;
 		_output$1.length = 0;
-		const content = this.ui.find(".InputWindow .content");
-		for (i = 0, count = items.length; i < count; ++i) {
+		const content = root.querySelector(".InputWindow .content");
+		for (let i = 0, count = items.length; i < count; ++i) {
 			if (!("index" in items[i])) items[i].index = i;
-			if (isItemStackable(items[i])) items[i].IsStackable = true;
-			else items[i].IsStackable = false;
-			if (!items[i].hasOwnProperty("count")) items[i].count = 1;
+			items[i].IsStackable = isItemStackable(items[i]);
+			if (!Object.prototype.hasOwnProperty.call(items[i], "count")) items[i].count = 1;
 			items[i].total = items[i].count;
-			out = jquery_default.extend({}, items[i]);
+			const out = Object.assign({}, items[i]);
 			out.count = 0;
 			addItem$1(content, items[i], true);
 			_input$1[items[i].index] = items[i];
 			_output$1[items[i].index] = out;
 		}
 	};
-	transferItem$1 = (function transferItemQuantityClosure() {
+	transferItem$1 = (() => {
 		let tmpItem = {};
-		return function _transferItem(fromContent, toContent, isAdding, index, count) {
+		return (fromContent, toContent, isAdding, index, count) => {
 			if (isAdding) {
 				if (!_input$1[index].IsIdentified) {
 					VendingModelMessage_default.setInit(603);
 					return;
 				}
 				_output$1[index].count = _type$3 === Vending.Type.BUYING_STORE ? count : Math.min(_output$1[index].count + count, _input$1[index].count);
-				tmpItem = jquery_default.extend({}, _input$1[index]);
+				tmpItem = Object.assign({}, _input$1[index]);
 				tmpItem.count = _type$3 === Vending.Type.BUYING_STORE ? 0 : _input$1[index].count - _output$1[index].count;
 				addItem$1(fromContent, tmpItem, true);
 				addItem$1(toContent, _output$1[index], false);
@@ -314692,7 +315386,7 @@ var init_Vending = __esmMin((() => {
 				count = Math.min(count, _output$1[index].count);
 				if (!count) return;
 				_output$1[index].count = _type$3 === Vending.Type.BUYING_STORE ? 0 : _output$1[index].count - count;
-				tmpItem = jquery_default.extend({}, _input$1[index]);
+				tmpItem = Object.assign({}, _input$1[index]);
 				tmpItem.count = _type$3 === Vending.Type.BUYING_STORE ? _input$1[index].total : _input$1[index].count + _output$1[index].count;
 				addItem$1(fromContent, _output$1[index], false);
 				addItem$1(toContent, tmpItem, true);
@@ -314703,35 +315397,41 @@ var init_Vending = __esmMin((() => {
 		if (Vending.isOpen) return;
 		_slots$4 = pkt.itemcount;
 		this.setList(CartItems_default.list);
-		this.ui.find(".add_shop")[0].style.height = 32 * _slots$4 + "px";
-		this.ui.find(".shopname").val("");
-		this.ui.show();
+		const root = _getRoot();
+		root.querySelector(".add_shop").style.height = `${32 * _slots$4}px`;
+		root.querySelector(".shopname").value = "";
+		this._host.style.display = "";
+		this._fixPositionOverflow();
 		Vending.isOpen = true;
 	};
 	Vending.onBuyingSkill = function onBuyingSkill(pkt) {
 		if (Vending.isOpen) return;
 		_slots$4 = pkt.itemcount;
-		const buyable = new Array();
+		const buyable = [];
 		for (const key in InventoryController.getUI().list) {
 			const item = InventoryController.getUI().list[key];
 			if (isItemStackable(item) && DB.isBuyable(item.ITID)) buyable.push(item);
 		}
 		this.setList(buyable);
-		this.ui.find(".add_shop")[0].style.height = 32 * _slots$4 + "px";
-		this.ui.find(".shopname").val("");
-		this.ui.show();
+		const root = _getRoot();
+		root.querySelector(".add_shop").style.height = `${32 * _slots$4}px`;
+		root.querySelector(".shopname").value = "";
+		this._host.style.display = "";
+		this._fixPositionOverflow();
 		Vending.isOpen = true;
 	};
-	Vending.onClose = function() {
-		if (this.ui) this.ui.hide();
+	Vending.onClose = function onClose() {
+		this._host.style.display = "none";
 		Vending.isOpen = false;
 	};
 	Vending.onSubmit = function onSubmit() {
 		const output = [];
 		const count = _output$1.length;
-		const shopname = this.ui.find(".shopname").val();
-		let i, limitZeny, ctr = 0;
-		for (i = 0; i < count; ++i) if (_output$1[i] && _output$1[i].count) {
+		const root = _getRoot();
+		const shopname = root.querySelector(".shopname").value;
+		let limitZeny;
+		let ctr = 0;
+		for (let i = 0; i < count; ++i) if (_output$1[i] && _output$1[i].count) {
 			output.push(_output$1[i]);
 			ctr++;
 		}
@@ -314743,7 +315443,7 @@ var init_Vending = __esmMin((() => {
 		if (_type$3 === Vending.Type.VENDING_STORE) pkt = new PACKET.CZ.REQ_OPENSTORE2();
 		else {
 			pkt = new PACKET.CZ.REQ_OPEN_BUYING_STORE();
-			limitZeny = parseInt(this.ui.find(".limitZeny").val(), 10);
+			limitZeny = parseInt(root.querySelector(".limitZeny").value, 10);
 			if (limitZeny > SessionStorage_default.zeny) {
 				VendingModelMessage_default.setInit(3683);
 				return;
@@ -314766,19 +315466,20 @@ var init_Vending = __esmMin((() => {
 		}
 		this.onRemove();
 	};
+	Vending.mouseMode = GUIComponent.MouseMode.STOP;
 	Vending_default = UIManager.addComponent(Vending);
 }));
 //#endregion
 //#region src/UI/Components/VendingShop/VendingShop.html?raw
 var VendingShop_default$2;
 var init_VendingShop$2 = __esmMin((() => {
-	VendingShop_default$2 = "<div id=\"vendingshop\">\r\n	<div class=\"titlebar\" data-background=\"basic_interface/titlebar_mid.bmp\">\r\n		<div class=\"left\">\r\n			<span class=\"text shopname\"></span>\r\n		</div>\r\n		<div class=\"clear\"></div>\r\n	</div>\r\n	<div class=\"overlay\"></div>\r\n	<div class=\"panel\">\r\n		<table>\r\n			<tr>\r\n				<td class=\"container\">\r\n					<div class=\"ff_bugfix\">\r\n						<div class=\"hide\"></div>\r\n						<div class=\"content\" data-background=\"basic_interface/itemwin_mid.bmp\"></div>\r\n					</div>\r\n				</td>\r\n			</tr>\r\n			<tr>\r\n				<td class=\"footer\" data-background=\"basic_interface/btnbar_mid2.bmp\">\r\n					<div class=\"right\">\r\n						<button\r\n							class=\"btn close\"\r\n							data-background=\"btn_close.bmp\"\r\n							data-hover=\"btn_close_a.bmp\"\r\n							data-down=\"btn_close_b.bmp\"\r\n						></button>\r\n					</div>\r\n				</td>\r\n			</tr>\r\n		</table>\r\n	</div>\r\n</div>\r\n";
+	VendingShop_default$2 = "<div id=\"vendingshop\">\r\n	<div class=\"titlebar\" data-background=\"basic_interface/titlebar_mid.bmp\">\r\n		<div class=\"left\">\r\n			<span class=\"text shopname\"></span>\r\n		</div>\r\n		<div class=\"clear\"></div>\r\n	</div>\r\n	<div class=\"overlay\"></div>\r\n	<div class=\"panel\">\r\n		<table>\r\n			<tr>\r\n				<td class=\"container\">\r\n					<div class=\"ff_bugfix\">\r\n						<div class=\"hide\"></div>\r\n						<div class=\"content\" data-background=\"basic_interface/itemwin_mid.bmp\"></div>\r\n					</div>\r\n				</td>\r\n			</tr>\r\n			<tr>\r\n				<td class=\"footer\" data-background=\"basic_interface/btnbar_mid2.bmp\">\r\n					<div class=\"right\">\r\n						<ui-button\r\n							class=\"btn close\"\r\n							bg=\"btn_close.bmp\"\r\n							hover=\"btn_close_a.bmp\"\r\n							down=\"btn_close_b.bmp\"\r\n						></ui-button>\r\n					</div>\r\n				</td>\r\n			</tr>\r\n		</table>\r\n	</div>\r\n</div>\r\n";
 }));
 //#endregion
 //#region src/UI/Components/VendingShop/VendingShop.css?raw
 var VendingShop_default$1;
 var init_VendingShop$1 = __esmMin((() => {
-	VendingShop_default$1 = "#vendingshop {\r\n	position: absolute;\r\n	top: 100px;\r\n	left: 100px;\r\n}\r\n#vendingshop table {\r\n	border-spacing: 0px;\r\n	display: inline-block;\r\n}\r\n\r\n#vendingshop .titlebar {\r\n	width: 100%;\r\n	height: 17px;\r\n	background-color: white;\r\n	background-repeat: repeat-x;\r\n	border-radius: 3px 3px 0px 0px;\r\n}\r\n#vendingshop .titlebar .base {\r\n	width: 11px;\r\n	height: 11px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n	vertical-align: middle;\r\n}\r\n#vendingshop .titlebar .text {\r\n	text-shadow: 1px 1px white;\r\n	vertical-align: -2px;\r\n	white-space: nowrap;\r\n	/* chrome bug */\r\n	display: inline-block;\r\n	width: 32px;\r\n	height: 13px;\r\n	font-size: 11px;\r\n	font-weight: bold;\r\n}\r\n#vendingshop .titlebar .left {\r\n	margin-left: 3px;\r\n	float: left;\r\n}\r\n#vendingshop .titlebar .clear {\r\n	clear: both;\r\n}\r\n\r\n#vendingshop .container {\r\n	padding-left: 16px;\r\n	border-right: 1px solid #ccc;\r\n	background: white;\r\n}\r\n#vendingshop .ff_bugfix {\r\n	position: relative;\r\n	width: 100%;\r\n	height: 100%;\r\n}\r\n#vendingshop .hide {\r\n	height: 100%;\r\n	width: 16px;\r\n	position: absolute;\r\n	top: 0px;\r\n	right: 0px;\r\n	background-color: white;\r\n}\r\n#vendingshop .content {\r\n	overflow: auto;\r\n	width: 100%;\r\n	height: 100%;\r\n	min-height: 65px;\r\n	background-color: transparent;\r\n	background-repeat: repeat;\r\n}\r\n\r\n#vendingshop .content .item {\r\n	display: block;\r\n	width: 24px;\r\n	height: 24px;\r\n	margin: 4px 4px 4px 4px;\r\n	position: relative;\r\n	float: left;\r\n}\r\n#vendingshop .content .item .icon {\r\n	width: 24px;\r\n	height: 24px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n#vendingshop .overlay {\r\n	position: absolute;\r\n	display: none;\r\n	white-space: nowrap;\r\n	z-index: 900;\r\n	height: 13px;\r\n	padding: 5px;\r\n	background: rgba(0, 0, 0, 0.7);\r\n	color: white;\r\n	text-shadow: 1px 1px black;\r\n}\r\n#vendingshop .overlay.grey {\r\n	color: #aaa;\r\n}\r\n#vendingshop .content .item .amount {\r\n	position: relative;\r\n	bottom: 9px;\r\n	right: 0px;\r\n	text-align: right;\r\n	text-shadow: -1px -1px white;\r\n}\r\n\r\n#vendingshop .footer {\r\n	width: 100%;\r\n	height: 27px;\r\n	background-repeat: repeat-x;\r\n	background-color: transparent;\r\n	position: relative;\r\n	border-right: 1px solid #ccc;\r\n}\r\n#vendingshop .footer .right {\r\n	float: right;\r\n	margin-right: 3px;\r\n}\r\n#vendingshop .btn {\r\n	width: 42px;\r\n	height: 20px;\r\n	border: none;\r\n	margin: 0;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n";
+	VendingShop_default$1 = ":host {\r\n	top: 100px;\r\n	left: 100px;\r\n	width: 288px;\r\n	height: 114px;\r\n}\r\n\r\n#vendingshop {\r\n	position: absolute;\r\n	width: 288px;\r\n	height: 114px;\r\n}\r\n#vendingshop table {\r\n	border-spacing: 0px;\r\n	display: inline-block;\r\n}\r\n\r\n#vendingshop .titlebar {\r\n	width: 100%;\r\n	height: 17px;\r\n	background-color: white;\r\n	background-repeat: repeat-x;\r\n	border-radius: 3px 3px 0px 0px;\r\n}\r\n#vendingshop .titlebar .base {\r\n	width: 11px;\r\n	height: 11px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n	vertical-align: middle;\r\n}\r\n#vendingshop .titlebar .text {\r\n	text-shadow: 1px 1px white;\r\n	vertical-align: -2px;\r\n	white-space: nowrap;\r\n	/* chrome bug */\r\n	display: inline-block;\r\n	width: 32px;\r\n	height: 13px;\r\n	font-size: 11px;\r\n	font-weight: bold;\r\n}\r\n#vendingshop .titlebar .left {\r\n	margin-left: 3px;\r\n	float: left;\r\n}\r\n#vendingshop .titlebar .clear {\r\n	clear: both;\r\n}\r\n\r\n#vendingshop .container {\r\n	padding-left: 16px;\r\n	border-right: 1px solid #ccc;\r\n	background: white;\r\n}\r\n#vendingshop .ff_bugfix {\r\n	position: relative;\r\n	width: 100%;\r\n	height: 100%;\r\n}\r\n#vendingshop .hide {\r\n	height: 100%;\r\n	width: 16px;\r\n	position: absolute;\r\n	top: 0px;\r\n	right: 0px;\r\n	background-color: white;\r\n}\r\n#vendingshop .content {\r\n	overflow: auto;\r\n	width: 100%;\r\n	height: 100%;\r\n	min-height: 65px;\r\n	background-color: transparent;\r\n	background-repeat: repeat;\r\n}\r\n\r\n#vendingshop .content .item {\r\n	display: block;\r\n	width: 24px;\r\n	height: 24px;\r\n	margin: 4px 4px 4px 4px;\r\n	position: relative;\r\n	float: left;\r\n}\r\n#vendingshop .content .item .icon {\r\n	width: 24px;\r\n	height: 24px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n#vendingshop .overlay {\r\n	position: absolute;\r\n	display: none;\r\n	white-space: nowrap;\r\n	z-index: 900;\r\n	height: 13px;\r\n	padding: 5px;\r\n	background: rgba(0, 0, 0, 0.7);\r\n	color: white;\r\n	text-shadow: 1px 1px black;\r\n}\r\n#vendingshop .overlay.grey {\r\n	color: #aaa;\r\n}\r\n#vendingshop .content .item .amount {\r\n	position: relative;\r\n	bottom: 9px;\r\n	right: 0px;\r\n	text-align: right;\r\n	text-shadow: -1px -1px white;\r\n}\r\n\r\n#vendingshop .footer {\r\n	width: 100%;\r\n	height: 27px;\r\n	background-repeat: repeat-x;\r\n	background-color: transparent;\r\n	position: relative;\r\n	border-right: 1px solid #ccc;\r\n}\r\n#vendingshop .footer .right {\r\n	float: right;\r\n	margin-right: 3px;\r\n}\r\n#vendingshop .btn {\r\n	width: 42px;\r\n	height: 20px;\r\n	border: none;\r\n	margin: 0;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n";
 }));
 //#endregion
 //#region src/UI/Components/VendingShop/VendingShop.js
@@ -314786,16 +315487,15 @@ var init_VendingShop$1 = __esmMin((() => {
 * Prettify zeny : 1000000 -> 1,000,000
 *
 * @param {number} zeny
-* @param {boolean} use color
+* @param {boolean} useStyle
 * @return {string}
 */
 function prettyZeny$2(val, useStyle) {
 	const list = val.toString().split("");
 	const count = list.length;
-	let i;
 	let str = "";
-	for (i = 0; i < count; i++) str = list[count - i - 1] + (i && i % 3 === 0 ? "," : "") + str;
-	if (useStyle) str = "<span style=\"" + [
+	for (let i = 0; i < count; i++) str = list[count - i - 1] + (i && i % 3 === 0 ? "," : "") + str;
+	if (useStyle) str = `<span style="${[
 		"color:#000000; text-shadow:1px 0px #00ffff;",
 		"color:#0000ff; text-shadow:1px 0px #ce00ce;",
 		"color:#0000ff; text-shadow:1px 0px #00ffff;",
@@ -314806,69 +315506,57 @@ function prettyZeny$2(val, useStyle) {
 		"color:#ff0000;",
 		"color:#000000; text-shadow:1px 0px #cece63;",
 		"color:#ff0000; text-shadow:1px 0px #ff007b;"
-	][count - 1] + "\">" + str + "</span>";
+	][count - 1]}">${str}</span>`;
 	return str;
-}
-/**
-* Stop event propagation
-*/
-function stopPropagation$9(event) {
-	event.stopImmediatePropagation();
-	return false;
 }
 /**
 * Drop an item from storage to inventory
 *
-* @param {event}
+* @param {Event} event
 */
 function onDrop$4(event) {
 	event.stopImmediatePropagation();
-	return false;
+	event.preventDefault();
 }
 /**
 * Block the scroll to move 32px at each move
 */
 function onScroll$3(event) {
 	let delta;
-	if (event.originalEvent.wheelDelta) {
-		delta = event.originalEvent.wheelDelta / 120;
+	if (event.wheelDelta) {
+		delta = event.wheelDelta / 120;
 		if (window.opera) delta = -delta;
-	} else if (event.originalEvent.detail) delta = -event.originalEvent.detail;
-	this.scrollTop = Math.floor(this.scrollTop / 32) * 32 - delta * 32;
+	} else if (event.detail) delta = -event.detail;
+	else if (event.deltaY) delta = -event.deltaY / 100;
+	event.currentTarget.scrollTop = Math.floor(event.currentTarget.scrollTop / 32) * 32 - delta * 32;
 	event.stopImmediatePropagation();
-	return false;
+	event.preventDefault();
 }
 /**
 * Show item name when mouse is over
 */
-function onItemOver$7() {
-	const idx = parseInt(this.getAttribute("data-index"), 10);
+function onItemOver$7(itemEl, root) {
+	const idx = parseInt(itemEl.getAttribute("data-index"), 10);
 	const item = VendingShop.getItemByIndex(idx);
 	if (!item) return;
-	const pos = jquery_default(this).position();
-	const overlay = VendingShop.ui.find(".overlay");
-	overlay.show();
-	overlay.css({
-		top: pos.top,
-		left: pos.left + 35
-	});
-	overlay.text(DB.getItemName(item) + " " + prettyZeny$2(item.price, false) + " " + DB.getMessage(2328));
-	if (item.IsIdentified) overlay.removeClass("grey");
-	else if (_type$2 === VendingShop.Type.VENDING_LIST) overlay.addClass("grey");
+	const overlay = root.querySelector(".overlay");
+	if (!overlay) return;
+	overlay.style.display = "";
+	overlay.style.top = `${itemEl.offsetTop}px`;
+	overlay.style.left = `${itemEl.offsetLeft + 35}px`;
+	overlay.textContent = `${DB.getItemName(item)} ${prettyZeny$2(item.price, false)} ${DB.getMessage(2328)}`;
+	if (item.IsIdentified) overlay.classList.remove("grey");
+	else if (_type$2 === VendingShop.Type.VENDING_LIST) overlay.classList.add("grey");
 }
 /**
 * Hide the item name
 */
-function onItemOut$8() {
-	VendingShop.ui.find(".overlay").hide();
+function onItemOut$8(root) {
+	const overlay = root.querySelector(".overlay");
+	if (overlay) overlay.style.display = "none";
 }
 /**
-* Start dragging an item
-*/
-function onItemDragStart$5(event) {}
-/**
 * Stop dragging an item
-*
 */
 function onItemDragEnd$5() {
 	delete window._OBJ_DRAG_;
@@ -314876,52 +315564,53 @@ function onItemDragEnd$5() {
 /**
 * Get item info (open description window)
 */
-function onItemInfo$10(event) {
+function onItemInfo$10(event, itemEl) {
 	event.stopImmediatePropagation();
-	const index = parseInt(this.getAttribute("data-index"), 10);
+	event.preventDefault();
+	const index = parseInt(itemEl.getAttribute("data-index"), 10);
 	const item = VendingShop.getItemByIndex(index);
-	if (!item) return false;
+	if (!item) return;
 	if (ItemInfo_default.uid === item.ITID) {
 		ItemInfo_default.remove();
-		return false;
+		return;
 	}
 	ItemInfo_default.append();
 	ItemInfo_default.uid = item.ITID;
 	ItemInfo_default.setItem(item);
-	return false;
 }
 /**
 * Ask to use an item
 */
-function onItemUsed(event) {
-	const index = parseInt(this.getAttribute("data-index"), 10);
+function onItemUsed(event, itemEl) {
+	const index = parseInt(itemEl.getAttribute("data-index"), 10);
 	const item = VendingShop.getItemByIndex(index);
 	if (item) {
 		VendingShop.useItem(item);
-		onItemOut$8();
+		onItemOut$8(VendingShop._shadow || VendingShop._host);
 	}
 	event.stopImmediatePropagation();
-	return false;
+	event.preventDefault();
 }
 var VendingShop, _realSize, _type$2, _preferences$19, VendingShop_default;
 var init_VendingShop = __esmMin((() => {
 	init_DBManager();
-	init_jquery();
 	init_NetworkManager();
 	init_PacketStructure();
 	init_PacketVerManager();
 	init_Client();
 	init_Preferences$1();
 	init_Renderer();
+	init_GUIComponent();
 	init_UIManager();
-	init_UIComponent();
+	init_Elements();
 	init_ChatBox();
 	init_ItemInfo();
 	init_Vending();
 	init_VendingShop$2();
 	init_VendingShop$1();
 	init_VendingReport();
-	VendingShop = new UIComponent("VendingShop", VendingShop_default$2, VendingShop_default$1);
+	VendingShop = new GUIComponent("VendingShop", VendingShop_default$1);
+	VendingShop.render = () => VendingShop_default$2;
 	/**
 	* @var {enum} Store type
 	*/
@@ -314944,26 +315633,59 @@ var init_VendingShop = __esmMin((() => {
 	/**
 	* Initialize UI
 	*/
-	VendingShop.init = function Init() {
-		this.ui.find(".btn.close").click(function() {
-			VendingShop.onSubmit();
+	VendingShop.init = function init() {
+		const root = this._shadow || this._host;
+		const closeBtn = root.querySelector(".btn.close");
+		if (closeBtn) {
+			closeBtn.addEventListener("mousedown", (e) => e.stopImmediatePropagation());
+			closeBtn.addEventListener("click", () => VendingShop.onSubmit());
+		}
+		this._host.addEventListener("drop", onDrop$4);
+		this._host.addEventListener("dragover", (e) => {
+			e.stopImmediatePropagation();
+			e.preventDefault();
 		});
-		this.ui.on("drop", onDrop$4).on("dragover", stopPropagation$9).find(".container .content").on("mousewheel DOMMouseScroll", onScroll$3).on("mouseover", ".item", onItemOver$7).on("mouseout", ".item", onItemOut$8).on("dragstart", ".item", onItemDragStart$5).on("dragend", ".item", onItemDragEnd$5).on("contextmenu", ".item", onItemInfo$10).on("dblclick", ".item", onItemUsed);
-		this.draggable(this.ui.find(".titlebar"));
+		const content = root.querySelector(".container .content");
+		if (content) {
+			content.addEventListener("wheel", onScroll$3);
+			content.addEventListener("mouseover", (e) => {
+				const itemEl = e.target.closest(".item");
+				if (itemEl) onItemOver$7(itemEl, root);
+			});
+			content.addEventListener("mouseout", (e) => {
+				if (e.target.closest(".item")) onItemOut$8(root);
+			});
+			content.addEventListener("dragstart", (e) => {
+				if (e.target.closest(".item"));
+			});
+			content.addEventListener("dragend", (e) => {
+				if (e.target.closest(".item")) onItemDragEnd$5();
+			});
+			content.addEventListener("contextmenu", (e) => {
+				const itemEl = e.target.closest(".item");
+				if (itemEl) onItemInfo$10(e, itemEl);
+			});
+			content.addEventListener("dblclick", (e) => {
+				const itemEl = e.target.closest(".item");
+				if (itemEl) onItemUsed(e, itemEl);
+			});
+		}
+		this.draggable(".titlebar");
+		this._host.style.display = "none";
 	};
 	/**
 	* Apply preferences once append to body
 	*/
-	VendingShop.onAppend = function OnAppend() {
+	VendingShop.onAppend = function onAppend() {
 		this.resize(_preferences$19.width, _preferences$19.height);
-		this.ui.css({
-			top: Math.min(Math.max(0, _preferences$19.y), Renderer.height - this.ui.height()),
-			left: Math.min(Math.max(0, _preferences$19.x), Renderer.width - this.ui.width())
-		});
-		_realSize = _preferences$19.reduce ? 0 : this.ui.height();
+		const hostRect = this._host.getBoundingClientRect();
+		this._host.style.top = `${Math.min(Math.max(0, _preferences$19.y), Renderer.height - hostRect.height)}px`;
+		this._host.style.left = `${Math.min(Math.max(0, _preferences$19.x), Renderer.width - hostRect.width)}px`;
+		_realSize = _preferences$19.reduce ? 0 : hostRect.height;
 		const messageText = DB.getMessage(226);
-		const titleShop = Vending_default._shopname.length > 25 ? Vending_default._shopname.substring(0, 25) + "..." : Vending_default._shopname;
-		this.ui.find(".text.shopname").text(messageText + " : " + titleShop);
+		const titleShop = Vending_default._shopname.length > 25 ? `${Vending_default._shopname.substring(0, 25)}...` : Vending_default._shopname;
+		const shopnameEl = (this._shadow || this._host).querySelector(".text.shopname");
+		if (shopnameEl) shopnameEl.textContent = `${messageText} : ${titleShop}`;
 	};
 	/**
 	* Specify the type of the shop
@@ -314976,17 +315698,19 @@ var init_VendingShop = __esmMin((() => {
 	/**
 	* Remove Inventory from window (and so clean up items)
 	*/
-	VendingShop.onRemove = function OnRemove() {
-		this.ui.find(".container .content").empty();
+	VendingShop.onRemove = function onRemove() {
+		const content = (this._shadow || this._host).querySelector(".container .content");
+		if (content) content.innerHTML = "";
 		this.list.length = 0;
-		jquery_default(".ItemInfo").remove();
+		const itemInfoEl = document.querySelector(".ItemInfo");
+		if (itemInfoEl) itemInfoEl.remove();
 		_preferences$19.reduce = !!_realSize;
-		_preferences$19.y = parseInt(this.ui.css("top"), 10);
-		_preferences$19.x = parseInt(this.ui.css("left"), 10);
-		_preferences$19.width = Math.floor((this.ui.width() - 25) / 32);
-		_preferences$19.height = Math.floor((this.ui.height() - 20) / 32);
+		_preferences$19.y = parseInt(this._host.style.top, 10);
+		_preferences$19.x = parseInt(this._host.style.left, 10);
+		_preferences$19.width = Math.floor((this._host.getBoundingClientRect().width - 25) / 32);
+		_preferences$19.height = Math.floor((this._host.getBoundingClientRect().height - 20) / 32);
 		_preferences$19.save();
-		this.ui.hide();
+		this._host.style.display = "none";
 	};
 	/**
 	* Extend inventory window size
@@ -314994,17 +315718,24 @@ var init_VendingShop = __esmMin((() => {
 	* @param {number} width
 	* @param {number} height
 	*/
-	VendingShop.resize = function Resize(width, height) {
+	VendingShop.resize = function resize(width, height) {
 		width = Math.min(Math.max(width, 6), 9);
 		height = Math.min(Math.max(height, 2), 6);
-		this.ui.find(".container .content").css({
-			width: width * 32 + 13,
-			height: height * 32
-		});
-		this.ui.css({
-			width: 32 + width * 32,
-			height: 50 + height * 32
-		});
+		const root = this._shadow || this._host;
+		const content = root.querySelector(".container .content");
+		if (content) {
+			content.style.width = `${width * 32 + 13}px`;
+			content.style.height = `${height * 32}px`;
+		}
+		const innerW = 32 + width * 32;
+		const innerH = 50 + height * 32;
+		this._host.style.width = `${innerW}px`;
+		this._host.style.height = `${innerH}px`;
+		const inner = root.querySelector("#vendingshop");
+		if (inner) {
+			inner.style.width = `${innerW}px`;
+			inner.style.height = `${innerH}px`;
+		}
 	};
 	/**
 	* Get item object
@@ -315012,10 +315743,9 @@ var init_VendingShop = __esmMin((() => {
 	* @param {number} id
 	* @returns {Item}
 	*/
-	VendingShop.getItemById = function GetItemById(id) {
-		let i, count;
+	VendingShop.getItemById = function getItemById(id) {
 		const list = VendingShop.list;
-		for (i = 0, count = list.length; i < count; ++i) if (list[i].ITID === id) return list[i];
+		for (let i = 0, count = list.length; i < count; ++i) if (list[i].ITID === id) return list[i];
 		return null;
 	};
 	/**
@@ -315025,9 +315755,8 @@ var init_VendingShop = __esmMin((() => {
 	* @returns {Item}
 	*/
 	VendingShop.getItemByIndex = function getItemByIndex(index) {
-		let i, count;
 		const list = VendingShop.list;
-		for (i = 0, count = list.length; i < count; ++i) if (list[i].index === index) return list[i];
+		for (let i = 0, count = list.length; i < count; ++i) if (list[i].index === index) return list[i];
 		return null;
 	};
 	/**
@@ -315035,23 +315764,23 @@ var init_VendingShop = __esmMin((() => {
 	* if the item index is exist you should clear it;[skybook888]
 	*/
 	VendingShop.setItems = function setItems(items) {
-		let i, count;
-		for (i = 0, count = items.length; i < count; ++i) if (this.addItemSub(items[i])) this.list.push(items[i]);
-		this.ui.show();
+		for (let i = 0, count = items.length; i < count; ++i) if (this.addItemSub(items[i])) this.list.push(items[i]);
+		this._host.style.display = "";
 	};
 	/**
 	* Insert Item to inventory
 	*
 	* @param {object} Item
 	*/
-	VendingShop.addItem = function AddItem(item) {
+	VendingShop.addItem = function addItem(item) {
 		let object = this.getItemByIndex(item.index);
 		if (object) {
 			object.count += item.count;
-			this.ui.find(".item[data-index=\"" + item.index + "\"] .count").text(object.count);
+			const countEl = (this._shadow || this._host).querySelector(`.item[data-index="${item.index}"] .count`);
+			if (countEl) countEl.textContent = object.count;
 			return;
 		}
-		object = jquery_default.extend({}, item);
+		object = Object.assign({}, item);
 		if (this.addItemSub(object)) this.list.push(object);
 	};
 	/**
@@ -315059,14 +315788,23 @@ var init_VendingShop = __esmMin((() => {
 	*
 	* @param {object} Item
 	*/
-	VendingShop.addItemSub = function AddItemSub(item) {
+	VendingShop.addItemSub = function addItemSub(item) {
 		const it = DB.getItemInfo(item.ITID);
-		const content = this.ui.find(".container .content");
-		content.append("<div class=\"item\" data-index=\"" + item.index + "\" draggable=\"true\"><div class=\"icon\"></div><div class=\"amount\"><span class=\"count\">" + (item.count || 1) + "</span></div></div>");
-		if (content.height() < content[0].scrollHeight) this.ui.find(".hide").hide();
-		else this.ui.find(".hide").show();
-		Client.loadFile(DB.INTERFACE_PATH + "item/" + (item.IsIdentified ? it.identifiedResourceName : it.unidentifiedResourceName) + ".bmp", function(data) {
-			content.find(".item[data-index=\"" + item.index + "\"] .icon").css("backgroundImage", "url(" + data + ")");
+		const root = this._shadow || this._host;
+		const content = root.querySelector(".container .content");
+		if (!content) return false;
+		const itemDiv = document.createElement("div");
+		itemDiv.className = "item";
+		itemDiv.setAttribute("data-index", item.index);
+		itemDiv.setAttribute("draggable", "true");
+		itemDiv.innerHTML = `<div class="icon"></div><div class="amount"><span class="count">${item.count || 1}</span></div>`;
+		content.appendChild(itemDiv);
+		const hideEl = root.querySelector(".hide");
+		if (hideEl) if (content.clientHeight < content.scrollHeight) hideEl.style.display = "none";
+		else hideEl.style.display = "";
+		Client.loadFile(`${DB.INTERFACE_PATH}item/${item.IsIdentified ? it.identifiedResourceName : it.unidentifiedResourceName}.bmp`, (data) => {
+			const iconEl = content.querySelector(`.item[data-index="${item.index}"] .icon`);
+			if (iconEl) iconEl.style.backgroundImage = `url(${data})`;
 		});
 		return true;
 	};
@@ -315076,44 +315814,52 @@ var init_VendingShop = __esmMin((() => {
 	* @param {number} index in inventory
 	* @param {number} count
 	*/
-	VendingShop.removeItem = function RemoveItem(index, count) {
-		let i, ctr;
+	VendingShop.removeItem = function removeItem(index, count) {
 		const item = this.getItemByIndex(index);
 		if (!item || count <= 0) return null;
 		const msg = DB.getMessage(231).replace("%s", DB.getItemName(item)).replace("%d", count);
 		ChatBox_default.addText(msg, ChatBox_default.TYPE.BLUE, ChatBox_default.FILTER.PUBLIC_LOG);
+		const root = this._shadow || this._host;
 		if (item.count) {
 			item.count -= count;
 			if (item.count > 0) {
-				this.ui.find(".item[data-index=\"" + item.index + "\"] .count").text(item.count);
+				const countEl = root.querySelector(`.item[data-index="${item.index}"] .count`);
+				if (countEl) countEl.textContent = item.count;
 				return item;
 			}
 		}
 		this.list.splice(this.list.indexOf(item), 1);
-		this.ui.find(".item[data-index=\"" + item.index + "\"]").remove();
-		ctr = 0;
-		for (i = 0; i < this.list.length; i++) if (this.list[i].count > 0) ctr++;
-		if (ctr == 0) this.onSubmit();
+		const itemEl = root.querySelector(`.item[data-index="${item.index}"]`);
+		if (itemEl) itemEl.remove();
+		let ctr = 0;
+		for (let i = 0; i < this.list.length; i++) if (this.list[i].count > 0) ctr++;
+		if (ctr === 0) this.onSubmit();
 		return item;
 	};
 	/**
-	* Remove item from inventory
+	* Update item in inventory
 	*
 	* @param {number} index in inventory
 	* @param {number} count
 	*/
-	VendingShop.updateItem = function UpdateItem(index, count) {
+	VendingShop.updateItem = function updateItem(index, count) {
 		const item = this.getItemByIndex(index);
 		if (!item) return;
 		item.count = count;
+		const root = this._shadow || this._host;
 		if (item.count > 0) {
-			this.ui.find(".item[data-index=\"" + item.index + "\"] .count").text(item.count);
+			const countEl = root.querySelector(`.item[data-index="${item.index}"] .count`);
+			if (countEl) countEl.textContent = item.count;
 			return;
 		}
 		this.list.splice(this.list.indexOf(item), 1);
-		this.ui.find(".item[data-index=\"" + item.index + "\"]").remove();
-		const content = this.ui.find(".container .content");
-		if (content.height() === content[0].scrollHeight) this.ui.find(".hide").show();
+		const itemEl = root.querySelector(`.item[data-index="${item.index}"]`);
+		if (itemEl) itemEl.remove();
+		const content = root.querySelector(".container .content");
+		const hideEl = root.querySelector(".hide");
+		if (content && hideEl) {
+			if (content.clientHeight >= content.scrollHeight) hideEl.style.display = "";
+		}
 	};
 	/**
 	* Submit data to send items
@@ -315126,6 +315872,7 @@ var init_VendingShop = __esmMin((() => {
 		this.onRemove();
 		if (_type$2 === VendingShop.Type.VENDING_LIST && PacketVerManager_default.value >= 20141016) VendingReport_default.append();
 	};
+	VendingShop.mouseMode = GUIComponent.MouseMode.STOP;
 	VendingShop_default = UIManager.addComponent(VendingShop);
 }));
 //#endregion
@@ -324254,7 +325001,10 @@ function EntityEngine() {
 	Network.hookPacket(PACKET.ZC.NOTIFY_NEWENTRY11, onEntitySpam);
 	Network.hookPacket(PACKET.ZC.NOTIFY_MOVEENTRY11, onEntitySpam);
 	Network.hookPacket(PACKET.ZC.NOTIFY_STANDENTRY11, onEntitySpam);
+	Network.hookPacket(PACKET.ZC.STORE_ASSISTANT_ENTRY, onEntitySpam);
+	Network.hookPacket(PACKET.ZC.STORE_ASSISTANT_ENTRY_V2, onEntitySpam);
 	Network.hookPacket(PACKET.ZC.NOTIFY_VANISH, onEntityVanish);
+	Network.hookPacket(PACKET.ZC.STORE_ASSISTANT_DISAPPEAR, onEntityVanish);
 	Network.hookPacket(PACKET.ZC.NOTIFY_MOVE, onEntityMove);
 	Network.hookPacket(PACKET.ZC.STOPMOVE, onEntityStopMove);
 	Network.hookPacket(PACKET.ZC.NOTIFY_ACT, onEntityAction);
@@ -332183,6 +332933,14 @@ function onConnectionAccepted$2(pkt) {
 	});
 }
 /**
+* onConnectionRefused
+*
+* @param {object} pkt - PACKET.ZC.REFUSE_ENTER
+*/
+function onConnectionRefused$2(pkt) {
+	UIManager.showErrorBox(DB.getMessage(9));
+}
+/**
 * Changing map, loading new map
 *
 * @param {object} pkt - PACKET.ZC.NPCACK_MAPMOVE
@@ -332339,12 +333097,7 @@ function onExitSuccess() {
 	MapRenderer.free();
 	SoundManager.stop();
 	BGM.stop();
-	if (PacketVerManager_default.value < 20181114) {
-		Background.remove();
-		Background.setImage("bgi_temp.bmp", () => {
-			__vitePreload(() => Promise.resolve().then(() => (init_GameEngine(), GameEngine_exports)).then((m) => m.default.reload()), void 0, import.meta.url);
-		});
-	} else __vitePreload(() => Promise.resolve().then(() => (init_GameEngine(), GameEngine_exports)).then((m) => m.default.reload()), void 0, import.meta.url);
+	__vitePreload(() => Promise.resolve().then(() => (init_GameEngine(), GameEngine_exports)).then((m) => m.default.reload()), void 0, import.meta.url);
 }
 /**
 * Try to return to char-server
@@ -332701,7 +333454,6 @@ var init_MapEngine = __esmMin((() => {
 	init_KeyEventHandler();
 	init_UIManager();
 	init_EffectManager();
-	init_Background();
 	init_Escape();
 	init_ChatBox();
 	init_ChatBoxSettings();
@@ -332884,6 +333636,7 @@ var init_MapEngine = __esmMin((() => {
 				Network.hookPacket(PACKET.ZC.CONFIG_NOTIFY3, onConfigNotify);
 				Network.hookPacket(PACKET.ZC.CONFIG_NOTIFY4, onConfigNotify);
 				Network.hookPacket(PACKET.ZC.CONFIG, onConfig);
+				Network.hookPacket(PACKET.ZC.REFUSE_ENTER, onConnectionRefused$2);
 				for (let i = 1; i <= 42; i++) {
 					const id = String(i).padStart(2, "0");
 					const ZC = PACKET.ZC[`REASSEMBLY_AUTH${id}`];
@@ -334854,73 +335607,13 @@ var init_CharSelectV3 = __esmMin((() => {
 //#region src/UI/Components/CharSelect/CharSelectV4/CharSelectV4.html?raw
 var CharSelectV4_default$2;
 var init_CharSelectV4$2 = __esmMin((() => {
-	CharSelectV4_default$2 = "<div id=\"CharSelectV4\">\r\n	<div class=\"char_select_container\">\r\n		<!--Cancel Button-->\r\n		<button\r\n			class=\"btn cancel\"\r\n			type=\"submit\"\r\n			data-background=\"select_character_ver3/bt_close2_normal.bmp\"\r\n			data-hover=\"select_character_ver3/bt_close2_over.bmp\"\r\n			data-down=\"select_character_ver3/bt_close2_press.bmp\"\r\n		></button>\r\n		<!-- BOX -->\r\n		<div class=\"char_list\">\r\n			<div\r\n				class=\"char_canvas\"\r\n				data-hover=\"select_character_ver3/img_slot_over.bmp\"\r\n				data-down=\"select_character_ver3/img_slot_press.bmp\"\r\n			>\r\n				<canvas id=\"slot0\" width=\"157\" height=\"195\"></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot0 hidden\"></div>\r\n			</div>\r\n\r\n			<div\r\n				class=\"char_canvas\"\r\n				data-hover=\"select_character_ver3/img_slot_over.bmp\"\r\n				data-down=\"select_character_ver3/img_slot_press.bmp\"\r\n			>\r\n				<canvas id=\"slot1\" width=\"157\" height=\"195\"></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot1 hidden\"></div>\r\n			</div>\r\n\r\n			<div\r\n				class=\"char_canvas\"\r\n				data-hover=\"select_character_ver3/img_slot_over.bmp\"\r\n				data-down=\"select_character_ver3/img_slot_press.bmp\"\r\n			>\r\n				<canvas id=\"slot2\" width=\"157\" height=\"195\"></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot2 hidden\"></div>\r\n			</div>\r\n\r\n			<div\r\n				class=\"char_canvas\"\r\n				data-hover=\"select_character_ver3/img_slot_over.bmp\"\r\n				data-down=\"select_character_ver3/img_slot_press.bmp\"\r\n			>\r\n				<canvas id=\"slot3\" width=\"157\" height=\"195\"></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot3 hidden\"></div>\r\n			</div>\r\n\r\n			<div\r\n				class=\"char_canvas\"\r\n				data-hover=\"select_character_ver3/img_slot_over.bmp\"\r\n				data-down=\"select_character_ver3/img_slot_press.bmp\"\r\n			>\r\n				<canvas id=\"slot4\" width=\"157\" height=\"195\"></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot4 hidden\"></div>\r\n			</div>\r\n\r\n			<div\r\n				class=\"char_canvas\"\r\n				data-hover=\"select_character_ver3/img_slot_over.bmp\"\r\n				data-down=\"select_character_ver3/img_slot_press.bmp\"\r\n			>\r\n				<canvas id=\"slot5\" width=\"157\" height=\"195\"></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot5 hidden\"></div>\r\n			</div>\r\n\r\n			<div\r\n				class=\"char_canvas\"\r\n				data-hover=\"select_character_ver3/img_slot_over.bmp\"\r\n				data-down=\"select_character_ver3/img_slot_press.bmp\"\r\n			>\r\n				<canvas id=\"slot6\" width=\"157\" height=\"195\"></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot6 hidden\"></div>\r\n			</div>\r\n\r\n			<div\r\n				class=\"char_canvas\"\r\n				data-hover=\"select_character_ver3/img_slot_over.bmp\"\r\n				data-down=\"select_character_ver3/img_slot_press.bmp\"\r\n			>\r\n				<canvas id=\"slot7\" width=\"157\" height=\"195\"></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot7 hidden\"></div>\r\n			</div>\r\n\r\n			<div\r\n				class=\"char_canvas\"\r\n				data-hover=\"select_character_ver3/img_slot_over.bmp\"\r\n				data-down=\"select_character_ver3/img_slot_press.bmp\"\r\n			>\r\n				<canvas id=\"slot8\" width=\"157\" height=\"195\"></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot8 hidden\"></div>\r\n			</div>\r\n\r\n			<div\r\n				class=\"char_canvas\"\r\n				data-hover=\"select_character_ver3/img_slot_over.bmp\"\r\n				data-down=\"select_character_ver3/img_slot_press.bmp\"\r\n			>\r\n				<canvas id=\"slot9\" width=\"157\" height=\"195\"></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot9 hidden\"></div>\r\n			</div>\r\n\r\n			<div\r\n				class=\"char_canvas\"\r\n				data-hover=\"select_character_ver3/img_slot_over.bmp\"\r\n				data-down=\"select_character_ver3/img_slot_press.bmp\"\r\n			>\r\n				<canvas id=\"slot10\" width=\"157\" height=\"195\"></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot10 hidden\"></div>\r\n			</div>\r\n\r\n			<div\r\n				class=\"char_canvas\"\r\n				data-hover=\"select_character_ver3/img_slot_over.bmp\"\r\n				data-down=\"select_character_ver3/img_slot_press.bmp\"\r\n			>\r\n				<canvas id=\"slot11\" width=\"157\" height=\"195\"></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot11 hidden\"></div>\r\n			</div>\r\n\r\n			<div\r\n				class=\"char_canvas\"\r\n				data-hover=\"select_character_ver3/img_slot_over.bmp\"\r\n				data-down=\"select_character_ver3/img_slot_press.bmp\"\r\n			>\r\n				<canvas id=\"slot12\" width=\"157\" height=\"195\"></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot12 hidden\"></div>\r\n			</div>\r\n\r\n			<div\r\n				class=\"char_canvas\"\r\n				data-hover=\"select_character_ver3/img_slot_over.bmp\"\r\n				data-down=\"select_character_ver3/img_slot_press.bmp\"\r\n			>\r\n				<canvas id=\"slot13\" width=\"157\" height=\"195\"></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot13 hidden\"></div>\r\n			</div>\r\n\r\n			<div\r\n				class=\"char_canvas\"\r\n				data-hover=\"select_character_ver3/img_slot_over.bmp\"\r\n				data-down=\"select_character_ver3/img_slot_press.bmp\"\r\n			>\r\n				<canvas id=\"slot14\" width=\"157\" height=\"195\"></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot14 hidden\"></div>\r\n			</div>\r\n		</div>\r\n\r\n		<!-- Characters infos -->\r\n		<div class=\"charinfo\" data-background=\"select_character_ver3/img_info.bmp\">\r\n			<div class=\"job\"></div>\r\n			<div class=\"lvl\"></div>\r\n			<div class=\"exp\"></div>\r\n			<div class=\"hp\"></div>\r\n			<div class=\"sp\"></div>\r\n			<div class=\"map\"></div>\r\n			<div class=\"str\"></div>\r\n			<div class=\"agi\"></div>\r\n			<div class=\"vit\"></div>\r\n			<div class=\"int\"></div>\r\n			<div class=\"dex\"></div>\r\n			<div class=\"luk\"></div>\r\n			<button\r\n				class=\"btn delete\"\r\n				data-background=\"select_character_ver3/bt_info_normal.bmp\"\r\n				data-hover=\"select_character_ver3/bt_info_over.bmp\"\r\n				data-down=\"select_character_ver3/bt_info_press.bmp\"\r\n				data-text=\"3339\"\r\n			></button>\r\n			<button\r\n				class=\"btn canceldelete\"\r\n				data-background=\"select_character_ver3/bt_info_normal.bmp\"\r\n				data-hover=\"select_character_ver3/bt_info_over.bmp\"\r\n				data-down=\"select_character_ver3/bt_info_press.bmp\"\r\n				data-text=\"3340\"\r\n			></button>\r\n			<button\r\n				class=\"btn finaldelete\"\r\n				data-background=\"select_character_ver3/bt_info_normal.bmp\"\r\n				data-hover=\"select_character_ver3/bt_info_over.bmp\"\r\n				data-down=\"select_character_ver3/bt_info_press.bmp\"\r\n				data-text=\"3342\"\r\n			></button>\r\n			<button\r\n				class=\"btn ok\"\r\n				data-background=\"select_character_ver3/bt_gamestart_off.bmp\"\r\n				data-hover=\"select_character_ver3/bt_gamestart_over.bmp\"\r\n				data-down=\"select_character_ver3/bt_gamestart_press.bmp\"\r\n				data-text=\"3341\"\r\n			></button>\r\n			<!-- Pages infos -->\r\n			<div class=\"pageinfo\"><span class=\"current\">1</span> / <span class=\"count\">9</span></div>\r\n		</div>\r\n	</div>\r\n</div>\r\n";
+	CharSelectV4_default$2 = "<div id=\"CharSelectV4\">\r\n	<div class=\"char_select_container\">\r\n		<!--Cancel Button-->\r\n		<button\r\n			class=\"btn cancel\"\r\n			type=\"submit\"\r\n			data-background=\"select_character_ver3/bt_close2_normal.bmp\"\r\n			data-hover=\"select_character_ver3/bt_close2_over.bmp\"\r\n			data-down=\"select_character_ver3/bt_close2_press.bmp\"\r\n		></button>\r\n		<!-- BOX -->\r\n		<div class=\"char_list\">\r\n			<div\r\n				class=\"char_canvas\"\r\n				data-hover=\"select_character_ver3/img_slot_over.bmp\"\r\n				data-down=\"select_character_ver3/img_slot_press.bmp\"\r\n			>\r\n				<canvas\r\n					id=\"slot0\"\r\n					width=\"157\"\r\n					height=\"195\"\r\n					data-background=\"select_character_ver3/img_slot2_normal.bmp\"\r\n				></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot0 hidden\"></div>\r\n			</div>\r\n\r\n			<div\r\n				class=\"char_canvas\"\r\n				data-hover=\"select_character_ver3/img_slot_over.bmp\"\r\n				data-down=\"select_character_ver3/img_slot_press.bmp\"\r\n			>\r\n				<canvas\r\n					id=\"slot1\"\r\n					width=\"157\"\r\n					height=\"195\"\r\n					data-background=\"select_character_ver3/img_slot2_normal.bmp\"\r\n				></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot1 hidden\"></div>\r\n			</div>\r\n\r\n			<div\r\n				class=\"char_canvas\"\r\n				data-hover=\"select_character_ver3/img_slot_over.bmp\"\r\n				data-down=\"select_character_ver3/img_slot_press.bmp\"\r\n			>\r\n				<canvas\r\n					id=\"slot2\"\r\n					width=\"157\"\r\n					height=\"195\"\r\n					data-background=\"select_character_ver3/img_slot2_normal.bmp\"\r\n				></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot2 hidden\"></div>\r\n			</div>\r\n\r\n			<div\r\n				class=\"char_canvas\"\r\n				data-hover=\"select_character_ver3/img_slot_over.bmp\"\r\n				data-down=\"select_character_ver3/img_slot_press.bmp\"\r\n			>\r\n				<canvas\r\n					id=\"slot3\"\r\n					width=\"157\"\r\n					height=\"195\"\r\n					data-background=\"select_character_ver3/img_slot2_normal.bmp\"\r\n				></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot3 hidden\"></div>\r\n			</div>\r\n\r\n			<div\r\n				class=\"char_canvas\"\r\n				data-hover=\"select_character_ver3/img_slot_over.bmp\"\r\n				data-down=\"select_character_ver3/img_slot_press.bmp\"\r\n			>\r\n				<canvas\r\n					id=\"slot4\"\r\n					width=\"157\"\r\n					height=\"195\"\r\n					data-background=\"select_character_ver3/img_slot2_normal.bmp\"\r\n				></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot4 hidden\"></div>\r\n			</div>\r\n\r\n			<div\r\n				class=\"char_canvas\"\r\n				data-hover=\"select_character_ver3/img_slot_over.bmp\"\r\n				data-down=\"select_character_ver3/img_slot_press.bmp\"\r\n			>\r\n				<canvas\r\n					id=\"slot5\"\r\n					width=\"157\"\r\n					height=\"195\"\r\n					data-background=\"select_character_ver3/img_slot2_normal.bmp\"\r\n				></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot5 hidden\"></div>\r\n			</div>\r\n\r\n			<div\r\n				class=\"char_canvas\"\r\n				data-hover=\"select_character_ver3/img_slot_over.bmp\"\r\n				data-down=\"select_character_ver3/img_slot_press.bmp\"\r\n			>\r\n				<canvas\r\n					id=\"slot6\"\r\n					width=\"157\"\r\n					height=\"195\"\r\n					data-background=\"select_character_ver3/img_slot2_normal.bmp\"\r\n				></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot6 hidden\"></div>\r\n			</div>\r\n\r\n			<div\r\n				class=\"char_canvas\"\r\n				data-hover=\"select_character_ver3/img_slot_over.bmp\"\r\n				data-down=\"select_character_ver3/img_slot_press.bmp\"\r\n			>\r\n				<canvas\r\n					id=\"slot7\"\r\n					width=\"157\"\r\n					height=\"195\"\r\n					data-background=\"select_character_ver3/img_slot2_normal.bmp\"\r\n				></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot7 hidden\"></div>\r\n			</div>\r\n\r\n			<div\r\n				class=\"char_canvas\"\r\n				data-hover=\"select_character_ver3/img_slot_over.bmp\"\r\n				data-down=\"select_character_ver3/img_slot_press.bmp\"\r\n			>\r\n				<canvas\r\n					id=\"slot8\"\r\n					width=\"157\"\r\n					height=\"195\"\r\n					data-background=\"select_character_ver3/img_slot2_normal.bmp\"\r\n				></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot8 hidden\"></div>\r\n			</div>\r\n\r\n			<div\r\n				class=\"char_canvas\"\r\n				data-hover=\"select_character_ver3/img_slot_over.bmp\"\r\n				data-down=\"select_character_ver3/img_slot_press.bmp\"\r\n			>\r\n				<canvas\r\n					id=\"slot9\"\r\n					width=\"157\"\r\n					height=\"195\"\r\n					data-background=\"select_character_ver3/img_slot2_normal.bmp\"\r\n				></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot9 hidden\"></div>\r\n			</div>\r\n\r\n			<div\r\n				class=\"char_canvas\"\r\n				data-hover=\"select_character_ver3/img_slot_over.bmp\"\r\n				data-down=\"select_character_ver3/img_slot_press.bmp\"\r\n			>\r\n				<canvas\r\n					id=\"slot10\"\r\n					width=\"157\"\r\n					height=\"195\"\r\n					data-background=\"select_character_ver3/img_slot2_normal.bmp\"\r\n				></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot10 hidden\"></div>\r\n			</div>\r\n\r\n			<div\r\n				class=\"char_canvas\"\r\n				data-hover=\"select_character_ver3/img_slot_over.bmp\"\r\n				data-down=\"select_character_ver3/img_slot_press.bmp\"\r\n			>\r\n				<canvas\r\n					id=\"slot11\"\r\n					width=\"157\"\r\n					height=\"195\"\r\n					data-background=\"select_character_ver3/img_slot2_normal.bmp\"\r\n				></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot11 hidden\"></div>\r\n			</div>\r\n\r\n			<div\r\n				class=\"char_canvas\"\r\n				data-hover=\"select_character_ver3/img_slot_over.bmp\"\r\n				data-down=\"select_character_ver3/img_slot_press.bmp\"\r\n			>\r\n				<canvas\r\n					id=\"slot12\"\r\n					width=\"157\"\r\n					height=\"195\"\r\n					data-background=\"select_character_ver3/img_slot2_normal.bmp\"\r\n				></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot12 hidden\"></div>\r\n			</div>\r\n\r\n			<div\r\n				class=\"char_canvas\"\r\n				data-hover=\"select_character_ver3/img_slot_over.bmp\"\r\n				data-down=\"select_character_ver3/img_slot_press.bmp\"\r\n			>\r\n				<canvas\r\n					id=\"slot13\"\r\n					width=\"157\"\r\n					height=\"195\"\r\n					data-background=\"select_character_ver3/img_slot2_normal.bmp\"\r\n				></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot13 hidden\"></div>\r\n			</div>\r\n\r\n			<div\r\n				class=\"char_canvas\"\r\n				data-hover=\"select_character_ver3/img_slot_over.bmp\"\r\n				data-down=\"select_character_ver3/img_slot_press.bmp\"\r\n			>\r\n				<canvas\r\n					id=\"slot14\"\r\n					width=\"157\"\r\n					height=\"195\"\r\n					data-background=\"select_character_ver3/img_slot2_normal.bmp\"\r\n				></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot14 hidden\"></div>\r\n			</div>\r\n		</div>\r\n\r\n		<!-- Characters infos -->\r\n		<div class=\"charinfo\" data-background=\"select_character_ver3/img_info.bmp\">\r\n			<div class=\"job\"></div>\r\n			<div class=\"lvl\"></div>\r\n			<div class=\"exp\"></div>\r\n			<div class=\"hp\"></div>\r\n			<div class=\"sp\"></div>\r\n			<div class=\"map\"></div>\r\n			<div class=\"str\"></div>\r\n			<div class=\"agi\"></div>\r\n			<div class=\"vit\"></div>\r\n			<div class=\"int\"></div>\r\n			<div class=\"dex\"></div>\r\n			<div class=\"luk\"></div>\r\n			<button\r\n				class=\"btn delete\"\r\n				data-background=\"select_character_ver3/bt_info_normal.bmp\"\r\n				data-hover=\"select_character_ver3/bt_info_over.bmp\"\r\n				data-down=\"select_character_ver3/bt_info_press.bmp\"\r\n				data-text=\"3339\"\r\n			></button>\r\n			<button\r\n				class=\"btn canceldelete\"\r\n				data-background=\"select_character_ver3/bt_info_normal.bmp\"\r\n				data-hover=\"select_character_ver3/bt_info_over.bmp\"\r\n				data-down=\"select_character_ver3/bt_info_press.bmp\"\r\n				data-text=\"3340\"\r\n			></button>\r\n			<button\r\n				class=\"btn finaldelete\"\r\n				data-background=\"select_character_ver3/bt_info_normal.bmp\"\r\n				data-hover=\"select_character_ver3/bt_info_over.bmp\"\r\n				data-down=\"select_character_ver3/bt_info_press.bmp\"\r\n				data-text=\"3342\"\r\n			></button>\r\n			<button\r\n				class=\"btn ok\"\r\n				data-background=\"select_character_ver3/bt_gamestart_off.bmp\"\r\n				data-hover=\"select_character_ver3/bt_gamestart_over.bmp\"\r\n				data-down=\"select_character_ver3/bt_gamestart_press.bmp\"\r\n				data-text=\"3341\"\r\n			></button>\r\n			<!-- Pages infos -->\r\n			<div class=\"pageinfo\"><span class=\"current\">1</span> / <span class=\"count\">9</span></div>\r\n		</div>\r\n	</div>\r\n</div>\r\n";
 }));
 //#endregion
 //#region src/UI/Components/CharSelect/CharSelectV4/CharSelectV4.css?raw
 var CharSelectV4_default$1;
 var init_CharSelectV4$1 = __esmMin((() => {
-	CharSelectV4_default$1 = "#CharSelectV4 {\r\n	position: absolute;\r\n	min-width: 100%;\r\n	min-height: 100%;\r\n	z-index: 100;\r\n	top: 0;\r\n	left: 0;\r\n	display: flex;\r\n	justify-content: center;\r\n	align-items: center;\r\n	flex-direction: column;\r\n}\r\n\r\n#CharSelectV4 .char_select_container {\r\n	position: absolute;\r\n	display: flex;\r\n	flex-direction: row;\r\n	background-color: rgba(0, 0, 0, 0.1);\r\n	border-radius: 5px;\r\n	padding-top: 20px;\r\n	padding-left: 5px;\r\n}\r\n\r\n/** Box **/\r\n#CharSelectV4 .char_list {\r\n	flex: 1;\r\n	max-width: 800px;\r\n	min-width: 157px;\r\n	height: 595px;\r\n	max-height: 80vh;\r\n	display: flex;\r\n	flex-direction: row;\r\n	flex-wrap: wrap;\r\n	overflow-y: auto;\r\n}\r\n\r\n#CharSelectV4 .box_select {\r\n	position: absolute;\r\n	width: 157px;\r\n	height: 159px;\r\n	top: 40px;\r\n	margin-left: -5px;\r\n}\r\n#CharSelectV4 .char_canvas {\r\n	width: 157px;\r\n	height: 195px;\r\n	position: relative;\r\n	z-index: 10;\r\n}\r\n#CharSelectV4 .char_canvas .name {\r\n	position: absolute;\r\n	bottom: 15px;\r\n	width: 100%;\r\n	text-align: center;\r\n}\r\n\r\n#CharSelectV4 .char_canvas .job_icon {\r\n	position: absolute;\r\n	top: 15px;\r\n	right: 12px;\r\n	width: 25px;\r\n	height: 25px;\r\n}\r\n\r\n/** Slot info **/\r\n#CharSelectV4 .slotinfo {\r\n	position: absolute;\r\n	top: 195px;\r\n	right: 10px;\r\n	height: 20px;\r\n	display: block;\r\n	border: 1px solid #c6cee7;\r\n	border-radius: 4px;\r\n	padding-left: 10px;\r\n	padding-right: 10px;\r\n}\r\n#CharSelectV4 .slotinfo .number {\r\n	color: #58709e;\r\n	font-weight: bold;\r\n	margin-right: 10px;\r\n}\r\n#CharSelectV4 .slotinfo .content {\r\n	color: #555;\r\n	top: 6px;\r\n	right: 8px;\r\n}\r\n\r\n/** Page info **/\r\n#CharSelectV4 .pageinfo {\r\n	position: absolute;\r\n	left: 275px;\r\n	top: 185px;\r\n	font-weight: bold;\r\n	color: #646464;\r\n}\r\n#CharSelectV4 .pageinfo .current {\r\n	color: #fe3b7d;\r\n}\r\n\r\n/** Characters infos **/\r\n#CharSelectV4 .charinfo {\r\n	height: 585px;\r\n	max-height: 80vh;\r\n	width: 185px;\r\n	background-repeat: no-repeat;\r\n	margin-top: 10px;\r\n	margin-left: 10px;\r\n	position: relative;\r\n}\r\n#CharSelectV4 .charinfo div {\r\n	position: absolute;\r\n	width: 90px;\r\n	height: 13px;\r\n}\r\n#CharSelectV4 .charinfo .name {\r\n	left: 52px;\r\n	top: 2px;\r\n	white-space: nowrap;\r\n}\r\n#CharSelectV4 .charinfo .job {\r\n	left: 60px;\r\n	top: 105px;\r\n}\r\n#CharSelectV4 .charinfo .lvl {\r\n	left: 60px;\r\n	top: 123px;\r\n}\r\n#CharSelectV4 .charinfo .exp {\r\n	left: 60px;\r\n	top: 140px;\r\n}\r\n#CharSelectV4 .charinfo .hp {\r\n	left: 60px;\r\n	top: 157px;\r\n}\r\n#CharSelectV4 .charinfo .sp {\r\n	left: 60px;\r\n	top: 174px;\r\n}\r\n#CharSelectV4 .charinfo .map {\r\n	left: 60px;\r\n	top: 89px;\r\n	white-space: nowrap;\r\n	overflow: hidden;\r\n	text-overflow: ellipsis;\r\n}\r\n#CharSelectV4 .charinfo .str {\r\n	left: 60px;\r\n	top: 191px;\r\n}\r\n#CharSelectV4 .charinfo .agi {\r\n	left: 60px;\r\n	top: 208px;\r\n}\r\n#CharSelectV4 .charinfo .vit {\r\n	left: 60px;\r\n	top: 225px;\r\n}\r\n#CharSelectV4 .charinfo .int {\r\n	left: 60px;\r\n	top: 242px;\r\n}\r\n#CharSelectV4 .charinfo .dex {\r\n	left: 60px;\r\n	top: 259px;\r\n}\r\n#CharSelectV4 .charinfo .luk {\r\n	left: 60px;\r\n	top: 276px;\r\n}\r\n\r\n/** Buttons **/\r\n#CharSelectV4 .btn.delete {\r\n	position: absolute;\r\n	border: 0;\r\n	width: 131px;\r\n	height: 24px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n\r\n#CharSelectV4 .btn.canceldelete {\r\n	position: absolute;\r\n	border: 0;\r\n	width: 131px;\r\n	height: 24px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n\r\n#CharSelectV4 .btn.finaldelete {\r\n	position: absolute;\r\n	border: 0;\r\n	width: 131px;\r\n	height: 24px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n\r\n#CharSelectV4 .btn.ok {\r\n	position: absolute;\r\n	border: 0;\r\n	width: 165px;\r\n	height: 110px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n	color: white;\r\n	padding-top: 20px;\r\n}\r\n#CharSelectV4 .btn.ok:hover {\r\n	text-shadow: #000 1px 1px;\r\n}\r\n\r\n#CharSelectV4 .ok,\r\n#CharSelectV4 .make {\r\n	right: 15px;\r\n	top: 380px;\r\n}\r\n#CharSelectV4 .cancel {\r\n	position: absolute;\r\n	top: 5px;\r\n	right: 5px;\r\n	width: 17px;\r\n	height: 18px;\r\n	border: none;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n#CharSelectV4 .delete {\r\n	right: 33px;\r\n	top: 300px;\r\n}\r\n\r\n#CharSelectV4 .canceldelete {\r\n	right: 33px;\r\n	top: 300px;\r\n}\r\n\r\n#CharSelectV4 .finaldelete {\r\n	right: 33px;\r\n	top: 330px;\r\n}\r\n\r\n#CharSelectV4 .timedelete {\r\n	position: relative;\r\n	height: 20px;\r\n	width: 100px;\r\n	top: -150px;\r\n	left: 40px;\r\n}\r\n\r\n#CharSelectV4 .hidden {\r\n	display: none;\r\n}\r\n";
-}));
-//#endregion
-//#region src/UI/Components/WinLogin/WinLoginV2/WinLoginV2Background.html?raw
-var WinLoginV2Background_default$2;
-var init_WinLoginV2Background$2 = __esmMin((() => {
-	WinLoginV2Background_default$2 = "<div id=\"login_background\">\r\n	<div id=\"login_background_image_1\" class=\"login_background_image\" data-background=\"t_¹è°æ1-1.bmp\"></div>\r\n	<div id=\"login_background_image_2\" class=\"login_background_image\" data-background=\"t_¹è°æ1-2.bmp\"></div>\r\n	<div id=\"login_background_image_3\" class=\"login_background_image\" data-background=\"t_¹è°æ1-3.bmp\"></div>\r\n	<div id=\"login_background_image_4\" class=\"login_background_image\" data-background=\"t_¹è°æ1-4.bmp\"></div>\r\n	<div id=\"login_background_image_5\" class=\"login_background_image\" data-background=\"t_¹è°æ2-1.bmp\"></div>\r\n	<div id=\"login_background_image_6\" class=\"login_background_image\" data-background=\"t_¹è°æ2-2.bmp\"></div>\r\n	<div id=\"login_background_image_7\" class=\"login_background_image\" data-background=\"t_¹è°æ2-3.bmp\"></div>\r\n	<div id=\"login_background_image_8\" class=\"login_background_image\" data-background=\"t_¹è°æ2-4.bmp\"></div>\r\n	<div id=\"login_background_image_9\" class=\"login_background_image\" data-background=\"t_¹è°æ3-1.bmp\"></div>\r\n	<div id=\"login_background_image_10\" class=\"login_background_image\" data-background=\"t_¹è°æ3-2.bmp\"></div>\r\n	<div id=\"login_background_image_11\" class=\"login_background_image\" data-background=\"t_¹è°æ3-3.bmp\"></div>\r\n	<div id=\"login_background_image_12\" class=\"login_background_image\" data-background=\"t_¹è°æ3-4.bmp\"></div>\r\n</div>\r\n";
-}));
-//#endregion
-//#region src/UI/Components/WinLogin/WinLoginV2/WinLoginV2Background.css?raw
-var WinLoginV2Background_default$1;
-var init_WinLoginV2Background$1 = __esmMin((() => {
-	WinLoginV2Background_default$1 = ":host {\r\n	top: 0px;\r\n	left: 0px;\r\n	width: 100%;\r\n	height: 100%;\r\n}\r\n\r\n#login_background {\r\n	position: absolute;\r\n	top: 0px;\r\n	left: 0px;\r\n	width: 100%;\r\n	height: 100%;\r\n	z-index: 0;\r\n}\r\n#login_background .login_background_image {\r\n	float: left;\r\n	width: 25%;\r\n	height: 33.3%;\r\n	background-size: 100% 100%;\r\n}\r\n";
-}));
-//#endregion
-//#region src/UI/Components/WinLogin/WinLoginV2/WinLoginV2Background.js
-var WinLoginV2Background, WinLoginV2Background_default;
-var init_WinLoginV2Background = __esmMin((() => {
-	init_UIManager();
-	init_GUIComponent();
-	init_WinLoginV2Background$2();
-	init_WinLoginV2Background$1();
-	WinLoginV2Background = new GUIComponent("WinLoginV2Background", WinLoginV2Background_default$1);
-	WinLoginV2Background.render = () => WinLoginV2Background_default$2;
-	/**
-	* Initialize win_login UI - Inherit from UIComponent
-	*/
-	WinLoginV2Background.init = function init() {};
-	/**
-	* Once the component is on html - InHerit from UIComponent
-	*/
-	WinLoginV2Background.onAppend = function onAppend() {};
-	WinLoginV2Background.mouseMode = GUIComponent.MouseMode.CROSS;
-	WinLoginV2Background_default = UIManager.addComponent(WinLoginV2Background);
-}));
-//#endregion
-//#region src/UI/Components/WinLogin/WinLoginV3/WinLoginV3Background.html?raw
-var WinLoginV3Background_default$2;
-var init_WinLoginV3Background$2 = __esmMin((() => {
-	WinLoginV3Background_default$2 = "<div id=\"login_background\">\r\n	<div class=\"login_background_image\" data-background=\"t_login.jpg\"></div>\r\n</div>\r\n";
-}));
-//#endregion
-//#region src/UI/Components/WinLogin/WinLoginV3/WinLoginV3Background.css?raw
-var WinLoginV3Background_default$1;
-var init_WinLoginV3Background$1 = __esmMin((() => {
-	WinLoginV3Background_default$1 = ":host {\r\n	top: 0px;\r\n	left: 0px;\r\n	width: 100%;\r\n	height: 100%;\r\n}\r\n\r\n#login_background {\r\n	position: absolute;\r\n	top: 0px;\r\n	left: 0px;\r\n	width: 100%;\r\n	height: 100%;\r\n	z-index: 0;\r\n}\r\n#login_background .login_background_image {\r\n	width: 100%;\r\n	height: 100%;\r\n	background-size: 100% 100%;\r\n}\r\n";
-}));
-//#endregion
-//#region src/UI/Components/WinLogin/WinLoginV3/WinLoginV3Background.js
-var WinLoginV3Background, WinLoginV3Background_default;
-var init_WinLoginV3Background = __esmMin((() => {
-	init_UIManager();
-	init_GUIComponent();
-	init_WinLoginV3Background$2();
-	init_WinLoginV3Background$1();
-	WinLoginV3Background = new GUIComponent("WinLoginV3Background", WinLoginV3Background_default$1);
-	WinLoginV3Background.render = () => WinLoginV3Background_default$2;
-	WinLoginV3Background.init = function init() {};
-	WinLoginV3Background.onAppend = function onAppend() {};
-	WinLoginV3Background.mouseMode = GUIComponent.MouseMode.CROSS;
-	WinLoginV3Background_default = UIManager.addComponent(WinLoginV3Background);
+	CharSelectV4_default$1 = "#CharSelectV4 {\r\n	position: absolute;\r\n	min-width: 100%;\r\n	min-height: 100%;\r\n	z-index: 100;\r\n	top: 0;\r\n	left: 0;\r\n	display: flex;\r\n	justify-content: center;\r\n	align-items: center;\r\n	flex-direction: column;\r\n}\r\n\r\n#CharSelectV4 .char_select_container {\r\n	position: absolute;\r\n	display: flex;\r\n	flex-direction: row;\r\n	background-color: rgba(0, 0, 0, 0.1);\r\n	border-radius: 5px;\r\n	padding-top: 20px;\r\n	padding-left: 5px;\r\n}\r\n\r\n/** Box **/\r\n#CharSelectV4 .char_list {\r\n	flex: 1;\r\n	max-width: 800px;\r\n	min-width: 157px;\r\n	height: 595px;\r\n	max-height: 80vh;\r\n	display: flex;\r\n	flex-direction: row;\r\n	flex-wrap: wrap;\r\n	overflow-y: auto;\r\n}\r\n\r\n#CharSelectV4 .box_select {\r\n	position: absolute;\r\n	width: 157px;\r\n	height: 159px;\r\n	top: 40px;\r\n	margin-left: -5px;\r\n}\r\n#CharSelectV4 .char_canvas {\r\n	width: 157px;\r\n	height: 195px;\r\n	position: relative;\r\n	z-index: 10;\r\n}\r\n#CharSelectV4 .char_canvas .name {\r\n	position: absolute;\r\n	bottom: 17px;\r\n	width: 100%;\r\n	text-align: center;\r\n	font-weight: bold;\r\n	color: #15154a;\r\n}\r\n\r\n#CharSelectV4 .char_canvas .job_icon {\r\n	position: absolute;\r\n	top: 15px;\r\n	right: 12px;\r\n	width: 25px;\r\n	height: 25px;\r\n}\r\n\r\n/** Slot info **/\r\n#CharSelectV4 .slotinfo {\r\n	position: absolute;\r\n	top: 195px;\r\n	right: 10px;\r\n	height: 20px;\r\n	display: block;\r\n	border: 1px solid #c6cee7;\r\n	border-radius: 4px;\r\n	padding-left: 10px;\r\n	padding-right: 10px;\r\n}\r\n#CharSelectV4 .slotinfo .number {\r\n	color: #58709e;\r\n	font-weight: bold;\r\n	margin-right: 10px;\r\n}\r\n#CharSelectV4 .slotinfo .content {\r\n	color: #555;\r\n	top: 6px;\r\n	right: 8px;\r\n}\r\n\r\n/** Page info **/\r\n#CharSelectV4 .pageinfo {\r\n	position: absolute;\r\n	left: 275px;\r\n	top: 185px;\r\n	font-weight: bold;\r\n	color: #646464;\r\n}\r\n#CharSelectV4 .pageinfo .current {\r\n	color: #fe3b7d;\r\n}\r\n\r\n/** Characters infos **/\r\n#CharSelectV4 .charinfo {\r\n	height: 585px;\r\n	max-height: 80vh;\r\n	width: 185px;\r\n	background-repeat: no-repeat;\r\n	margin-top: 10px;\r\n	margin-left: 10px;\r\n	position: relative;\r\n}\r\n#CharSelectV4 .charinfo div {\r\n	position: absolute;\r\n	width: 90px;\r\n	height: 13px;\r\n}\r\n#CharSelectV4 .charinfo .name {\r\n	left: 52px;\r\n	top: 2px;\r\n	white-space: nowrap;\r\n}\r\n#CharSelectV4 .charinfo .job {\r\n	left: 60px;\r\n	top: 105px;\r\n}\r\n#CharSelectV4 .charinfo .lvl {\r\n	left: 60px;\r\n	top: 123px;\r\n}\r\n#CharSelectV4 .charinfo .exp {\r\n	left: 60px;\r\n	top: 140px;\r\n}\r\n#CharSelectV4 .charinfo .hp {\r\n	left: 60px;\r\n	top: 157px;\r\n}\r\n#CharSelectV4 .charinfo .sp {\r\n	left: 60px;\r\n	top: 174px;\r\n}\r\n#CharSelectV4 .charinfo .map {\r\n	left: 60px;\r\n	top: 89px;\r\n	white-space: nowrap;\r\n	overflow: hidden;\r\n	text-overflow: ellipsis;\r\n}\r\n#CharSelectV4 .charinfo .str {\r\n	left: 60px;\r\n	top: 191px;\r\n}\r\n#CharSelectV4 .charinfo .agi {\r\n	left: 60px;\r\n	top: 208px;\r\n}\r\n#CharSelectV4 .charinfo .vit {\r\n	left: 60px;\r\n	top: 225px;\r\n}\r\n#CharSelectV4 .charinfo .int {\r\n	left: 60px;\r\n	top: 242px;\r\n}\r\n#CharSelectV4 .charinfo .dex {\r\n	left: 60px;\r\n	top: 259px;\r\n}\r\n#CharSelectV4 .charinfo .luk {\r\n	left: 60px;\r\n	top: 276px;\r\n}\r\n\r\n/** Buttons **/\r\n#CharSelectV4 .btn.delete {\r\n	position: absolute;\r\n	border: 0;\r\n	width: 131px;\r\n	height: 24px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n\r\n#CharSelectV4 .btn.canceldelete {\r\n	position: absolute;\r\n	border: 0;\r\n	width: 131px;\r\n	height: 24px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n\r\n#CharSelectV4 .btn.finaldelete {\r\n	position: absolute;\r\n	border: 0;\r\n	width: 131px;\r\n	height: 24px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n\r\n#CharSelectV4 .btn.ok {\r\n	position: absolute;\r\n	border: 0;\r\n	width: 165px;\r\n	height: 110px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n	color: white;\r\n	padding-top: 20px;\r\n}\r\n#CharSelectV4 .btn.ok:hover {\r\n	text-shadow: #000 1px 1px;\r\n}\r\n\r\n#CharSelectV4 .ok,\r\n#CharSelectV4 .make {\r\n	right: 15px;\r\n	top: 380px;\r\n}\r\n#CharSelectV4 .cancel {\r\n	position: absolute;\r\n	top: 5px;\r\n	right: 5px;\r\n	width: 17px;\r\n	height: 18px;\r\n	border: none;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n#CharSelectV4 .delete {\r\n	right: 33px;\r\n	top: 300px;\r\n}\r\n\r\n#CharSelectV4 .canceldelete {\r\n	right: 33px;\r\n	top: 300px;\r\n}\r\n\r\n#CharSelectV4 .finaldelete {\r\n	right: 33px;\r\n	top: 330px;\r\n}\r\n\r\n#CharSelectV4 .timedelete {\r\n	position: relative;\r\n	height: 20px;\r\n	width: 100px;\r\n	top: -150px;\r\n	left: 40px;\r\n}\r\n\r\n#CharSelectV4 .hidden {\r\n	display: none;\r\n}\r\n";
 }));
 //#endregion
 //#region src/UI/Components/CharSelect/CharSelectV4/CharSelectV4.js
@@ -335017,7 +335710,7 @@ function cancel$4() {
 	if (_disable_UI === false) {
 		UIManager.showPromptBox(DB.getMessage(17), "ok", "cancel", function() {
 			CharSelectV4.onExitRequest();
-			updateCharSlot();
+			CharSelectV4.clearAllSlots();
 		}, null);
 		stopCountdownInterval();
 	}
@@ -335138,41 +335831,6 @@ function changeBackgroundEverySecond() {
 		}
 	}
 }
-function updateCharSlot() {
-	for (let i = 0; i < _maxSlots; ++i) {
-		jquery_default(CharSelectV4.ui.find(".char_canvas")[i]).find(".name").html(_slots[i] !== void 0 ? _slots[i].name : "");
-		if (_slots[i] === void 0) {
-			const slotNum = i;
-			jquery_default(CharSelectV4.ui.find(".job_icon")[slotNum]).css("background-image", "");
-			if (CharSelectV4.ui.find("#slot" + slotNum)) Client.loadFile(DB.INTERFACE_PATH + "select_character_ver3/img_slot2_normal.bmp", function(dataURI) {
-				CharSelectV4.ui.find("#slot" + slotNum).css("backgroundImage", "url(" + dataURI + ")");
-			});
-			const countdown = document.querySelector(".timedelete.slot" + slotNum);
-			if (countdown) {
-				countdown.setAttribute("data-duration", 0);
-				countdown.classList.add("hidden");
-				countdown.style.display = "none";
-			}
-		} else {
-			Client.loadFile(DB.INTERFACE_PATH + "select_character_ver3/img_slot_normal.bmp", function(dataURI) {
-				CharSelectV4.ui.find("#slot" + i).css("backgroundImage", "url(" + dataURI + ")");
-			});
-			const slotJobIcon = jquery_default(CharSelectV4.ui.find(".job_icon")[i]);
-			Client.loadFile(DB.INTERFACE_PATH + "renewalparty/icon_jobs_" + _slots[i].job + ".bmp", function(dataURI) {
-				slotJobIcon.css("backgroundImage", "url(" + dataURI + ")");
-			});
-			if (_slots[i].DeleteDate) {
-				const slotNum = i;
-				const countdown = document.querySelector(".timedelete.slot" + slotNum);
-				if (countdown) {
-					countdown.setAttribute("data-duration", _slots[i].DeleteDate);
-					countdown.classList.remove("hidden");
-					countdown.style.display = "block";
-				}
-			}
-		}
-	}
-}
 /**
 * Render sprites to canvas
 */
@@ -335185,7 +335843,7 @@ function render$4() {
 		_ctx[i].clearRect(0, 0, _ctx[i].canvas.width, _ctx[i].canvas.height);
 		if (_entitySlots[idx + i]) {
 			SpriteRenderer.bind2DContext(_ctx[i], 78, 157);
-			if (_slots[i].DeleteDate) _entitySlots[idx + i].action = 2;
+			if (_slots[idx + i] && _slots[idx + i].DeleteDate) _entitySlots[idx + i].action = 2;
 			_entitySlots[idx + i].renderEntity();
 		}
 	}
@@ -335207,9 +335865,6 @@ var init_CharSelectV4 = __esmMin((() => {
 	init_CharSelectV4$1();
 	init_Client();
 	init_jquery();
-	init_PacketVerManager();
-	init_WinLoginV2Background();
-	init_WinLoginV3Background();
 	CharSelectV4 = new UIComponent("CharSelectV4", CharSelectV4_default$2, CharSelectV4_default$1);
 	_preferences$1 = Preferences.get("CharSelectV4", { index: 0 }, 1);
 	_maxSlots = 15;
@@ -335260,8 +335915,7 @@ var init_CharSelectV4 = __esmMin((() => {
 	* Once append to body
 	*/
 	CharSelectV4.onAppend = function onAppend() {
-		if (PacketVerManager_default.value >= 20221207) WinLoginV3Background_default.append();
-		else WinLoginV2Background_default.append();
+		CharSelectV4.clearAllSlots();
 		if (CharSelectV4.ui) startCountdownInterval();
 		moveCursorTo(_index);
 		_bgInterval = setInterval(changeBackgroundEverySecond, 250);
@@ -335315,15 +335969,10 @@ var init_CharSelectV4 = __esmMin((() => {
 	* @param {object} pkt - packet structure
 	*/
 	CharSelectV4.setInfo = function setInfo(pkt) {
+		CharSelectV4.clearAllSlots();
 		_maxSlots = Math.floor(pkt.TotalSlotNum + pkt.PremiumStartSlot || 15);
 		_sex = pkt.sex;
-		_slots.length = 0;
-		_entitySlots.length = 0;
-		_list.length = 0;
-		if (pkt.charInfo) {
-			for (let i = 0, count = pkt.charInfo.length; i < count; ++i) CharSelectV4.addCharacter(pkt.charInfo[i]);
-			updateCharSlot();
-		}
+		if (pkt.charInfo) for (let i = 0, count = pkt.charInfo.length; i < count; ++i) CharSelectV4.addCharacter(pkt.charInfo[i]);
 		moveCursorTo(_index);
 	};
 	/**
@@ -335372,6 +336021,7 @@ var init_CharSelectV4 = __esmMin((() => {
 					_list.splice(i, 1);
 					--count;
 				} else i++;
+				CharSelectV4.updateCharSlot(_index);
 				moveCursorTo(_index);
 				return;
 			}
@@ -335408,7 +336058,7 @@ var init_CharSelectV4 = __esmMin((() => {
 		_entitySlots[character.CharNum].set(character);
 		_entitySlots[character.CharNum].effectState = _entitySlots[character.CharNum]._effectState & ~StatusState_default.EffectState.INVISIBLE;
 		_entitySlots[character.CharNum].hideShadow = true;
-		updateCharSlot();
+		CharSelectV4.updateCharSlot(character.CharNum);
 	};
 	/**
 	* Disable or Enable the UI.
@@ -335427,6 +336077,53 @@ var init_CharSelectV4 = __esmMin((() => {
 	CharSelectV4.onCreateRequest = function onCreateRequest() {};
 	CharSelectV4.onConnectRequest = function onConnectRequest() {};
 	CharSelectV4.onCancelDeleteRequest = function onCancelDeleteRequest() {};
+	CharSelectV4.updateCharSlot = function updateCharSlot(slotId) {
+		let start = 0;
+		let loopMax = Math.max(_maxSlots, _slots.length);
+		if (typeof slotId !== "undefined") {
+			start = slotId;
+			loopMax = slotId + 1;
+		}
+		for (let i = start; i < loopMax; ++i) {
+			jquery_default(CharSelectV4.ui.find(".char_canvas")[i]).find(".name").html(_slots[i] ? _slots[i].name : "");
+			if (!_slots[i]) {
+				const slotNum = i;
+				jquery_default(CharSelectV4.ui.find(".job_icon")[slotNum]).css("background-image", "");
+				if (CharSelectV4.ui.find("#slot" + slotNum)) Client.loadFile(DB.INTERFACE_PATH + "select_character_ver3/img_slot2_normal.bmp", function(dataURI) {
+					CharSelectV4.ui.find("#slot" + slotNum).css("backgroundImage", "url(" + dataURI + ")");
+				});
+				const countdown = document.querySelector(".timedelete.slot" + slotNum);
+				if (countdown) {
+					countdown.setAttribute("data-duration", 0);
+					countdown.classList.add("hidden");
+					countdown.style.display = "none";
+				}
+			} else {
+				Client.loadFile(DB.INTERFACE_PATH + "select_character_ver3/img_slot_normal.bmp", function(dataURI) {
+					CharSelectV4.ui.find("#slot" + i).css("backgroundImage", "url(" + dataURI + ")");
+				});
+				const slotJobIcon = jquery_default(CharSelectV4.ui.find(".job_icon")[i]);
+				Client.loadFile(DB.INTERFACE_PATH + "renewalparty/icon_jobs_" + _slots[i].job + ".bmp", function(dataURI) {
+					slotJobIcon.css("backgroundImage", "url(" + dataURI + ")");
+				});
+				if (_slots[i].DeleteDate) {
+					const slotNum = i;
+					const countdown = document.querySelector(".timedelete.slot" + slotNum);
+					if (countdown) {
+						countdown.setAttribute("data-duration", _slots[i].DeleteDate);
+						countdown.classList.remove("hidden");
+						countdown.style.display = "block";
+					}
+				}
+			}
+		}
+	};
+	CharSelectV4.clearAllSlots = function clearAllSlots() {
+		_slots.length = 0;
+		_entitySlots.length = 0;
+		_list.length = 0;
+		CharSelectV4.updateCharSlot();
+	};
 	CharSelectV4_default = UIManager.addComponent(CharSelectV4);
 }));
 //#endregion
@@ -336664,6 +337361,38 @@ function onConnectionAccepted$1(pkt) {
 	*/
 }
 /**
+* Server don't want the user to select a character
+*
+* @param {object} pkt - PACKET.HC.REFUSE_SELECTCHAR
+*/
+function onSelectionRefused(pkt) {
+	let msg_id;
+	switch (pkt.ErrorCode) {
+		case 0:
+			msg_id = 1350;
+			break;
+		case 1:
+			msg_id = 1351;
+			break;
+		case 2:
+			msg_id = 1352;
+			break;
+		case 3:
+			msg_id = 1353;
+			break;
+		case 4:
+			msg_id = 1354;
+			break;
+		case 5:
+			msg_id = 1364;
+			break;
+		default:
+			msg_id = 2;
+			break;
+	}
+	UIManager.showErrorBox(DB.getMessage(msg_id));
+}
+/**
 * Server don't want the user to connect
 *
 * @param {object} pkt - PACKET.HC.REFUSE_ENTER
@@ -336671,9 +337400,20 @@ function onConnectionAccepted$1(pkt) {
 function onConnectionRefused$1(pkt) {
 	let msg_id;
 	switch (pkt.ErrorCode) {
+		case 1:
+			msg_id = 208;
+			break;
+		case 111:
+			msg_id = 1865;
+			break;
+		case 118:
+			msg_id = 3818;
+			break;
+		case 119:
+			msg_id = 2929;
+			break;
 		default:
-		case 0:
-			msg_id = 3;
+			msg_id = 2;
 			break;
 	}
 	UIManager.showErrorBox(DB.getMessage(msg_id));
@@ -337127,6 +337867,7 @@ var init_CharEngine = __esmMin((() => {
 			Controller$1.selectUIVersion();
 			Network.hookPacket(PACKET.HC.ACCEPT_ENTER_NEO_UNION, onConnectionAccepted$1);
 			Network.hookPacket(PACKET.HC.REFUSE_ENTER, onConnectionRefused$1);
+			Network.hookPacket(PACKET.HC.REFUSE_SELECTCHAR, onSelectionRefused);
 			Network.hookPacket(PACKET.HC.ACCEPT_MAKECHAR_NEO_UNION, onCreationSuccess);
 			Network.hookPacket(PACKET.HC.ACCEPT_MAKECHAR, onCreationSuccess);
 			Network.hookPacket(PACKET.HC.REFUSE_MAKECHAR, onCreationFail);
@@ -337149,14 +337890,10 @@ var init_CharEngine = __esmMin((() => {
 		*/
 		static reload() {
 			Network.close();
-			if (PacketVerManager_default.value < 20181114) Background.setImage("bgi_temp.bmp", () => {
+			Background.setLoginBackground(() => {
 				UIManager.removeComponents();
 				CharEngine.init(_server$1);
 			});
-			else {
-				UIManager.removeComponents();
-				CharEngine.init(_server$1);
-			}
 		}
 	};
 	retryCount = 0;
@@ -337165,40 +337902,42 @@ var init_CharEngine = __esmMin((() => {
 //#region src/UI/Components/WinList/WinList.html?raw
 var WinList_default$2;
 var init_WinList$2 = __esmMin((() => {
-	WinList_default$2 = "<div id=\"serverlist\">\r\n	<div class=\"head\" data-background=\"login_interface/win_service.bmp\"></div>\r\n	<div class=\"bottom\" data-background=\"login_interface/win_service.bmp\">\r\n		<button\r\n			class=\"btn cancel\"\r\n			data-background=\"btn_cancel.bmp\"\r\n			data-hover=\"btn_cancel_a.bmp\"\r\n			data-down=\"btn_cancel_b.bmp\"\r\n		></button>\r\n		<button class=\"btn ok\" data-background=\"btn_ok.bmp\" data-hover=\"btn_ok_a.bmp\" data-down=\"btn_ok_b.bmp\"></button>\r\n	</div>\r\n	<div class=\"content\">\r\n		<div class=\"list\"></div>\r\n	</div>\r\n</div>\r\n";
+	WinList_default$2 = "<div id=\"serverlist\">\r\n	<div class=\"head\">\r\n		<ui-image src=\"login_interface/win_service.bmp\"></ui-image>\r\n	</div>\r\n	<div class=\"bottom\">\r\n		<ui-image src=\"login_interface/win_service.bmp\"></ui-image>\r\n		<ui-button class=\"btn cancel\" bg=\"btn_cancel.bmp\" hover=\"btn_cancel_a.bmp\" down=\"btn_cancel_b.bmp\"></ui-button>\r\n		<ui-button class=\"btn ok\" bg=\"btn_ok.bmp\" hover=\"btn_ok_a.bmp\" down=\"btn_ok_b.bmp\"></ui-button>\r\n	</div>\r\n	<div class=\"content\">\r\n		<div class=\"list\"></div>\r\n	</div>\r\n</div>\r\n";
 }));
 //#endregion
 //#region src/UI/Components/WinList/WinList.css?raw
 var WinList_default$1;
 var init_WinList$1 = __esmMin((() => {
-	WinList_default$1 = "#serverlist {\r\n	z-index: 100;\r\n	position: absolute;\r\n	width: 280px;\r\n	height: 200px;\r\n}\r\n#serverlist .head {\r\n	position: absolute;\r\n	width: 280px;\r\n	height: 22px;\r\n	top: 0px;\r\n	left: 0px;\r\n}\r\n#serverlist .bottom {\r\n	position: relative;\r\n	width: 280px;\r\n	height: 120px;\r\n	top: 80px;\r\n	left: 0px;\r\n}\r\n\r\n#serverlist .content {\r\n	position: absolute;\r\n	width: 258px;\r\n	height: 145px;\r\n	top: 22px;\r\n	left: 0px;\r\n	padding-left: 10px;\r\n	padding-right: 10px;\r\n	background-color: white;\r\n	border-left: 1px solid #c7c7c7;\r\n	border-right: 1px solid #c7c7c7;\r\n}\r\n#serverlist .list {\r\n	background-color: #f7f7f7;\r\n	height: 145px;\r\n	width: 260px;\r\n}\r\n#serverlist .menu_node {\r\n	width: 255px;\r\n	height: 15px;\r\n	display: block;\r\n	padding-top: 2px;\r\n	padding-left: 5px;\r\n}\r\n\r\n#serverlist .btn {\r\n	position: absolute;\r\n	bottom: 0px;\r\n	border: 0;\r\n	width: 42px;\r\n	height: 20px;\r\n	bottom: 4px;\r\n	background-color: transparent;\r\n}\r\n#serverlist .ok {\r\n	right: 50px;\r\n}\r\n#serverlist .cancel {\r\n	right: 5px;\r\n}\r\n";
+	WinList_default$1 = ":host {\r\n	width: 280px;\r\n	height: 200px;\r\n	top: 0px;\r\n	left: 0px;\r\n}\r\n\r\n#serverlist {\r\n	position: absolute;\r\n	width: 280px;\r\n	height: 200px;\r\n}\r\n#serverlist .head {\r\n	position: absolute;\r\n	width: 280px;\r\n	height: 22px;\r\n	top: 0px;\r\n	left: 0px;\r\n}\r\n#serverlist .bottom {\r\n	position: relative;\r\n	width: 280px;\r\n	height: 120px;\r\n	top: 80px;\r\n	left: 0px;\r\n}\r\n\r\n#serverlist .content {\r\n	position: absolute;\r\n	width: 258px;\r\n	height: 145px;\r\n	top: 22px;\r\n	left: 0px;\r\n	padding-left: 10px;\r\n	padding-right: 10px;\r\n	background-color: white;\r\n	border-left: 1px solid #c7c7c7;\r\n	border-right: 1px solid #c7c7c7;\r\n}\r\n#serverlist .list {\r\n	background-color: #f7f7f7;\r\n	height: 145px;\r\n	width: 260px;\r\n}\r\n#serverlist .menu_node {\r\n	width: 255px;\r\n	height: 15px;\r\n	display: block;\r\n	padding-top: 2px;\r\n	padding-left: 5px;\r\n}\r\n\r\n#serverlist .btn {\r\n	position: absolute;\r\n	bottom: 4px;\r\n	border: 0;\r\n	width: 42px;\r\n	height: 20px;\r\n	background-color: transparent;\r\n}\r\n#serverlist .ok {\r\n	right: 50px;\r\n}\r\n#serverlist .cancel {\r\n	right: 5px;\r\n}\r\n";
 }));
 //#endregion
 //#region src/UI/Components/WinList/WinList.js
 var WinList, WinList_default;
 var init_WinList = __esmMin((() => {
-	init_jquery();
 	init_Renderer();
 	init_KeyEventHandler();
 	init_UIManager();
-	init_UIComponent();
+	init_GUIComponent();
+	init_Elements();
 	init_WinList$2();
 	init_WinList$1();
-	WinList = new UIComponent("WinList", WinList_default$2, WinList_default$1);
+	WinList = new GUIComponent("WinList", WinList_default$1);
+	WinList.render = () => WinList_default$2;
 	/**
 	* Initialize UI
 	*/
 	WinList.init = function init() {
-		this.ui.css({
-			top: (Renderer.height - 280) / 1.5,
-			left: (Renderer.width - 280) / 2
-		});
+		this._host.style.top = `${(Renderer.height - 280) / 1.5}px`;
+		this._host.style.left = `${(Renderer.width - 280) / 2}px`;
 		this.draggable();
-		this.ui_list = this.ui.find(".list:first");
+		const root = this._shadow || this._host;
+		this._listEl = root.querySelector(".list");
 		this.list = null;
 		this.index = 0;
-		this.ui.find(".ok").click(this.selectIndex.bind(this));
-		this.ui.find(".cancel").click(this.exit.bind(this));
+		const okBtn = root.querySelector(".ok");
+		const cancelBtn = root.querySelector(".cancel");
+		if (okBtn) okBtn.addEventListener("click", () => WinList.selectIndex());
+		if (cancelBtn) cancelBtn.addEventListener("click", () => WinList.exit());
 	};
 	/**
 	* Add elements to the list
@@ -337206,15 +337945,20 @@ var init_WinList = __esmMin((() => {
 	* @param {Array} list object to display
 	*/
 	WinList.setList = function setList(list) {
-		let i, count;
 		this.list = list;
-		this.ui_list.empty();
-		function onSelectListIndex(event) {
-			WinList.setIndex(jquery_default(this).data("id"));
-			event.stopImmediatePropagation();
-			return false;
+		this._listEl.innerHTML = "";
+		for (let i = 0, count = list.length; i < count; ++i) {
+			const node = document.createElement("div");
+			node.classList.add("menu_node");
+			node.textContent = list[i];
+			node.dataset.id = i;
+			node.addEventListener("mousedown", (event) => {
+				WinList.setIndex(parseInt(node.dataset.id, 10));
+				event.stopImmediatePropagation();
+			});
+			node.addEventListener("dblclick", () => WinList.selectIndex());
+			this._listEl.appendChild(node);
 		}
-		for (i = 0, count = list.length; i < count; ++i) this.ui_list.append(jquery_default("<div/>").addClass("menu_node").text(list[i]).data("id", i).mousedown(onSelectListIndex).dblclick(this.selectIndex.bind(this)));
 		this.setIndex(0);
 	};
 	/**
@@ -337235,8 +337979,9 @@ var init_WinList = __esmMin((() => {
 	*/
 	WinList.setIndex = function setIndex(id) {
 		if (id > -1 && id < this.list.length) {
-			this.ui_list.find("div:eq(" + this.index + ")").css("backgroundColor", "transparent");
-			this.ui_list.find("div:eq(" + id + ")").css("backgroundColor", "#cde0ff");
+			const nodes = this._listEl.querySelectorAll(".menu_node");
+			if (nodes[this.index]) nodes[this.index].style.backgroundColor = "transparent";
+			if (nodes[id]) nodes[id].style.backgroundColor = "#cde0ff";
 			this.index = id;
 		}
 	};
@@ -337252,7 +337997,7 @@ var init_WinList = __esmMin((() => {
 	* @param {object} event
 	*/
 	WinList.onKeyDown = function onKeyDown(event) {
-		if (!this.ui.is(":visible")) return true;
+		if (this._host.style.display === "none") return true;
 		switch (event.which) {
 			default: return;
 			case KEYS.ENTER:
@@ -337274,10 +338019,11 @@ var init_WinList = __esmMin((() => {
 	* Free variables once removed from HTML
 	*/
 	WinList.onRemove = function onRemove() {
-		this.ui_list.empty();
+		this._listEl.innerHTML = "";
 		this.list = null;
 		this.index = 0;
 	};
+	WinList.mouseMode = GUIComponent.MouseMode.STOP;
 	WinList_default = UIManager.addComponent(WinList);
 }));
 //#endregion
@@ -340041,33 +340787,6 @@ var init_Rijndael = __esmMin((() => {
 	};
 }));
 //#endregion
-//#region src/UI/Components/WinLogin/WinLogin/WinLoginBackground.html?raw
-var WinLoginBackground_default$2;
-var init_WinLoginBackground$2 = __esmMin((() => {
-	WinLoginBackground_default$2 = "<div id=\"login_background\">\r\n	<div class=\"login_background_image\" data-background=\"bgi_temp.bmp\"></div>\r\n</div>\r\n";
-}));
-//#endregion
-//#region src/UI/Components/WinLogin/WinLogin/WinLoginBackground.css?raw
-var WinLoginBackground_default$1;
-var init_WinLoginBackground$1 = __esmMin((() => {
-	WinLoginBackground_default$1 = ":host {\r\n	top: 0px;\r\n	left: 0px;\r\n	width: 100%;\r\n	height: 100%;\r\n}\r\n\r\n#login_background {\r\n	position: absolute;\r\n	top: 0px;\r\n	left: 0px;\r\n	width: 100%;\r\n	height: 100%;\r\n	z-index: 0;\r\n}\r\n#login_background .login_background_image {\r\n	width: 100%;\r\n	height: 100%;\r\n	background-size: 100% 100%;\r\n}\r\n";
-}));
-//#endregion
-//#region src/UI/Components/WinLogin/WinLogin/WinLoginBackground.js
-var WinLoginBackground, WinLoginBackground_default;
-var init_WinLoginBackground = __esmMin((() => {
-	init_UIManager();
-	init_GUIComponent();
-	init_WinLoginBackground$2();
-	init_WinLoginBackground$1();
-	WinLoginBackground = new GUIComponent("WinLoginBackground", WinLoginBackground_default$1);
-	WinLoginBackground.render = () => WinLoginBackground_default$2;
-	WinLoginBackground.init = function init() {};
-	WinLoginBackground.onAppend = function onAppend() {};
-	WinLoginBackground.mouseMode = GUIComponent.MouseMode.CROSS;
-	WinLoginBackground_default = UIManager.addComponent(WinLoginBackground);
-}));
-//#endregion
 //#region src/UI/Components/WinLogin/WinLogin/WinLogin.html?raw
 var WinLogin_default$2;
 var init_WinLogin$3 = __esmMin((() => {
@@ -340081,7 +340800,7 @@ var init_WinLogin$2 = __esmMin((() => {
 }));
 //#endregion
 //#region src/UI/Components/WinLogin/WinLoginCommon.js
-function createWinLogin({ name, htmlText, cssText, Background }) {
+function createWinLogin({ name, htmlText, cssText }) {
 	const Component = new GUIComponent(name, cssText);
 	Component.render = () => htmlText;
 	Component.needFocus = false;
@@ -340115,10 +340834,8 @@ function createWinLogin({ name, htmlText, cssText, Background }) {
 		root.querySelector(".signup").addEventListener("click", signup);
 		root.querySelector(".connect").addEventListener("click", connect);
 		root.querySelector(".exit").addEventListener("click", exit);
-		if (Background) Background.init();
 	};
 	Component.onAppend = function onAppend() {
-		if (Background) Background.append();
 		_inputUsername.value = _preferences.saveID ? _preferences.ID : "";
 		_inputPassword.value = "";
 		Client.loadFile(`${DB.INTERFACE_PATH}login_interface/chk_save${_preferences.saveID ? "on" : "off"}.bmp`, (url) => {
@@ -340198,15 +340915,13 @@ var init_WinLoginCommon = __esmMin((() => {
 //#region src/UI/Components/WinLogin/WinLogin/WinLogin.js
 var WinLogin_default;
 var init_WinLogin$1 = __esmMin((() => {
-	init_WinLoginBackground();
 	init_WinLogin$3();
 	init_WinLogin$2();
 	init_WinLoginCommon();
 	WinLogin_default = createWinLogin({
 		name: "WinLogin",
 		htmlText: WinLogin_default$2,
-		cssText: WinLogin_default$1,
-		Background: WinLoginBackground_default
+		cssText: WinLogin_default$1
 	});
 }));
 //#endregion
@@ -340227,13 +340942,11 @@ var WinLoginV2_default;
 var init_WinLoginV2 = __esmMin((() => {
 	init_WinLoginV2$2();
 	init_WinLoginV2$1();
-	init_WinLoginV2Background();
 	init_WinLoginCommon();
 	WinLoginV2_default = createWinLogin({
 		name: "WinLoginV2",
 		htmlText: WinLoginV2_default$2,
-		cssText: WinLoginV2_default$1,
-		Background: WinLoginV2Background_default
+		cssText: WinLoginV2_default$1
 	});
 }));
 //#endregion
@@ -340242,13 +340955,11 @@ var WinLoginV3_default;
 var init_WinLoginV3 = __esmMin((() => {
 	init_WinLoginV2$2();
 	init_WinLoginV2$1();
-	init_WinLoginV3Background();
 	init_WinLoginCommon();
 	WinLoginV3_default = createWinLogin({
 		name: "WinLoginV3",
 		htmlText: WinLoginV2_default$2,
-		cssText: WinLoginV2_default$1,
-		Background: WinLoginV3Background_default
+		cssText: WinLoginV2_default$1
 	});
 }));
 //#endregion
@@ -340287,7 +340998,10 @@ function onConnectionRequest(username, password) {
 	_loginID = username;
 	Network.connect(_server.address, _server.port, (success) => {
 		if (!success) {
-			UIManager.showErrorBox(DB.getMessage(1));
+			UIManager.showMessageBox(DB.getMessage(1), "ok", () => {
+				UIManager.removeComponents();
+				Controller.getUI().append();
+			}, true);
 			return;
 		}
 		let pkt;
@@ -340375,6 +341089,7 @@ function onCharServerSelected(index) {
 	WinList_default.remove();
 	WinLoading.append();
 	SessionStorage_default.ServerName = _charServers[index].name;
+	Network.onDisconnect = null;
 	CharEngine.init(_charServers[index]);
 }
 /**
@@ -340401,6 +341116,7 @@ function onConnectionAccepted(pkt) {
 	if (count === 1 && Configs.get("skipServerList")) {
 		WinLoading.append();
 		SessionStorage_default.ServerName = _charServers[0].name;
+		Network.onDisconnect = null;
 		CharEngine.init(_charServers[0]);
 	} else {
 		WinList_default.onIndexSelected = onCharServerSelected;
@@ -340422,6 +341138,158 @@ function onConnectionAccepted(pkt) {
 	}), void 0, import.meta.url);
 }
 /**
+* Received data from server, connection refused (Taren)
+*
+* @param {object} pkt - PACKET.AC.LOGIN_TAREN_REFUSE
+*/
+function onTarenConnectionRefused(pkt) {
+	let msg_id;
+	switch (pkt.ErrorCode) {
+		case 1:
+			msg_id = 3196;
+			break;
+		case 2:
+			msg_id = 3197;
+			break;
+		case 3:
+			msg_id = 3198;
+			break;
+		case 4:
+			msg_id = 3199;
+			break;
+		case 5:
+			msg_id = 3200;
+			break;
+		case 6:
+			msg_id = 3201;
+			break;
+		case 7:
+			msg_id = 3214;
+			break;
+		case 9:
+			msg_id = 3911;
+			break;
+		default:
+			msg_id = 3202;
+			break;
+	}
+	UIManager.showMessageBox(DB.getMessage(msg_id), "ok", () => {
+		UIManager.removeComponents();
+		Controller.getUI().append();
+	}, true);
+	Network.close();
+}
+/**
+* Received data from server, connection refused (Taren)
+*
+* @param {object} pkt - PACKET.AC.LOGIN_TAREN_REFUSE2
+*/
+function onTarenConnectionRefused2(pkt) {
+	let msg_id;
+	switch (pkt.ErrorCode) {
+		case 1:
+			msg_id = 3196;
+			break;
+		case 2:
+			msg_id = 3197;
+			break;
+		case 3:
+			msg_id = 3198;
+			break;
+		case 4:
+			msg_id = 3199;
+			break;
+		case 5:
+			msg_id = 3200;
+			break;
+		case 6:
+			msg_id = 3201;
+			break;
+		case 7:
+			msg_id = 3214;
+			break;
+		case 8:
+		case 100:
+		case 102:
+			msg_id = 3202;
+			break;
+		case 9:
+			msg_id = 3911;
+			break;
+		case 101:
+			msg_id = 449;
+			break;
+		default:
+			msg_id = 3202;
+			break;
+	}
+	UIManager.showMessageBox(DB.getMessage(msg_id).replace("%s", pkt.blockDate), "ok", () => {
+		UIManager.removeComponents();
+		Controller.getUI().append();
+	}, true);
+}
+/**
+* Received data from server, connection refused (International)
+*
+* @param {object} pkt - PACKET.AC.REFUSE_LOGIN_USA
+*/
+function onInternationalConnectionRefused(pkt) {
+	let msg_id;
+	switch (pkt.ErrorCode) {
+		default:
+		case 5200:
+			msg_id = 3314;
+			break;
+		case 5201:
+			msg_id = 3315;
+			break;
+		case 5202:
+			msg_id = 3316;
+			break;
+		case 5203:
+			msg_id = 3317;
+			break;
+		case 5204:
+			msg_id = 3318;
+			break;
+		case 5205:
+			msg_id = 3319;
+			break;
+		case 5206:
+			msg_id = 3320;
+			break;
+		case 5207:
+			msg_id = 3321;
+			break;
+		case 5208:
+			msg_id = 3322;
+			break;
+		case 5209:
+			msg_id = 3323;
+			break;
+		case 5210:
+			msg_id = 3324;
+			break;
+		case 5211:
+			msg_id = 3325;
+			break;
+		case 5212:
+			msg_id = 3326;
+			break;
+		case 5213:
+			msg_id = 3327;
+			break;
+		case 5214:
+			msg_id = 3328;
+			break;
+	}
+	UIManager.showMessageBox(DB.getMessage(msg_id).replace("%d", pkt.blockDate), "ok", () => {
+		UIManager.removeComponents();
+		Controller.getUI().append();
+	}, true);
+	Network.close();
+}
+/**
 * Received data from server, connection refused
 *
 * @param {object} pkt - PACKET.AC.REFUSE_LOGIN
@@ -340433,7 +341301,7 @@ function onConnectionRefused(pkt) {
 			error = 6;
 			break;
 		case 1:
-			error = 7;
+			error = 267;
 			break;
 		case 2:
 			error = 8;
@@ -340451,7 +341319,7 @@ function onConnectionRefused(pkt) {
 			error = 449;
 			break;
 		case 7:
-			error = 264;
+			error = 439;
 			break;
 		case 8:
 			error = 681;
@@ -340477,6 +341345,45 @@ function onConnectionRefused(pkt) {
 		case 15:
 			error = 709;
 			break;
+		case 16:
+			error = 9;
+			break;
+		case 17:
+			error = 1380;
+			break;
+		case 18:
+			error = 1381;
+			break;
+		case 19:
+			error = 1751;
+			break;
+		case 20:
+			error = 1752;
+			break;
+		case 21:
+			error = 1786;
+			break;
+		case 22:
+		case 23:
+		case 24:
+		case 25:
+		case 26:
+		case 27:
+		case 30:
+			error = 3440;
+			break;
+		case 28:
+			error = 2731;
+			break;
+		case 29:
+			error = 2732;
+			break;
+		case 33:
+			error = 2682;
+			break;
+		case 36:
+			error = 3453;
+			break;
 		case 99:
 			error = 368;
 			break;
@@ -340494,6 +341401,88 @@ function onConnectionRefused(pkt) {
 			break;
 		case 104:
 			error = 860;
+			break;
+		case 105:
+			error = 1372;
+			break;
+		case 106:
+			error = 1293;
+			break;
+		case 108:
+			error = 1393;
+			break;
+		case 109:
+			error = 1394;
+			break;
+		case 110:
+			error = 2345;
+			break;
+		case 112:
+			error = 2410;
+			break;
+		case 242:
+			error = 3439;
+			break;
+		case 243:
+			error = 3687;
+			break;
+		case 244:
+			error = 4190;
+			break;
+		case 5011:
+			error = 1839;
+			break;
+		case 5012:
+			error = 823;
+			break;
+		case 5013:
+		case 5054:
+			error = 1789;
+			break;
+		case 5014:
+		case 5016:
+		case 5019:
+		case 5021:
+		case 5052:
+		case 5053:
+		case 5055:
+		case 5056:
+		case 5057:
+		case 5058:
+		case 5059:
+		case 5060:
+		case 5061:
+			error = 1838;
+			break;
+		case 5015:
+			error = 1840;
+			break;
+		case 5017:
+			error = 1841;
+			break;
+		case 5018:
+			error = 1786;
+			break;
+		case 5050:
+			error = 1830;
+			break;
+		case 5051:
+			error = 5;
+			break;
+		case 5062:
+			error = 266;
+			break;
+		case 5063:
+			error = 1793;
+			break;
+		case 5064:
+			error = 1794;
+			break;
+		case 5300:
+			error = 3534;
+			break;
+		case 5301:
+			error = 3539;
 			break;
 	}
 	UIManager.showMessageBox(DB.getMessage(error).replace("%s", pkt.blockDate), "ok", () => {
@@ -340521,10 +341510,10 @@ function onServerClosed(pkt) {
 			msg_id = 5;
 			break;
 		case 3:
-			msg_id = 9;
+			msg_id = 241;
 			break;
 		case 4:
-			msg_id = 439;
+			msg_id = 264;
 			break;
 		case 5:
 			msg_id = 305;
@@ -340541,17 +341530,68 @@ function onServerClosed(pkt) {
 		case 10:
 			msg_id = 530;
 			break;
+		case 11:
+			msg_id = 575;
+			break;
+		case 12:
+			msg_id = 576;
+			break;
+		case 13:
+			msg_id = 577;
+			break;
+		case 14:
+			msg_id = 578;
+			break;
 		case 15:
 			msg_id = 579;
 			break;
+		case 16:
+			msg_id = 606;
+			break;
+		case 17:
+			msg_id = 607;
+			break;
+		case 18:
+			msg_id = 678;
+			break;
+		case 100:
+			msg_id = 1123;
+			break;
 		case 101:
-			msg_id = 810;
+			msg_id = 1178;
 			break;
 		case 102:
 			msg_id = 1179;
 			break;
+		case 103:
+			msg_id = 1309;
+			break;
+		case 104:
+			msg_id = 1310;
+			break;
+		case 105:
+			msg_id = 1311;
+			break;
+		case 106:
+			msg_id = 1373;
+			break;
+		case 107:
+			msg_id = 1429;
+			break;
+		case 108:
+			msg_id = 1582;
+			break;
+		case 109:
+			msg_id = 1583;
+			break;
+		case 110:
+			msg_id = 1589;
+			break;
 	}
-	UIManager.showErrorBox(DB.getMessage(msg_id));
+	UIManager.showMessageBox(DB.getMessage(msg_id), "ok", () => {
+		UIManager.removeComponents();
+		Controller.getUI().append();
+	}, true);
 	Network.close();
 }
 var WinLoading, _server, _charServers, _loginID, LoginEngine;
@@ -340621,7 +341661,7 @@ var init_LoginEngine = __esmMin((() => {
 				Thread.send("SET_HOST", remoteClient);
 				if (old_server != null && (old_server.address != _server.address || old_server.port != _server.port)) q.add(() => {
 					DB.onReady = () => {
-						Background.setImage("bgi_temp.bmp");
+						Background.setLoginBackground();
 						q._next();
 					};
 					DB.onProgress = (i, count) => {
@@ -340630,7 +341670,7 @@ var init_LoginEngine = __esmMin((() => {
 					UIManager.removeComponents();
 					Background.init();
 					Background.resize(Renderer.width, Renderer.height);
-					Background.setImage("bgi_temp.bmp", () => {
+					Background.setLoginBackground(() => {
 						DB.isLoaded = false;
 						DB.init();
 					});
@@ -340640,8 +341680,15 @@ var init_LoginEngine = __esmMin((() => {
 			SessionStorage_default.AdminList = server.adminList || [];
 			Plugins.init();
 			Controller.selectUIVersion();
+			Background.setLoginBackground();
 			Controller.getUI().onConnectionRequest = onConnectionRequest;
 			Controller.getUI().onExitRequest = onExitRequest;
+			Network.onDisconnect = () => {
+				UIManager.showMessageBox(DB.getMessage(1), "ok", () => {
+					UIManager.removeComponents();
+					Controller.getUI().append();
+				}, true);
+			};
 			if (autoLogin instanceof Array && autoLogin[0] && autoLogin[1]) {
 				onConnectionRequest.apply(null, autoLogin);
 				Configs.set("autoLogin", null);
@@ -340652,6 +341699,11 @@ var init_LoginEngine = __esmMin((() => {
 			else Network.hookPacket(PACKET.AC.ACCEPT_LOGIN3, onConnectionAccepted);
 			Network.hookPacket(PACKET.AC.REFUSE_LOGIN, onConnectionRefused);
 			Network.hookPacket(PACKET.AC.REFUSE_LOGIN_R2, onConnectionRefused);
+			Network.hookPacket(PACKET.AC.REFUSE_LOGIN3, onConnectionRefused);
+			Network.hookPacket(PACKET.AC.REFUSE_LOGIN_EX, onConnectionRefused);
+			Network.hookPacket(PACKET.AC.REFUSE_LOGIN_USA, onInternationalConnectionRefused);
+			Network.hookPacket(PACKET.AC.LOGIN_TAREN_REFUSE, onTarenConnectionRefused);
+			Network.hookPacket(PACKET.AC.LOGIN_TAREN_REFUSE2, onTarenConnectionRefused2);
 			Network.hookPacket(PACKET.SC.NOTIFY_BAN, onServerClosed);
 			q.run();
 		}
@@ -341495,10 +342547,8 @@ function onReload() {
 	let i;
 	const count = list.length;
 	if (count === 0) UIManager.showMessageBox("Sorry, no server found.", "ok", GameEngine.init);
-	else if (count === 1 && Configs.get("skipServerList")) {
-		LoginEngine.init(_servers[0]);
-		Background.remove();
-	} else {
+	else if (count === 1 && Configs.get("skipServerList")) LoginEngine.init(_servers[0]);
+	else {
 		for (i = 0; i < count; ++i) list[i] = _servers[i].display;
 		WinList_default.append();
 		WinList_default.setList(list);
@@ -341510,7 +342560,6 @@ function onReload() {
 function onReadyLoginServer(index) {
 	_previous_server = _servers[index];
 	WinList_default.remove();
-	Background.remove();
 	LoginEngine.init(_servers[index]);
 }
 /**
