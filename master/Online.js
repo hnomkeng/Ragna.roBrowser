@@ -141,6 +141,12 @@ function returnTrue() {
 function returnFalse() {
 	return false;
 }
+/*!
+* Sizzle CSS Selector Engine
+* Copyright 2012 jQuery Foundation and other contributors
+* Released under the MIT license
+* http://sizzlejs.com/
+*/
 function sibling(cur, dir) {
 	do
 		cur = cur[dir];
@@ -2248,12 +2254,6 @@ var init_jquery_1_9_1 = __esmMin((() => {
 			if (elem) return jQuery.event.trigger(type, data, elem, true);
 		}
 	});
-	/*!
-	* Sizzle CSS Selector Engine
-	* Copyright 2012 jQuery Foundation and other contributors
-	* Released under the MIT license
-	* http://sizzlejs.com/
-	*/
 	(function(window, undefined) {
 		var i, cachedruns, Expr, getText, isXML, compile, hasDuplicate, outermostContext, setDocument, document, docElem, documentIsXML, rbuggyQSA, rbuggyMatches, matches, contains, sortOrder, expando = "sizzle" + -/* @__PURE__ */ new Date(), preferredDoc = window.document, support = {}, dirruns = 0, done = 0, classCache = createCache(), tokenCache = createCache(), compilerCache = createCache(), strundefined = typeof undefined, MAX_NEGATIVE = 1 << 31, arr = [], pop = arr.pop, push = arr.push, slice = arr.slice, indexOf = arr.indexOf || function(elem) {
 			var i = 0, len = this.length;
@@ -14996,6 +14996,22 @@ var init_iconv_lite = __esmMin((() => {
 		} })();
 	})();
 }));
+/*! Bundled license information:
+
+ieee754/index.js:
+(*! ieee754. BSD-3-Clause License. Feross Aboukhadijeh <https://feross.org/opensource> *)
+
+buffer/index.js:
+(*!
+* The buffer module from node.js, for the browser.
+*
+* @author   Feross Aboukhadijeh <https://feross.org>
+* @license  MIT
+*)
+
+safe-buffer/index.js:
+(*! safe-buffer. MIT License. Feross Aboukhadijeh <https://feross.org/opensource> *)
+*/
 //#endregion
 //#region src/Utils/CodepageManager.js
 /**
@@ -89310,7 +89326,7 @@ var init_BGM = __esmMin((() => {
 /**
 * Render background (or a black background if no image is loaded yet)
 */
-function render$24() {
+function render$23() {
 	_ctx$17.clearRect(0, 0, _canvas[0].width, _canvas[0].height);
 	if (_progress > -1) Background.setPercent(_progress);
 }
@@ -89371,7 +89387,7 @@ var init_Background = __esmMin((() => {
 			let i;
 			_progress = 0;
 			_canvas.css("zIndex", 1);
-			render$24();
+			render$23();
 			if (loading) {
 				_loading = loading;
 				return;
@@ -89394,7 +89410,7 @@ var init_Background = __esmMin((() => {
 				height: height + "px"
 			});
 			_ctx$17.clearRect(0, 0, width, height);
-			render$24();
+			render$23();
 		}
 		/**
 		* Set an image as background
@@ -89406,7 +89422,7 @@ var init_Background = __esmMin((() => {
 			const exist = !!_container[0].parentNode;
 			_progress = -1;
 			_container.empty().css("backgroundImage", "none");
-			render$24();
+			render$23();
 			if (Array.isArray(filename)) {
 				let loadedCount = 0;
 				const total = filename.length;
@@ -89876,7 +89892,7 @@ function init$12(gl) {
 * @param {number} x
 * @param {number} y
 */
-function render$23(gl, modelView, projection, fog, x, y) {
+function render$22(gl, modelView, projection, fog, x, y) {
 	if (!_texture$5) return;
 	const uniform = _program$25.uniform;
 	const attribute = _program$25.attribute;
@@ -89970,7 +89986,7 @@ var init_GridSelector = __esmMin((() => {
 	GridSelector_default = {
 		init: init$12,
 		free: free$7,
-		render: render$23
+		render: render$22
 	};
 }));
 //#endregion
@@ -90053,7 +90069,7 @@ var init_Ground$1 = __esmMin((() => {
 * @param {object} fog structure
 * @param {object} light structure
 */
-function render$22(gl, modelView, projection, normalMat, fog, light) {
+function render$21(gl, modelView, projection, normalMat, fog, light) {
 	const uniform = _program$24.uniform;
 	const attribute = _program$24.attribute;
 	gl.useProgram(_program$24);
@@ -90298,7 +90314,7 @@ var init_Ground = __esmMin((() => {
 	Ground_default = {
 		init: init$11,
 		free: free$6,
-		render: render$22,
+		render: render$21,
 		getShadowFactor
 	};
 }));
@@ -90736,7 +90752,7 @@ function init$10(gl, water) {
 * @param {object} light structure
 * @param {number} tick (game tick)
 */
-function render$21(gl, modelView, projection, fog, light, tick) {
+function render$20(gl, modelView, projection, fog, light, tick) {
 	if (!_vertCount) return;
 	const uniform = _program$22.uniform;
 	const attribute = _program$22.attribute;
@@ -90805,7 +90821,7 @@ var init_Water = __esmMin((() => {
 	Water_default = {
 		init: init$10,
 		free: free$5,
-		render: render$21
+		render: render$20
 	};
 }));
 //#endregion
@@ -90883,7 +90899,7 @@ function init$9(gl, data) {
 * @param {object} fog structure
 * @param {object} light structure
 */
-function render$20(gl, modelView, projection, normalMat, fog, light) {
+function render$19(gl, modelView, projection, normalMat, fog, light) {
 	const uniform = _program$21.uniform;
 	const attribute = _program$21.attribute;
 	let i, count;
@@ -90966,7 +90982,7 @@ var init_Models = __esmMin((() => {
 	_pendingTextures = 0;
 	Models_default = {
 		init: init$9,
-		render: render$20,
+		render: render$19,
 		free: free$4
 	};
 }));
@@ -91385,7 +91401,7 @@ function updateModelBuffer(gl, model, frame, force) {
 /**
 * Render animated models
 */
-function render$19(gl, modelView, projection, normalMat, fog, light, tick) {
+function render$18(gl, modelView, projection, normalMat, fog, light, tick) {
 	if (_animatedModels.length === 0) return;
 	if (!_program$20) init$8(gl);
 	const uniform = _program$20.uniform;
@@ -91451,7 +91467,7 @@ var init_AnimatedModels = __esmMin((() => {
 		init: init$8,
 		free: free$3,
 		add: add$2,
-		render: render$19,
+		render: render$18,
 		hasAnimatedModels
 	};
 }));
@@ -91474,7 +91490,7 @@ function free$2() {
 *
 * @param {vec2} position
 */
-function render$18(position, tick) {
+function render$17(position, tick) {
 	_list$16.forEach((sound) => {
 		const dist = Math.floor(vec2$3.dist(sound.pos, position));
 		if (sound.tick < tick && dist <= sound.range) {
@@ -91492,7 +91508,7 @@ var init_Sounds = __esmMin((() => {
 	Sounds_default = {
 		add: add$1,
 		free: free$2,
-		render: render$18
+		render: render$17
 	};
 }));
 //#endregion
@@ -91958,7 +91974,7 @@ var init_RainWeather = __esmMin((() => {
 					osc.disconnect();
 					gain.disconnect();
 				} catch (e) {}
-			}, duration * 1e3 + 50);
+			}, 60);
 		}
 		triggerThunderSound() {
 			if (!this.audioCtx) return;
@@ -92119,11 +92135,11 @@ var init_RainWeather = __esmMin((() => {
 				else {
 					const elapsed2 = elapsed - 160;
 					if (elapsed2 < FLASH_FADE_IN) flashAlpha = elapsed2 / FLASH_FADE_IN * .8;
-					else if (elapsed2 < FLASH_FADE_IN + FLASH_FADE_OUT) flashAlpha = .8 * (1 - (elapsed2 - FLASH_FADE_IN) / FLASH_FADE_OUT);
+					else if (elapsed2 < 350) flashAlpha = .8 * (1 - (elapsed2 - FLASH_FADE_IN) / FLASH_FADE_OUT);
 					else this.isFlashing = false;
 				}
 				else if (elapsed < FLASH_FADE_IN) flashAlpha = elapsed / FLASH_FADE_IN * .8;
-				else if (elapsed < FLASH_FADE_IN + FLASH_FADE_OUT) flashAlpha = .8 * (1 - (elapsed - FLASH_FADE_IN) / FLASH_FADE_OUT);
+				else if (elapsed < 350) flashAlpha = .8 * (1 - (elapsed - FLASH_FADE_IN) / FLASH_FADE_OUT);
 				else this.isFlashing = false;
 				if (this.isFlashing) {
 					overlayR = .9;
@@ -92362,7 +92378,7 @@ function renderLayer$2(layer, spr, pal, sizeScale, pos, alpha) {
 	SpriteRenderer.image.texture = frame.texture;
 	SpriteRenderer.render(false);
 }
-var RAG_TICK_MS$1, FADEOUT_TAIL_MS$2, EMIT_STOP_BEFORE_END_MS$1, FLAKE_LIFE_MS, FLAKE_FADEIN_MS, FLAKE_FADEOUT_START_MS, SCATTER_RADIUS_CELLS$1, SPAWN_HEIGHT_MIN_CELLS$1, SPAWN_HEIGHT_MAX_CELLS$1, FALL_SPEED_CELLS_PER_MS, SPR_PATH, _instance$3, _mapName$4, _isStopping$1, SnowWeatherEffect;
+var RAG_TICK_MS$1, FADEOUT_TAIL_MS$2, EMIT_STOP_BEFORE_END_MS$1, FLAKE_LIFE_MS, FLAKE_FADEIN_MS, FLAKE_FADEOUT_START_MS, SCATTER_RADIUS_CELLS$1, SPAWN_HEIGHT_MIN_CELLS$1, SPAWN_HEIGHT_MAX_CELLS$1, FALL_SPEED_CELLS_PER_MS, _instance$3, _mapName$4, _isStopping$1, SnowWeatherEffect;
 var init_SnowWeather = __esmMin((() => {
 	init_Client();
 	init_Renderer();
@@ -92380,7 +92396,6 @@ var init_SnowWeather = __esmMin((() => {
 	SPAWN_HEIGHT_MIN_CELLS$1 = 18;
 	SPAWN_HEIGHT_MAX_CELLS$1 = 22;
 	FALL_SPEED_CELLS_PER_MS = .1 / RAG_TICK_MS$1;
-	SPR_PATH = "data/sprite/ÀÌÆÑÆ®/ef_snow";
 	_instance$3 = null;
 	_mapName$4 = "";
 	_isStopping$1 = false;
@@ -92497,8 +92512,8 @@ var init_SnowWeather = __esmMin((() => {
 		}
 		render(gl, tick) {
 			if (!SessionStorage_default.Entity) return;
-			const spr = Client.loadFile(SPR_PATH + ".spr", null, null, { to_rgba: true });
-			const act = Client.loadFile(SPR_PATH + ".act");
+			const spr = Client.loadFile("data/sprite/ÀÌÆÑÆ®/ef_snow.spr", null, null, { to_rgba: true });
+			const act = Client.loadFile("data/sprite/ÀÌÆÑÆ®/ef_snow.act");
 			if (!spr || !act) return;
 			this.spr = spr;
 			this.act = act;
@@ -107722,6 +107737,11 @@ var init_PacketStructure = __esmMin((() => {
 		this.maxhp = fp.readULong();
 	};
 	PACKET.ZC.NOTIFY_MONSTER_HP.size = 14;
+	PACKET.ZC.HP_INFO_TINY = function PACKET_ZC_HP_INFO_TINY(fp, end) {
+		this.GID = fp.readULong();
+		this.hp = fp.readUChar();
+	};
+	PACKET.ZC.HP_INFO_TINY.size = 7;
 	PACKET.ZC.ALL_QUEST_LIST_V2 = function PACKET_ZC_ALL_QUEST_LIST_V2(fp, end) {
 		this.questCount = fp.readLong();
 		this.QuestList = (function(questCount) {
@@ -145524,6 +145544,7 @@ var init_PacketRegister = __esmMin((() => {
 		2600: PACKET.ZC.ACK_OPENSTORE2,
 		2605: PACKET.ZC.EQUIPWIN_MICROSCOPE_V5,
 		2608: PACKET.ZC.ACK_REQNAMEALL2,
+		2614: PACKET.ZC.HP_INFO_TINY,
 		2615: PACKET.ZC.ITEM_PICKUP_ACK7,
 		2617: PACKET.CH.MAKE_CHAR3,
 		2619: PACKET.ZC.HAT_EFFECT,
@@ -148155,7 +148176,7 @@ function Packets(name, Struct, size) {
 function connect$4(host, port, callback, isZone) {
 	const socket = _socketFactory ? _socketFactory(host, port) : defaultSocketFactory(host, port);
 	socket.isZone = !!isZone;
-	socket.onClose = onClose$20;
+	socket.onClose = onClose$19;
 	socket.onComplete = function onComplete(success) {
 		let msg = "Fail";
 		let color = "red";
@@ -148201,8 +148222,10 @@ function send(buffer) {
 * @param {function} struct - packet structure callback
 */
 function registerPacket(id, Struct) {
-	Struct.id = id;
-	Packets.list[id] = new Packets(Struct.name, Struct, Struct.size);
+	if (Struct) {
+		Struct.id = id;
+		Packets.list[id] = new Packets(Struct.name, Struct, Struct.size);
+	} else console.error("registerPacket: Struct is undefined for id: 0x" + parseInt(id, 10).toString(16));
 }
 /**
 * Hook a Packet
@@ -148290,7 +148313,7 @@ function receive(buf) {
 * Communication end
 * Server ask to close the socket
 */
-function onClose$20() {
+function onClose$19() {
 	const idx = _sockets.indexOf(this);
 	if (this === _socket) {
 		console.warn("[Network] Disconnect from server");
@@ -151825,7 +151848,7 @@ var init_GUIComponent = __esmMin((() => {
 						const lockX = component.magnet && (component.magnet.LEFT || component.magnet.RIGHT);
 						const lockY = component.magnet && (component.magnet.TOP || component.magnet.BOTTOM);
 						let snapX = null, snapY = null;
-						let snapXD = SNAP_DISTANCE + 1, snapYD = SNAP_DISTANCE + 1;
+						let snapXD = 11, snapYD = 11;
 						const checkX = (val) => {
 							const d = Math.abs(val - x_);
 							if (d < snapXD) {
@@ -152949,7 +152972,7 @@ function cleanTextColor(text) {
 /**
 * Exit window
 */
-function onClose$19(e) {
+function onClose$18(e) {
 	try {
 		e.stopImmediatePropagation();
 	} catch (error) {}
@@ -153057,7 +153080,7 @@ var init_MakeReadBook = __esmMin((() => {
 			canvas.className = "clone_book event_add_cursor";
 			MakeReadBook.ui.find(".footer").find("canvas").remove();
 			MakeReadBook.ui.find(".footer").append(canvas);
-			MakeReadBook.ui.find(".clone_book").click(onClose$19);
+			MakeReadBook.ui.find(".clone_book").click(onClose$18);
 			const canvas2 = new SPR(spr_highlighter).getCanvasFromFrame(0);
 			canvas2.className = "highlighter event_add_cursor";
 			MakeReadBook.ui.find("#highlighter").find("canvas").remove();
@@ -153122,7 +153145,7 @@ var init_MakeReadBook = __esmMin((() => {
 		});
 	};
 	MakeReadBook.highlighter = async function highlighter() {
-		if (_preferences$71.show) onClose$19();
+		if (_preferences$71.show) onClose$18();
 		let index = _BOOK_INFORMATION["bookmark_activated"] ? _BOOK_INFORMATION["bookmark_activated_page"] : 0;
 		let newText = "";
 		for (; index < _BOOK_INFORMATION["contents"].length; index++) newText = newText + "\n" + _BOOK_INFORMATION["contents"][index];
@@ -155249,7 +155272,7 @@ var init_Storage$1 = __esmMin((() => {
 /**
 * Stop event propagation
 */
-function stopPropagation$33(event) {
+function stopPropagation$32(event) {
 	event.stopImmediatePropagation();
 	return false;
 }
@@ -155505,13 +155528,13 @@ var init_CartItems = __esmMin((() => {
 	* Initialize UI
 	*/
 	CartItems.init = function Init() {
-		this.ui.find(".titlebar .base").mousedown(stopPropagation$33);
+		this.ui.find(".titlebar .base").mousedown(stopPropagation$32);
 		this.ui.find(".titlebar .mini").click(onToggleReduction$4);
 		this.ui.find(".footer .extend").mousedown(onResize$15);
 		this.ui.find(".titlebar .close").click(function() {
 			CartItems.ui.hide();
 		});
-		this.ui.on("drop", onDrop$21).on("dragover", stopPropagation$33).find(".container .content").on("mousewheel DOMMouseScroll", onScroll$6).on("mouseover", ".item", onItemOver$17).on("mouseout", ".item", onItemOut$18).on("dragstart", ".item", onItemDragStart$13).on("dragend", ".item", onItemDragEnd$14).on("contextmenu", ".item", onItemInfo$21).on("dblclick", ".item", onItemUsed$5);
+		this.ui.on("drop", onDrop$21).on("dragover", stopPropagation$32).find(".container .content").on("mousewheel DOMMouseScroll", onScroll$6).on("mouseover", ".item", onItemOver$17).on("mouseout", ".item", onItemOut$18).on("dragstart", ".item", onItemDragStart$13).on("dragend", ".item", onItemDragEnd$14).on("contextmenu", ".item", onItemInfo$21).on("dblclick", ".item", onItemUsed$5);
 		this.draggable(this.ui.find(".titlebar"));
 	};
 	/**
@@ -160474,7 +160497,7 @@ function onValidZenyInput(event) {
 /**
 * Stop event propagation
 */
-function stopPropagation$32(event) {
+function stopPropagation$31(event) {
 	event.stopImmediatePropagation();
 	return false;
 }
@@ -160683,9 +160706,9 @@ var init_Mail$1 = __esmMin((() => {
 		this.ui.find("#create_mail_cancel").on("click", offCreateMessagesOnWindowMailbox);
 		this.ui.find("#create_mail_send").on("click", sendCreateMessagesMail);
 		updatePageMailItems();
-		this.ui.find(".container_item").on("drop", onDrop$20).on("dragover", stopPropagation$32).on("mouseover", ".item", onItemOver$16).on("mouseout", ".item", onItemOut$17).on("dragstart", ".item", onItemDragStart$12).on("dragend", ".item", onItemDragEnd$13).on("contextmenu", ".item", onItemInfo$20);
-		this.ui.find("input[type=text]").on("drop", onDropText$2).on("dragover", stopPropagation$32);
-		this.ui.find("textarea").on("drop", onDropText$2).on("dragover", stopPropagation$32);
+		this.ui.find(".container_item").on("drop", onDrop$20).on("dragover", stopPropagation$31).on("mouseover", ".item", onItemOver$16).on("mouseout", ".item", onItemOut$17).on("dragstart", ".item", onItemDragStart$12).on("dragend", ".item", onItemDragEnd$13).on("contextmenu", ".item", onItemInfo$20);
+		this.ui.find("input[type=text]").on("drop", onDropText$2).on("dragover", stopPropagation$31);
+		this.ui.find("textarea").on("drop", onDropText$2).on("dragover", stopPropagation$31);
 		this.ui.find("#zeny_amt").on("click", onAddZenyInput);
 		this.ui.find("#zeny_ok").on("click", onValidZenyInput);
 		onWindowMailbox();
@@ -190645,20 +190668,38 @@ var init_SkillInfo = __esmMin((() => {
 	};
 }));
 //#endregion
+//#region src/UI/Components/SkillTargetSelection/SkillTargetSelection.html?raw
+var SkillTargetSelection_default$2;
+var init_SkillTargetSelection$2 = __esmMin((() => {
+	SkillTargetSelection_default$2 = "<div id=\"SkillTargetSelection\">\r\n	<canvas class=\"skill-name\"></canvas>\r\n	<canvas class=\"skill-description\"></canvas>\r\n	<canvas class=\"skill-level\"></canvas>\r\n</div>\r\n";
+}));
+//#endregion
+//#region src/UI/Components/SkillTargetSelection/SkillTargetSelection.css?raw
+var SkillTargetSelection_default$1;
+var init_SkillTargetSelection$1 = __esmMin((() => {
+	SkillTargetSelection_default$1 = ":host {\r\n	top: 0;\r\n	left: 0;\r\n	overflow: visible;\r\n	pointer-events: none;\r\n}\r\n\r\n#SkillTargetSelection {\r\n	display: block;\r\n}\r\n\r\n.skill-name {\r\n	position: fixed;\r\n	top: 45px;\r\n	z-index: 100;\r\n	border-radius: 3px;\r\n	border: 1px solid #555;\r\n	pointer-events: auto;\r\n}\r\n\r\n.skill-description {\r\n	position: fixed;\r\n	bottom: 60px;\r\n	z-index: 100;\r\n	border-radius: 3px;\r\n	border: 1px solid #555;\r\n	pointer-events: auto;\r\n}\r\n\r\n.skill-level {\r\n	position: fixed;\r\n	left: 0;\r\n	top: 0;\r\n	z-index: 100;\r\n	pointer-events: auto;\r\n}\r\n";
+}));
+//#endregion
 //#region src/UI/Components/SkillTargetSelection/SkillTargetSelection.js
+/**
+* Helper to get the shadow root
+*/
+function _getRoot$7() {
+	return SkillTargetSelection._shadow || SkillTargetSelection._host;
+}
 /**
 * Render text into the canvas
 *
 * @param {string} text to render
 * @param {CanvasElement} canvas node
 */
-function render$17(text, canvas) {
+function renderText(text, canvas) {
 	const fontSize = 12;
 	const ctx = canvas.getContext("2d");
-	ctx.font = fontSize + "px Arial";
+	ctx.font = `${fontSize}px Arial`;
 	canvas.width = ctx.measureText(text).width + 14;
 	canvas.height = 23;
-	ctx.font = fontSize + "px Arial";
+	ctx.font = `${fontSize}px Arial`;
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
 	ctx.fillStyle = "rgba(0,0,0,0.5)";
 	ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -190666,10 +190707,10 @@ function render$17(text, canvas) {
 	ctx.fillText(text, 8, 17);
 	ctx.fillStyle = "#00FF00";
 	ctx.fillText(text, 7, 16);
-	canvas.style.left = (Renderer.width - canvas.width >> 1) + "px";
+	canvas.style.left = `${Renderer.width - canvas.width >> 1}px`;
 }
 /**
-* Render text into the canvas
+* Render level text into the canvas
 *
 * @param {string} text to render
 * @param {CanvasElement} canvas node
@@ -190679,7 +190720,7 @@ function renderLevel(text, canvas) {
 	const ctx = canvas.getContext("2d");
 	canvas.width = 35;
 	canvas.height = 35;
-	ctx.font = fontSize + "px Arial";
+	ctx.font = `${fontSize}px Arial`;
 	ctx.strokeStyle = "#333333";
 	ctx.lineWidth = 3;
 	ctx.strokeText(text, 0, 30);
@@ -190690,10 +190731,15 @@ function renderLevel(text, canvas) {
 * Intersect entity when clicking
 */
 function intersectEntities(event) {
+	if (_mousedownHandler) {
+		window.removeEventListener("mousedown", _mousedownHandler, true);
+		_mousedownHandler = null;
+	}
 	SkillTargetSelection.remove();
 	if (!Mouse.intersect) return false;
 	if (event.which !== 1) return true;
 	event.stopImmediatePropagation();
+	event.preventDefault();
 	if (_flag & SkillTargetSelection.TYPE.PLACE) {
 		SkillTargetSelection.onUseSkillToPos(_skill.SKID, _skill.useLevel ? _skill.useLevel : _skill.level, Mouse.world.x, Mouse.world.y);
 		return false;
@@ -190737,27 +190783,37 @@ function intersectEntity(entity) {
 	if (_flag & SkillTargetSelection.TYPE.ENEMY && entity === SessionStorage_default.Entity) return;
 	SkillTargetSelection.onUseSkillToId(_skill.SKID, _skill.useLevel ? _skill.useLevel : _skill.level, entity.GID);
 }
-var SkillTargetSelection, _flag, _skill, _skillName, _description, _skill_level, SkillTargetSelection_default;
+var SkillTargetSelection, _flag, _skill, _skillName, _description, _skillLevel, _mousedownHandler, SkillTargetSelection_default;
 var init_SkillTargetSelection = __esmMin((() => {
 	init_DBManager();
 	init_SkillInfo();
 	init_KeyEventHandler();
 	init_MouseEventHandler();
-	init_jquery();
 	init_Renderer();
 	init_Entity$1();
 	init_EntityManager();
 	init_SessionStorage();
 	init_Controls();
 	init_UIManager();
-	init_UIComponent();
+	init_GUIComponent();
 	init_CursorManager();
 	init_PartyFriends();
-	SkillTargetSelection = new UIComponent("SkillTargetSelection");
+	init_SkillTargetSelection$2();
+	init_SkillTargetSelection$1();
+	SkillTargetSelection = new GUIComponent("SkillTargetSelection", SkillTargetSelection_default$1);
+	SkillTargetSelection.render = () => SkillTargetSelection_default$2;
 	/**
 	* Mouse can cross this UI
 	*/
-	SkillTargetSelection.mouseMode = UIComponent.MouseMode.CROSS;
+	SkillTargetSelection.mouseMode = GUIComponent.MouseMode.CROSS;
+	/**
+	* Do not focus this UI
+	*/
+	SkillTargetSelection.needFocus = false;
+	/**
+	* Handle ESCAPE before other handlers
+	*/
+	SkillTargetSelection.captureKeyEvents = true;
 	/**
 	* @var {constant}
 	*/
@@ -190772,54 +190828,41 @@ var init_SkillTargetSelection = __esmMin((() => {
 		HOMUN: 128
 	};
 	_flag = 0;
+	_mousedownHandler = null;
 	/**
 	* Initialize component
 	*/
 	SkillTargetSelection.init = function init() {
-		_skillName = document.createElement("canvas");
-		_description = document.createElement("canvas");
-		_skill_level = document.createElement("canvas");
-		_skillName.style.position = "absolute";
-		_skillName.style.top = "45px";
-		_skillName.style.zIndex = 100;
-		_skillName.style.borderRadius = "3px";
-		_skillName.style.border = "1px solid #555";
-		_description.style.position = "absolute";
-		_description.style.bottom = "60px";
-		_description.style.zIndex = 100;
-		_description.style.borderRadius = "3px";
-		_description.style.border = "1px solid #555";
-		_skill_level.style.position = "absolute";
-		_skill_level.style.left = 0;
-		_skill_level.style.top = 0;
-		_skill_level.style.zIndex = 100;
-		jquery_default(window).mousemove(function(event) {
-			_skill_level.style.left = event.pageX + 20 + "px";
-			_skill_level.style.top = event.pageY - 18 + "px";
+		const root = _getRoot$7();
+		_skillName = root.querySelector(".skill-name");
+		_description = root.querySelector(".skill-description");
+		_skillLevel = root.querySelector(".skill-level");
+		_skillName.style.display = "none";
+		_description.style.display = "none";
+		_skillLevel.style.display = "none";
+		window.addEventListener("mousemove", (event) => {
+			_skillLevel.style.left = `${event.pageX + 20}px`;
+			_skillLevel.style.top = `${event.pageY - 18}px`;
 		});
-		render$17(DB.getMessage(234), _description);
-		this.ui = jquery_default("<div id =\"SkillTargetSelection\"/>");
-		this.ui.append();
+		renderText(DB.getMessage(234), _description);
 	};
 	/**
 	* Append to body
 	*/
 	SkillTargetSelection.onAppend = function onAppend() {
-		let events;
-		if (!_skillName.parentNode) document.body.appendChild(_skillName);
-		if (!_description.parentNode) document.body.appendChild(_description);
-		if (!_skill_level.parentNode) document.body.appendChild(_skill_level);
-		events = jquery_default._data(window, "events").keydown;
-		events.unshift(events.pop());
-		jquery_default(window).one("mousedown.targetselection", intersectEntities);
-		events = jquery_default._data(window, "events").mousedown;
-		events.unshift(events.pop());
+		_skillName.style.display = "block";
+		_description.style.display = "block";
+		_skillLevel.style.display = "block";
+		_mousedownHandler = (event) => {
+			intersectEntities(event);
+		};
+		window.addEventListener("mousedown", _mousedownHandler, true);
 	};
 	/**
 	* Possible to exit using ESCAPE
 	*/
 	SkillTargetSelection.onKeyDown = function onKeyDown(event) {
-		if ((event.which === KEYS.ESCAPE || event.key === "Escape") && this.ui.is(":visible")) {
+		if ((event.which === KEYS.ESCAPE || event.key === "Escape") && this._host.style.display !== "none") {
 			this.remove();
 			event.stopImmediatePropagation();
 			return false;
@@ -190830,14 +190873,17 @@ var init_SkillTargetSelection = __esmMin((() => {
 	* Remove from body
 	*/
 	SkillTargetSelection.onRemove = function onRemove() {
-		jquery_default(window).off("mousedown.targetselection");
+		if (_mousedownHandler) {
+			window.removeEventListener("mousedown", _mousedownHandler, true);
+			_mousedownHandler = null;
+		}
 		Cursor.blockMagnetism = false;
 		Cursor.freeze = false;
 		Cursor.setType(Cursor.ACTION.DEFAULT);
 		EntityManager.setSupportPicking(false);
-		if (_skillName.parentNode) document.body.removeChild(_skillName);
-		if (_description.parentNode) document.body.removeChild(_description);
-		if (_skill_level.parentNode) document.body.removeChild(_skill_level);
+		_skillName.style.display = "none";
+		_description.style.display = "none";
+		_skillLevel.style.display = "none";
 		Mouse.state = Mouse.MOUSE_STATE.NORMAL;
 	};
 	/**
@@ -190864,8 +190910,8 @@ var init_SkillTargetSelection = __esmMin((() => {
 		Mouse.state = Mouse.MOUSE_STATE.USESKILL;
 		EntityManager.setSupportPicking((_flag & SkillTargetSelection.TYPE.FRIEND) > 0);
 		const sk = SkillInfo[skill.SKID];
-		render$17(description || sk.SkillName, _skillName);
-		renderLevel(_skill.useLevel ? _skill.useLevel : _skill.level, _skill_level);
+		renderText(description || sk.SkillName, _skillName);
+		renderLevel(_skill.useLevel ? _skill.useLevel : _skill.level, _skillLevel);
 		Cursor.setType(Cursor.ACTION.TARGET);
 		Cursor.freeze = true;
 	};
@@ -190875,7 +190921,7 @@ var init_SkillTargetSelection = __esmMin((() => {
 		_skill.useLevel += delta;
 		if (_skill.useLevel < 1) _skill.useLevel = 1;
 		if (_skill.useLevel > _skill.level) _skill.useLevel = _skill.level;
-		renderLevel(_skill.useLevel, _skill_level);
+		renderLevel(_skill.useLevel, _skillLevel);
 	};
 	/**
 	* Intersect with an entity ID
@@ -190901,7 +190947,7 @@ var init_SkillTargetSelection = __esmMin((() => {
 	* Functions to define
 	*/
 	SkillTargetSelection.onUseSkillToId = function onUseSkillToId() {};
-	SkillTargetSelection.onUseSkillToPos = function onUseSkillToId() {};
+	SkillTargetSelection.onUseSkillToPos = function onUseSkillToPos() {};
 	SkillTargetSelection_default = UIManager.addComponent(SkillTargetSelection);
 }));
 //#endregion
@@ -190950,7 +190996,7 @@ function onResize$14() {
 /**
 * Close the window
 */
-function onClose$18() {
+function onClose$17() {
 	PartyFriendsV0.ui.hide();
 	PartyHelper_default.remove();
 }
@@ -191177,7 +191223,7 @@ var init_PartyFriendsV0 = __esmMin((() => {
 			event.stopImmediatePropagation();
 			return false;
 		});
-		this.ui.find(".close").click(onClose$18);
+		this.ui.find(".close").click(onClose$17);
 		this.ui.find(".lock").mousedown(onToggleLock$1);
 		this.ui.find(".switchtab.off").mousedown(onChangeTab$2);
 		this.ui.find(".remove").mousedown(onRequestRemoveSelection$1);
@@ -195462,14 +195508,14 @@ function onShowLVL() {
 * Stop event propagation
 * @param {object} event
 */
-function stopPropagation$31(event) {
+function stopPropagation$30(event) {
 	event.stopImmediatePropagation();
 	return false;
 }
 /**
 * Closing window
 */
-function onClose$17() {
+function onClose$16() {
 	WorldMap._host.style.display = "none";
 }
 var WorldMap, _preferences$63, _partyMembersByMap, _hoveredSection, C_TITLEBARHEIGHT, C_BASEWIDTH, C_BASEHEIGHT, C_ASPECTX, C_ASPECTY, WorldMap_default;
@@ -195509,7 +195555,7 @@ var init_WorldMap = __esmMin((() => {
 	*/
 	WorldMap.init = function init() {
 		const root = this._shadow || this._host;
-		root.querySelectorAll(".titlebar .base").forEach((el) => el.addEventListener("mousedown", stopPropagation$31));
+		root.querySelectorAll(".titlebar .base").forEach((el) => el.addEventListener("mousedown", stopPropagation$30));
 		const selectEl = root.querySelector(".titlebar select");
 		if (selectEl) selectEl.addEventListener("change", onSelect);
 		const toggleBtn = root.querySelector(".titlebar .togglemaps");
@@ -195517,7 +195563,7 @@ var init_WorldMap = __esmMin((() => {
 		const showLvlBtn = root.querySelector(".titlebar .showlvl");
 		if (showLvlBtn) showLvlBtn.addEventListener("click", onShowLVL);
 		const closeBtn = root.querySelector(".titlebar .close");
-		if (closeBtn) closeBtn.addEventListener("click", onClose$17);
+		if (closeBtn) closeBtn.addEventListener("click", onClose$16);
 		const content = root.querySelector(".map .content");
 		if (content) {
 			content.addEventListener("click", onWorldMapSectionClick);
@@ -196868,7 +196914,7 @@ function onResize$13() {
 /**
 * Close the window
 */
-function onClose$16() {
+function onClose$15() {
 	PartyFriendsV1.ui.hide();
 	PartyHelper_default.remove();
 }
@@ -197148,7 +197194,7 @@ var init_PartyFriendsV1 = __esmMin((() => {
 			event.stopImmediatePropagation();
 			return false;
 		});
-		this.ui.find(".close").click(onClose$16);
+		this.ui.find(".close").click(onClose$15);
 		this.ui.find(".lock").mousedown(onToggleLock);
 		this.ui.find(".switchtab.off").mousedown(onChangeTab$1);
 		this.ui.find(".remove").mousedown(onRequestRemoveSelection);
@@ -197676,38 +197722,65 @@ var init_SkillDescription$2 = __esmMin((() => {
 //#region src/UI/Components/SkillDescription/SkillDescription.css?raw
 var SkillDescription_default$1;
 var init_SkillDescription$1 = __esmMin((() => {
-	SkillDescription_default$1 = "#SkillDescription {\r\n	position: absolute;\r\n	border-radius: 5px;\r\n	padding: 1px;\r\n	border: 1px solid #c5c5c5;\r\n	line-height: 18px;\r\n	letter-spacing: 0px;\r\n}\r\n#SkillDescription .content {\r\n	padding: 5px;\r\n	border-radius: 5px;\r\n	background-color: white;\r\n	width: 278px;\r\n}\r\n#SkillDescription .close {\r\n	position: absolute;\r\n	right: 3px;\r\n	top: 3px;\r\n	border: none;\r\n	width: 9px;\r\n	height: 10px;\r\n	padding: 0px;\r\n	margin: 0px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n";
+	SkillDescription_default$1 = ":host {\r\n	top: 0px;\r\n	left: 0px;\r\n}\r\n\r\n#SkillDescription {\r\n	position: absolute;\r\n	border-radius: 5px;\r\n	padding: 1px;\r\n	border: 1px solid #c5c5c5;\r\n	line-height: 18px;\r\n	letter-spacing: 0px;\r\n}\r\n#SkillDescription .content {\r\n	padding: 5px;\r\n	border-radius: 5px;\r\n	background-color: white;\r\n	width: 278px;\r\n}\r\n#SkillDescription .close {\r\n	position: absolute;\r\n	right: 3px;\r\n	top: 3px;\r\n	border: none;\r\n	width: 9px;\r\n	height: 10px;\r\n	padding: 0px;\r\n	margin: 0px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n";
 }));
 //#endregion
 //#region src/UI/Components/SkillDescription/SkillDescription.js
-var SkillDescription$1, SkillDescription_default;
+/**
+* Sanitize and format RO text with ^rrggbb color codes, ^nItemID^NNN
+* item name substitution, and newline conversion.
+* Replicates the logic from Utils/jquery.js overridden .text() method.
+*
+* @param {string} value - raw skill description text
+* @returns {string} safe HTML string
+*/
+function _formatROText(value) {
+	const tmp = document.createElement("div");
+	tmp.innerHTML = String(value);
+	tmp.querySelectorAll("*").forEach((el) => {
+		if (!_allowedTags.has(el.tagName.toLowerCase())) el.replaceWith(...el.childNodes);
+	});
+	let txt = tmp.innerHTML;
+	let result;
+	const colorReg = /\^([a-fA-F0-9]{6})/;
+	while (result = colorReg.exec(txt)) txt = txt.replace(result[0], `<span style="color:#${result[1]}">`) + "</span>";
+	const itemReg = /\^nItemID\^(\d+)/g;
+	while (result = itemReg.exec(txt)) txt = txt.replace(result[0], DB.getItemInfo(result[1]).identifiedDisplayName);
+	txt = txt.replace(/\n/g, "<br/>");
+	return txt;
+}
+/**
+* Helper to get the shadow root
+*/
+function _getRoot$6() {
+	return SkillDescription$1._shadow || SkillDescription$1._host;
+}
+var _allowedTags, SkillDescription$1, SkillDescription_default;
 var init_SkillDescription = __esmMin((() => {
-	init_jquery();
 	init_DBManager();
 	init_Renderer();
 	init_KeyEventHandler();
 	init_MouseEventHandler();
 	init_UIManager();
-	init_UIComponent();
+	init_GUIComponent();
 	init_SkillDescription$2();
 	init_SkillDescription$1();
-	SkillDescription$1 = new UIComponent("SkillDescription", SkillDescription_default$2, SkillDescription_default$1);
+	_allowedTags = new Set([
+		"font",
+		"i",
+		"b"
+	]);
+	SkillDescription$1 = new GUIComponent("SkillDescription", SkillDescription_default$1);
+	SkillDescription$1.render = () => SkillDescription_default$2;
 	/**
 	* SkillDescription unique id
 	*/
 	SkillDescription$1.uid = -1;
 	/**
-	* Once append to the DOM
+	* Possible to exit using ESCAPE
 	*/
 	SkillDescription$1.onKeyDown = function onKeyDown(event) {
-		if ((event.which === KEYS.ESCAPE || event.key === "Escape") && this.ui.is(":visible")) this.remove();
-	};
-	/**
-	* Once append
-	*/
-	SkillDescription$1.onAppend = function onAppend() {
-		const events = jquery_default._data(window, "events").keydown;
-		events.unshift(events.pop());
+		if ((event.which === KEYS.ESCAPE || event.key === "Escape") && this._host.style.display !== "none") this.remove();
 	};
 	/**
 	* Once removed
@@ -197719,9 +197792,11 @@ var init_SkillDescription = __esmMin((() => {
 	* Initialize UI
 	*/
 	SkillDescription$1.init = function init() {
-		this.ui.find(".close").click(function() {
-			this.remove();
-		}.bind(this));
+		const closeBtn = _getRoot$6().querySelector(".close");
+		if (closeBtn) {
+			closeBtn.addEventListener("mousedown", (e) => e.stopImmediatePropagation());
+			closeBtn.addEventListener("click", () => SkillDescription$1.remove());
+		}
 		this.draggable();
 	};
 	/**
@@ -197731,11 +197806,12 @@ var init_SkillDescription = __esmMin((() => {
 	*/
 	SkillDescription$1.setSkill = function setSkill(id) {
 		this.uid = id;
-		this.ui.find(".content").text(DB.getSkillDescription(id));
-		this.ui.css({
-			top: Math.min(Mouse.screen.y + 10, Renderer.height - this.ui.height()),
-			left: Math.min(Mouse.screen.x + 10, Renderer.width - this.ui.width())
-		});
+		const content = _getRoot$6().querySelector(".content");
+		if (content) content.innerHTML = _formatROText(DB.getSkillDescription(id));
+		const hostWidth = this._host.getBoundingClientRect().width;
+		const hostHeight = this._host.getBoundingClientRect().height;
+		this._host.style.top = `${Math.min(Mouse.screen.y + 10, Renderer.height - hostHeight)}px`;
+		this._host.style.left = `${Math.min(Mouse.screen.x + 10, Renderer.width - hostWidth)}px`;
 	};
 	SkillDescription_default = UIManager.addComponent(SkillDescription$1);
 }));
@@ -198191,7 +198267,7 @@ function onRequestUseSkill$2() {
 /**
 * Request to get skill info (right click on a skill)
 */
-function onRequestSkillInfo$2() {
+function onRequestSkillInfo() {
 	let main = jquery_default(this).parent();
 	if (!main.hasClass("skill")) main = main.parent();
 	const skill = getSkillById$2(parseInt(main.data("index"), 10));
@@ -198216,7 +198292,7 @@ function onSkillFocus$2() {
 */
 function onSkillDragStart$2(event) {
 	const skill = getSkillById$2(parseInt(this.getAttribute("data-index"), 10));
-	if (!skill || !skill.level || !skill.type) return stopPropagation$30(event);
+	if (!skill || !skill.level || !skill.type) return stopPropagation$29(event);
 	const img = new Image();
 	img.decoding = "async";
 	img.src = this.firstChild.firstChild.src;
@@ -198250,7 +198326,7 @@ function skillLevelSelectDown$2(skill) {
 /**
 * Stop propagation of events
 */
-function stopPropagation$30(event) {
+function stopPropagation$29(event) {
 	event.stopImmediatePropagation();
 	return false;
 }
@@ -198390,7 +198466,7 @@ var init_Guild$1 = __esmMin((() => {
 		MemberView = this.ui.find(".MemberView").remove();
 		PositionView = this.ui.find(".PositionView").remove();
 		ExpelView = this.ui.find(".ExpelView").remove();
-		ui.find(".titlebar .close").mousedown(stopPropagation$30).click(Guild.toggle.bind(this));
+		ui.find(".titlebar .close").mousedown(stopPropagation$29).click(Guild.toggle.bind(this));
 		ui.find(".tabs").on("click", "button", onChangeTab);
 		Client.loadFiles([DB.INTERFACE_PATH + "checkbox_0.bmp", DB.INTERFACE_PATH + "checkbox_1.bmp"], function(off, on) {
 			_checkbox_off = off;
@@ -198458,8 +198534,8 @@ var init_Guild$1 = __esmMin((() => {
 			_btnLevelUp$7.detach();
 			Guild.ui.show();
 			Guild.ui.parent().append(Guild.ui);
-		}).mousedown(stopPropagation$30);
-		this.ui.on("dblclick", ".skill .icon, .skill .name", onRequestUseSkill$2).on("contextmenu", ".skill .icon, .skill .name", onRequestSkillInfo$2).on("mousedown", ".selectable", onSkillFocus$2).on("dragstart", ".skill", onSkillDragStart$2).on("dragend", ".skill", onSkillDragEnd$2);
+		}).mousedown(stopPropagation$29);
+		this.ui.on("dblclick", ".skill .icon, .skill .name", onRequestUseSkill$2).on("contextmenu", ".skill .icon, .skill .name", onRequestSkillInfo).on("mousedown", ".selectable", onSkillFocus$2).on("dragstart", ".skill", onSkillDragStart$2).on("dragend", ".skill", onSkillDragEnd$2);
 		ui.find(".content.notice").on("focus", "textarea, input", function() {
 			ui.find(".footer .btn_ok").show();
 		});
@@ -202924,7 +203000,7 @@ function getSkillPosition$1(JobId) {
 /**
 * Stop event propagation
 */
-function stopPropagation$29(event) {
+function stopPropagation$28(event) {
 	event.stopImmediatePropagation();
 	return false;
 }
@@ -203013,7 +203089,7 @@ function resize$6(width, height) {
 /**
 * Closing window
 */
-function onClose$15() {
+function onClose$14() {
 	SkillList.ui.hide();
 }
 /**
@@ -203086,27 +203162,41 @@ function onNecessarySkillsRemove$1() {
 	SkillList.ui.find(".counterSkill").remove();
 }
 /**
-* Request to get skill info (right click on a skill)
+* Resolve the skill ID from the hovered/clicked element
 */
-function onRequestSkillInfo$1() {
-	let main = jquery_default(this).parent();
+function _resolveSkillID$1(el) {
+	let main = jquery_default(el).parent();
 	if (!main.hasClass("skill")) main = main.parent();
 	const id = parseInt(main.data("index"), 10);
-	const skillID = getSkillById$1(id)?.SKID ?? id;
+	return getSkillById$1(id)?.SKID ?? id;
+}
+/**
+* Show skill description on right-click (always, regardless of checkbox)
+*/
+function onContextMenuSkillInfo$1() {
+	const skillID = _resolveSkillID$1(this);
 	if (SkillDescription_default.uid === skillID) {
 		SkillDescription_default.remove();
 		return;
 	}
-	if (_preferences$55.skillInfo) {
-		SkillDescription_default.append();
-		SkillDescription_default.setSkill(skillID);
-	}
+	SkillDescription_default.append();
+	SkillDescription_default.setSkill(skillID);
 }
 /**
-* Hide description
+* Show skill description on mouseover (only when checkbox is checked)
+*/
+function onMouseOverSkillInfo$1() {
+	if (!_preferences$55.skillInfo) return;
+	const skillID = _resolveSkillID$1(this);
+	if (SkillDescription_default.uid === skillID) return;
+	SkillDescription_default.append();
+	SkillDescription_default.setSkill(skillID);
+}
+/**
+* Hide description (only auto-hide on mouseout when checkbox is checked)
 */
 function onSkillDescriptionRemove$1() {
-	SkillDescription_default.remove();
+	if (_preferences$55.skillInfo) SkillDescription_default.remove();
 }
 /**
 * Checkbox show/hide description
@@ -203129,7 +203219,7 @@ function onSkillFocus$1() {
 */
 function onSkillDragStart$1(event) {
 	const skill = getSkillById$1(parseInt(this.getAttribute("data-index"), 10));
-	if (!skill || !skill.level || !skill.type) return stopPropagation$29(event);
+	if (!skill || !skill.level || !skill.type) return stopPropagation$28(event);
 	const img = new Image();
 	img.decoding = "async";
 	img.src = jquery_default(this).find(".icon img").attr("src");
@@ -203273,9 +203363,9 @@ var init_SkillList$1 = __esmMin((() => {
 	* Initialize UI
 	*/
 	SkillList.init = function init() {
-		this.ui.find(".titlebar .base").mousedown(stopPropagation$29);
+		this.ui.find(".titlebar .base").mousedown(stopPropagation$28);
 		this.ui.find(".footer .extend").mousedown(onResize$12);
-		this.ui.find(".titlebar .close").click(onClose$15);
+		this.ui.find(".titlebar .close").click(onClose$14);
 		this.ui.find(".titlebar .mini").click(onMini$1);
 		this.ui.find(".view_skill_info").change(onToggleSkillInfo$1);
 		this.ui.find(".reset").click(onResetChoice$1);
@@ -203286,8 +203376,8 @@ var init_SkillList$1 = __esmMin((() => {
 			_btnLevelUp$6.detach();
 			SkillList.ui.show();
 			SkillList.ui.parent().append(SkillList.ui);
-		}).mousedown(stopPropagation$29);
-		this.ui.on("dblclick", ".skill .icon, .skill .name", onRequestUseSkill$1).on("contextmenu", ".skill .icon, .skill .name", onRequestSkillInfo$1).on("mousedown", ".selectable", onSkillFocus$1).on("mouseover", ".skillCol .skill .icon, .skill .name", onRequestSkillInfo$1).on("mouseout", ".skillCol .skill .icon, .skill .name", onSkillDescriptionRemove$1).on("mouseover", ".skillCol .skill .icon, .skill .name", onNecessarySkills$1).on("mouseout", ".skillCol .skill .icon, .skill .name", onNecessarySkillsRemove$1).on("click", ".skillCol .skill .icon, .skill .name", onRememberChoice$1).on("dragstart", ".skill", onSkillDragStart$1).on("dragend", ".skill", onSkillDragEnd$1).on("touchstart", ".skill .icon", onSkillTouchStart).on("touchmove", ".skill .icon", onSkillTouchMove).on("touchend", ".skill .icon", onSkillTouchEnd);
+		}).mousedown(stopPropagation$28);
+		this.ui.on("dblclick", ".skill .icon, .skill .name", onRequestUseSkill$1).on("contextmenu", ".skill .icon, .skill .name", onContextMenuSkillInfo$1).on("mousedown", ".selectable", onSkillFocus$1).on("mouseover", ".skillCol .skill .icon, .skill .name", onMouseOverSkillInfo$1).on("mouseout", ".skillCol .skill .icon, .skill .name", onSkillDescriptionRemove$1).on("mouseover", ".skillCol .skill .icon, .skill .name", onNecessarySkills$1).on("mouseout", ".skillCol .skill .icon, .skill .name", onNecessarySkillsRemove$1).on("click", ".skillCol .skill .icon, .skill .name", onRememberChoice$1).on("dragstart", ".skill", onSkillDragStart$1).on("dragend", ".skill", onSkillDragEnd$1).on("touchstart", ".skill .icon", onSkillTouchStart).on("touchmove", ".skill .icon", onSkillTouchMove).on("touchend", ".skill .icon", onSkillTouchEnd);
 		this.draggable(this.ui.find(".titlebar"));
 		Client.loadFile(DB.INTERFACE_PATH + "basic_interface/arw_right.bmp", function(data) {
 			rArrow$1 = "url(" + data + ")";
@@ -203726,7 +203816,7 @@ function getSkillPosition(JobId) {
 /**
 * Stop event propagation
 */
-function stopPropagation$28(event) {
+function stopPropagation$27(event) {
 	event.stopImmediatePropagation();
 	return false;
 }
@@ -203805,7 +203895,7 @@ function resize$5(width, height) {
 /**
 * Closing window
 */
-function onClose$14() {
+function onClose$13() {
 	SkillListV0.ui.hide();
 }
 /**
@@ -203878,27 +203968,41 @@ function onNecessarySkillsRemove() {
 	SkillListV0.ui.find(".counterSkill").remove();
 }
 /**
-* Request to get skill info (right click on a skill)
+* Resolve the skill ID from the hovered/clicked element
 */
-function onRequestSkillInfo() {
-	let main = jquery_default(this).parent();
+function _resolveSkillID(el) {
+	let main = jquery_default(el).parent();
 	if (!main.hasClass("skill")) main = main.parent();
 	const id = parseInt(main.data("index"), 10);
-	const skillID = getSkillById(id)?.SKID ?? id;
+	return getSkillById(id)?.SKID ?? id;
+}
+/**
+* Show skill description on right-click (always, regardless of checkbox)
+*/
+function onContextMenuSkillInfo() {
+	const skillID = _resolveSkillID(this);
 	if (SkillDescription_default.uid === skillID) {
 		SkillDescription_default.remove();
 		return;
 	}
-	if (_preferences$54.mini || _preferences$54.skillInfo) {
-		SkillDescription_default.append();
-		SkillDescription_default.setSkill(skillID);
-	}
+	SkillDescription_default.append();
+	SkillDescription_default.setSkill(skillID);
 }
 /**
-* Hide description
+* Show skill description on mouseover (only when checkbox is checked)
+*/
+function onMouseOverSkillInfo() {
+	if (!(_preferences$54.mini || _preferences$54.skillInfo)) return;
+	const skillID = _resolveSkillID(this);
+	if (SkillDescription_default.uid === skillID) return;
+	SkillDescription_default.append();
+	SkillDescription_default.setSkill(skillID);
+}
+/**
+* Hide description (only auto-hide on mouseout when checkbox is checked)
 */
 function onSkillDescriptionRemove() {
-	SkillDescription_default.remove();
+	if (_preferences$54.mini || _preferences$54.skillInfo) SkillDescription_default.remove();
 }
 /**
 * Checkbox show/hide description
@@ -203921,7 +204025,7 @@ function onSkillFocus() {
 */
 function onSkillDragStart(event) {
 	const skill = getSkillById(parseInt(this.getAttribute("data-index"), 10));
-	if (!skill || !skill.level || !skill.type) return stopPropagation$28(event);
+	if (!skill || !skill.level || !skill.type) return stopPropagation$27(event);
 	const img = new Image();
 	img.decoding = "async";
 	img.src = jquery_default(this).find(".icon img").attr("src");
@@ -203995,9 +204099,9 @@ var init_SkillListV0 = __esmMin((() => {
 	* Initialize UI
 	*/
 	SkillListV0.init = function init() {
-		this.ui.find(".titlebar .base").mousedown(stopPropagation$28);
+		this.ui.find(".titlebar .base").mousedown(stopPropagation$27);
 		this.ui.find(".footer .extend").mousedown(onResize$11);
-		this.ui.find(".titlebar .close").click(onClose$14);
+		this.ui.find(".titlebar .close").click(onClose$13);
 		this.ui.find(".titlebar .mini").click(onMini);
 		this.ui.find(".view_skill_info").change(onToggleSkillInfo);
 		this.ui.find(".reset").click(onResetChoice);
@@ -204008,8 +204112,8 @@ var init_SkillListV0 = __esmMin((() => {
 			_btnLevelUp$5.detach();
 			SkillListV0.ui.show();
 			SkillListV0.ui.parent().append(SkillListV0.ui);
-		}).mousedown(stopPropagation$28);
-		this.ui.on("dblclick", ".skill .icon, .skill .name", onRequestUseSkill).on("contextmenu", ".skill .icon, .skill .name", onRequestSkillInfo).on("mousedown", ".selectable", onSkillFocus).on("mouseover", ".skillCol .skill .icon, .skill .name", onRequestSkillInfo).on("mouseout", ".skillCol .skill .icon, .skill .name", onSkillDescriptionRemove).on("mouseover", ".skillCol .skill .icon, .skill .name", onNecessarySkills).on("mouseout", ".skillCol .skill .icon, .skill .name", onNecessarySkillsRemove).on("click", ".skillCol .skill .icon, .skill .name", onRememberChoice).on("dragstart", ".skill", onSkillDragStart).on("dragend", ".skill", onSkillDragEnd);
+		}).mousedown(stopPropagation$27);
+		this.ui.on("dblclick", ".skill .icon, .skill .name", onRequestUseSkill).on("contextmenu", ".skill .icon, .skill .name", onContextMenuSkillInfo).on("mousedown", ".selectable", onSkillFocus).on("mouseover", ".skillCol .skill .icon, .skill .name", onMouseOverSkillInfo).on("mouseout", ".skillCol .skill .icon, .skill .name", onSkillDescriptionRemove).on("mouseover", ".skillCol .skill .icon, .skill .name", onNecessarySkills).on("mouseout", ".skillCol .skill .icon, .skill .name", onNecessarySkillsRemove).on("click", ".skillCol .skill .icon, .skill .name", onRememberChoice).on("dragstart", ".skill", onSkillDragStart).on("dragend", ".skill", onSkillDragEnd);
 		this.draggable(this.ui.find(".titlebar"));
 		Client.loadFile(DB.INTERFACE_PATH + "basic_interface/arw_right.bmp", function(data) {
 			rArrow = "url(" + data + ")";
@@ -204357,7 +204461,7 @@ function onClickClose$4(e) {
 /**
 * Close the window
 */
-function onClose$13() {
+function onClose$12() {
 	QuestHelper.ui.hide();
 }
 var QuestHelper, _preferences$53, QuestHelper_default;
@@ -204464,7 +204568,7 @@ var init_QuestHelper = __esmMin((() => {
 	*/
 	QuestHelper.clean = function clean() {
 		QuestHelper.ui.hide();
-		onClose$13();
+		onClose$12();
 	};
 	/**
 	* Removing the UI from window, save preferences
@@ -204667,7 +204771,7 @@ function refreshQuestUI$1() {
 /**
 * Close the window
 */
-function onClose$12() {
+function onClose$11() {
 	Quest.ui.hide();
 }
 var Quest, _questList$1, _questNotShowList, _active_menu$1, _preferences$51, Quest_default;
@@ -204707,7 +204811,7 @@ var init_Quest$2 = __esmMin((() => {
 			event.stopImmediatePropagation();
 			return false;
 		});
-		this.ui.find(".close").click(onClose$12);
+		this.ui.find(".close").click(onClose$11);
 		this.ui.on("click", ".quest-menu-item", onClickMenu$2);
 		this.ui.on("click", ".close-quest-container-btn", onClickClose$3);
 		this.draggable(this.ui.find(".titlebar"));
@@ -204745,7 +204849,7 @@ var init_Quest$2 = __esmMin((() => {
 		Quest.ClearQuestList();
 		QuestHelper_default.clearQuestDesc();
 		QuestWindow_default.ClearQuestList();
-		onClose$12();
+		onClose$11();
 	};
 	/**
 	* Removing the UI from window, save preferences
@@ -204967,7 +205071,7 @@ function onClickClose$2(e) {
 /**
 * Close the window
 */
-function onClose$11() {
+function onClose$10() {
 	QuestHelperV1.ui.hide();
 }
 function onSelectMonster(e) {
@@ -205069,7 +205173,7 @@ var init_QuestHelperV1 = __esmMin((() => {
 	*/
 	QuestHelperV1.clean = function clean() {
 		QuestHelperV1.ui.hide();
-		onClose$11();
+		onClose$10();
 	};
 	/**
 	* Removing the UI from window, save preferences
@@ -205159,7 +205263,7 @@ function refreshQuestUI() {
 /**
 * Close the window
 */
-function onClose$10() {
+function onClose$9() {
 	QuestV1.ui.hide();
 }
 var QuestV1, _index$5, _questList, _active_menu, _preferences$49, QuestV1_default;
@@ -205198,8 +205302,8 @@ var init_QuestV1 = __esmMin((() => {
 			return false;
 		});
 		this.ui.find(".view").click(onClickView);
-		this.ui.find(".close").click(onClose$10);
-		this.ui.find(".btn-right").click(onClose$10);
+		this.ui.find(".close").click(onClose$9);
+		this.ui.find(".btn-right").click(onClose$9);
 		this.ui.on("click", ".quest-menu-item", onClickMenu$1);
 		this.ui.find("#active-quest-list").show();
 		this.draggable(this.ui.find(".titlebar"));
@@ -205232,7 +205336,7 @@ var init_QuestV1 = __esmMin((() => {
 		QuestV1.ui.find("#all-quest-list").hide();
 		QuestV1.ClearQuestList();
 		QuestHelperV1_default.clearQuestDesc();
-		onClose$10();
+		onClose$9();
 	};
 	/**
 	* Removing the UI from window, save preferences
@@ -207806,13 +207910,13 @@ function performSearch(query) {
 /**
 * Closing window
 */
-function onClose$9() {
+function onClose$8() {
 	Reputation.ui.hide();
 }
 /**
 * Stop event propagation
 */
-function stopPropagation$27(event) {
+function stopPropagation$26(event) {
 	event.stopImmediatePropagation();
 	return false;
 }
@@ -207916,9 +208020,9 @@ var init_Reputation = __esmMin((() => {
 		Client.loadFile(DB.INTERFACE_PATH + "reputation/light_blue.bmp", (d) => indicator_blue = d);
 		Client.loadFile(DB.INTERFACE_PATH + "reputation/light_red.bmp", (d) => indicator_red = d);
 		this.draggable(this.ui);
-		this.ui.find(".base").mousedown(stopPropagation$27);
-		this.ui.find(".close").click(onClose$9);
-		this.ui.find(".big_btn_close").click(onClose$9);
+		this.ui.find(".base").mousedown(stopPropagation$26);
+		this.ui.find(".close").click(onClose$8);
+		this.ui.find(".big_btn_close").click(onClose$8);
 		const paginator = Reputation.ui.find(".paginator");
 		paginator.find(".page_prev").on("click", () => {
 			if (Reputation.page.current > 0) renderReputePage(Reputation.page.current - 1);
@@ -208423,7 +208527,7 @@ function onDrop$19(event) {
 /**
 * Stop event propagation
 */
-function stopPropagation$26(event) {
+function stopPropagation$25(event) {
 	event.stopImmediatePropagation();
 	return false;
 }
@@ -208548,7 +208652,7 @@ var init_WriteRodex = __esmMin((() => {
 		WriteRodex.ui.find(".tax-text").html("0");
 		WriteRodex.ui.find(".value").val("").attr("max", SessionStorage_default.zeny);
 		WriteRodex.ui.find(".item-list").html("");
-		WriteRodex.ui.find(".items").on("drop", onDrop$19).on("dragover", stopPropagation$26);
+		WriteRodex.ui.find(".items").on("drop", onDrop$19).on("dragover", stopPropagation$25);
 		WriteRodex.ui.show();
 		WriteRodex.ui.focus();
 	};
@@ -208664,7 +208768,7 @@ function getItemTab$3(item) {
 /**
 * Stop event propagation
 */
-function stopPropagation$25(event) {
+function stopPropagation$24(event) {
 	event.stopImmediatePropagation();
 	return false;
 }
@@ -208964,14 +209068,14 @@ var init_InventoryV0 = __esmMin((() => {
 	* Initialize UI
 	*/
 	InventoryV0.init = function Init() {
-		this.ui.find(".titlebar .base").mousedown(stopPropagation$25);
+		this.ui.find(".titlebar .base").mousedown(stopPropagation$24);
 		this.ui.find(".titlebar .mini").click(onToggleReduction$3);
 		this.ui.find(".tabs button").mousedown(onSwitchTab$3);
 		this.ui.find(".footer .extend").mousedown(onResize$10);
 		this.ui.find(".titlebar .close").click(function() {
 			InventoryV0.ui.hide();
 		});
-		this.ui.on("drop", onDrop$18).on("dragover", stopPropagation$25).find(".container .content").on("mouseover", ".item", onItemOver$14).on("mouseout", ".item", onItemOut$15).on("dragstart", ".item", onItemDragStart$10).on("dragend", ".item", onItemDragEnd$11).on("contextmenu", ".item", onItemInfo$18).on("dblclick", ".item", onItemUsed$4).on("click", ".item", onItemClick$3);
+		this.ui.on("drop", onDrop$18).on("dragover", stopPropagation$24).find(".container .content").on("mouseover", ".item", onItemOver$14).on("mouseout", ".item", onItemOut$15).on("dragstart", ".item", onItemDragStart$10).on("dragend", ".item", onItemDragEnd$11).on("contextmenu", ".item", onItemInfo$18).on("dblclick", ".item", onItemUsed$4).on("click", ".item", onItemClick$3);
 		this.ui.find(".ncnt").text(0);
 		this.ui.find(".mcnt").text(100);
 		this.draggable(this.ui.find(".titlebar"));
@@ -209323,7 +209427,7 @@ function getItemTab$2(item) {
 /**
 * Stop event propagation
 */
-function stopPropagation$24(event) {
+function stopPropagation$23(event) {
 	event.stopImmediatePropagation();
 	return false;
 }
@@ -209720,18 +209824,18 @@ var init_InventoryV1 = __esmMin((() => {
 	* Initialize UI
 	*/
 	InventoryV1.init = function Init() {
-		this.ui.find(".titlebar .base").mousedown(stopPropagation$24);
+		this.ui.find(".titlebar .base").mousedown(stopPropagation$23);
 		this.ui.find(".titlebar .mini").click(onToggleReduction$2);
 		this.ui.find(".tabs button").mousedown(onSwitchTab$2);
 		this.ui.find(".footer .extend").mousedown(onResize$9);
 		this.ui.find(".titlebar .close").click(function() {
 			InventoryV1.ui.hide();
 		});
-		this.ui.on("drop", onDrop$17).on("dragover", stopPropagation$24).find(".container .content").on("mouseover", ".item", onItemOver$13).on("mouseout", ".item", onItemOut$14).on("dragstart", ".item", onItemDragStart$9).on("dragend", ".item", onItemDragEnd$10).on("contextmenu", ".item", onItemInfo$17).on("dblclick", ".item", onItemUsed$3).on("click", ".item", onItemClick$2);
+		this.ui.on("drop", onDrop$17).on("dragover", stopPropagation$23).find(".container .content").on("mouseover", ".item", onItemOver$13).on("mouseout", ".item", onItemOut$14).on("dragstart", ".item", onItemDragStart$9).on("dragend", ".item", onItemDragEnd$10).on("contextmenu", ".item", onItemInfo$17).on("dblclick", ".item", onItemUsed$3).on("click", ".item", onItemClick$2);
 		this.ui.find(".ncnt").text("0 / ");
 		this.ui.find(".mcnt").text(100);
 		this.draggable(this.ui.find(".titlebar"));
-		this.ui.find(".tabs button").on("dragover", stopPropagation$24).on("drop", onTabDrop$2);
+		this.ui.find(".tabs button").on("dragover", stopPropagation$23).on("drop", onTabDrop$2);
 		jquery_default(".tabs button").removeClass("selected");
 		this.ui.find(".tabs button").eq(_preferences$38.tab).addClass("selected");
 		const lockImg = _preferences$38.itemlock ? "inventory/item_drop_lock_on.bmp" : "inventory/item_drop_lock_off.bmp";
@@ -210535,7 +210639,7 @@ function getItemTab$1(item) {
 /**
 * Stop event propagation
 */
-function stopPropagation$23(event) {
+function stopPropagation$22(event) {
 	event.stopImmediatePropagation();
 	return false;
 }
@@ -210937,18 +211041,18 @@ var init_InventoryV2 = __esmMin((() => {
 	* Initialize UI
 	*/
 	InventoryV2.init = function Init() {
-		this.ui.find(".titlebar .base").mousedown(stopPropagation$23);
+		this.ui.find(".titlebar .base").mousedown(stopPropagation$22);
 		this.ui.find(".titlebar .mini").click(onToggleReduction$1);
 		this.ui.find(".tabs button").mousedown(onSwitchTab$1);
 		this.ui.find(".footer .extend").mousedown(onResize$8);
 		this.ui.find(".titlebar .close").click(function() {
 			InventoryV2.ui.hide();
 		});
-		this.ui.on("drop", onDrop$15).on("dragover", stopPropagation$23).find(".container .content").on("mouseover", ".item", onItemOver$12).on("mouseout", ".item", onItemOut$13).on("dragstart", ".item", onItemDragStart$8).on("dragend", ".item", onItemDragEnd$9).on("contextmenu", ".item", onItemInfo$16).on("dblclick", ".item", onItemUsed$2).on("click", ".item", onItemClick$1);
+		this.ui.on("drop", onDrop$15).on("dragover", stopPropagation$22).find(".container .content").on("mouseover", ".item", onItemOver$12).on("mouseout", ".item", onItemOut$13).on("dragstart", ".item", onItemDragStart$8).on("dragend", ".item", onItemDragEnd$9).on("contextmenu", ".item", onItemInfo$16).on("dblclick", ".item", onItemUsed$2).on("click", ".item", onItemClick$1);
 		this.ui.find(".ncnt").text("0 / ");
 		this.ui.find(".mcnt").text(100);
 		this.draggable(this.ui.find(".titlebar"));
-		this.ui.find(".tabs button").on("dragover", stopPropagation$23).on("drop", onTabDrop$1);
+		this.ui.find(".tabs button").on("dragover", stopPropagation$22).on("drop", onTabDrop$1);
 		jquery_default(".tabs button").removeClass("selected");
 		this.ui.find(".tabs button").eq(_preferences$37.tab).addClass("selected");
 		const lockImg = _preferences$37.itemlock ? "inventory/item_drop_lock_on.bmp" : "inventory/item_drop_lock_off.bmp";
@@ -211452,7 +211556,7 @@ function clearRefineStates() {
 /**
 * Stop event propagation
 */
-function stopPropagation$22(event) {
+function stopPropagation$21(event) {
 	event.stopImmediatePropagation();
 	return false;
 }
@@ -211639,12 +211743,12 @@ function onPopulateMaterials$1() {
 		const bsbDiv = Refine.ui.find(".bsb_overlay .bsb");
 		const bsbItem = DB.getItemInfo(BSB_ITID);
 		const item = InventoryController.getUI().getItemById(BSB_ITID);
-		bsbDiv.append("<div class=\"item\" data-index=\"" + BSB_ITID + "\" draggable=\"false\"><div class=\"icon\"></div><div class=\"mat_count\"></div>");
+		bsbDiv.append("<div class=\"item\" data-index=\"6635\" draggable=\"false\"><div class=\"icon\"></div><div class=\"mat_count\"></div>");
 		Client.loadFile(DB.INTERFACE_PATH + "item/" + (bsbItem.IsIdentified ? bsbItem.identifiedResourceName : bsbItem.unidentifiedResourceName) + ".bmp", function(data) {
-			bsbDiv.find(".item[data-index=\"" + BSB_ITID + "\"] .icon").css("backgroundImage", "url(" + data + ")");
+			bsbDiv.find(".item[data-index=\"6635\"] .icon").css("backgroundImage", "url(" + data + ")");
 		});
 		const bsbCountOuter = item ? item.count : 0;
-		const bsbcountmsg = bsbDiv.find(".item[data-index=\"" + BSB_ITID + "\"] .mat_count");
+		const bsbcountmsg = bsbDiv.find(".item[data-index=\"6635\"] .mat_count");
 		if (bsbCountOuter === 0) bsbcountmsg.html("<span style=\"color: #ce1029;\">" + bsbCountOuter + "</span>/" + blacksmithBlessing);
 		else bsbcountmsg.text(bsbCountOuter + "/" + blacksmithBlessing);
 		bsbDiv.find(".icon").click(function() {
@@ -212204,14 +212308,14 @@ var init_Refine = __esmMin((() => {
 			top: 200,
 			left: 300
 		});
-		this.ui.find(".titlebar .base").mousedown(stopPropagation$22);
+		this.ui.find(".titlebar .base").mousedown(stopPropagation$21);
 		this.ui.find(".titlebar .close").click(onRefineClose);
 		this.ui.find(".footer .cancel").click(onRefineClose);
 		this.draggable(this.ui.find(".titlebar"));
 		const successdiv = this.ui.find(".success");
 		initialsuccess = DB.getMessage(3724).replace("%d%", `<span class="number">0</span>`);
 		successdiv.html(initialsuccess);
-		this.ui.find(".item_to_refine").on("drop", onItemDrop$1).on("dragover", stopPropagation$22).on("dragstart", ".item", onItemDragStart$7).on("dragend", ".item", onItemDragEnd$8);
+		this.ui.find(".item_to_refine").on("drop", onItemDrop$1).on("dragover", stopPropagation$21).on("dragstart", ".item", onItemDragStart$7).on("dragend", ".item", onItemDragEnd$8);
 		this.ui.find(".materials").on("mouseover", ".item", onItemOver$11).on("mouseout", onItemOut$12);
 		this.ui.find(".materials").on("contextmenu", ".item", onItemInfo$15);
 		this.ui.find(".item_to_refine").on("contextmenu", ".item", onItemInfo$15);
@@ -212333,7 +212437,7 @@ function clearEnchantGradeStates() {
 /**
 * Stop event propagation
 */
-function stopPropagation$21(event) {
+function stopPropagation$20(event) {
 	event.stopImmediatePropagation();
 	return false;
 }
@@ -212858,7 +212962,7 @@ var init_EnchantGrade = __esmMin((() => {
 		this.ui.find(".titlebar .close_btn").click(onEnchantGradeClose);
 		this.ui.find(".footer .big_close_btn").click(onEnchantGradeClose);
 		this.draggable(this.ui.find(".titlebar"));
-		this.ui.find(".enchant_drop_proxy").on("drop", onItemDrop).on("dragover", stopPropagation$21);
+		this.ui.find(".enchant_drop_proxy").on("drop", onItemDrop).on("dragover", stopPropagation$20);
 		this.ui.find(".enchant_container").on("dragstart", ".item", onItemDragStart$6).on("dragend", ".item", onItemDragEnd$7);
 		this.ui.find(".material_slot").on("contextmenu", ".item", onItemInfo$14);
 		this.ui.find(".enchant_container").on("contextmenu", ".item", onItemInfo$14);
@@ -214568,7 +214672,7 @@ function getItemTab(item) {
 /**
 * Stop event propagation
 */
-function stopPropagation$20(event) {
+function stopPropagation$19(event) {
 	event.stopImmediatePropagation();
 	return false;
 }
@@ -215063,18 +215167,18 @@ var init_InventoryV3 = __esmMin((() => {
 	* Initialize UI
 	*/
 	InventoryV3.init = function Init() {
-		this.ui.find(".titlebar .base").mousedown(stopPropagation$20);
+		this.ui.find(".titlebar .base").mousedown(stopPropagation$19);
 		this.ui.find(".titlebar .mini").click(onToggleReduction);
 		this.ui.find(".tabs button").mousedown(onSwitchTab);
 		this.ui.find(".footer .extend").mousedown(onResize$7);
 		this.ui.find(".titlebar .close").click(function() {
 			InventoryV3.ui.hide();
 		});
-		this.ui.on("drop", onDrop$14).on("dragover", stopPropagation$20).find(".container .content").on("mouseover", ".item", onItemOver$10).on("mouseout", ".item", onItemOut$11).on("dragstart", ".item", onItemDragStart$5).on("dragend", ".item", onItemDragEnd$6).on("contextmenu", ".item", onItemInfo$13).on("dblclick", ".item", onItemUsed$1).on("click", ".item", onItemClick);
+		this.ui.on("drop", onDrop$14).on("dragover", stopPropagation$19).find(".container .content").on("mouseover", ".item", onItemOver$10).on("mouseout", ".item", onItemOut$11).on("dragstart", ".item", onItemDragStart$5).on("dragend", ".item", onItemDragEnd$6).on("contextmenu", ".item", onItemInfo$13).on("dblclick", ".item", onItemUsed$1).on("click", ".item", onItemClick);
 		this.ui.find(".ncnt").text("0 / ");
 		this.ui.find(".mcnt").text(100);
 		this.draggable(this.ui.find(".titlebar"));
-		this.ui.find(".tabs button").on("dragover", stopPropagation$20).on("drop", onTabDrop);
+		this.ui.find(".tabs button").on("dragover", stopPropagation$19).on("drop", onTabDrop);
 		jquery_default(".tabs button").removeClass("selected");
 		this.ui.find(".tabs button").eq(_preferences$36.tab).addClass("selected");
 		const lockImg = _preferences$36.itemlock ? "inventory/item_drop_lock_on.bmp" : "inventory/item_drop_lock_off.bmp";
@@ -216092,7 +216196,7 @@ function onRemoveOption$5() {
 /**
 * Stop an event to propagate
 */
-function stopPropagation$19(event) {
+function stopPropagation$18(event) {
 	event.stopImmediatePropagation();
 	return false;
 }
@@ -216281,7 +216385,7 @@ var init_EquipmentV0 = __esmMin((() => {
 	*/
 	EquipmentV0.init = function init() {
 		_ctx$9 = this.ui.find("canvas")[0].getContext("2d");
-		if (UIVersionManager.getEquipmentVersion() > 0) _btnLevelUp$4 = jquery_default("#lvlup_base").detach().mousedown(stopPropagation$19).click(function() {
+		if (UIVersionManager.getEquipmentVersion() > 0) _btnLevelUp$4 = jquery_default("#lvlup_base").detach().mousedown(stopPropagation$18).click(function() {
 			_btnLevelUp$4.detach();
 			EquipmentV0.ui.show();
 			EquipmentV0.ui.parent().append(EquipmentV0.ui);
@@ -216292,7 +216396,7 @@ var init_EquipmentV0 = __esmMin((() => {
 			this.ui.addClass("equipmentV0");
 			this.ui.find("#lvlup_base").remove();
 		}
-		this.ui.find(".titlebar .base").mousedown(stopPropagation$19);
+		this.ui.find(".titlebar .base").mousedown(stopPropagation$18);
 		this.ui.find(".titlebar .mini").click(function() {
 			EquipmentV0.ui.find(".panel").toggle();
 		});
@@ -216571,7 +216675,7 @@ function onRemoveOption$4() {
 /**
 * Stop an event to propagate
 */
-function stopPropagation$18(event) {
+function stopPropagation$17(event) {
 	event.stopImmediatePropagation();
 	return false;
 }
@@ -216798,7 +216902,7 @@ var init_EquipmentV1 = __esmMin((() => {
 			if (i != 0) contentDivs$3[id].classList.add("content", "hide");
 			i++;
 		}
-		if (UIVersionManager.getEquipmentVersion() > 0) _btnLevelUp$3 = jquery_default("#lvlup_base").detach().mousedown(stopPropagation$18).click(function() {
+		if (UIVersionManager.getEquipmentVersion() > 0) _btnLevelUp$3 = jquery_default("#lvlup_base").detach().mousedown(stopPropagation$17).click(function() {
 			_btnLevelUp$3.detach();
 			EquipmentV1.ui.show();
 			EquipmentV1.ui.parent().append(EquipmentV1.ui);
@@ -216809,7 +216913,7 @@ var init_EquipmentV1 = __esmMin((() => {
 			this.ui.addClass("equipmentV0");
 			this.ui.find("#lvlup_base").remove();
 		}
-		this.ui.find(".titlebar .base").mousedown(stopPropagation$18);
+		this.ui.find(".titlebar .base").mousedown(stopPropagation$17);
 		this.ui.find(".titlebar .mini").click(function() {
 			EquipmentV1.ui.find(".panel").toggle();
 		});
@@ -217114,7 +217218,7 @@ function onRemoveOption$3() {
 /**
 * Stop an event to propagate
 */
-function stopPropagation$17(event) {
+function stopPropagation$16(event) {
 	event.stopImmediatePropagation();
 	return false;
 }
@@ -217341,7 +217445,7 @@ var init_EquipmentV2 = __esmMin((() => {
 			if (i != 0) contentDivs$2[id].classList.add("content", "hide");
 			i++;
 		}
-		if (UIVersionManager.getEquipmentVersion() > 0) _btnLevelUp$2 = jquery_default("#lvlup_base").detach().mousedown(stopPropagation$17).click(function() {
+		if (UIVersionManager.getEquipmentVersion() > 0) _btnLevelUp$2 = jquery_default("#lvlup_base").detach().mousedown(stopPropagation$16).click(function() {
 			_btnLevelUp$2.detach();
 			EquipmentV2.ui.show();
 			EquipmentV2.ui.parent().append(EquipmentV2.ui);
@@ -217352,7 +217456,7 @@ var init_EquipmentV2 = __esmMin((() => {
 			this.ui.addClass("equipmentV0");
 			this.ui.find("#lvlup_base").remove();
 		}
-		this.ui.find(".titlebar .base").mousedown(stopPropagation$17);
+		this.ui.find(".titlebar .base").mousedown(stopPropagation$16);
 		this.ui.find(".titlebar .mini").click(function() {
 			EquipmentV2.ui.find(".panel").toggle();
 		});
@@ -217690,7 +217794,7 @@ function onRemoveOption$2() {
 /**
 * Stop an event to propagate
 */
-function stopPropagation$16(event) {
+function stopPropagation$15(event) {
 	event.stopImmediatePropagation();
 	return false;
 }
@@ -217921,7 +218025,7 @@ var init_EquipmentV3 = __esmMin((() => {
 			if (i != 0) contentDivs$1[id].classList.add("content", "hide");
 			i++;
 		}
-		if (UIVersionManager.getEquipmentVersion() > 0) _btnLevelUp$1 = jquery_default("#lvlup_base").detach().mousedown(stopPropagation$16).click(() => {
+		if (UIVersionManager.getEquipmentVersion() > 0) _btnLevelUp$1 = jquery_default("#lvlup_base").detach().mousedown(stopPropagation$15).click(() => {
 			_btnLevelUp$1.detach();
 			WinStatsController.getUI().ui.show();
 		});
@@ -217930,7 +218034,7 @@ var init_EquipmentV3 = __esmMin((() => {
 			this.ui.addClass("equipmentV0");
 			this.ui.find("#lvlup_base").remove();
 		}
-		this.ui.find(".titlebar .base").mousedown(stopPropagation$16);
+		this.ui.find(".titlebar .base").mousedown(stopPropagation$15);
 		this.ui.find(".titlebar .mini").click(function() {
 			EquipmentV3.ui.find(".panel").toggle();
 		});
@@ -218343,7 +218447,7 @@ function onRemoveOption$1() {
 /**
 * Stop an event to propagate
 */
-function stopPropagation$15(event) {
+function stopPropagation$14(event) {
 	event.stopImmediatePropagation();
 	return false;
 }
@@ -218582,7 +218686,7 @@ var init_EquipmentV4 = __esmMin((() => {
 			if (i != 0) contentDivs[id].classList.add("content", "hide");
 			i++;
 		}
-		if (UIVersionManager.getEquipmentVersion() > 0) _btnLevelUp = jquery_default("#lvlup_base").detach().mousedown(stopPropagation$15).click(() => {
+		if (UIVersionManager.getEquipmentVersion() > 0) _btnLevelUp = jquery_default("#lvlup_base").detach().mousedown(stopPropagation$14).click(() => {
 			_btnLevelUp.detach();
 			WinStatsController.getUI().ui.show();
 		});
@@ -218591,7 +218695,7 @@ var init_EquipmentV4 = __esmMin((() => {
 			this.ui.addClass("equipmentV0");
 			this.ui.find("#lvlup_base").remove();
 		}
-		this.ui.find(".titlebar .base").mousedown(stopPropagation$15);
+		this.ui.find(".titlebar .base").mousedown(stopPropagation$14);
 		this.ui.find(".titlebar .mini").click(function() {
 			EquipmentV4.ui.find(".panel").toggle();
 		});
@@ -222133,21 +222237,21 @@ function homunToggleAutoFeed() {
 /**
 * Request to modify homun's name
 */
-function onChangeName$1() {
+function onChangeName() {
 	const input = HomunInformations.ui.find(".name");
 	HomunInformations.reqNameEdit(input.val());
 }
 /**
 * Closing window
 */
-function onClose$8() {
+function onClose$7() {
 	HomunInformations.ui.hide();
 	SkillListMH_default.homunculus.ui.hide();
 }
 /**
 * Stop event propagation
 */
-function stopPropagation$14(event) {
+function stopPropagation$13(event) {
 	event.stopImmediatePropagation();
 	return false;
 }
@@ -222184,9 +222288,9 @@ var init_HomunInformations = __esmMin((() => {
 	*/
 	HomunInformations.init = function init() {
 		this.draggable(this.ui.find(".content"));
-		this.ui.find(".base").mousedown(stopPropagation$14);
-		this.ui.find(".close").click(onClose$8);
-		this.ui.find(".modify").click(onChangeName$1);
+		this.ui.find(".base").mousedown(stopPropagation$13);
+		this.ui.find(".close").click(onClose$7);
+		this.ui.find(".modify").click(onChangeName);
 		this.ui.find(".feed").click(onFeed);
 		this.ui.find(".del").click(onDelete$1);
 		this.ui.find(".homun_auto_feed").click(homunToggleAutoFeed);
@@ -222419,14 +222523,14 @@ var init_MercenaryInformations$1 = __esmMin((() => {
 /**
 * Stop event propagation
 */
-function stopPropagation$13(event) {
+function stopPropagation$12(event) {
 	event.stopImmediatePropagation();
 	return false;
 }
 /**
 * Closing window
 */
-function onClose$7() {
+function onClose$6() {
 	MercenaryInformations.ui.hide();
 	SkillListMH_default.mercenary.ui.hide();
 }
@@ -222463,9 +222567,9 @@ var init_MercenaryInformations = __esmMin((() => {
 	*/
 	MercenaryInformations.init = function init() {
 		this.draggable(this.ui.find(".content"));
-		this.ui.find(".content").mousedown(stopPropagation$13);
-		this.ui.find(".content .base").mousedown(stopPropagation$13);
-		this.ui.find(".close").click(onClose$7);
+		this.ui.find(".content").mousedown(stopPropagation$12);
+		this.ui.find(".content .base").mousedown(stopPropagation$12);
+		this.ui.find(".close").click(onClose$6);
 		this.ui.find(".dismiss").click(onDelete);
 		if (!_preferences$28.show) this.ui.hide();
 		this.ui.css({
@@ -224292,7 +224396,7 @@ function onDropText$1(event) {
 /**
 * Stop event propagation
 */
-function stopPropagation$12(event) {
+function stopPropagation$11(event) {
 	event.stopImmediatePropagation();
 	return false;
 }
@@ -224592,7 +224696,7 @@ var init_ChatBox = __esmMin((() => {
 				if (!movedInsideChatbox && !isTextInput && !isChatMessage) this.ui.find(".input .username").focus();
 			}.bind(this), 1e3);
 		}.bind(this));
-		this.ui.find("input[type=text]").on("drop", onDropText$1).on("dragover", stopPropagation$12);
+		this.ui.find("input[type=text]").on("drop", onDropText$1).on("dragover", stopPropagation$11);
 		this.ui.find(".header input").dblclick(function() {
 			this.type = "text";
 			this.select();
@@ -244683,7 +244787,7 @@ function onContainerMouseLeave(event) {
 /**
 * Stop event propagation
 */
-function stopPropagation$11(event) {
+function stopPropagation$10(event) {
 	event.stopImmediatePropagation();
 	return false;
 }
@@ -244710,7 +244814,7 @@ function onResize$3(event) {
 			jquery_default(window).off("mouseup.resize");
 		}
 	});
-	return stopPropagation$11(event);
+	return stopPropagation$10(event);
 }
 /**
 * Displays the cat hand over an icon
@@ -244852,7 +244956,7 @@ function clickElement(index) {
 /**
 * Closing the window
 */
-function onClose$6() {
+function onClose$5() {
 	ShortCut.ui.css("height", 0);
 	_preferences$23.size = 0;
 	_preferences$23.save();
@@ -245074,8 +245178,8 @@ var init_ShortCut = __esmMin((() => {
 	*/
 	ShortCut.init = function init() {
 		this.ui.find(".resize").mousedown(onResize$3);
-		this.ui.find(".close").mousedown(stopPropagation$11).click(onClose$6);
-		this.ui.on("drop", ".container", onDrop$8).on("dragover", ".container", stopPropagation$11).on("dragstart", ".icon", onDragStart$2).on("dragend", ".icon", onDragEnd).on("dblclick", ".icon", onUseShortCut).on("contextmenu", ".icon", onElementInfo).on("mousedown", ".icon", function(event) {
+		this.ui.find(".close").mousedown(stopPropagation$10).click(onClose$5);
+		this.ui.on("drop", ".container", onDrop$8).on("dragover", ".container", stopPropagation$10).on("dragstart", ".icon", onDragStart$2).on("dragend", ".icon", onDragEnd).on("dblclick", ".icon", onUseShortCut).on("contextmenu", ".icon", onElementInfo).on("mousedown", ".icon", function(event) {
 			event.stopImmediatePropagation();
 		});
 		this.draggable();
@@ -248018,63 +248122,15 @@ var init_PetInformations$2 = __esmMin((() => {
 //#region src/UI/Components/PetInformations/PetInformations.css?raw
 var PetInformations_default$1;
 var init_PetInformations$1 = __esmMin((() => {
-	PetInformations_default$1 = "#PetInformations {\r\n	position: absolute;\r\n	top: 100px;\r\n	left: 100px;\r\n	width: 280px;\r\n	height: 180px;\r\n	background-color: white;\r\n	border-radius: 5px;\r\n}\r\n\r\n#PetInformations .titlebar {\r\n	width: 100%;\r\n	height: 17px;\r\n	background-color: white;\r\n	background-repeat: repeat-x;\r\n	border-radius: 3px 3px 0px 0px;\r\n}\r\n#PetInformations .titlebar .base {\r\n	width: 11px;\r\n	height: 11px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n	vertical-align: middle;\r\n}\r\n#PetInformations .titlebar .text {\r\n	text-shadow: 1px 1px white;\r\n	vertical-align: -2px;\r\n	white-space: nowrap;\r\n	/* chrome bug */\r\n	display: inline-block;\r\n	width: 50px;\r\n	height: 13px;\r\n	font-size: 11px;\r\n	font-weight: bold;\r\n}\r\n\r\n#PetInformations .titlebar .left {\r\n	margin-left: 3px;\r\n	float: left;\r\n}\r\n#PetInformations .titlebar .right {\r\n	float: right;\r\n	margin-right: 3px;\r\n}\r\n#PetInformations .titlebar .clear {\r\n	clear: both;\r\n}\r\n\r\n#PetInformations .content {\r\n	background-repeat: no-repeat;\r\n	position: relative;\r\n	width: 100%;\r\n	height: 100%;\r\n}\r\n\r\n#PetInformations .title_name {\r\n	position: absolute;\r\n	top: 5px;\r\n	left: 100px;\r\n}\r\n#PetInformations .name {\r\n	position: absolute;\r\n	top: 5px;\r\n	left: 150px;\r\n	border: none;\r\n	background-color: #eee;\r\n	margin: 0px;\r\n	width: 70px;\r\n	color: black;\r\n}\r\n\r\n#PetInformations .modify {\r\n	position: absolute;\r\n	background-color: grey;\r\n	top: 5px;\r\n	right: 5px;\r\n	border: 0;\r\n	width: 42px;\r\n	height: 20px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n\r\n#PetInformations .name.disabled {\r\n	color: black;\r\n	text-shadow: 1px 1px 0px #00ff00;\r\n	background-color: transparent;\r\n}\r\n#PetInformations .modify.disabled {\r\n	display: none;\r\n}\r\n\r\n#PetInformations .title_level {\r\n	position: absolute;\r\n	top: 30px;\r\n	left: 100px;\r\n}\r\n#PetInformations .level {\r\n	position: absolute;\r\n	top: 30px;\r\n	left: 150px;\r\n}\r\n\r\n#PetInformations .title_hunger {\r\n	position: absolute;\r\n	top: 55px;\r\n	left: 100px;\r\n}\r\n#PetInformations .hunger {\r\n	position: absolute;\r\n	top: 55px;\r\n	left: 150px;\r\n}\r\n\r\n#PetInformations .title_intimacy {\r\n	position: absolute;\r\n	top: 75px;\r\n	left: 100px;\r\n}\r\n#PetInformations .intimacy {\r\n	position: absolute;\r\n	top: 75px;\r\n	left: 150px;\r\n}\r\n\r\n#PetInformations .title_accessory {\r\n	position: absolute;\r\n	top: 100px;\r\n	left: 100px;\r\n}\r\n#PetInformations .accessory {\r\n	position: absolute;\r\n	top: 120px;\r\n	left: 100px;\r\n}\r\n#PetInformations .feeding {\r\n	position: absolute;\r\n	top: 140px;\r\n	left: 100px;\r\n	display: flex;\r\n	align-items: center;\r\n}\r\n#PetInformations .feeding .pet_auto_feed {\r\n	width: 10px;\r\n	height: 12px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n	margin-left: 5px;\r\n}\r\n\r\n#PetInformations .command {\r\n	position: absolute;\r\n	top: 27px;\r\n	right: 5px;\r\n	width: 105px;\r\n}\r\n";
+	PetInformations_default$1 = ":host {\r\n	width: 280px;\r\n	height: 180px;\r\n	top: 100px;\r\n	left: 100px;\r\n}\r\n\r\n#PetInformations {\r\n	position: absolute;\r\n	width: 280px;\r\n	height: 180px;\r\n	background-color: white;\r\n	border-radius: 5px;\r\n}\r\n\r\n#PetInformations .titlebar {\r\n	width: 100%;\r\n	height: 17px;\r\n	background-color: white;\r\n	background-repeat: repeat-x;\r\n	border-radius: 3px 3px 0px 0px;\r\n}\r\n#PetInformations .titlebar .base {\r\n	width: 11px;\r\n	height: 11px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n	vertical-align: middle;\r\n}\r\n#PetInformations .titlebar .text {\r\n	text-shadow: 1px 1px white;\r\n	vertical-align: -2px;\r\n	white-space: nowrap;\r\n	display: inline-block;\r\n	width: 50px;\r\n	height: 13px;\r\n	font-size: 11px;\r\n	font-weight: bold;\r\n}\r\n\r\n#PetInformations .titlebar .left {\r\n	margin-left: 3px;\r\n	float: left;\r\n}\r\n#PetInformations .titlebar .right {\r\n	float: right;\r\n	margin-right: 3px;\r\n}\r\n#PetInformations .titlebar .clear {\r\n	clear: both;\r\n}\r\n\r\n#PetInformations .content {\r\n	background-repeat: no-repeat;\r\n	position: relative;\r\n	width: 100%;\r\n	height: 100%;\r\n}\r\n\r\n#PetInformations .title_name {\r\n	position: absolute;\r\n	top: 5px;\r\n	left: 100px;\r\n}\r\n#PetInformations .name {\r\n	position: absolute;\r\n	top: 5px;\r\n	left: 150px;\r\n	border: none;\r\n	background-color: #eee;\r\n	margin: 0px;\r\n	width: 70px;\r\n	color: black;\r\n}\r\n\r\n#PetInformations .modify {\r\n	position: absolute;\r\n	background-color: grey;\r\n	top: 5px;\r\n	right: 5px;\r\n	border: 0;\r\n	width: 42px;\r\n	height: 20px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n\r\n#PetInformations .name.disabled {\r\n	color: black;\r\n	text-shadow: 1px 1px 0px #00ff00;\r\n	background-color: transparent;\r\n}\r\n#PetInformations .modify.disabled {\r\n	display: none;\r\n}\r\n\r\n#PetInformations .title_level {\r\n	position: absolute;\r\n	top: 30px;\r\n	left: 100px;\r\n}\r\n#PetInformations .level {\r\n	position: absolute;\r\n	top: 30px;\r\n	left: 150px;\r\n}\r\n\r\n#PetInformations .title_hunger {\r\n	position: absolute;\r\n	top: 55px;\r\n	left: 100px;\r\n}\r\n#PetInformations .hunger {\r\n	position: absolute;\r\n	top: 55px;\r\n	left: 150px;\r\n}\r\n\r\n#PetInformations .title_intimacy {\r\n	position: absolute;\r\n	top: 75px;\r\n	left: 100px;\r\n}\r\n#PetInformations .intimacy {\r\n	position: absolute;\r\n	top: 75px;\r\n	left: 150px;\r\n}\r\n\r\n#PetInformations .title_accessory {\r\n	position: absolute;\r\n	top: 100px;\r\n	left: 100px;\r\n}\r\n#PetInformations .accessory {\r\n	position: absolute;\r\n	top: 120px;\r\n	left: 100px;\r\n}\r\n#PetInformations .feeding {\r\n	position: absolute;\r\n	top: 140px;\r\n	left: 100px;\r\n	display: flex;\r\n	align-items: center;\r\n}\r\n#PetInformations .feeding .pet_auto_feed {\r\n	width: 10px;\r\n	height: 12px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n	margin-left: 5px;\r\n}\r\n\r\n#PetInformations .command {\r\n	position: absolute;\r\n	top: 27px;\r\n	right: 5px;\r\n	width: 105px;\r\n}\r\n";
 }));
 //#endregion
 //#region src/UI/Components/PetInformations/PetInformations.js
 /**
-* User just execute a command
+* Helper to get the shadow root
 */
-function onCommandSelected() {
-	const value = this.value;
-	if (value.startsWith("evolution_")) {
-		const baseJobID = Number(value.replace("evolution_", ""));
-		PetInformations.reqEvolution(baseJobID);
-		this.value = "default";
-		return;
-	}
-	switch (value) {
-		case "feed":
-			PetInformations.reqPetFeed();
-			break;
-		case "action":
-			PetInformations.reqPetAction();
-			break;
-		case "release":
-			PetInformations.reqBackToEgg();
-			break;
-		case "unequip":
-			PetInformations.reqUnEquipPet();
-			break;
-		default:
-	}
-	this.value = "default";
-}
-/**
-* Toggle Auto Feed
-*/
-function petToggleAutoFeed() {
-	PetInformations.onConfigUpdate(2, !petAutoFeeding ? 1 : 0);
-}
-/**
-* Request to modify pet's name
-*/
-function onChangeName() {
-	const input = PetInformations.ui.find(".name");
-	PetInformations.reqNameEdit(input.val());
-}
-/**
-* Closing window
-*/
-function onClose$5() {
-	PetInformations.ui.hide();
-}
-/**
-* Stop event propagation
-*/
-function stopPropagation$10(event) {
-	event.stopImmediatePropagation();
-	return false;
+function _getRoot$5() {
+	return PetInformations._shadow || PetInformations._host;
 }
 var PetInformations, _preferences$22, petAutoFeeding, PetInformations_default;
 var init_PetInformations = __esmMin((() => {
@@ -248083,11 +248139,14 @@ var init_PetInformations = __esmMin((() => {
 	init_Preferences$1();
 	init_Renderer();
 	init_UIManager();
-	init_UIComponent();
+	init_GUIComponent();
 	init_PetInformations$2();
 	init_PetInformations$1();
+	init_KeyEventHandler();
 	init_PacketVerManager();
-	PetInformations = new UIComponent("PetInformations", PetInformations_default$2, PetInformations_default$1);
+	PetInformations = new GUIComponent("PetInformations", PetInformations_default$1);
+	PetInformations.render = () => PetInformations_default$2;
+	PetInformations.captureKeyEvents = true;
 	_preferences$22 = Preferences.get("PetInformations", {
 		x: 100,
 		y: 200,
@@ -248098,30 +248157,71 @@ var init_PetInformations = __esmMin((() => {
 	* Initialize component
 	*/
 	PetInformations.init = function init() {
-		this.draggable(this.ui.find(".titlebar"));
-		this.ui.find(".base").mousedown(stopPropagation$10);
-		this.ui.find(".close").click(onClose$5);
-		this.ui.find(".modify").click(onChangeName);
-		this.ui.find(".command").change(onCommandSelected);
-		this.ui.find(".pet_auto_feed").mousedown(petToggleAutoFeed);
-		this.ui.css({
-			top: Math.min(Math.max(0, _preferences$22.y), Renderer.height - this.ui.height()),
-			left: Math.min(Math.max(0, _preferences$22.x), Renderer.width - this.ui.width())
+		this.draggable(".titlebar");
+		const root = _getRoot$5();
+		const closeBtn = root.querySelector(".close");
+		if (closeBtn) {
+			closeBtn.addEventListener("mousedown", (e) => e.stopImmediatePropagation());
+			closeBtn.addEventListener("click", () => {
+				this._host.style.display = "none";
+			});
+		}
+		const modifyBtn = root.querySelector(".modify");
+		if (modifyBtn) modifyBtn.addEventListener("click", () => {
+			const input = root.querySelector(".name");
+			if (input) PetInformations.reqNameEdit(input.value);
+		});
+		const commandSelect = root.querySelector(".command");
+		if (commandSelect) commandSelect.addEventListener("change", function() {
+			const value = this.value;
+			if (value.startsWith("evolution_")) {
+				const baseJobID = Number(value.replace("evolution_", ""));
+				PetInformations.reqEvolution(baseJobID);
+				this.value = "default";
+				return;
+			}
+			switch (value) {
+				case "feed":
+					PetInformations.reqPetFeed();
+					break;
+				case "action":
+					PetInformations.reqPetAction();
+					break;
+				case "release":
+					PetInformations.reqBackToEgg();
+					break;
+				case "unequip":
+					PetInformations.reqUnEquipPet();
+					break;
+				default:
+			}
+			this.value = "default";
+		});
+		const autoFeedBtn = root.querySelector(".pet_auto_feed");
+		if (autoFeedBtn) autoFeedBtn.addEventListener("mousedown", () => {
+			PetInformations.onConfigUpdate(2, !petAutoFeeding ? 1 : 0);
 		});
 	};
 	PetInformations.onAppend = function onAppend() {
-		Client.loadFile(DB.INTERFACE_PATH + "checkbox_" + (petAutoFeeding ? "1" : "0") + ".bmp", function(data) {
-			PetInformations.ui.find(".pet_auto_feed").css("backgroundImage", "url(" + data + ")");
+		const root = _getRoot$5();
+		Client.loadFile(DB.INTERFACE_PATH + "checkbox_" + (petAutoFeeding ? "1" : "0") + ".bmp", (data) => {
+			const el = root.querySelector(".pet_auto_feed");
+			if (el) el.style.backgroundImage = `url(${data})`;
 		});
-		if (PacketVerManager_default.value < 20141008) PetInformations.ui.find(".feeding").hide();
+		if (PacketVerManager_default.value < 20141008) {
+			const feeding = root.querySelector(".feeding");
+			if (feeding) feeding.style.display = "none";
+		}
+		this._host.style.top = `${Math.min(Math.max(0, _preferences$22.y), Renderer.height - this._host.getBoundingClientRect().height)}px`;
+		this._host.style.left = `${Math.min(Math.max(0, _preferences$22.x), Renderer.width - this._host.getBoundingClientRect().width)}px`;
 	};
 	/**
 	* Once remove from body, save user preferences
 	*/
 	PetInformations.onRemove = function onRemove() {
-		_preferences$22.show = this.ui.is(":visible");
-		_preferences$22.y = parseInt(this.ui.css("top"), 10);
-		_preferences$22.x = parseInt(this.ui.css("left"), 10);
+		_preferences$22.show = this._host.style.display !== "none";
+		_preferences$22.y = parseInt(this._host.style.top, 10);
+		_preferences$22.x = parseInt(this._host.style.left, 10);
 		_preferences$22.save();
 	};
 	/**
@@ -248130,11 +248230,12 @@ var init_PetInformations = __esmMin((() => {
 	* @param {object} key
 	*/
 	PetInformations.onShortCut = function onShortCut(key) {
-		if (!this.ui) return;
 		switch (key.cmd) {
 			case "TOGGLE":
-				this.ui.toggle();
-				if (this.ui.is(":visible")) this.focus();
+				if (this._host.style.display === "none") {
+					this._host.style.display = "";
+					this.focus();
+				} else this._host.style.display = "none";
 				break;
 		}
 	};
@@ -248144,27 +248245,54 @@ var init_PetInformations = __esmMin((() => {
 	* @param {object} pet info
 	*/
 	PetInformations.setInformations = function setInformations(info) {
-		this.ui.find(".name").val(info.szName);
-		this.ui.find(".level").text(info.nLevel);
+		const root = _getRoot$5();
+		const nameInput = root.querySelector(".name");
+		if (nameInput) nameInput.value = info.szName;
+		const levelEl = root.querySelector(".level");
+		if (levelEl) levelEl.textContent = info.nLevel;
 		this.setHunger(info.nFullness);
 		this.setIntimacy(info.nRelationship);
-		this.ui.find(".accessory").text(DB.getMessage(info.ITID ? 598 : 600));
-		Client.loadFile(DB.getPetIllustPath(info.job), function(data) {
-			this.ui.find(".content").css("backgroundImage", "url(" + data + ")");
-		}.bind(this));
-		if (!info.bModified) this.ui.find(".name, .modify").removeClass("disabled").attr("disabled", false);
-		else this.ui.find(".name, .modify").addClass("disabled").attr("disabled", true);
-		const cmdSelect = this.ui.find(".command");
-		cmdSelect.find(".evolution-option").remove();
-		const evolution = DB.getPetEvolutionByJob(info.job);
-		if (evolution) for (const targetEggID in evolution) {
-			const evoPet = DB.getPetByEggID(Number(targetEggID));
-			const evoName = evoPet ? evoPet.PetString || evoPet.PetName : `Evolution ${targetEggID}`;
-			const option = document.createElement("option");
-			option.className = "evolution-option";
-			option.value = "evolution_" + info.job;
-			option.textContent = "Evolution - " + evoName;
-			cmdSelect.append(option);
+		const accessoryEl = root.querySelector(".accessory");
+		if (accessoryEl) accessoryEl.textContent = DB.getMessage(info.ITID ? 598 : 600);
+		Client.loadFile(DB.getPetIllustPath(info.job), (data) => {
+			const contentEl = root.querySelector(".content");
+			if (contentEl) contentEl.style.backgroundImage = `url(${data})`;
+		});
+		if (!info.bModified) {
+			if (nameInput) {
+				nameInput.classList.remove("disabled");
+				nameInput.disabled = false;
+			}
+			const modifyBtn = root.querySelector(".modify");
+			if (modifyBtn) {
+				modifyBtn.classList.remove("disabled");
+				modifyBtn.disabled = false;
+			}
+		} else {
+			if (nameInput) {
+				nameInput.classList.add("disabled");
+				nameInput.disabled = true;
+			}
+			const modifyBtn = root.querySelector(".modify");
+			if (modifyBtn) {
+				modifyBtn.classList.add("disabled");
+				modifyBtn.disabled = true;
+			}
+		}
+		const cmdSelect = root.querySelector(".command");
+		if (cmdSelect) {
+			const oldOptions = cmdSelect.querySelectorAll(".evolution-option");
+			for (const opt of oldOptions) opt.remove();
+			const evolution = DB.getPetEvolutionByJob(info.job);
+			if (evolution) for (const targetEggID in evolution) {
+				const evoPet = DB.getPetByEggID(Number(targetEggID));
+				const evoName = evoPet ? evoPet.PetString || evoPet.PetName : `Evolution ${targetEggID}`;
+				const option = document.createElement("option");
+				option.className = "evolution-option";
+				option.value = `evolution_${info.job}`;
+				option.textContent = `Evolution - ${evoName}`;
+				cmdSelect.appendChild(option);
+			}
 		}
 	};
 	/**
@@ -248173,12 +248301,15 @@ var init_PetInformations = __esmMin((() => {
 	* @param {number} intimacy
 	*/
 	PetInformations.setIntimacy = function setIntimacy(val) {
-		this.ui.find(".intimacy").text(DB.getMessage(val < 100 ? 672 : val < 250 ? 673 : val < 600 ? 669 : val < 900 ? 674 : 675));
+		const el = _getRoot$5().querySelector(".intimacy");
+		if (el) el.textContent = DB.getMessage(val < 100 ? 672 : val < 250 ? 673 : val < 600 ? 669 : val < 900 ? 674 : 675);
 	};
 	PetInformations.setFeedConfig = function setFeedConfig(flag) {
 		petAutoFeeding = flag;
-		if (PetInformations.ui) Client.loadFile(DB.INTERFACE_PATH + "checkbox_" + (petAutoFeeding ? "1" : "0") + ".bmp", function(data) {
-			PetInformations.ui.find(".pet_auto_feed").css("backgroundImage", "url(" + data + ")");
+		const root = _getRoot$5();
+		if (root) Client.loadFile(DB.INTERFACE_PATH + "checkbox_" + (petAutoFeeding ? "1" : "0") + ".bmp", (data) => {
+			const el = root.querySelector(".pet_auto_feed");
+			if (el) el.style.backgroundImage = `url(${data})`;
 		});
 	};
 	/**
@@ -248187,7 +248318,30 @@ var init_PetInformations = __esmMin((() => {
 	* @param {number} hunger
 	*/
 	PetInformations.setHunger = function setHunger(val) {
-		this.ui.find(".hunger").text(DB.getMessage(val < 10 ? 667 : val < 25 ? 668 : val < 75 ? 669 : val < 90 ? 670 : 671));
+		const el = _getRoot$5().querySelector(".hunger");
+		if (el) el.textContent = DB.getMessage(val < 10 ? 667 : val < 25 ? 668 : val < 75 ? 669 : val < 90 ? 670 : 671);
+	};
+	/**
+	* Handle keyboard events inside shadow DOM
+	* Protects input fields from being consumed by global handlers
+	*/
+	PetInformations.onKeyDown = function onKeyDown(event) {
+		const focused = (this._shadow || this._host).activeElement;
+		if (focused && focused.tagName && focused.tagName.match(/input|select|textarea/i)) {
+			if (event.which === KEYS.ESCAPE || event.key === "Escape") {
+				focused.blur();
+				event.stopImmediatePropagation();
+				return false;
+			}
+			if (event.which === KEYS.ENTER) {
+				if (focused.classList.contains("name")) PetInformations.reqNameEdit(focused.value);
+				event.stopImmediatePropagation();
+				return false;
+			}
+			event.stopImmediatePropagation();
+			return true;
+		}
+		return true;
 	};
 	/**
 	* Functions defined in Engine/MapEngine/Pet.js
@@ -249818,7 +249972,7 @@ var init_EntityDisplay = __esmMin((() => {
 				multiShadow(ctx, lines[1], start_x, fontSize * 1.2 + paddingTop, 1, 0, 0);
 				ctx.fillStyle = color;
 				ctx.strokeStyle = "black";
-				ctx.strokeText(lines[0], start_x, 0 + paddingTop);
+				ctx.strokeText(lines[0], start_x, 5);
 				ctx.fillText(lines[0], start_x, paddingTop);
 				ctx.strokeText(lines[1], start_x, fontSize * 1.2 + paddingTop);
 				ctx.fillText(lines[1], start_x, fontSize * 1.2 + paddingTop);
@@ -249933,12 +250087,11 @@ var init_EntityDialog = __esmMin((() => {
 			this.display = true;
 			const ctx = this.ctx;
 			const max_width = 250;
-			const fontSize = 12;
 			const lines = [];
 			let width = 0, i, j;
 			let result;
 			const color = fontColor || "white";
-			ctx.font = fontSize + "px Arial";
+			ctx.font = "12px Arial";
 			while (text.length) {
 				i = text.length;
 				while (ctx.measureText(text.substr(0, i)).width > max_width) i--;
@@ -249952,8 +250105,8 @@ var init_EntityDialog = __esmMin((() => {
 				text = text.substr(lines[lines.length - 1].length, text.length);
 			}
 			ctx.canvas.width = 14 + width;
-			ctx.canvas.height = 8 + (fontSize + 5) * lines.length;
-			ctx.font = fontSize + "px Arial";
+			ctx.canvas.height = 8 + 17 * lines.length;
+			ctx.font = "12px Arial";
 			ctx.fillStyle = "rgba(0,0,0,0.4)";
 			ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
 			ctx.strokeStyle = "#525252";
@@ -249961,9 +250114,9 @@ var init_EntityDialog = __esmMin((() => {
 			ctx.stroke();
 			for (i = 0, j = lines.length; i < j; ++i) {
 				ctx.fillStyle = "black";
-				ctx.fillText(lines[i], 8, 5 + fontSize + (fontSize + 5) * i);
+				ctx.fillText(lines[i], 8, 17 + 17 * i);
 				ctx.fillStyle = color;
-				ctx.fillText(lines[i], 7, 4 + fontSize + (fontSize + 5) * i);
+				ctx.fillText(lines[i], 7, 16 + 17 * i);
 			}
 			if (this.timeout) Events.clearTimeout(this.timeout);
 			this.timeout = Events.setTimeout(function() {
@@ -255138,8 +255291,8 @@ var init_UIComponent = __esmMin((() => {
 					const lockY = component.magnet && (component.magnet.TOP || component.magnet.BOTTOM);
 					snapX = null;
 					snapY = null;
-					snapXD = SNAP_DISTANCE + 1;
-					snapYD = SNAP_DISTANCE + 1;
+					snapXD = 11;
+					snapYD = 11;
 					currentX = x_;
 					currentY = y_;
 					const len = _snapCache.length;
@@ -256022,6 +256175,14 @@ var init_Client = __esmMin((() => {
 //#endregion
 //#region node_modules/lodash/lodash.js
 var require_lodash = /* @__PURE__ */ __commonJSMin(((exports, module) => {
+	/**
+	* @license
+	* Lodash <https://lodash.com/>
+	* Copyright OpenJS Foundation and other contributors <https://openjsf.org/>
+	* Released under MIT license <https://lodash.com/license>
+	* Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
+	* Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
+	*/
 	(function() {
 		/** Used as a safe reference for `undefined` in pre-ES5 environments. */
 		var undefined;
@@ -276129,7 +276290,7 @@ var init_WeaponAction = __esmMin((() => {
 		this[WeaponType_default.SPEAR] = 2;
 		this[WeaponType_default.TWOHANDSPEAR] = 2;
 	})();
-	WeaponAction[JobConst_default.MAGICIA] = new (function() {
+	WeaponAction[JobConst_default.MAGICIAN] = new (function() {
 		this[WeaponType_default.NONE] = 0;
 		this[WeaponType_default.ROD] = 1;
 		this[WeaponType_default.TWOHANDROD] = 1;
@@ -297891,7 +298052,7 @@ var init_bson = __esmMin((() => {
 				if (value < 0) return Long.UZERO;
 				if (value >= TWO_PWR_64_DBL) return Long.MAX_UNSIGNED_VALUE;
 			} else {
-				if (value <= -TWO_PWR_63_DBL) return Long.MIN_VALUE;
+				if (value <= -0x8000000000000000) return Long.MIN_VALUE;
 				if (value + 1 >= TWO_PWR_63_DBL) return Long.MAX_VALUE;
 			}
 			if (value < 0) return Long.fromNumber(-value, unsigned).neg();
@@ -314892,7 +315053,7 @@ var init_Vending$1 = __esmMin((() => {
 }));
 //#endregion
 //#region src/UI/Components/Vending/Vending.js
-function _getRoot() {
+function _getRoot$4() {
 	return Vending._shadow || Vending._host;
 }
 function escapeHtml(text) {
@@ -314959,7 +315120,7 @@ function addItem$1(content, item, isinput) {
 		container.innerHTML = `<div class="item output" draggable="true" data-index="${item.index}"><div class="icon"></div><div class="amount">${amountText}</div>` + eaHtml + `<div class="name">${escapeHtml(DB.getItemName(item))}</div><div class="price">${textPrice} ${price}</div></div>`;
 		itemObj = container;
 		if (_type$3 === Vending.Type.BUYING_STORE) {
-			const limitInput = _getRoot().querySelector(".limitZeny");
+			const limitInput = _getRoot$4().querySelector(".limitZeny");
 			let limit = parseInt(limitInput.value, 10);
 			limit += item.count * item.price;
 			limitInput.value = limit;
@@ -315030,7 +315191,7 @@ function onDrop$5(event) {
 		return;
 	}
 	if (data.type !== "item" || data.from !== "Vending" || data.container === this.className) return;
-	const fromContent = _getRoot().querySelector(`.${data.container} .content`);
+	const fromContent = _getRoot$4().querySelector(`.${data.container} .content`);
 	const toContent = this.querySelector(".content");
 	requestMoveItem$1(data.index, fromContent, toContent, this.className === "OutputWindow");
 }
@@ -315049,7 +315210,7 @@ function onItemInfo$11(event) {
 }
 function onItemSelected$1() {
 	if (_type$3 === Vending.Type.BUY || _type$3 === Vending.Type.VENDING_STORE) return;
-	const root = _getRoot();
+	const root = _getRoot$4();
 	const inputWin = root.querySelector(".InputWindow");
 	let from, to;
 	if (inputWin.contains(this)) {
@@ -315062,7 +315223,7 @@ function onItemSelected$1() {
 	requestMoveItem$1(parseInt(this.getAttribute("data-index"), 10), from.querySelector(".content"), to.querySelector(".content"), from === inputWin);
 }
 function onItemFocus$1() {
-	_getRoot().querySelectorAll(".item.selected").forEach((el) => el.classList.remove("selected"));
+	_getRoot$4().querySelectorAll(".item.selected").forEach((el) => el.classList.remove("selected"));
 	this.classList.add("selected");
 }
 function onScroll$4(event) {
@@ -315075,7 +315236,7 @@ function onScroll$4(event) {
 	event.preventDefault();
 }
 function onDragStart$1(event) {
-	const root = _getRoot();
+	const root = _getRoot$4();
 	const inputWin = root.querySelector(".InputWindow");
 	const outputWin = root.querySelector(".OutputWindow");
 	const container = (inputWin.contains(this) ? inputWin : outputWin).className;
@@ -315092,7 +315253,7 @@ function onDragStart$1(event) {
 	}));
 }
 function onResizeInput() {
-	const inputWin = _getRoot().querySelector(".InputWindow");
+	const inputWin = _getRoot$4().querySelector(".InputWindow");
 	const content = inputWin.querySelector(".container .content");
 	const top = inputWin.offsetTop;
 	let lastHeight = 0;
@@ -315127,14 +315288,14 @@ function onItemOver$8() {
 	const idx = parseInt(this.getAttribute("data-index"), 10);
 	const item = _type$3 === Vending.Type.VENDING_STORE ? CartItems_default.getItemByIndex(idx) : InventoryController.getUI().getItemByIndex(idx);
 	if (!item) return;
-	const overlay = _getRoot().querySelector(".overlay");
+	const overlay = _getRoot$4().querySelector(".overlay");
 	overlay.style.display = "";
 	overlay.style.top = `${this.offsetTop - 20}px`;
 	overlay.style.left = `${this.offsetLeft - 10}px`;
 	overlay.textContent = `${DB.getItemName(item)} ${item.count || 1} ea`;
 }
 function onItemOut$9() {
-	const overlay = _getRoot().querySelector(".overlay");
+	const overlay = _getRoot$4().querySelector(".overlay");
 	if (overlay) overlay.style.display = "none";
 }
 var Vending, _preferences$20, _input$1, _output$1, _slots$4, _type$3, transferItem$1, Vending_default;
@@ -315185,7 +315346,7 @@ var init_Vending = __esmMin((() => {
 	_slots$4 = 0;
 	Vending.captureKeyEvents = true;
 	Vending.init = function init() {
-		const root = _getRoot();
+		const root = _getRoot$4();
 		const sellBtn = root.querySelector(".btn.sell");
 		if (sellBtn) {
 			sellBtn.addEventListener("mousedown", (e) => e.stopImmediatePropagation());
@@ -315275,7 +315436,7 @@ var init_Vending = __esmMin((() => {
 		});
 	};
 	Vending.onAppend = function onAppend() {
-		const root = _getRoot();
+		const root = _getRoot$4();
 		const inputWin = root.querySelector(".InputWindow");
 		const outputWin = root.querySelector(".OutputWindow");
 		const inputContent = inputWin.querySelector(".content");
@@ -315289,7 +315450,7 @@ var init_Vending = __esmMin((() => {
 		this._host.style.display = "none";
 	};
 	Vending.setType = function setType(type) {
-		const root = _getRoot();
+		const root = _getRoot$4();
 		const winBuyEls = root.querySelectorAll(".WinBuy");
 		const winSellEls = root.querySelectorAll(".WinSell");
 		switch (type) {
@@ -315317,7 +315478,7 @@ var init_Vending = __esmMin((() => {
 	};
 	Vending.onRemove = function onRemove() {
 		VendingModelMessage_default.onRemove();
-		const root = _getRoot();
+		const root = _getRoot$4();
 		const inputWin = root.querySelector(".InputWindow");
 		const outputWin = root.querySelector(".OutputWindow");
 		_input$1.length = 0;
@@ -315350,7 +315511,7 @@ var init_Vending = __esmMin((() => {
 		return true;
 	};
 	Vending.setList = function setList(items) {
-		const root = _getRoot();
+		const root = _getRoot$4();
 		root.querySelectorAll(".content").forEach((el) => {
 			el.innerHTML = "";
 		});
@@ -315397,7 +315558,7 @@ var init_Vending = __esmMin((() => {
 		if (Vending.isOpen) return;
 		_slots$4 = pkt.itemcount;
 		this.setList(CartItems_default.list);
-		const root = _getRoot();
+		const root = _getRoot$4();
 		root.querySelector(".add_shop").style.height = `${32 * _slots$4}px`;
 		root.querySelector(".shopname").value = "";
 		this._host.style.display = "";
@@ -315413,7 +315574,7 @@ var init_Vending = __esmMin((() => {
 			if (isItemStackable(item) && DB.isBuyable(item.ITID)) buyable.push(item);
 		}
 		this.setList(buyable);
-		const root = _getRoot();
+		const root = _getRoot$4();
 		root.querySelector(".add_shop").style.height = `${32 * _slots$4}px`;
 		root.querySelector(".shopname").value = "";
 		this._host.style.display = "";
@@ -315427,7 +315588,7 @@ var init_Vending = __esmMin((() => {
 	Vending.onSubmit = function onSubmit() {
 		const output = [];
 		const count = _output$1.length;
-		const root = _getRoot();
+		const root = _getRoot$4();
 		const shopname = root.querySelector(".shopname").value;
 		let limitZeny;
 		let ctr = 0;
@@ -315509,6 +315670,14 @@ function prettyZeny$2(val, useStyle) {
 	][count - 1]}">${str}</span>`;
 	return str;
 }
+/**
+* Hide/show inventory's content
+* @preserved currently unused, might be needed in the future
+*/
+/**
+* Update tab, reset inventory content
+* @preserved currently unused, might be needed in the future
+*/
 /**
 * Drop an item from storage to inventory
 *
@@ -316962,13 +317131,25 @@ var init_ShortCuts = __esmMin((() => {
 	ShortCuts_default = UIManager.addComponent(ShortCuts);
 }));
 //#endregion
+//#region src/UI/Components/StatusIcons/StatusIcons.html?raw
+var StatusIcons_default$2;
+var init_StatusIcons$2 = __esmMin((() => {
+	StatusIcons_default$2 = "<div id=\"StatusIcons\"></div>\r\n";
+}));
+//#endregion
 //#region src/UI/Components/StatusIcons/StatusIcons.css?raw
 var StatusIcons_default$1;
 var init_StatusIcons$1 = __esmMin((() => {
-	StatusIcons_default$1 = "#StatusIcons {\r\n	display: block;\r\n	position: absolute;\r\n	top: 166px;\r\n	right: 20px;\r\n	z-index: 50;\r\n}\r\n\r\n#StatusIcons .state {\r\n	position: absolute;\r\n}\r\n\r\n#StatusIcons .state .description {\r\n	display: none;\r\n	z-index: 51;\r\n	position: absolute;\r\n	right: 33px;\r\n	top: 0px;\r\n	padding: 0px 5px 0px 5px;\r\n	background-color: rgba(0, 0, 0, 0.5);\r\n	border: 1px solid #c6c6c6;\r\n	border-radius: 3px;\r\n	color: white;\r\n	text-shadow: 1px 1px black;\r\n	white-space: nowrap;\r\n	line-height: 16px;\r\n}\r\n\r\n#StatusIcons .state:hover .description {\r\n	display: block;\r\n}\r\n\r\n#StatusIcons .state canvas {\r\n	width: 32px;\r\n	height: 32px;\r\n}\r\n";
+	StatusIcons_default$1 = ":host {\r\n	top: 166px;\r\n	right: 20px;\r\n	overflow: visible;\r\n}\r\n\r\n#StatusIcons {\r\n	display: block;\r\n}\r\n\r\n#StatusIcons .state {\r\n	position: absolute;\r\n}\r\n\r\n#StatusIcons .state .description {\r\n	display: none;\r\n	z-index: 51;\r\n	position: absolute;\r\n	right: 33px;\r\n	top: 0px;\r\n	padding: 0px 5px 0px 5px;\r\n	background-color: rgba(0, 0, 0, 0.5);\r\n	border: 1px solid #c6c6c6;\r\n	border-radius: 3px;\r\n	color: white;\r\n	text-shadow: 1px 1px black;\r\n	white-space: nowrap;\r\n	line-height: 16px;\r\n}\r\n\r\n#StatusIcons .state:hover .description {\r\n	display: block;\r\n}\r\n\r\n#StatusIcons .state canvas {\r\n	width: 32px;\r\n	height: 32px;\r\n}\r\n";
 }));
 //#endregion
 //#region src/UI/Components/StatusIcons/StatusIcons.js
+/**
+* Helper to get the shadow root
+*/
+function _getRoot$3() {
+	return StatusIcons._shadow || StatusIcons._host;
+}
 function addResizedStatusIcon(img, index) {
 	if (img.width < 33 && img.height < 33) {
 		_status[index].img = img;
@@ -316991,7 +317172,7 @@ function addResizedStatusIcon(img, index) {
 	ctx.restore();
 	const resizedImg = new Image();
 	resizedImg.src = canvas.toDataURL();
-	resizedImg.onload = function() {
+	resizedImg.onload = () => {
 		_status[index].img = resizedImg;
 		addElement$4(_status[index].element);
 	};
@@ -317002,7 +317183,7 @@ function addResizedStatusIcon(img, index) {
 * Used when one element is removed.
 */
 function resetElementsPosition() {
-	const elements = StatusIcons.ui.find(".state");
+	const elements = _getRoot$3().querySelectorAll(".state");
 	const count = elements.length;
 	let x = 0;
 	let y = 0;
@@ -317012,8 +317193,8 @@ function resetElementsPosition() {
 			x += 45;
 		}
 		const element = elements[i];
-		element.style.top = y + "px";
-		element.style.right = x + "px";
+		element.style.top = `${y}px`;
+		element.style.right = `${x}px`;
 	}
 }
 /**
@@ -317069,14 +317250,16 @@ function createElement(index) {
 * @param {CanvasElement}
 */
 function addElement$4(element) {
-	const elements = StatusIcons.ui.find(".state");
+	const root = _getRoot$3();
+	const elements = root.querySelectorAll(".state");
 	const max = (Renderer.height - 166) / 36 | 0;
 	const count = elements.length;
 	const x = (count / max | 0) * 45;
 	const y = count % max * 36;
-	element.style.top = y + "px";
-	element.style.right = x + "px";
-	StatusIcons.ui.append(element);
+	element.style.top = `${y}px`;
+	element.style.right = `${x}px`;
+	const container = root.querySelector("#StatusIcons");
+	if (container) container.appendChild(element);
 }
 /**
 * Rendering a status icon
@@ -317110,7 +317293,7 @@ function renderStatus(status, now) {
 		const tick = (end - now) / 1e3 | 0;
 		const seconds = tick % 60;
 		const minutes = tick / 60 | 0;
-		status.time.textContent = now >= end || end === Infinity ? "" : (minutes ? minutes + " " + DB.getMessage(1807, "minute") + " " : "") + seconds + " " + DB.getMessage(1808, "second");
+		status.time.textContent = now >= end || end === Infinity ? "" : (minutes ? `${minutes} ${DB.getMessage(1807, "minute")} ` : "") + `${seconds} ${DB.getMessage(1808, "second")}`;
 	}
 }
 /**
@@ -317131,19 +317314,20 @@ var StatusIcons, _status, _last_updated_time, _render_time, StatusIcons_default;
 var init_StatusIcons = __esmMin((() => {
 	init_StatusInfo();
 	init_DBManager();
-	init_jquery();
 	init_Texture();
 	init_Client();
 	init_Renderer();
 	init_UIManager();
-	init_UIComponent();
+	init_GUIComponent();
 	init_ScreenEffectManager();
+	init_StatusIcons$2();
 	init_StatusIcons$1();
-	StatusIcons = new UIComponent("StatusIcons", null, StatusIcons_default$1);
+	StatusIcons = new GUIComponent("StatusIcons", StatusIcons_default$1);
+	StatusIcons.render = () => StatusIcons_default$2;
 	/**
 	* Mouse can cross this UI
 	*/
-	StatusIcons.mouseMode = UIComponent.MouseMode.CROSS;
+	StatusIcons.mouseMode = GUIComponent.MouseMode.CROSS;
 	/**
 	* @var {boolean} do not focus this UI
 	*/
@@ -317151,12 +317335,6 @@ var init_StatusIcons = __esmMin((() => {
 	_status = {};
 	_last_updated_time = Date.now();
 	_render_time = 500;
-	/**
-	* Initialize component
-	*/
-	StatusIcons.init = function init() {
-		this.ui = jquery_default("<div/>").attr("id", "StatusIcons");
-	};
 	/**
 	* Start rendering icons
 	*/
@@ -317173,7 +317351,8 @@ var init_StatusIcons = __esmMin((() => {
 	* Clean up component
 	*/
 	StatusIcons.clean = function clean() {
-		this.ui.empty();
+		const container = _getRoot$3().querySelector("#StatusIcons");
+		if (container) container.innerHTML = "";
 		_status = {};
 		ScreenEffectManager.clean();
 	};
@@ -317195,8 +317374,8 @@ var init_StatusIcons = __esmMin((() => {
 		_status[index].start = Renderer.tick;
 		_status[index].end = Renderer.tick + life;
 		if (life === 9999) _status[index].end = Infinity;
-		if (_status.img) return;
-		Client.loadFile("data/texture/effect/" + StatusInfo[index].icon, function(data) {
+		if (_status[index].img) return;
+		Client.loadFile(`data/texture/effect/${StatusInfo[index].icon}`, (data) => {
 			Texture.load(data, function() {
 				if (_status[index] && !_status[index].img) addResizedStatusIcon(this, index);
 			});
@@ -320234,14 +320413,21 @@ var init_PvPTimer$2 = __esmMin((() => {
 //#region src/UI/Components/PvPTimer/PvPTimer.css?raw
 var PvPTimer_default$1;
 var init_PvPTimer$1 = __esmMin((() => {
-	PvPTimer_default$1 = "#PvPTimer {\r\n	position: absolute;\r\n	top: 0px;\r\n	left: 50%;\r\n	transform: translateX(-50%);\r\n	text-align: center;\r\n	width: 360px;\r\n	height: 250px;\r\n	pointer-events: none;\r\n	z-index: 1000 !important;\r\n}\r\n\r\n#PvPTimer .pvp-timer-canvas {\r\n	display: block;\r\n	width: 300px;\r\n	height: 110px;\r\n	margin: 0 auto;\r\n}\r\n\r\n#PvPTimer .pvp-timeattack-canvas {\r\n	display: block;\r\n	width: 360px;\r\n	height: 128px;\r\n	margin-top: -12px;\r\n}\r\n\r\n#PvPTimer canvas {\r\n	background: transparent;\r\n	image-rendering: pixelated;\r\n}\r\n";
+	PvPTimer_default$1 = ":host {\r\n	top: 0px;\r\n	left: 50%;\r\n	transform: translateX(-50%);\r\n	width: 360px;\r\n	height: 250px;\r\n	pointer-events: none;\r\n	z-index: 1000 !important;\r\n}\r\n\r\n#PvPTimer {\r\n	position: absolute;\r\n	text-align: center;\r\n	width: 360px;\r\n	height: 250px;\r\n}\r\n\r\n#PvPTimer .pvp-timer-canvas {\r\n	display: block;\r\n	width: 300px;\r\n	height: 110px;\r\n	margin: 0 auto;\r\n}\r\n\r\n#PvPTimer .pvp-timeattack-canvas {\r\n	display: block;\r\n	width: 360px;\r\n	height: 128px;\r\n	margin-top: -12px;\r\n}\r\n\r\n#PvPTimer canvas {\r\n	background: transparent;\r\n	image-rendering: pixelated;\r\n}\r\n";
 }));
 //#endregion
 //#region src/UI/Components/PvPTimer/PvPTimer.js
 /**
+* Helper to get the shadow root
+*/
+function _getRoot$2() {
+	return PvPTimer._shadow || PvPTimer._host;
+}
+/**
 * Pick layers from act
 * @param {Object} act
 * @param {number} actionId
+* @param {number} frameId
 * @returns {Object[]}
 */
 function pickLayers$1(act, actionId, frameId) {
@@ -320266,9 +320452,9 @@ function renderTimer(seconds) {
 	_timerCtx.clearRect(0, 0, TIMER_W, TIMER_H);
 	const m = Math.floor(seconds / 60);
 	const s = seconds % 60;
-	const text = m == 0 ? String(s).padStart(2, "0") : String(m).padStart(2, "0") + ":" + String(s).padStart(2, "0");
+	const text = m === 0 ? String(s).padStart(2, "0") : `${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
 	const digitWidth = 50;
-	let x = TIMER_W - (m == 0 ? 2 * digitWidth : 5 * digitWidth) >> 1;
+	let x = TIMER_W - (m === 0 ? 2 * digitWidth : 5 * digitWidth) >> 1;
 	for (let i = 0; i < text.length; i++) {
 		const a = timerCharToAction(text[i]);
 		if (!isNaN(a)) {
@@ -320281,7 +320467,7 @@ function startTimer() {
 	if (_timerInterval) return;
 	_startTs = Date.now() / 1e3 | 0;
 	renderTimer(0);
-	_timerInterval = setInterval(function() {
+	_timerInterval = setInterval(() => {
 		renderTimer((Date.now() / 1e3 | 0) - _startTs);
 	}, 1e3);
 }
@@ -320303,10 +320489,10 @@ function playTimeAttackBanner() {
 	const count = action.animations.length;
 	function run() {
 		_taCtx.clearRect(0, 0, TA_W, TA_H);
-		drawActionToCanvas$1(_taCtx, _timeAtkAct, _timeAtkSpr, 0, (TA_W >> 1) - 100, TA_Y, frame);
+		drawActionToCanvas$1(_taCtx, _timeAtkAct, _timeAtkSpr, 0, 80, TA_Y, frame);
 		frame++;
 		if (frame < count) _taHideTimer = setTimeout(run, 100);
-		else _taHideTimer = setTimeout(function() {
+		else _taHideTimer = setTimeout(() => {
 			_taCtx.clearRect(0, 0, TA_W, TA_H);
 		}, 300);
 	}
@@ -320315,13 +320501,16 @@ function playTimeAttackBanner() {
 var PvPTimer, TIMER_W, TIMER_H, TA_W, TA_H, TIMER_Y, TA_Y, _timerCanvas, _timerCtx, _taCanvas, _taCtx, _timefontAct, _timefontSpr, _timeAtkAct, _timeAtkSpr, _timerInterval, _startTs, _layerEntity$1, _taHideTimer, isFirstTime, PvPTimer_default;
 var init_PvPTimer = __esmMin((() => {
 	init_UIManager();
-	init_UIComponent();
+	init_GUIComponent();
 	init_Client();
 	init_SpriteRenderer();
 	init_Entity$1();
 	init_PvPTimer$2();
 	init_PvPTimer$1();
-	PvPTimer = new UIComponent("PvPTimer", PvPTimer_default$2, PvPTimer_default$1);
+	PvPTimer = new GUIComponent("PvPTimer", PvPTimer_default$1);
+	PvPTimer.render = () => PvPTimer_default$2;
+	PvPTimer.mouseMode = GUIComponent.MouseMode.CROSS;
+	PvPTimer.needFocus = false;
 	TIMER_W = 300, TIMER_H = 110;
 	TA_W = 360, TA_H = 128;
 	TIMER_Y = 60;
@@ -320340,14 +320529,15 @@ var init_PvPTimer = __esmMin((() => {
 			"data/sprite/ÀÌÆÑÆ®/timefont.spr",
 			"data/sprite/ÀÌÆÑÆ®/timeattack.act",
 			"data/sprite/ÀÌÆÑÆ®/timeattack.spr"
-		], function(tAct, tSpr, aAct, aSpr) {
+		], (tAct, tSpr, aAct, aSpr) => {
 			_timefontAct = tAct;
 			_timefontSpr = tSpr;
 			_timeAtkAct = aAct;
 			_timeAtkSpr = aSpr;
 		});
-		_timerCanvas = PvPTimer.ui.find(".pvp-timer-canvas")[0];
-		_taCanvas = PvPTimer.ui.find(".pvp-timeattack-canvas")[0];
+		const root = _getRoot$2();
+		_timerCanvas = root.querySelector(".pvp-timer-canvas");
+		_taCanvas = root.querySelector(".pvp-timeattack-canvas");
 		if (!_timerCanvas || !_taCanvas) return;
 		_timerCanvas.width = TIMER_W;
 		_timerCanvas.height = TIMER_H;
@@ -320360,7 +320550,7 @@ var init_PvPTimer = __esmMin((() => {
 	* Append UI
 	*/
 	PvPTimer.onAppend = function onAppend() {
-		this.ui.hide();
+		this._host.style.display = "none";
 	};
 	/**
 	* Remove UI
@@ -320373,15 +320563,15 @@ var init_PvPTimer = __esmMin((() => {
 	* Set data
 	* @param {Object} data
 	*/
-	PvPTimer.setData = function setData(data) {};
+	PvPTimer.setData = function setData(_data) {};
 	PvPTimer.hide = function hide() {
-		this.ui.hide();
+		this._host.style.display = "none";
 		stopTimer();
 	};
 	PvPTimer.show = function show() {
-		this.ui.show();
+		this._host.style.display = "";
 		startTimer();
-		if (isFirstTime == true) {
+		if (isFirstTime === true) {
 			playTimeAttackBanner();
 			isFirstTime = false;
 		}
@@ -320398,10 +320588,16 @@ var init_PvPCount$2 = __esmMin((() => {
 //#region src/UI/Components/PvPCount/PvPCount.css?raw
 var PvPCount_default$1;
 var init_PvPCount$1 = __esmMin((() => {
-	PvPCount_default$1 = "#PvPCount {\r\n	position: absolute;\r\n	right: 0px;\r\n	bottom: 0px;\r\n	width: 240px;\r\n	height: 96px;\r\n	pointer-events: none;\r\n	z-index: 1000 !important;\r\n}\r\n\r\n#PvPCount .pvp-rank-canvas {\r\n	display: block;\r\n	width: 240px;\r\n	height: 96px;\r\n}\r\n\r\n/* Pixel accuracy */\r\n#PvPCount canvas {\r\n	background: transparent;\r\n	image-rendering: pixelated;\r\n}\r\n";
+	PvPCount_default$1 = ":host {\r\n	right: 0px;\r\n	bottom: 0px;\r\n	width: 240px;\r\n	height: 96px;\r\n	pointer-events: none;\r\n	z-index: 1000 !important;\r\n}\r\n\r\n#PvPCount {\r\n	position: absolute;\r\n	width: 240px;\r\n	height: 96px;\r\n}\r\n\r\n#PvPCount .pvp-rank-canvas {\r\n	display: block;\r\n	width: 240px;\r\n	height: 96px;\r\n}\r\n\r\n/* Pixel accuracy */\r\n#PvPCount canvas {\r\n	background: transparent;\r\n	image-rendering: pixelated;\r\n}\r\n";
 }));
 //#endregion
 //#region src/UI/Components/PvPCount/PvPCount.js
+/**
+* Helper to get the shadow root
+*/
+function _getRoot$1() {
+	return PvPCount._shadow || PvPCount._host;
+}
 /**
 * Pick layers from act
 * @param {Object} act
@@ -320446,7 +320642,7 @@ function renderRankText(text) {
 	for (i = 0; i < totalStr.length; i++) {
 		a = rankCharToAction(totalStr[i]);
 		if (!isNaN(a)) {
-			drawActionToCanvas(_rankCtx, _rankfontAct, _rankfontSpr, a, x, RANK_Y + 6);
+			drawActionToCanvas(_rankCtx, _rankfontAct, _rankfontSpr, a, x, 58);
 			x += step;
 		}
 	}
@@ -320457,14 +320653,17 @@ function clearRank() {
 var PvPCount, RANK_W, RANK_H, RANK_Y, _rankCanvas, _rankCtx, _rankfontAct, _rankfontSpr, _layerEntity, ranking, total, PvPCount_default;
 var init_PvPCount = __esmMin((() => {
 	init_UIManager();
-	init_UIComponent();
+	init_GUIComponent();
 	init_Client();
 	init_SpriteRenderer();
 	init_Entity$1();
 	init_SoundManager();
 	init_PvPCount$2();
 	init_PvPCount$1();
-	PvPCount = new UIComponent("PvPCount", PvPCount_default$2, PvPCount_default$1);
+	PvPCount = new GUIComponent("PvPCount", PvPCount_default$1);
+	PvPCount.render = () => PvPCount_default$2;
+	PvPCount.mouseMode = GUIComponent.MouseMode.CROSS;
+	PvPCount.needFocus = false;
 	RANK_W = 240, RANK_H = 96;
 	RANK_Y = 52;
 	_layerEntity = new Entity();
@@ -320474,11 +320673,11 @@ var init_PvPCount = __esmMin((() => {
 	* Initialize UI
 	*/
 	PvPCount.init = function init() {
-		Client.loadFiles(["data/sprite/ÀÌÆÑÆ®/rankfont.act", "data/sprite/ÀÌÆÑÆ®/rankfont.spr"], function(rAct, rSpr) {
+		Client.loadFiles(["data/sprite/ÀÌÆÑÆ®/rankfont.act", "data/sprite/ÀÌÆÑÆ®/rankfont.spr"], (rAct, rSpr) => {
 			_rankfontAct = rAct;
 			_rankfontSpr = rSpr;
 		});
-		_rankCanvas = PvPCount.ui.find(".pvp-rank-canvas")[0];
+		_rankCanvas = _getRoot$1().querySelector(".pvp-rank-canvas");
 		if (!_rankCanvas) return;
 		_rankCanvas.width = RANK_W;
 		_rankCanvas.height = RANK_H;
@@ -320501,8 +320700,8 @@ var init_PvPCount = __esmMin((() => {
 	* @param {Object} data
 	*/
 	PvPCount.setData = function setData(data) {
-		if (data.ranking == ranking && data.total == total) return;
-		renderRankText(data.ranking + "/" + data.total);
+		if (data.ranking === ranking && data.total === total) return;
+		renderRankText(`${data.ranking}/${data.total}`);
 		if (data.total > total) SoundManager.play("effect/number_change.wav");
 		ranking = data.ranking;
 		total = data.total;
@@ -323820,6 +324019,26 @@ function onEntityLifeUpdate(pkt) {
 		entity.life.hp = pkt.hp;
 		entity.life.hp_max = pkt.maxhp;
 		entity.life.update();
+		entity.life.display = true;
+	}
+}
+/**
+* Update entity's life (Tiny)
+*
+* @param {object} pkt - PACKET.ZC.HP_INFO_TINY
+*/
+function onEntityLifeUpdateTiny(pkt) {
+	const hp = pkt.hp * 5;
+	EntityManager.storeLife(pkt.GID, {
+		hp,
+		hp_max: 100
+	});
+	const entity = EntityManager.get(pkt.GID);
+	if (entity) {
+		entity.life.hp = hp;
+		entity.life.hp_max = 100;
+		entity.life.update();
+		entity.life.display = true;
 	}
 }
 /**
@@ -325054,6 +325273,7 @@ function EntityEngine() {
 	Network.hookPacket(PACKET.ZC.RESURRECTION, onEntityResurect);
 	Network.hookPacket(PACKET.ZC.EMOTION, onEntityEmotion);
 	Network.hookPacket(PACKET.ZC.NOTIFY_MONSTER_HP, onEntityLifeUpdate);
+	Network.hookPacket(PACKET.ZC.HP_INFO_TINY, onEntityLifeUpdateTiny);
 	Network.hookPacket(PACKET.ZC.QUEST_NOTIFY_EFFECT, onEntityQuestNotifyEffect);
 	Network.hookPacket(PACKET.ZC.BLADESTOP, onBladeStopPacket);
 	Network.hookPacket(PACKET.ZC.NOTIFY_EXP, onNotifyExp);
@@ -327871,14 +328091,29 @@ var init_Sense$2 = __esmMin((() => {
 //#region src/UI/Components/Sense/Sense.css?raw
 var Sense_default$1;
 var init_Sense$1 = __esmMin((() => {
-	Sense_default$1 = "#win_sense {\r\n	position: absolute;\r\n	width: 400px;\r\n	height: 200px;\r\n	z-index: 999;\r\n}\r\n\r\n#win_sense .header {\r\n	position: absolute;\r\n	top: 0px;\r\n	left: 0px;\r\n	height: 17px;\r\n	width: 100%;\r\n}\r\n#win_sense .header .titbar_left {\r\n	height: 100%;\r\n	width: 12px;\r\n	float: left;\r\n}\r\n#win_sense .header .titbar_mid {\r\n	height: 100%;\r\n	width: 376px;\r\n	float: left;\r\n	background-repeat: repeat-x;\r\n}\r\n#win_sense .header .titbar_right {\r\n	height: 100%;\r\n	width: 12px;\r\n	float: left;\r\n}\r\n#win_sense .header .title {\r\n	position: absolute;\r\n	top: 2px;\r\n	left: 12px;\r\n}\r\n\r\n#win_sense .content {\r\n	position: absolute;\r\n	top: 17px;\r\n	left: 0px;\r\n	height: 155px;\r\n	width: 100%;\r\n	background-color: white;\r\n}\r\n\r\n#win_sense .sprite {\r\n	position: absolute;\r\n	top: 0px;\r\n	left: 0px;\r\n	height: 155px;\r\n	width: 120px;\r\n}\r\n\r\n#win_sense .stats {\r\n	position: absolute;\r\n	top: 5px;\r\n	left: 120px;\r\n	width: 280px;\r\n}\r\n#win_sense .stats tr td {\r\n	padding: 0px;\r\n	height: 14px;\r\n}\r\n\r\n#win_sense .elements {\r\n	position: absolute;\r\n	bottom: 5px;\r\n	left: 120px;\r\n	border: 0px;\r\n	border-spacing: 9px 2px;\r\n}\r\n#win_sense .elements tr td {\r\n	border: 1px solid blue;\r\n	text-align: center;\r\n	width: 75px;\r\n	padding: 1px;\r\n}\r\n\r\n#win_sense .element_good {\r\n	color: darkgreen;\r\n	font-weight: bold;\r\n}\r\n#win_sense .element_bad {\r\n	color: darkred;\r\n}\r\n\r\n#win_sense .footer {\r\n	position: absolute;\r\n	bottom: 0px;\r\n	left: 0px;\r\n	height: 29px;\r\n	width: 100%;\r\n}\r\n#win_sense .footer .bg_left {\r\n	height: 100%;\r\n	width: 21px;\r\n	float: left;\r\n}\r\n#win_sense .footer .bg_mid {\r\n	height: 100%;\r\n	width: 357px;\r\n	float: left;\r\n	background-repeat: repeat-x;\r\n}\r\n#win_sense .footer .bg_right {\r\n	height: 100%;\r\n	width: 21px;\r\n	float: left;\r\n}\r\n\r\n#win_sense .footer .btns {\r\n	position: absolute;\r\n	bottom: 2px;\r\n	right: 3px;\r\n}\r\n#win_sense .footer .btn {\r\n	border: 0;\r\n	width: 42px;\r\n	height: 20px;\r\n	bottom: 4px;\r\n	margin-left: 3px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n\r\n.win_sense_overlay {\r\n	position: fixed;\r\n	top: 0px;\r\n	left: 0px;\r\n	width: 100%;\r\n	height: 100%;\r\n	z-index: 99;\r\n}\r\n";
+	Sense_default$1 = ":host {\r\n	width: 400px;\r\n	height: 200px;\r\n	top: 150px;\r\n	left: 150px;\r\n}\r\n\r\n#win_sense {\r\n	position: absolute;\r\n	width: 400px;\r\n	height: 200px;\r\n}\r\n\r\n#win_sense .header {\r\n	position: absolute;\r\n	top: 0px;\r\n	left: 0px;\r\n	height: 17px;\r\n	width: 100%;\r\n}\r\n#win_sense .header .titbar_left {\r\n	height: 100%;\r\n	width: 12px;\r\n	float: left;\r\n}\r\n#win_sense .header .titbar_mid {\r\n	height: 100%;\r\n	width: 376px;\r\n	float: left;\r\n	background-repeat: repeat-x;\r\n}\r\n#win_sense .header .titbar_right {\r\n	height: 100%;\r\n	width: 12px;\r\n	float: left;\r\n}\r\n#win_sense .header .title {\r\n	position: absolute;\r\n	top: 2px;\r\n	left: 12px;\r\n}\r\n\r\n#win_sense .content {\r\n	position: absolute;\r\n	top: 17px;\r\n	left: 0px;\r\n	height: 155px;\r\n	width: 100%;\r\n	background-color: white;\r\n}\r\n\r\n#win_sense .sprite {\r\n	position: absolute;\r\n	top: 0px;\r\n	left: 0px;\r\n	height: 155px;\r\n	width: 120px;\r\n}\r\n\r\n#win_sense .stats {\r\n	position: absolute;\r\n	top: 5px;\r\n	left: 120px;\r\n	width: 280px;\r\n}\r\n#win_sense .stats tr td {\r\n	padding: 0px;\r\n	height: 14px;\r\n}\r\n\r\n#win_sense .elements {\r\n	position: absolute;\r\n	bottom: 5px;\r\n	left: 120px;\r\n	border: 0px;\r\n	border-spacing: 9px 2px;\r\n}\r\n#win_sense .elements tr td {\r\n	border: 1px solid blue;\r\n	text-align: center;\r\n	width: 75px;\r\n	padding: 1px;\r\n}\r\n\r\n#win_sense .element_good {\r\n	color: darkgreen;\r\n	font-weight: bold;\r\n}\r\n#win_sense .element_bad {\r\n	color: darkred;\r\n}\r\n\r\n#win_sense .footer {\r\n	position: absolute;\r\n	bottom: 0px;\r\n	left: 0px;\r\n	height: 29px;\r\n	width: 100%;\r\n}\r\n#win_sense .footer .bg_left {\r\n	height: 100%;\r\n	width: 21px;\r\n	float: left;\r\n}\r\n#win_sense .footer .bg_mid {\r\n	height: 100%;\r\n	width: 357px;\r\n	float: left;\r\n	background-repeat: repeat-x;\r\n}\r\n#win_sense .footer .bg_right {\r\n	height: 100%;\r\n	width: 21px;\r\n	float: left;\r\n}\r\n\r\n#win_sense .footer .btns {\r\n	position: absolute;\r\n	bottom: 2px;\r\n	right: 3px;\r\n}\r\n#win_sense .footer .btn {\r\n	border: 0;\r\n	width: 42px;\r\n	height: 20px;\r\n	bottom: 4px;\r\n	margin-left: 3px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n";
 }));
 //#endregion
 //#region src/UI/Components/Sense/Sense.js
 /**
+* Helper to get the shadow root
+*/
+function _getRoot() {
+	return Sense._shadow || Sense._host;
+}
+/**
+* Set element class based on property value
+*/
+function _setElementClass(el, value, label) {
+	el.className = "";
+	if (value < 100) el.className = "element_bad";
+	else if (value > 100) el.className = "element_good";
+	el.textContent = `${label}: ${value}`;
+}
+/**
 * Rendering the Character
 */
-function render$9(tick) {
+function render$9() {
 	SpriteRenderer.bind2DContext(_model$2.ctx, Math.floor(_model$2.ctx.canvas.width / 2), _model$2.ctx.canvas.height);
 	_model$2.ctx.clearRect(0, 0, _model$2.ctx.canvas.width, _model$2.ctx.canvas.height);
 	_model$2.entity.renderEntity();
@@ -327890,10 +328125,11 @@ var init_Sense = __esmMin((() => {
 	init_Entity$1();
 	init_SpriteRenderer();
 	init_UIManager();
-	init_UIComponent();
+	init_GUIComponent();
 	init_Sense$2();
 	init_Sense$1();
-	Sense = new UIComponent("Sense", Sense_default$2, Sense_default$1);
+	Sense = new GUIComponent("Sense", Sense_default$1);
+	Sense.render = () => Sense_default$2;
 	Elements = [];
 	Sizes = [];
 	Races = [];
@@ -327907,17 +328143,19 @@ var init_Sense = __esmMin((() => {
 	* Initialize popup
 	*/
 	Sense.init = function init() {
-		this.ui.css({
-			top: (Renderer.height - 120) / 1.5 - 120,
-			left: (Renderer.width - 280) / 2,
-			zIndex: 100
-		});
-		this.ui.find(".close").mousedown(function(event) {
-			event.stopImmediatePropagation();
-			return false;
-		}).click(this.remove.bind(this));
-		this.draggable(this.ui.find(".header"));
-		_model$2.ctx = this.ui.find("#canvas_model")[0].getContext("2d");
+		this._host.style.top = `${(Renderer.height - 120) / 1.5 - 120}px`;
+		this._host.style.left = `${(Renderer.width - 280) / 2}px`;
+		this._host.style.zIndex = "100";
+		const root = _getRoot();
+		const closeBtn = root.querySelector(".close");
+		if (closeBtn) {
+			closeBtn.addEventListener("mousedown", (e) => {
+				e.stopImmediatePropagation();
+			});
+			closeBtn.addEventListener("click", () => Sense.remove());
+		}
+		this.draggable(".header");
+		_model$2.ctx = root.querySelector("#canvas_model").getContext("2d");
 		Elements = [
 			DB.getMessage(414),
 			DB.getMessage(415),
@@ -327951,87 +328189,44 @@ var init_Sense = __esmMin((() => {
 	/**
 	* Set stats
 	*
-	* @param {string} title
+	* @param {object} pkt
 	*/
 	Sense.setWindow = function setWindow(pkt) {
-		this.ui.find(".header .title").text(DB.getMessage(406));
+		const root = _getRoot();
+		root.querySelector(".header .title").textContent = DB.getMessage(406);
 		_model$2.entity.set({
 			job: pkt.job,
 			action: 0,
 			direction: 0
 		});
 		_model$2.render = true;
-		this.ui.find("#label_name").text(DB.getMessage(407));
-		this.ui.find("#value_name").html("<a href=\"https://ratemyserver.net/mob_db.php?small=1&mob_id=" + pkt.job + "\" target=\"_blank\">" + DB.getMonsterName(pkt.job) + " </a>");
-		this.ui.find("#label_size").text(DB.getMessage(410));
-		this.ui.find("#value_size").text(Sizes[pkt.size]);
-		this.ui.find("#label_level").text(DB.getMessage(408));
-		this.ui.find("#value_level").text(pkt.level);
-		this.ui.find("#label_type").text(DB.getMessage(411));
-		this.ui.find("#value_type").text(Races[pkt.raceType]);
-		this.ui.find("#label_hp").text(DB.getMessage(409));
-		this.ui.find("#value_hp").text(pkt.hp);
-		this.ui.find("#label_mdef").text(DB.getMessage(412));
-		this.ui.find("#value_mdef").text(pkt.mdefPower);
-		this.ui.find("#label_def").text(DB.getMessage(270));
-		this.ui.find("#value_def").text(pkt.def);
-		this.ui.find("#label_attr").text(DB.getMessage(413));
-		this.ui.find("#value_attr").text(Elements[pkt.property]);
-		const water = this.ui.find("#element_water");
-		water.removeClass("element_good");
-		water.removeClass("element_bad");
-		if (pkt.propertyTable.water < 100) water.addClass("element_bad");
-		else if (pkt.propertyTable.water > 100) water.addClass("element_good");
-		water.text(DB.getMessage(415) + ": " + pkt.propertyTable.water);
-		const wind = this.ui.find("#element_wind");
-		wind.removeClass("element_good");
-		wind.removeClass("element_bad");
-		if (pkt.propertyTable.wind < 100) wind.addClass("element_bad");
-		else if (pkt.propertyTable.wind > 100) wind.addClass("element_good");
-		wind.text(DB.getMessage(418) + ": " + pkt.propertyTable.wind);
-		const dark = this.ui.find("#element_shadow");
-		dark.removeClass("element_good");
-		dark.removeClass("element_bad");
-		if (pkt.propertyTable.dark < 100) dark.addClass("element_bad");
-		else if (pkt.propertyTable.dark > 100) dark.addClass("element_good");
-		dark.text(DB.getMessage(421) + ": " + pkt.propertyTable.dark);
-		const earth = this.ui.find("#element_earth");
-		earth.removeClass("element_good");
-		earth.removeClass("element_bad");
-		if (pkt.propertyTable.earth < 100) earth.addClass("element_bad");
-		else if (pkt.propertyTable.earth > 100) earth.addClass("element_good");
-		earth.text(DB.getMessage(416) + ": " + pkt.propertyTable.earth);
-		const poison = this.ui.find("#element_poison");
-		poison.removeClass("element_good");
-		poison.removeClass("element_bad");
-		if (pkt.propertyTable.poison < 100) poison.addClass("element_bad");
-		else if (pkt.propertyTable.poison > 100) poison.addClass("element_good");
-		poison.text(DB.getMessage(419) + ": " + pkt.propertyTable.poison);
-		const mental = this.ui.find("#element_ghost");
-		mental.removeClass("element_good");
-		mental.removeClass("element_bad");
-		if (pkt.propertyTable.mental < 100) mental.addClass("element_bad");
-		else if (pkt.propertyTable.mental > 100) mental.addClass("element_good");
-		mental.text(DB.getMessage(422) + ": " + pkt.propertyTable.mental);
-		const fire = this.ui.find("#element_fire");
-		fire.removeClass("element_good");
-		fire.removeClass("element_bad");
-		if (pkt.propertyTable.fire < 100) fire.addClass("element_bad");
-		else if (pkt.propertyTable.fire > 100) fire.addClass("element_good");
-		fire.text(DB.getMessage(417) + ": " + pkt.propertyTable.fire);
-		const saint = this.ui.find("#element_holy");
-		saint.removeClass("element_good");
-		saint.removeClass("element_bad");
-		if (pkt.propertyTable.saint < 100) saint.addClass("element_bad");
-		else if (pkt.propertyTable.saint > 100) saint.addClass("element_good");
-		saint.text(DB.getMessage(420) + ": " + pkt.propertyTable.saint);
-		const undead = this.ui.find("#element_undead");
-		undead.removeClass("element_good");
-		undead.removeClass("element_bad");
-		if (pkt.propertyTable.undead < 100) undead.addClass("element_bad");
-		else if (pkt.propertyTable.undead > 100) undead.addClass("element_good");
-		undead.text(DB.getMessage(423) + ": " + pkt.propertyTable.undead);
-		this.ui.show();
+		root.querySelector("#label_name").textContent = DB.getMessage(407);
+		const valueName = root.querySelector("#value_name");
+		valueName.innerHTML = `<a href="https://ratemyserver.net/mob_db.php?small=1&mob_id=${pkt.job}" target="_blank">${DB.getMonsterName(pkt.job)} </a>`;
+		root.querySelector("#label_size").textContent = DB.getMessage(410);
+		root.querySelector("#value_size").textContent = Sizes[pkt.size];
+		root.querySelector("#label_level").textContent = DB.getMessage(408);
+		root.querySelector("#value_level").textContent = pkt.level;
+		root.querySelector("#label_type").textContent = DB.getMessage(411);
+		root.querySelector("#value_type").textContent = Races[pkt.raceType];
+		root.querySelector("#label_hp").textContent = DB.getMessage(409);
+		root.querySelector("#value_hp").textContent = pkt.hp;
+		root.querySelector("#label_mdef").textContent = DB.getMessage(412);
+		root.querySelector("#value_mdef").textContent = pkt.mdefPower;
+		root.querySelector("#label_def").textContent = DB.getMessage(270);
+		root.querySelector("#value_def").textContent = pkt.def;
+		root.querySelector("#label_attr").textContent = DB.getMessage(413);
+		root.querySelector("#value_attr").textContent = Elements[pkt.property];
+		_setElementClass(root.querySelector("#element_water"), pkt.propertyTable.water, DB.getMessage(415));
+		_setElementClass(root.querySelector("#element_wind"), pkt.propertyTable.wind, DB.getMessage(418));
+		_setElementClass(root.querySelector("#element_shadow"), pkt.propertyTable.dark, DB.getMessage(421));
+		_setElementClass(root.querySelector("#element_earth"), pkt.propertyTable.earth, DB.getMessage(416));
+		_setElementClass(root.querySelector("#element_poison"), pkt.propertyTable.poison, DB.getMessage(419));
+		_setElementClass(root.querySelector("#element_ghost"), pkt.propertyTable.mental, DB.getMessage(422));
+		_setElementClass(root.querySelector("#element_fire"), pkt.propertyTable.fire, DB.getMessage(417));
+		_setElementClass(root.querySelector("#element_holy"), pkt.propertyTable.saint, DB.getMessage(420));
+		_setElementClass(root.querySelector("#element_undead"), pkt.propertyTable.undead, DB.getMessage(423));
+		this._host.style.display = "";
 		Renderer.render(render$9);
 	};
 	/**
@@ -328968,18 +329163,32 @@ var init_ChatRoom = __esmMin((() => {
 	};
 }));
 //#endregion
+//#region src/UI/Components/SlotMachine/SlotMachine.html?raw
+var SlotMachine_default$2;
+var init_SlotMachine$2 = __esmMin((() => {
+	SlotMachine_default$2 = "<div id=\"SlotMachine\">\r\n	<canvas width=\"270\" height=\"260\"></canvas>\r\n</div>\r\n";
+}));
+//#endregion
+//#region src/UI/Components/SlotMachine/SlotMachine.css?raw
+var SlotMachine_default$1;
+var init_SlotMachine$1 = __esmMin((() => {
+	SlotMachine_default$1 = ":host {\r\n	width: 270px;\r\n	height: 260px;\r\n}\r\n\r\n#SlotMachine {\r\n	position: absolute;\r\n	width: 270px;\r\n	height: 260px;\r\n}\r\n\r\n#SlotMachine canvas {\r\n	display: block;\r\n	width: 270px;\r\n	height: 260px;\r\n}\r\n";
+}));
+//#endregion
 //#region src/UI/Components/SlotMachine/SlotMachine.js
 var SlotMachine, _sprite, _action, _type$1, _result, _ctx$4, _entity, _start, rendering, SlotMachine_default;
 var init_SlotMachine = __esmMin((() => {
-	init_jquery();
+	init_GUIComponent();
 	init_UIManager();
-	init_UIComponent();
 	init_Client();
 	init_Events();
 	init_Renderer();
 	init_Entity$1();
 	init_SpriteRenderer();
-	SlotMachine = new UIComponent("SlotMachine");
+	init_SlotMachine$2();
+	init_SlotMachine$1();
+	SlotMachine = new GUIComponent("SlotMachine", SlotMachine_default$1);
+	SlotMachine.render = () => SlotMachine_default$2;
 	_type$1 = 0;
 	_result = false;
 	_entity = new Entity();
@@ -328988,29 +329197,21 @@ var init_SlotMachine = __esmMin((() => {
 	* Initialize UI
 	*/
 	SlotMachine.init = function init() {
-		this.ui = jquery_default("<canvas/>").attr({
-			width: 270,
-			height: 260,
-			id: "SlotMachine"
-		}).css({
-			zIndex: 500,
-			position: "absolute",
-			top: Renderer.height / 2 - 130,
-			left: Renderer.width / 2 - 135
-		});
-		_ctx$4 = this.ui[0].getContext("2d");
-		Client.loadFiles(["data/sprite/slotmachine.spr", "data/sprite/slotmachine.act"], function(spr, act) {
+		const canvas = (this._shadow || this._host).querySelector("canvas");
+		_ctx$4 = canvas.getContext("2d");
+		this._host.style.zIndex = "500";
+		Client.loadFiles(["data/sprite/slotmachine.spr", "data/sprite/slotmachine.act"], (spr, act) => {
 			_sprite = spr;
 			_action = act;
 			_type$1 = 0;
 			_start = Renderer.tick;
-			if (this.ui[0].parentNode) Renderer.render(rendering);
-		}.bind(this));
-		this.ui.mousedown(function(event) {
+			if (this._host.parentNode) Renderer.render(rendering);
+		});
+		canvas.addEventListener("mousedown", (event) => {
 			if (_type$1 === 0) {
 				SlotMachine.onTry();
 				event.stopImmediatePropagation();
-				return false;
+				event.preventDefault();
 			}
 		});
 	};
@@ -329020,6 +329221,8 @@ var init_SlotMachine = __esmMin((() => {
 	SlotMachine.onAppend = function onAppend() {
 		_type$1 = 0;
 		_start = Renderer.tick;
+		this._host.style.top = `${Renderer.height / 2 - 130}px`;
+		this._host.style.left = `${Renderer.width / 2 - 135}px`;
 		if (_sprite && _action) Renderer.render(rendering);
 	};
 	/**
@@ -329038,19 +329241,18 @@ var init_SlotMachine = __esmMin((() => {
 		_result = result;
 		_start = Renderer.tick;
 	};
-	rendering = (function renderingClosure() {
+	rendering = (() => {
 		const position = new Uint16Array([0, 0]);
-		return function _renderFrame() {
-			let i, count, max;
+		return () => {
 			let action, anim;
 			switch (_type$1) {
 				case 0:
 					action = _action.actions[0];
 					anim = Math.floor((Renderer.tick - _start) / action.delay * 2);
 					break;
-				case 1:
+				case 1: {
 					action = _action.actions[1];
-					max = action.animations.length + (_result ? 7 : 3);
+					const max = action.animations.length + (_result ? 7 : 3);
 					anim = Renderer.tick - _start;
 					anim = Math.floor(anim / action.delay);
 					anim = Math.min(anim, max);
@@ -329059,30 +329261,33 @@ var init_SlotMachine = __esmMin((() => {
 						_start = Renderer.tick;
 					}
 					break;
+				}
 				case 2:
-				case 3:
+				case 3: {
 					action = _action.actions[_type$1];
-					max = action.animations.length;
+					const max = action.animations.length;
 					anim = Renderer.tick - _start;
 					anim = Math.floor(anim / action.delay);
 					if (anim >= max) {
 						Renderer.stop(rendering);
-						Events.setTimeout(function() {
+						Events.setTimeout(() => {
 							SlotMachine.remove();
 						}, 500);
 					}
 					break;
+				}
 			}
 			const animation = action.animations[anim % action.animations.length];
 			SpriteRenderer.bind2DContext(_ctx$4, 140, 165);
 			_ctx$4.clearRect(0, 0, _ctx$4.canvas.width, _ctx$4.canvas.height);
-			for (i = 0, count = animation.layers.length; i < count; ++i) _entity.renderLayer(animation.layers[i], _sprite, _sprite, 1, position, false);
+			for (let i = 0, count = animation.layers.length; i < count; ++i) _entity.renderLayer(animation.layers[i], _sprite, _sprite, 1, position, false);
 		};
 	})();
 	/**
 	* Functions defined in Engine/MapEngine/Pet.js
 	*/
 	SlotMachine.onTry = function onTry() {};
+	SlotMachine.mouseMode = GUIComponent.MouseMode.STOP;
 	SlotMachine_default = UIManager.addComponent(SlotMachine);
 }));
 //#endregion
@@ -335613,7 +335818,7 @@ var init_CharSelectV4$2 = __esmMin((() => {
 //#region src/UI/Components/CharSelect/CharSelectV4/CharSelectV4.css?raw
 var CharSelectV4_default$1;
 var init_CharSelectV4$1 = __esmMin((() => {
-	CharSelectV4_default$1 = "#CharSelectV4 {\r\n	position: absolute;\r\n	min-width: 100%;\r\n	min-height: 100%;\r\n	z-index: 100;\r\n	top: 0;\r\n	left: 0;\r\n	display: flex;\r\n	justify-content: center;\r\n	align-items: center;\r\n	flex-direction: column;\r\n}\r\n\r\n#CharSelectV4 .char_select_container {\r\n	position: absolute;\r\n	display: flex;\r\n	flex-direction: row;\r\n	background-color: rgba(0, 0, 0, 0.1);\r\n	border-radius: 5px;\r\n	padding-top: 20px;\r\n	padding-left: 5px;\r\n}\r\n\r\n/** Box **/\r\n#CharSelectV4 .char_list {\r\n	flex: 1;\r\n	max-width: 800px;\r\n	min-width: 157px;\r\n	height: 595px;\r\n	max-height: 80vh;\r\n	display: flex;\r\n	flex-direction: row;\r\n	flex-wrap: wrap;\r\n	overflow-y: auto;\r\n}\r\n\r\n#CharSelectV4 .box_select {\r\n	position: absolute;\r\n	width: 157px;\r\n	height: 159px;\r\n	top: 40px;\r\n	margin-left: -5px;\r\n}\r\n#CharSelectV4 .char_canvas {\r\n	width: 157px;\r\n	height: 195px;\r\n	position: relative;\r\n	z-index: 10;\r\n}\r\n#CharSelectV4 .char_canvas .name {\r\n	position: absolute;\r\n	bottom: 17px;\r\n	width: 100%;\r\n	text-align: center;\r\n	font-weight: bold;\r\n	color: #15154a;\r\n}\r\n\r\n#CharSelectV4 .char_canvas .job_icon {\r\n	position: absolute;\r\n	top: 15px;\r\n	right: 12px;\r\n	width: 25px;\r\n	height: 25px;\r\n}\r\n\r\n/** Slot info **/\r\n#CharSelectV4 .slotinfo {\r\n	position: absolute;\r\n	top: 195px;\r\n	right: 10px;\r\n	height: 20px;\r\n	display: block;\r\n	border: 1px solid #c6cee7;\r\n	border-radius: 4px;\r\n	padding-left: 10px;\r\n	padding-right: 10px;\r\n}\r\n#CharSelectV4 .slotinfo .number {\r\n	color: #58709e;\r\n	font-weight: bold;\r\n	margin-right: 10px;\r\n}\r\n#CharSelectV4 .slotinfo .content {\r\n	color: #555;\r\n	top: 6px;\r\n	right: 8px;\r\n}\r\n\r\n/** Page info **/\r\n#CharSelectV4 .pageinfo {\r\n	position: absolute;\r\n	left: 275px;\r\n	top: 185px;\r\n	font-weight: bold;\r\n	color: #646464;\r\n}\r\n#CharSelectV4 .pageinfo .current {\r\n	color: #fe3b7d;\r\n}\r\n\r\n/** Characters infos **/\r\n#CharSelectV4 .charinfo {\r\n	height: 585px;\r\n	max-height: 80vh;\r\n	width: 185px;\r\n	background-repeat: no-repeat;\r\n	margin-top: 10px;\r\n	margin-left: 10px;\r\n	position: relative;\r\n}\r\n#CharSelectV4 .charinfo div {\r\n	position: absolute;\r\n	width: 90px;\r\n	height: 13px;\r\n}\r\n#CharSelectV4 .charinfo .name {\r\n	left: 52px;\r\n	top: 2px;\r\n	white-space: nowrap;\r\n}\r\n#CharSelectV4 .charinfo .job {\r\n	left: 60px;\r\n	top: 105px;\r\n}\r\n#CharSelectV4 .charinfo .lvl {\r\n	left: 60px;\r\n	top: 123px;\r\n}\r\n#CharSelectV4 .charinfo .exp {\r\n	left: 60px;\r\n	top: 140px;\r\n}\r\n#CharSelectV4 .charinfo .hp {\r\n	left: 60px;\r\n	top: 157px;\r\n}\r\n#CharSelectV4 .charinfo .sp {\r\n	left: 60px;\r\n	top: 174px;\r\n}\r\n#CharSelectV4 .charinfo .map {\r\n	left: 60px;\r\n	top: 89px;\r\n	white-space: nowrap;\r\n	overflow: hidden;\r\n	text-overflow: ellipsis;\r\n}\r\n#CharSelectV4 .charinfo .str {\r\n	left: 60px;\r\n	top: 191px;\r\n}\r\n#CharSelectV4 .charinfo .agi {\r\n	left: 60px;\r\n	top: 208px;\r\n}\r\n#CharSelectV4 .charinfo .vit {\r\n	left: 60px;\r\n	top: 225px;\r\n}\r\n#CharSelectV4 .charinfo .int {\r\n	left: 60px;\r\n	top: 242px;\r\n}\r\n#CharSelectV4 .charinfo .dex {\r\n	left: 60px;\r\n	top: 259px;\r\n}\r\n#CharSelectV4 .charinfo .luk {\r\n	left: 60px;\r\n	top: 276px;\r\n}\r\n\r\n/** Buttons **/\r\n#CharSelectV4 .btn.delete {\r\n	position: absolute;\r\n	border: 0;\r\n	width: 131px;\r\n	height: 24px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n\r\n#CharSelectV4 .btn.canceldelete {\r\n	position: absolute;\r\n	border: 0;\r\n	width: 131px;\r\n	height: 24px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n\r\n#CharSelectV4 .btn.finaldelete {\r\n	position: absolute;\r\n	border: 0;\r\n	width: 131px;\r\n	height: 24px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n\r\n#CharSelectV4 .btn.ok {\r\n	position: absolute;\r\n	border: 0;\r\n	width: 165px;\r\n	height: 110px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n	color: white;\r\n	padding-top: 20px;\r\n}\r\n#CharSelectV4 .btn.ok:hover {\r\n	text-shadow: #000 1px 1px;\r\n}\r\n\r\n#CharSelectV4 .ok,\r\n#CharSelectV4 .make {\r\n	right: 15px;\r\n	top: 380px;\r\n}\r\n#CharSelectV4 .cancel {\r\n	position: absolute;\r\n	top: 5px;\r\n	right: 5px;\r\n	width: 17px;\r\n	height: 18px;\r\n	border: none;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n#CharSelectV4 .delete {\r\n	right: 33px;\r\n	top: 300px;\r\n}\r\n\r\n#CharSelectV4 .canceldelete {\r\n	right: 33px;\r\n	top: 300px;\r\n}\r\n\r\n#CharSelectV4 .finaldelete {\r\n	right: 33px;\r\n	top: 330px;\r\n}\r\n\r\n#CharSelectV4 .timedelete {\r\n	position: relative;\r\n	height: 20px;\r\n	width: 100px;\r\n	top: -150px;\r\n	left: 40px;\r\n}\r\n\r\n#CharSelectV4 .hidden {\r\n	display: none;\r\n}\r\n";
+	CharSelectV4_default$1 = "#CharSelectV4 {\r\n	position: absolute;\r\n	min-width: 100%;\r\n	min-height: 100%;\r\n	z-index: 100;\r\n	top: 0;\r\n	left: 0;\r\n	display: flex;\r\n	justify-content: center;\r\n	align-items: center;\r\n	flex-direction: column;\r\n}\r\n\r\n#CharSelectV4 .char_select_container {\r\n	position: absolute;\r\n	display: flex;\r\n	flex-direction: row;\r\n	background-color: rgba(0, 0, 0, 0.1);\r\n	border-radius: 5px;\r\n	padding-top: 20px;\r\n	padding-left: 5px;\r\n}\r\n\r\n/** Box **/\r\n#CharSelectV4 .char_list {\r\n	flex: 1;\r\n	max-width: 800px;\r\n	min-width: 157px;\r\n	height: 595px;\r\n	max-height: 80vh;\r\n	display: flex;\r\n	flex-direction: row;\r\n	flex-wrap: wrap;\r\n	overflow-y: auto;\r\n}\r\n\r\n#CharSelectV4 .box_select {\r\n	position: absolute;\r\n	width: 157px;\r\n	height: 159px;\r\n	top: 40px;\r\n	margin-left: -5px;\r\n}\r\n#CharSelectV4 .char_canvas {\r\n	width: 157px;\r\n	height: 195px;\r\n	position: relative;\r\n	z-index: 10;\r\n}\r\n#CharSelectV4 .char_canvas .name {\r\n	position: absolute;\r\n	bottom: 17px;\r\n	width: 100%;\r\n	text-align: center;\r\n	font-weight: bold;\r\n	color: #15154a;\r\n}\r\n\r\n#CharSelectV4 .char_canvas .job_icon {\r\n	position: absolute;\r\n	top: 15px;\r\n	right: 12px;\r\n	width: 25px;\r\n	height: 25px;\r\n}\r\n\r\n/** Slot info **/\r\n#CharSelectV4 .slotinfo {\r\n	position: absolute;\r\n	top: 195px;\r\n	right: 10px;\r\n	height: 20px;\r\n	display: block;\r\n	border: 1px solid #c6cee7;\r\n	border-radius: 4px;\r\n	padding-left: 10px;\r\n	padding-right: 10px;\r\n}\r\n#CharSelectV4 .slotinfo .number {\r\n	color: #58709e;\r\n	font-weight: bold;\r\n	margin-right: 10px;\r\n}\r\n#CharSelectV4 .slotinfo .content {\r\n	color: #555;\r\n	top: 6px;\r\n	right: 8px;\r\n}\r\n\r\n/** Page info **/\r\n#CharSelectV4 .pageinfo {\r\n	position: absolute;\r\n	left: 275px;\r\n	top: 185px;\r\n	font-weight: bold;\r\n	color: #646464;\r\n}\r\n#CharSelectV4 .pageinfo .current {\r\n	color: #fe3b7d;\r\n}\r\n\r\n/** Characters infos **/\r\n#CharSelectV4 .charinfo {\r\n	height: 585px;\r\n	max-height: 80vh;\r\n	width: 185px;\r\n	background-repeat: no-repeat;\r\n	margin-top: 10px;\r\n	margin-left: 10px;\r\n	position: relative;\r\n}\r\n#CharSelectV4 .charinfo div {\r\n	position: absolute;\r\n	width: 90px;\r\n	height: 13px;\r\n}\r\n#CharSelectV4 .charinfo .name {\r\n	left: 52px;\r\n	top: 2px;\r\n	white-space: nowrap;\r\n}\r\n#CharSelectV4 .charinfo .job {\r\n	left: 60px;\r\n	top: 105px;\r\n}\r\n#CharSelectV4 .charinfo .lvl {\r\n	left: 60px;\r\n	top: 123px;\r\n}\r\n#CharSelectV4 .charinfo .exp {\r\n	left: 60px;\r\n	top: 140px;\r\n}\r\n#CharSelectV4 .charinfo .hp {\r\n	left: 60px;\r\n	top: 157px;\r\n}\r\n#CharSelectV4 .charinfo .sp {\r\n	left: 60px;\r\n	top: 174px;\r\n}\r\n#CharSelectV4 .charinfo .map {\r\n	left: 60px;\r\n	top: 89px;\r\n	white-space: nowrap;\r\n	overflow: hidden;\r\n	text-overflow: ellipsis;\r\n}\r\n#CharSelectV4 .charinfo .str {\r\n	left: 60px;\r\n	top: 191px;\r\n}\r\n#CharSelectV4 .charinfo .agi {\r\n	left: 60px;\r\n	top: 208px;\r\n}\r\n#CharSelectV4 .charinfo .vit {\r\n	left: 60px;\r\n	top: 225px;\r\n}\r\n#CharSelectV4 .charinfo .int {\r\n	left: 60px;\r\n	top: 242px;\r\n}\r\n#CharSelectV4 .charinfo .dex {\r\n	left: 60px;\r\n	top: 259px;\r\n}\r\n#CharSelectV4 .charinfo .luk {\r\n	left: 60px;\r\n	top: 276px;\r\n}\r\n\r\n/** Buttons **/\r\n#CharSelectV4 .btn.delete {\r\n	position: absolute;\r\n	border: 0;\r\n	width: 131px;\r\n	height: 24px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n\r\n#CharSelectV4 .btn.canceldelete {\r\n	position: absolute;\r\n	border: 0;\r\n	width: 131px;\r\n	height: 24px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n\r\n#CharSelectV4 .btn.finaldelete {\r\n	position: absolute;\r\n	border: 0;\r\n	width: 131px;\r\n	height: 24px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n\r\n#CharSelectV4 .btn.ok {\r\n	position: absolute;\r\n	border: 0;\r\n	width: 165px;\r\n	height: 110px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n	color: white;\r\n	padding-top: 20px;\r\n}\r\n#CharSelectV4 .btn.ok:hover {\r\n	text-shadow: #000 1px 1px;\r\n}\r\n\r\n#CharSelectV4 .ok,\r\n#CharSelectV4 .make {\r\n	right: 15px;\r\n	top: 380px;\r\n}\r\n#CharSelectV4 .cancel {\r\n	position: absolute;\r\n	top: 5px;\r\n	right: 5px;\r\n	width: 17px;\r\n	height: 18px;\r\n	border: none;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n#CharSelectV4 .delete {\r\n	right: 33px;\r\n	top: 300px;\r\n}\r\n\r\n#CharSelectV4 .canceldelete {\r\n	right: 33px;\r\n	top: 300px;\r\n}\r\n\r\n#CharSelectV4 .finaldelete {\r\n	right: 33px;\r\n	top: 330px;\r\n}\r\n\r\n#CharSelectV4 .timedelete {\r\n	position: relative;\r\n	height: 20px;\r\n	width: 100px;\r\n	top: -150px;\r\n	left: 55px;\r\n}\r\n\r\n#CharSelectV4 .hidden {\r\n	display: none;\r\n}\r\n";
 }));
 //#endregion
 //#region src/UI/Components/CharSelect/CharSelectV4/CharSelectV4.js
@@ -335624,7 +335829,8 @@ function formatDuration(seconds) {
 	const hours = Math.floor(seconds / 3600);
 	const minutes = Math.floor(seconds % 3600 / 60);
 	const remainingSeconds = seconds % 60;
-	return DB.getMessage(3349).replace("%d", `${hours}`).replace("%d", `${minutes}`).replace("%d", `${remainingSeconds}`);
+	const replacer = DB.getMessage(3349).includes("%d") ? "%d" : "%02d";
+	return DB.getMessage(3349).replace(replacer, hours.toString().padStart(2, "0")).replace(replacer, minutes.toString().padStart(2, "0")).replace(replacer, remainingSeconds.toString().padStart(2, "0"));
 }
 /**
 * Countdown for delay in deletion
@@ -335915,7 +336121,7 @@ var init_CharSelectV4 = __esmMin((() => {
 	* Once append to body
 	*/
 	CharSelectV4.onAppend = function onAppend() {
-		CharSelectV4.clearAllSlots();
+		CharSelectV4.updateCharSlot();
 		if (CharSelectV4.ui) startCountdownInterval();
 		moveCursorTo(_index);
 		_bgInterval = setInterval(changeBackgroundEverySecond, 250);
